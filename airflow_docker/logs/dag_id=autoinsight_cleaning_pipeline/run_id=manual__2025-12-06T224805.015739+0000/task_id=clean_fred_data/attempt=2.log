@@ -1,0 +1,60 @@
+[2025-12-06T23:00:16.076+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_fred_data manual__2025-12-06T22:48:05.015739+00:00 [queued]>
+[2025-12-06T23:00:16.090+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_fred_data manual__2025-12-06T22:48:05.015739+00:00 [queued]>
+[2025-12-06T23:00:16.091+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2025-12-06T23:00:16.102+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_fred_data> on 2025-12-06 22:48:05.015739+00:00
+[2025-12-06T23:00:16.109+0000] {standard_task_runner.py:57} INFO - Started process 789 to run task
+[2025-12-06T23:00:16.112+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'clean_fred_data', 'manual__2025-12-06T22:48:05.015739+00:00', '--job-id', '113', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmphy9hxu24']
+[2025-12-06T23:00:16.116+0000] {standard_task_runner.py:85} INFO - Job 113: Subtask clean_fred_data
+[2025-12-06T23:00:16.184+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.clean_fred_data manual__2025-12-06T22:48:05.015739+00:00 [running]> on host a568c43bff1e
+[2025-12-06T23:00:16.248+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='clean_fred_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T22:48:05.015739+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T22:48:05.015739+00:00'
+[2025-12-06T23:00:16.250+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T23:00:16.250+0000] {logging_mixin.py:154} INFO - CLEANING TASK 2: FRED Economic Indicators
+[2025-12-06T23:00:16.250+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T23:00:16.337+0000] {logging_mixin.py:154} INFO - 
+Starting FRED Economic Indicators Cleaning
+[2025-12-06T23:00:16.338+0000] {logging_mixin.py:154} INFO - Running in LOCAL mode
+[2025-12-06T23:00:16.338+0000] {logging_mixin.py:154} INFO - Loading AWS S3 connectors...
+[2025-12-06T23:00:28.733+0000] {logging_mixin.py:154} INFO - Input: s3a://autoinsightfinal/fred/raw/fred_economic_indicators.csv
+[2025-12-06T23:00:28.738+0000] {logging_mixin.py:154} INFO - Output: s3a://autoinsightfinal/fred/cleaned_new/economic_indicators/parquet/
+[2025-12-06T23:00:28.739+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T23:00:28.740+0000] {logging_mixin.py:154} INFO - FRED ECONOMIC INDICATORS - CLEANING
+[2025-12-06T23:00:28.741+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T23:00:28.742+0000] {logging_mixin.py:154} INFO - 
+Reading raw data from: s3a://autoinsightfinal/fred/raw/fred_economic_indicators.csv
+[2025-12-06T23:00:47.312+0000] {logging_mixin.py:154} INFO -   Loaded 213 records (long format)
+[2025-12-06T23:00:47.318+0000] {logging_mixin.py:154} INFO - 
+Pivoting from long to wide format...
+[2025-12-06T23:00:52.462+0000] {logging_mixin.py:154} INFO -   Pivoted to 71 rows (wide format)
+[2025-12-06T23:00:52.465+0000] {logging_mixin.py:154} INFO - 
+Cleaning Summary:
+[2025-12-06T23:00:52.466+0000] {logging_mixin.py:154} INFO -   Initial records: 213 (long format)
+[2025-12-06T23:00:52.471+0000] {logging_mixin.py:154} INFO -   Final records: 71 (wide format)
+[2025-12-06T23:00:54.891+0000] {logging_mixin.py:154} INFO -   Date range: 2020-01-01 to 2025-11-01
+[2025-12-06T23:00:54.893+0000] {logging_mixin.py:154} INFO - 
+Writing cleaned data to: s3a://autoinsightfinal/fred/cleaned_new/economic_indicators/parquet/
+[2025-12-06T23:01:11.817+0000] {logging_mixin.py:154} INFO - Writing CSV to: s3a://autoinsightfinal/fred/cleaned_new/economic_indicators/csv/
+[2025-12-06T23:01:32.717+0000] {logging_mixin.py:154} INFO - 
+FRED cleaning complete!
+[2025-12-06T23:01:32.719+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T23:01:32.720+0000] {logging_mixin.py:154} INFO - 
+Sample of cleaned data (Snowflake-ready):
+[2025-12-06T23:01:33.613+0000] {logging_mixin.py:154} INFO - +----------+-------------------+-----------------+-------------------+-----------+--------------------------+
+|date      |total_vehicle_sales|light_truck_sales|domestic_auto_sales|data_source|loaded_at                 |
++----------+-------------------+-----------------+-------------------+-----------+--------------------------+
+|2020-01-01|16.85              |16.42            |3.224              |FRED       |2025-12-06 23:01:32.761683|
+|2020-02-01|17.13              |16.669           |3.202              |FRED       |2025-12-06 23:01:32.761683|
+|2020-03-01|11.825             |11.444           |2.27               |FRED       |2025-12-06 23:01:32.761683|
+|2020-04-01|8.919              |8.571            |1.433              |FRED       |2025-12-06 23:01:32.761683|
+|2020-05-01|12.543             |12.244           |1.883              |FRED       |2025-12-06 23:01:32.761683|
+|2020-06-01|13.532             |13.182           |2.061              |FRED       |2025-12-06 23:01:32.761683|
+|2020-07-01|15.182             |14.802           |2.617              |FRED       |2025-12-06 23:01:32.761683|
+|2020-08-01|16.09              |15.656           |2.722              |FRED       |2025-12-06 23:01:32.761683|
+|2020-09-01|16.713             |16.275           |2.83               |FRED       |2025-12-06 23:01:32.761683|
+|2020-10-01|16.564             |16.112           |2.817              |FRED       |2025-12-06 23:01:32.761683|
++----------+-------------------+-----------------+-------------------+-----------+--------------------------+
+only showing top 10 rows
+[2025-12-06T23:01:33.985+0000] {logging_mixin.py:154} INFO - ✅ FRED Data Cleaning Complete
+[2025-12-06T23:01:34.021+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-06T23:01:34.057+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=clean_fred_data, execution_date=20251206T224805, start_date=20251206T230016, end_date=20251206T230134
+[2025-12-06T23:01:34.113+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-06T23:01:34.156+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

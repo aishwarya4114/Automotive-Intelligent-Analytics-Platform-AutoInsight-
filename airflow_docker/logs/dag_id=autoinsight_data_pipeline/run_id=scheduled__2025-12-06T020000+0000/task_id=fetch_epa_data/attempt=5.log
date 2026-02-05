@@ -1,0 +1,61 @@
+[2025-12-07T07:14:08.220+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-06T02:00:00+00:00 [queued]>
+[2025-12-07T07:14:08.231+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-06T02:00:00+00:00 [queued]>
+[2025-12-07T07:14:08.232+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 4
+[2025-12-07T07:14:08.248+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_epa_data> on 2025-12-06 02:00:00+00:00
+[2025-12-07T07:14:08.254+0000] {standard_task_runner.py:57} INFO - Started process 203 to run task
+[2025-12-07T07:14:08.258+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_epa_data', 'scheduled__2025-12-06T02:00:00+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmp0lm6fhif']
+[2025-12-07T07:14:08.262+0000] {standard_task_runner.py:85} INFO - Job 189: Subtask fetch_epa_data
+[2025-12-07T07:14:08.353+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-06T02:00:00+00:00 [running]> on host fb35e4f278df
+[2025-12-07T07:14:08.467+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_epa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-06T02:00:00+00:00'
+[2025-12-07T07:14:08.470+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:14:08.472+0000] {logging_mixin.py:154} INFO - TASK 1: EPA Fuel Economy Data Collection
+[2025-12-07T07:14:08.473+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:14:09.199+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T07:14:09.200+0000] {logging_mixin.py:154} INFO - EPA FUEL ECONOMY DATA COLLECTION WITH S3 UPLOAD
+[2025-12-07T07:14:09.201+0000] {logging_mixin.py:154} INFO - AutoInsight Project - 15 Manufacturers
+[2025-12-07T07:14:09.202+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T07:14:09.203+0000] {logging_mixin.py:154} INFO - 📅 Date Range: January 1, 2020 - December 07, 2025
+[2025-12-07T07:14:09.204+0000] {logging_mixin.py:154} INFO - 🔓 Authentication: NONE REQUIRED (Public API)
+[2025-12-07T07:14:09.205+0000] {logging_mixin.py:154} INFO - 📄 Format: XML (automatically parsed)
+[2025-12-07T07:14:09.205+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T07:14:09.206+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T07:14:09.206+0000] {logging_mixin.py:154} INFO - Fetching EPA Data for 15 Manufacturers
+[2025-12-07T07:14:09.207+0000] {logging_mixin.py:154} INFO - Date Range: January 1, 2020 - December 07, 2025
+[2025-12-07T07:14:09.207+0000] {logging_mixin.py:154} INFO - Years: [2020, 2021, 2022, 2023, 2024]
+[2025-12-07T07:14:09.207+0000] {logging_mixin.py:154} INFO - Format: XML (parsed automatically)
+[2025-12-07T07:14:09.208+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T07:14:09.208+0000] {logging_mixin.py:154} INFO - 📊 [1/15] Processing: Tesla
+[2025-12-07T07:14:09.209+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-07T07:14:09.785+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-07T07:14:27.536+0000] {logging_mixin.py:154} INFO - → 21 variants
+[2025-12-07T07:14:27.538+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-07T07:14:27.844+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-07T07:14:39.257+0000] {logging_mixin.py:154} INFO - → 13 variants
+[2025-12-07T07:14:39.260+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-07T07:14:39.580+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-07T07:14:51.057+0000] {logging_mixin.py:154} INFO - → 13 variants
+[2025-12-07T07:14:51.058+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-07T07:14:51.335+0000] {logging_mixin.py:154} INFO - Found 10 model(s) 
+[2025-12-07T07:15:00.130+0000] {logging_mixin.py:154} INFO - → 10 variants
+[2025-12-07T07:15:00.132+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-07T07:15:00.506+0000] {logging_mixin.py:154} INFO - Found 16 model(s) 
+[2025-12-07T07:15:14.951+0000] {logging_mixin.py:154} INFO - → 16 variants
+[2025-12-07T07:15:14.955+0000] {logging_mixin.py:154} INFO -   ✅ Tesla COMPLETE: 73 total vehicles
+[2025-12-07T07:15:14.957+0000] {logging_mixin.py:154} INFO - 📊 [2/15] Processing: Ford
+[2025-12-07T07:15:14.958+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-07T07:15:15.300+0000] {logging_mixin.py:154} INFO - Found 53 model(s) 
+[2025-12-07T07:16:16.652+0000] {logging_mixin.py:154} INFO - → 74 variants
+[2025-12-07T07:16:16.654+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-07T07:16:16.980+0000] {logging_mixin.py:154} INFO - Found 58 model(s) 
+[2025-12-07T07:17:31.840+0000] {logging_mixin.py:154} INFO - → 97 variants
+[2025-12-07T07:17:31.842+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-07T07:17:32.169+0000] {logging_mixin.py:154} INFO - Found 64 model(s) 
+[2025-12-07T07:18:50.074+0000] {logging_mixin.py:154} INFO - → 111 variants
+[2025-12-07T07:18:50.077+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-07T07:18:50.370+0000] {logging_mixin.py:154} INFO - Found 59 model(s) 
+[2025-12-07T07:19:03.454+0000] {local_task_job_runner.py:115} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-12-07T07:19:03.464+0000] {process_utils.py:131} INFO - Sending 15 to group 203. PIDs of all processes in the group: [203]
+[2025-12-07T07:19:03.468+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 203
+[2025-12-07T07:19:03.471+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.

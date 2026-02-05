@@ -1,0 +1,144 @@
+[2025-12-08T22:30:12.309+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_ratings manual__2025-12-08T22:23:46.693862+00:00 [queued]>
+[2025-12-08T22:30:12.319+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_ratings manual__2025-12-08T22:23:46.693862+00:00 [queued]>
+[2025-12-08T22:30:12.320+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2025-12-08T22:30:12.332+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_ratings> on 2025-12-08 22:23:46.693862+00:00
+[2025-12-08T22:30:12.337+0000] {standard_task_runner.py:57} INFO - Started process 204 to run task
+[2025-12-08T22:30:12.340+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline_v2', 'clean_nhtsa_ratings', 'manual__2025-12-08T22:23:46.693862+00:00', '--job-id', '263', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpajru333z']
+[2025-12-08T22:30:12.344+0000] {standard_task_runner.py:85} INFO - Job 263: Subtask clean_nhtsa_ratings
+[2025-12-08T22:30:12.429+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_ratings manual__2025-12-08T22:23:46.693862+00:00 [running]> on host 71216401ab91
+[2025-12-08T22:30:12.504+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline_v2' AIRFLOW_CTX_TASK_ID='clean_nhtsa_ratings' AIRFLOW_CTX_EXECUTION_DATE='2025-12-08T22:23:46.693862+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-08T22:23:46.693862+00:00'
+[2025-12-08T22:30:12.506+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T22:30:12.507+0000] {logging_mixin.py:154} INFO - CLEANING TASK: NHTSA Safety Ratings
+[2025-12-08T22:30:12.507+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T22:30:12.616+0000] {logging_mixin.py:154} INFO - 
+🚀 Starting NHTSA Ratings Cleaning
+[2025-12-08T22:30:12.617+0000] {logging_mixin.py:154} INFO - 🔧 Running in LOCAL mode
+[2025-12-08T22:30:12.617+0000] {logging_mixin.py:154} INFO - 📦 Loading AWS S3 connectors...
+[2025-12-08T22:30:23.894+0000] {logging_mixin.py:154} INFO - 📥 Input: s3a://autoinsightfinal/nhtsa/raw/ratings/*.csv
+[2025-12-08T22:30:23.900+0000] {logging_mixin.py:154} INFO - 📤 Output: s3a://autoinsightfinal/nhtsa/cleaned_new/ratings/parquet/
+[2025-12-08T22:30:23.902+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-08T22:30:23.903+0000] {logging_mixin.py:154} INFO - NHTSA SAFETY RATINGS - SPARK CLEANING PIPELINE
+[2025-12-08T22:30:23.904+0000] {logging_mixin.py:154} INFO - Input: 2020-2025 data (pre-filtered)
+[2025-12-08T22:30:23.906+0000] {logging_mixin.py:154} INFO - Target: Top 15 manufacturers
+[2025-12-08T22:30:23.907+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with standardized columns
+[2025-12-08T22:30:23.909+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-08T22:30:23.911+0000] {logging_mixin.py:154} INFO - 
+📥 Reading raw data from: s3a://autoinsightfinal/nhtsa/raw/ratings/*.csv
+[2025-12-08T22:30:41.801+0000] {logging_mixin.py:154} INFO -   ✓ Loaded 2,979 records
+[2025-12-08T22:30:41.802+0000] {logging_mixin.py:154} INFO -   ✓ Initial columns: 129
+[2025-12-08T22:30:41.802+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 1: Selecting relevant columns...
+[2025-12-08T22:30:42.053+0000] {logging_mixin.py:154} INFO -   ✓ Selected 38 columns
+[2025-12-08T22:30:42.060+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 2: Standardizing manufacturer names...
+[2025-12-08T22:30:42.534+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 3: Filtering to top 15 manufacturers...
+[2025-12-08T22:30:42.550+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-08T22:30:47.274+0000] {logging_mixin.py:154} INFO -   ✓ Kept 2,850 records from top 15 manufacturers
+[2025-12-08T22:30:47.275+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 129 records from other manufacturers
+[2025-12-08T22:30:47.275+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 4: Cleaning MODEL_YR...
+[2025-12-08T22:30:47.491+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 5: Cleaning MODEL field...
+[2025-12-08T22:30:47.843+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 6: Cleaning star rating columns...
+[2025-12-08T22:30:49.349+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 7: Calculating average star rating...
+[2025-12-08T22:30:49.680+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 8: Converting safety features to booleans...
+[2025-12-08T22:30:50.219+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 9: Counting advanced safety features...
+[2025-12-08T22:30:50.335+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 10: Cleaning weight fields...
+[2025-12-08T22:30:50.578+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 11: Standardizing body style and vehicle class...
+[2025-12-08T22:30:50.690+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 12: Creating safety tier categories...
+[2025-12-08T22:30:50.764+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 13: Adding data quality flags...
+[2025-12-08T22:30:50.850+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 14: Removing duplicates...
+[2025-12-08T22:30:56.384+0000] {logging_mixin.py:154} INFO -   ✓ Removed 1,123 duplicate records
+[2025-12-08T22:30:56.385+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 15: Standardizing column names for Snowflake...
+[2025-12-08T22:30:56.517+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 16: Creating standardized vehicle_id...
+[2025-12-08T22:30:56.705+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 17: Adding metadata...
+[2025-12-08T22:30:56.805+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 18: Selecting final columns (Snowflake-ready)...
+[2025-12-08T22:30:58.620+0000] {logging_mixin.py:154} INFO - 
+📊 Cleaning Summary:
+[2025-12-08T22:30:58.621+0000] {logging_mixin.py:154} INFO -   Initial records: 2,979
+[2025-12-08T22:30:58.622+0000] {logging_mixin.py:154} INFO -   Final records: 1,727
+[2025-12-08T22:30:58.622+0000] {logging_mixin.py:154} INFO -   Retention rate: 58.0%
+[2025-12-08T22:30:58.623+0000] {logging_mixin.py:154} INFO -   Initial columns: 129
+[2025-12-08T22:30:58.628+0000] {logging_mixin.py:154} INFO -   Final columns: 38
+[2025-12-08T22:30:58.629+0000] {logging_mixin.py:154} INFO - 
+  Safety Tier Distribution:
+[2025-12-08T22:31:02.746+0000] {logging_mixin.py:154} INFO -     EXCELLENT: 841
+[2025-12-08T22:31:02.747+0000] {logging_mixin.py:154} INFO -     NOT_RATED: 637
+[2025-12-08T22:31:02.748+0000] {logging_mixin.py:154} INFO -     GOOD: 147
+[2025-12-08T22:31:02.748+0000] {logging_mixin.py:154} INFO -     ACCEPTABLE: 88
+[2025-12-08T22:31:02.749+0000] {logging_mixin.py:154} INFO -     POOR: 12
+[2025-12-08T22:31:02.749+0000] {logging_mixin.py:154} INFO -     MARGINAL: 2
+[2025-12-08T22:31:02.750+0000] {logging_mixin.py:154} INFO - 
+  Top Manufacturers:
+[2025-12-08T22:31:06.818+0000] {logging_mixin.py:154} INFO -     Ford: 232
+[2025-12-08T22:31:06.822+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz: 196
+[2025-12-08T22:31:06.826+0000] {logging_mixin.py:154} INFO -     BMW: 187
+[2025-12-08T22:31:06.827+0000] {logging_mixin.py:154} INFO -     Toyota: 164
+[2025-12-08T22:31:06.828+0000] {logging_mixin.py:154} INFO -     Chevrolet: 150
+[2025-12-08T22:31:06.829+0000] {logging_mixin.py:154} INFO -     Hyundai: 117
+[2025-12-08T22:31:06.831+0000] {logging_mixin.py:154} INFO -     Nissan: 109
+[2025-12-08T22:31:06.832+0000] {logging_mixin.py:154} INFO -     Kia: 101
+[2025-12-08T22:31:06.832+0000] {logging_mixin.py:154} INFO -     Jeep: 90
+[2025-12-08T22:31:06.833+0000] {logging_mixin.py:154} INFO -     Honda: 89
+[2025-12-08T22:31:06.834+0000] {logging_mixin.py:154} INFO -     GMC: 78
+[2025-12-08T22:31:06.834+0000] {logging_mixin.py:154} INFO -     Volkswagen: 66
+[2025-12-08T22:31:06.835+0000] {logging_mixin.py:154} INFO -     Subaru: 63
+[2025-12-08T22:31:06.836+0000] {logging_mixin.py:154} INFO -     Mazda: 47
+[2025-12-08T22:31:06.836+0000] {logging_mixin.py:154} INFO -     Tesla: 38
+[2025-12-08T22:31:06.837+0000] {logging_mixin.py:154} INFO - 
+💾 Preparing to write cleaned data...
+[2025-12-08T22:31:06.991+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/ratings/parquet/
+[2025-12-08T22:31:06.992+0000] {logging_mixin.py:154} INFO - 💾 Writing cleaned data to: s3a://autoinsightfinal/nhtsa/cleaned_new/ratings/parquet/
+[2025-12-08T22:31:30.312+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/ratings/csv/
+[2025-12-08T22:31:30.313+0000] {logging_mixin.py:154} INFO - 💾 Writing CSV to: s3a://autoinsightfinal/nhtsa/cleaned_new/ratings/csv/
+[2025-12-08T22:31:50.175+0000] {logging_mixin.py:154} INFO - 
+✅ Ratings cleaning complete!
+[2025-12-08T22:31:50.179+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-08T22:31:50.179+0000] {logging_mixin.py:154} INFO - 
+📋 Sample of cleaned data (Snowflake-ready):
+[2025-12-08T22:31:53.979+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+----+-------------------+----+-----------+-------------------+
+|rating_id                                                       |make|model              |year|safety_tier|average_star_rating|
++----------------------------------------------------------------+----+-------------------+----+-----------+-------------------+
+|08dde665b589edf8e8c5de20e8ff4111425ecf9edcdfb5555e40d0c1724a7b65|BMW |2 SERIES           |2020|NOT_RATED  |NULL               |
+|0fcc872bc0bca6acfdc36c9e949a94def387f0799280b1792b51cee153cbbf1b|BMW |2 SERIES           |2021|NOT_RATED  |NULL               |
+|47e5166748a383bafed96d4979ffaf30c80287c8aebcbf3420448f4dee403d96|BMW |2 SERIES COUPE     |2022|NOT_RATED  |NULL               |
+|a3f055a8c48b6c8d4373a7340e370249c9fb95e2216ae2b9ac5a42a402f1c0f6|BMW |2 SERIES COUPE     |2023|NOT_RATED  |NULL               |
+|231a0d769fc8adb58d7f8238f4e9fdcbfd8324af47da72ee7bdd99c4f5b6e136|BMW |2 SERIES COUPE     |2024|NOT_RATED  |NULL               |
+|d0b7ba42cad55b32d11ad6b40a850f8e3fa3a6a656ae702a3ab162e94bf29a09|BMW |2 SERIES GRAN      |2020|NOT_RATED  |NULL               |
+|a8af939f83b7b0512dcf4962dc967f7b107845dc4064e4573880f0a806663da9|BMW |2 SERIES GRAN      |2021|NOT_RATED  |NULL               |
+|09c41141cb71e66f862d619106a0a1cf1df32bfcbd0521b374c7f6a0aaa70052|BMW |2 SERIES GRAN COUPE|2022|NOT_RATED  |NULL               |
+|b6b12758a11e9f9c3d7ae1d5dc63ad5f5e65392e7a4ff2fa22309ec9b7b8b739|BMW |2 SERIES GRAN COUPE|2023|NOT_RATED  |NULL               |
+|5945030b67f359cc23576208e59600b94e03cc1fee48833f7747d086e4477ace|BMW |2 SERIES GRAN COUPE|2024|NOT_RATED  |NULL               |
++----------------------------------------------------------------+----+-------------------+----+-----------+-------------------+
+only showing top 10 rows
+[2025-12-08T22:31:53.982+0000] {logging_mixin.py:154} INFO - 
+🔍 Vehicle ID verification (first 5):
+[2025-12-08T22:31:56.502+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+-------------+-----------------------+----+
+|vehicle_id                                                      |make         |model                  |year|
++----------------------------------------------------------------+-------------+-----------------------+----+
+|fcc4a2b38f1f7ee5322505f82bc3d64d043d9d056e3e35a38b47d36f196f5512|GMC          |CANYON                 |2024|
+|8ec24f2808e66a9feacf56b3e1603429f2212d9b76218dcd72c3de99acc9831f|Mercedes-Benz|EQS                    |2024|
+|3eda365e0a8df785b19b8e317e3cf3e55a42fb77d328f863b8c6c1ba77aef667|BMW          |8 SERIES COUPE         |2023|
+|55b0639b322a1724d47f8c4ee0d0ce651895364bbd4cee24ecfd39d60701d163|Ford         |F-250 TREMOR (CREW CAB)|2023|
+|d359dd8f25ab97ecc4f6294a3dda397c1f7a0dc703bfbbab7ae4bbc7f5336594|Chevrolet    |TAHOE                  |2022|
++----------------------------------------------------------------+-------------+-----------------------+----+
+only showing top 5 rows
+[2025-12-08T22:31:57.217+0000] {logging_mixin.py:154} INFO - ✅ NHTSA Safety Ratings Complete
+[2025-12-08T22:31:57.240+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-08T22:31:57.270+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline_v2, task_id=clean_nhtsa_ratings, execution_date=20251208T222346, start_date=20251208T223012, end_date=20251208T223157
+[2025-12-08T22:31:57.324+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-08T22:31:57.376+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

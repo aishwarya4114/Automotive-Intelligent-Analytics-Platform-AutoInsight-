@@ -1,0 +1,619 @@
+[2025-12-10T04:30:38.695+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-09T02:00:00+00:00 [queued]>
+[2025-12-10T04:30:38.710+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-09T02:00:00+00:00 [queued]>
+[2025-12-10T04:30:38.711+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 4
+[2025-12-10T04:30:38.731+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_epa_data> on 2025-12-09 02:00:00+00:00
+[2025-12-10T04:30:38.739+0000] {standard_task_runner.py:57} INFO - Started process 11650 to run task
+[2025-12-10T04:30:38.744+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_epa_data', 'scheduled__2025-12-09T02:00:00+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmpuu4k66ky']
+[2025-12-10T04:30:38.749+0000] {standard_task_runner.py:85} INFO - Job 64: Subtask fetch_epa_data
+[2025-12-10T04:30:38.853+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-09T02:00:00+00:00 [running]> on host 09126cf425ed
+[2025-12-10T04:30:39.595+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_epa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-09T02:00:00+00:00'
+[2025-12-10T04:30:39.598+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T04:30:39.599+0000] {logging_mixin.py:154} INFO - TASK 1: EPA Fuel Economy Data Collection
+[2025-12-10T04:30:39.600+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T04:30:39.865+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T04:30:39.866+0000] {logging_mixin.py:154} INFO - EPA FUEL ECONOMY DATA COLLECTION
+[2025-12-10T04:30:39.867+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T04:30:39.868+0000] {logging_mixin.py:154} INFO - Date Range: 2015-2024 (10 years)
+[2025-12-10T04:30:39.868+0000] {logging_mixin.py:154} INFO - Manufacturers: 15
+[2025-12-10T04:30:39.869+0000] {logging_mixin.py:154} INFO - Consistent with NHTSA 2015-2025 coverage
+[2025-12-10T04:30:39.869+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T04:30:39.870+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T04:30:39.871+0000] {logging_mixin.py:154} INFO - Fetching EPA Data for 15 Manufacturers
+[2025-12-10T04:30:39.871+0000] {logging_mixin.py:154} INFO - Years: 2015-2025
+[2025-12-10T04:30:39.872+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T04:30:39.873+0000] {logging_mixin.py:154} INFO -  [1/15] Processing: Tesla
+[2025-12-10T04:30:39.873+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T04:30:40.180+0000] {logging_mixin.py:154} INFO - Found 8 model(s) 
+[2025-12-10T04:30:46.428+0000] {logging_mixin.py:154} INFO -  8 variants
+[2025-12-10T04:30:46.430+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T04:30:46.704+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-10T04:31:00.763+0000] {logging_mixin.py:154} INFO -  18 variants
+[2025-12-10T04:31:00.767+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T04:31:01.299+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-10T04:31:13.675+0000] {logging_mixin.py:154} INFO -  15 variants
+[2025-12-10T04:31:13.678+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T04:31:13.991+0000] {logging_mixin.py:154} INFO - Found 11 model(s) 
+[2025-12-10T04:31:22.213+0000] {logging_mixin.py:154} INFO -  11 variants
+[2025-12-10T04:31:22.221+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T04:31:22.493+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-10T04:31:47.747+0000] {logging_mixin.py:154} INFO -  18 variants
+[2025-12-10T04:31:47.751+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T04:31:48.169+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-10T04:32:04.654+0000] {logging_mixin.py:154} INFO -  21 variants
+[2025-12-10T04:32:04.658+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T04:32:04.950+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-10T04:32:15.467+0000] {logging_mixin.py:154} INFO -  13 variants
+[2025-12-10T04:32:15.471+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T04:32:15.764+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-10T04:32:26.386+0000] {logging_mixin.py:154} INFO -  13 variants
+[2025-12-10T04:32:26.391+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T04:32:26.700+0000] {logging_mixin.py:154} INFO - Found 10 model(s) 
+[2025-12-10T04:32:37.511+0000] {logging_mixin.py:154} INFO -  9 variants
+[2025-12-10T04:32:37.515+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T04:32:41.521+0000] {logging_mixin.py:154} INFO -     Error getting models for Tesla 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Tesla (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e7cb210>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[2025-12-10T04:32:41.523+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T04:32:41.524+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T04:32:45.527+0000] {logging_mixin.py:154} INFO -     Error getting models for Tesla 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Tesla (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e7ccad0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+[2025-12-10T04:32:45.528+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T04:32:45.529+0000] {logging_mixin.py:154} INFO -     Tesla COMPLETE: 126 total vehicles
+[2025-12-10T04:32:45.529+0000] {logging_mixin.py:154} INFO -  [2/15] Processing: Ford
+[2025-12-10T04:32:45.530+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T04:32:49.931+0000] {logging_mixin.py:154} INFO - Found 42 model(s) 
+[2025-12-10T04:33:47.432+0000] {logging_mixin.py:154} INFO -  77 variants
+[2025-12-10T04:33:47.435+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T04:33:47.709+0000] {logging_mixin.py:154} INFO - Found 53 model(s) 
+[2025-12-10T04:34:48.099+0000] {logging_mixin.py:154} INFO -  88 variants
+[2025-12-10T04:34:48.102+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T04:34:48.376+0000] {logging_mixin.py:154} INFO - Found 60 model(s) 
+[2025-12-10T04:36:00.153+0000] {logging_mixin.py:154} INFO -  99 variants
+[2025-12-10T04:36:00.156+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T04:36:00.454+0000] {logging_mixin.py:154} INFO - Found 65 model(s) 
+[2025-12-10T04:37:20.024+0000] {logging_mixin.py:154} INFO -  110 variants
+[2025-12-10T04:37:20.026+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T04:37:20.388+0000] {logging_mixin.py:154} INFO - Found 63 model(s) 
+[2025-12-10T04:38:44.105+0000] {logging_mixin.py:154} INFO -  97 variants
+[2025-12-10T04:38:44.109+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T04:38:44.431+0000] {logging_mixin.py:154} INFO - Found 53 model(s) 
+[2025-12-10T04:39:46.045+0000] {logging_mixin.py:154} INFO -  74 variants
+[2025-12-10T04:39:46.049+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T04:39:46.341+0000] {logging_mixin.py:154} INFO - Found 58 model(s) 
+[2025-12-10T04:40:53.040+0000] {logging_mixin.py:154} INFO -  97 variants
+[2025-12-10T04:40:53.043+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T04:40:53.334+0000] {logging_mixin.py:154} INFO - Found 64 model(s) 
+[2025-12-10T04:42:10.752+0000] {logging_mixin.py:154} INFO -  111 variants
+[2025-12-10T04:42:10.756+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T04:42:11.081+0000] {logging_mixin.py:154} INFO - Found 59 model(s) 
+[2025-12-10T04:43:29.323+0000] {logging_mixin.py:154} INFO -  109 variants
+[2025-12-10T04:43:29.326+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T04:43:29.593+0000] {logging_mixin.py:154} INFO - Found 44 model(s) 
+[2025-12-10T04:44:18.456+0000] {logging_mixin.py:154} INFO -  70 variants
+[2025-12-10T04:44:18.464+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T04:44:18.747+0000] {logging_mixin.py:154} INFO - Found 44 model(s) 
+[2025-12-10T04:45:09.131+0000] {logging_mixin.py:154} INFO -  64 variants
+[2025-12-10T04:45:09.135+0000] {logging_mixin.py:154} INFO -     Ford COMPLETE: 996 total vehicles
+[2025-12-10T04:45:09.136+0000] {logging_mixin.py:154} INFO -  [3/15] Processing: Toyota
+[2025-12-10T04:45:09.137+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T04:45:09.641+0000] {logging_mixin.py:154} INFO - Found 35 model(s) 
+[2025-12-10T04:45:52.902+0000] {logging_mixin.py:154} INFO -  53 variants
+[2025-12-10T04:45:52.906+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T04:45:53.178+0000] {logging_mixin.py:154} INFO - Found 37 model(s) 
+[2025-12-10T04:46:32.966+0000] {logging_mixin.py:154} INFO -  51 variants
+[2025-12-10T04:46:32.969+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T04:46:33.243+0000] {logging_mixin.py:154} INFO - Found 43 model(s) 
+[2025-12-10T04:47:23.191+0000] {logging_mixin.py:154} INFO -  60 variants
+[2025-12-10T04:47:23.194+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T04:47:23.543+0000] {logging_mixin.py:154} INFO - Found 45 model(s) 
+[2025-12-10T04:48:11.381+0000] {logging_mixin.py:154} INFO -  61 variants
+[2025-12-10T04:48:11.384+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T04:48:11.669+0000] {logging_mixin.py:154} INFO - Found 46 model(s) 
+[2025-12-10T04:49:00.074+0000] {logging_mixin.py:154} INFO -  64 variants
+[2025-12-10T04:49:00.078+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T04:49:00.415+0000] {logging_mixin.py:154} INFO - Found 51 model(s) 
+[2025-12-10T04:49:52.257+0000] {logging_mixin.py:154} INFO -  65 variants
+[2025-12-10T04:49:52.259+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T04:49:52.538+0000] {logging_mixin.py:154} INFO - Found 54 model(s) 
+[2025-12-10T04:50:45.776+0000] {logging_mixin.py:154} INFO -  67 variants
+[2025-12-10T04:50:45.780+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T04:50:46.142+0000] {logging_mixin.py:154} INFO - Found 56 model(s) 
+[2025-12-10T04:51:41.649+0000] {logging_mixin.py:154} INFO -  74 variants
+[2025-12-10T04:51:41.653+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T04:51:42.059+0000] {logging_mixin.py:154} INFO - Found 59 model(s) 
+[2025-12-10T04:52:42.659+0000] {logging_mixin.py:154} INFO -  78 variants
+[2025-12-10T04:52:42.661+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T04:52:43.029+0000] {logging_mixin.py:154} INFO - Found 69 model(s) 
+[2025-12-10T04:53:49.299+0000] {logging_mixin.py:154} INFO -  94 variants
+[2025-12-10T04:53:49.301+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T04:53:49.694+0000] {logging_mixin.py:154} INFO - Found 63 model(s) 
+[2025-12-10T04:54:55.092+0000] {logging_mixin.py:154} INFO -  87 variants
+[2025-12-10T04:54:55.096+0000] {logging_mixin.py:154} INFO -     Toyota COMPLETE: 754 total vehicles
+[2025-12-10T04:54:55.097+0000] {logging_mixin.py:154} INFO -  [4/15] Processing: GMC
+[2025-12-10T04:54:55.098+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T04:54:55.392+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-10T04:55:26.826+0000] {logging_mixin.py:154} INFO -  51 variants
+[2025-12-10T04:55:26.828+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T04:55:27.222+0000] {logging_mixin.py:154} INFO - Found 19 model(s) 
+[2025-12-10T04:55:55.109+0000] {logging_mixin.py:154} INFO -  43 variants
+[2025-12-10T04:55:55.113+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T04:55:55.380+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-10T04:56:25.204+0000] {logging_mixin.py:154} INFO -  47 variants
+[2025-12-10T04:56:25.209+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T04:56:25.503+0000] {logging_mixin.py:154} INFO - Found 17 model(s) 
+[2025-12-10T04:56:52.706+0000] {logging_mixin.py:154} INFO -  44 variants
+[2025-12-10T04:56:52.709+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T04:56:52.975+0000] {logging_mixin.py:154} INFO - Found 19 model(s) 
+[2025-12-10T04:57:25.955+0000] {logging_mixin.py:154} INFO -  52 variants
+[2025-12-10T04:57:25.971+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T04:57:26.315+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-10T04:57:59.637+0000] {logging_mixin.py:154} INFO -  53 variants
+[2025-12-10T04:57:59.641+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T04:57:59.969+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-10T04:58:40.937+0000] {logging_mixin.py:154} INFO -  69 variants
+[2025-12-10T04:58:40.941+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T04:58:41.246+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-10T04:59:22.842+0000] {logging_mixin.py:154} INFO -  66 variants
+[2025-12-10T04:59:22.849+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T04:59:25.261+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-10T04:59:54.972+0000] {logging_mixin.py:154} INFO -  46 variants
+[2025-12-10T04:59:54.975+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T04:59:55.254+0000] {logging_mixin.py:154} INFO - Found 27 model(s) 
+[2025-12-10T05:00:30.963+0000] {logging_mixin.py:154} INFO -  55 variants
+[2025-12-10T05:00:30.967+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T05:00:31.247+0000] {logging_mixin.py:154} INFO - Found 27 model(s) 
+[2025-12-10T05:01:08.792+0000] {logging_mixin.py:154} INFO -  53 variants
+[2025-12-10T05:01:08.795+0000] {logging_mixin.py:154} INFO -     GMC COMPLETE: 579 total vehicles
+[2025-12-10T05:01:08.797+0000] {logging_mixin.py:154} INFO -  [5/15] Processing: Honda
+[2025-12-10T05:01:08.798+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T05:01:09.086+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-10T05:01:28.214+0000] {logging_mixin.py:154} INFO -  27 variants
+[2025-12-10T05:01:28.217+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T05:01:28.482+0000] {logging_mixin.py:154} INFO - Found 12 model(s) 
+[2025-12-10T05:01:46.676+0000] {logging_mixin.py:154} INFO -  29 variants
+[2025-12-10T05:01:46.679+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T05:01:47.084+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-10T05:02:15.651+0000] {logging_mixin.py:154} INFO -  43 variants
+[2025-12-10T05:02:15.654+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T05:02:15.934+0000] {logging_mixin.py:154} INFO - Found 23 model(s) 
+[2025-12-10T05:02:45.731+0000] {logging_mixin.py:154} INFO -  45 variants
+[2025-12-10T05:02:45.736+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T05:02:46.031+0000] {logging_mixin.py:154} INFO - Found 23 model(s) 
+[2025-12-10T05:03:21.560+0000] {logging_mixin.py:154} INFO -  49 variants
+[2025-12-10T05:03:21.597+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T05:03:21.907+0000] {logging_mixin.py:154} INFO - Found 23 model(s) 
+[2025-12-10T05:03:51.277+0000] {logging_mixin.py:154} INFO -  46 variants
+[2025-12-10T05:03:51.280+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T05:03:51.579+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-10T05:04:13.246+0000] {logging_mixin.py:154} INFO -  30 variants
+[2025-12-10T05:04:13.260+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T05:04:13.532+0000] {logging_mixin.py:154} INFO - Found 20 model(s) 
+[2025-12-10T05:04:35.806+0000] {logging_mixin.py:154} INFO -  32 variants
+[2025-12-10T05:04:35.809+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T05:04:36.104+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-10T05:04:55.790+0000] {logging_mixin.py:154} INFO -  28 variants
+[2025-12-10T05:04:55.797+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T05:04:56.084+0000] {logging_mixin.py:154} INFO - Found 20 model(s) 
+[2025-12-10T05:05:25.158+0000] {logging_mixin.py:154} INFO -  32 variants
+[2025-12-10T05:05:25.161+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T05:05:25.462+0000] {logging_mixin.py:154} INFO - Found 20 model(s) 
+[2025-12-10T05:05:46.904+0000] {logging_mixin.py:154} INFO -  27 variants
+[2025-12-10T05:05:46.907+0000] {logging_mixin.py:154} INFO -     Honda COMPLETE: 388 total vehicles
+[2025-12-10T05:05:46.909+0000] {logging_mixin.py:154} INFO -  [6/15] Processing: Chevrolet
+[2025-12-10T05:05:46.909+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T05:05:47.163+0000] {logging_mixin.py:154} INFO - Found 38 model(s) 
+[2025-12-10T05:06:46.792+0000] {logging_mixin.py:154} INFO -  92 variants
+[2025-12-10T05:06:46.795+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T05:06:47.047+0000] {logging_mixin.py:154} INFO - Found 42 model(s) 
+[2025-12-10T05:07:43.505+0000] {logging_mixin.py:154} INFO -  89 variants
+[2025-12-10T05:07:43.509+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T05:07:43.815+0000] {logging_mixin.py:154} INFO - Found 39 model(s) 
+[2025-12-10T05:08:38.679+0000] {logging_mixin.py:154} INFO -  87 variants
+[2025-12-10T05:08:38.684+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T05:08:39.013+0000] {logging_mixin.py:154} INFO - Found 36 model(s) 
+[2025-12-10T05:09:33.975+0000] {logging_mixin.py:154} INFO -  88 variants
+[2025-12-10T05:09:33.980+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T05:09:34.301+0000] {logging_mixin.py:154} INFO - Found 41 model(s) 
+[2025-12-10T05:10:32.535+0000] {logging_mixin.py:154} INFO -  96 variants
+[2025-12-10T05:10:32.538+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T05:10:32.791+0000] {logging_mixin.py:154} INFO - Found 29 model(s) 
+[2025-12-10T05:11:20.145+0000] {logging_mixin.py:154} INFO -  80 variants
+[2025-12-10T05:11:20.149+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T05:11:20.432+0000] {logging_mixin.py:154} INFO - Found 28 model(s) 
+[2025-12-10T05:12:26.509+0000] {logging_mixin.py:154} INFO -  96 variants
+[2025-12-10T05:12:26.518+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T05:12:26.829+0000] {logging_mixin.py:154} INFO - Found 30 model(s) 
+[2025-12-10T05:13:25.917+0000] {logging_mixin.py:154} INFO -  96 variants
+[2025-12-10T05:13:25.923+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T05:13:26.240+0000] {logging_mixin.py:154} INFO - Found 29 model(s) 
+[2025-12-10T05:14:11.412+0000] {logging_mixin.py:154} INFO -  69 variants
+[2025-12-10T05:14:11.416+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T05:14:11.686+0000] {logging_mixin.py:154} INFO - Found 37 model(s) 
+[2025-12-10T06:13:03.763+0000] {logging_mixin.py:154} INFO -  57 variants
+[2025-12-10T06:13:03.769+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:03.784+0000] {logging_mixin.py:154} INFO -     Error getting models for Chevrolet 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Chevrolet (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343b10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:03.812+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:03.815+0000] {logging_mixin.py:154} INFO -     Chevrolet COMPLETE: 850 total vehicles
+[2025-12-10T06:13:03.823+0000] {logging_mixin.py:154} INFO -  [7/15] Processing: Nissan
+[2025-12-10T06:13:03.832+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:03.859+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31ae90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:03.876+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:03.888+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:03.936+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342e10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:03.938+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:03.943+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:03.986+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31bc50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:03.989+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:03.990+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:04.026+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343550>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.029+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.031+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:04.069+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31ae50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.083+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.086+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:04.100+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343990>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.117+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.118+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:04.128+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31ae50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.133+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.134+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:04.145+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343d90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.149+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.150+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:04.178+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31a390>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.179+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.179+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:04.195+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343550>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.196+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.197+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:04.208+0000] {logging_mixin.py:154} INFO -     Error getting models for Nissan 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Nissan (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e4e4f10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.209+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.210+0000] {logging_mixin.py:154} INFO -     Nissan COMPLETE: 0 total vehicles
+[2025-12-10T06:13:04.211+0000] {logging_mixin.py:154} INFO -  [8/15] Processing: BMW
+[2025-12-10T06:13:04.211+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:04.220+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e4a3410>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.224+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.225+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:04.233+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e433e10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.234+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.235+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:04.242+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e4fb210>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.243+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.244+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:04.255+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e332690>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.257+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.265+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:04.292+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342150>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.295+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.296+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:04.306+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333590>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.319+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.323+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:04.334+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e341ed0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.341+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.347+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:04.366+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333890>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.375+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.385+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:04.395+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343550>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.396+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.398+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:04.411+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333310>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.413+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.416+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:04.428+0000] {logging_mixin.py:154} INFO -     Error getting models for BMW 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=BMW (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343a10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.429+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.430+0000] {logging_mixin.py:154} INFO -     BMW COMPLETE: 0 total vehicles
+[2025-12-10T06:13:04.435+0000] {logging_mixin.py:154} INFO -  [9/15] Processing: Mercedes-Benz
+[2025-12-10T06:13:04.437+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:04.452+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333310>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.453+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.454+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:04.464+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e341a90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.465+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.466+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:04.491+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3328d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.493+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.495+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:04.531+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e341a90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.542+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.544+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:04.554+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3339d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.556+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.558+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:04.565+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343790>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.566+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.566+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:04.588+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333290>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.589+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.590+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:04.603+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343e90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.604+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.606+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:04.616+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333290>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.617+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.618+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:04.630+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343590>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.636+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.637+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:04.646+0000] {logging_mixin.py:154} INFO -     Error getting models for Mercedes-Benz 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Mercedes-Benz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e332250>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.648+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.650+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz COMPLETE: 0 total vehicles
+[2025-12-10T06:13:04.651+0000] {logging_mixin.py:154} INFO -  [10/15] Processing: Volkswagen
+[2025-12-10T06:13:04.651+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:04.665+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342810>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.667+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.668+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:04.678+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e332850>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.680+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.682+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:04.693+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343290>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.698+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.702+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:04.722+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333890>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.724+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.727+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:04.739+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3401d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.746+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.748+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:04.780+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333090>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.783+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.784+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:04.794+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342810>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.795+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.796+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:04.806+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333b50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.807+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.808+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:04.815+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343950>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.816+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.817+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:04.824+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333b50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.825+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.825+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:04.835+0000] {logging_mixin.py:154} INFO -     Error getting models for Volkswagen 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Volkswagen (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343c50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.835+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.836+0000] {logging_mixin.py:154} INFO -     Volkswagen COMPLETE: 0 total vehicles
+[2025-12-10T06:13:04.836+0000] {logging_mixin.py:154} INFO -  [11/15] Processing: Hyundai
+[2025-12-10T06:13:04.837+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:04.845+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333dd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.845+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.846+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:04.855+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3433d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.856+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.856+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:04.865+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333dd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.866+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.867+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:04.875+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3401d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.876+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.877+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:04.883+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333890>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.884+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.885+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:04.893+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e341f50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.894+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.895+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:04.907+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333190>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.908+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.908+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:04.915+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3437d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.916+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.917+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:04.924+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333f90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.926+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.927+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:04.934+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3433d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.935+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.936+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:04.943+0000] {logging_mixin.py:154} INFO -     Error getting models for Hyundai 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Hyundai (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333050>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.944+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.945+0000] {logging_mixin.py:154} INFO -     Hyundai COMPLETE: 0 total vehicles
+[2025-12-10T06:13:04.946+0000] {logging_mixin.py:154} INFO -  [12/15] Processing: Kia
+[2025-12-10T06:13:04.947+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:04.954+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343490>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.955+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.956+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:04.965+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e30ed90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.966+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.967+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:04.974+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343490>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.975+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.975+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:04.982+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e4f3210>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.983+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.983+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:04.990+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e341dd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:04.991+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:04.992+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:05.001+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e319e90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.002+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.002+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:05.009+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e341dd0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.011+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.012+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:05.018+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e30f5d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.019+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.020+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:05.027+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343f50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.028+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.029+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:05.035+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333c10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.036+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.037+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:05.045+0000] {logging_mixin.py:154} INFO -     Error getting models for Kia 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Kia (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343e90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.046+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.047+0000] {logging_mixin.py:154} INFO -     Kia COMPLETE: 0 total vehicles
+[2025-12-10T06:13:05.048+0000] {logging_mixin.py:154} INFO -  [13/15] Processing: Subaru
+[2025-12-10T06:13:05.048+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:05.055+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e4e6e50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.056+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.057+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:05.065+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343950>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.066+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.068+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:05.075+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31bc10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.076+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.077+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:05.085+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3439d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.086+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.087+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:05.094+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e319790>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.095+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.095+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:05.102+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e333850>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.103+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.104+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:05.111+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342b90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.112+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.113+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:05.124+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342b90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.125+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.126+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:05.138+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31ac90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.139+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.140+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:05.151+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e340c50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.153+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.153+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:05.160+0000] {logging_mixin.py:154} INFO -     Error getting models for Subaru 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Subaru (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e4e5290>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.161+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.162+0000] {logging_mixin.py:154} INFO -     Subaru COMPLETE: 0 total vehicles
+[2025-12-10T06:13:05.163+0000] {logging_mixin.py:154} INFO -  [14/15] Processing: Mazda
+[2025-12-10T06:13:05.163+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:05.170+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342810>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.171+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.172+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:05.185+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31ae50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.185+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.186+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:05.196+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e340c50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.197+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.199+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:05.212+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3436d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.213+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.214+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:05.220+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342d90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.221+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.221+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:05.227+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3197d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.228+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.229+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:05.241+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342d90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.242+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.243+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:05.251+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31bc10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.252+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.253+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:05.260+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343150>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.260+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.261+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:05.268+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31ac90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.269+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.270+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:05.277+0000] {logging_mixin.py:154} INFO -     Error getting models for Mazda 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Mazda (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343b50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.278+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.279+0000] {logging_mixin.py:154} INFO -     Mazda COMPLETE: 0 total vehicles
+[2025-12-10T06:13:05.279+0000] {logging_mixin.py:154} INFO -  [15/15] Processing: Jeep
+[2025-12-10T06:13:05.280+0000] {logging_mixin.py:154} INFO -   └─ Year 2015... 
+[2025-12-10T06:13:05.287+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2015: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2015&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3197d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.288+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.288+0000] {logging_mixin.py:154} INFO -   └─ Year 2016... 
+[2025-12-10T06:13:05.295+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2016: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2016&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343150>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.296+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.297+0000] {logging_mixin.py:154} INFO -   └─ Year 2017... 
+[2025-12-10T06:13:05.305+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2017: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2017&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e319990>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.306+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.307+0000] {logging_mixin.py:154} INFO -   └─ Year 2018... 
+[2025-12-10T06:13:05.314+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2018: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2018&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e340f90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.315+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.316+0000] {logging_mixin.py:154} INFO -   └─ Year 2019... 
+[2025-12-10T06:13:05.323+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2019: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2019&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e343690>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.324+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.325+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-10T06:13:05.334+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2020: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2020&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3433d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.335+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.335+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-10T06:13:05.343+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2021: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2021&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e319e90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.344+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.345+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-10T06:13:05.353+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2022: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2022&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e342e10>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.354+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.354+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-10T06:13:05.363+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2023: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2023&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e3197d0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.364+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.364+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-10T06:13:05.372+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2024: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2024&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e340f90>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.373+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.374+0000] {logging_mixin.py:154} INFO -   └─ Year 2025... 
+[2025-12-10T06:13:05.381+0000] {logging_mixin.py:154} INFO -     Error getting models for Jeep 2025: HTTPSConnectionPool(host='www.fueleconomy.gov', port=443): Max retries exceeded with url: /ws/rest/vehicle/menu/model?year=2025&make=Jeep (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160e31aa50>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:05.381+0000] {logging_mixin.py:154} INFO - No models
+[2025-12-10T06:13:05.382+0000] {logging_mixin.py:154} INFO -     Jeep COMPLETE: 0 total vehicles
+[2025-12-10T06:13:05.383+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:13:05.383+0000] {logging_mixin.py:154} INFO -  COLLECTION COMPLETE: 3693 total vehicles
+[2025-12-10T06:13:05.384+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:13:05.636+0000] {logging_mixin.py:154} INFO -  Saved locally: data/epa_fuel_economy_2015_2024_20251210_061305.csv
+[2025-12-10T06:13:05.681+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2025-12-10T06:13:06.322+0000] {logging_mixin.py:154} INFO -      Uploading to S3: s3://autoinsightfinal/epa/raw/epa_fuel_economy_2015_2024_20251210_061305.csv
+[2025-12-10T06:57:45.428+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to up_for_retry. Terminating instance.
+[2025-12-10T06:57:45.444+0000] {process_utils.py:131} INFO - Sending 15 to group 11650. PIDs of all processes in the group: [11650]
+[2025-12-10T06:57:45.447+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 11650
+[2025-12-10T06:57:45.451+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-12-10T06:57:46.658+0000] {logging_mixin.py:154} INFO -       S3 upload failed: Task received SIGTERM signal
+[2025-12-10T06:57:46.769+0000] {logging_mixin.py:154} INFO -  Saved locally: data/epa_fuel_economy_2015_2024_20251210_061305.json
+[2025-12-10T06:57:46.786+0000] {logging_mixin.py:154} INFO -      Uploading to S3: s3://autoinsightfinal/epa/raw/epa_fuel_economy_2015_2024_20251210_061305.json
+[2025-12-10T06:57:58.557+0000] {logging_mixin.py:154} INFO -       Uploaded successfully
+[2025-12-10T06:57:58.562+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:57:58.564+0000] {logging_mixin.py:154} INFO - DATA SUMMARY
+[2025-12-10T06:57:58.568+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:57:58.569+0000] {logging_mixin.py:154} INFO - Total Records: 3,693
+[2025-12-10T06:57:58.584+0000] {logging_mixin.py:154} INFO - Manufacturers: 6
+[2025-12-10T06:57:58.590+0000] {logging_mixin.py:154} INFO - Unique Models: 537
+[2025-12-10T06:57:58.593+0000] {logging_mixin.py:154} INFO - Years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+[2025-12-10T06:57:58.594+0000] {logging_mixin.py:154} INFO - Collection Time: 147.3 minutes
+[2025-12-10T06:57:58.595+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:57:58.595+0000] {logging_mixin.py:154} INFO - RECORDS BY MANUFACTURER
+[2025-12-10T06:57:58.596+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:57:58.611+0000] {logging_mixin.py:154} INFO -   Ford                   996 ( 27.0%)
+[2025-12-10T06:57:58.612+0000] {logging_mixin.py:154} INFO -   Chevrolet              850 ( 23.0%)
+[2025-12-10T06:57:58.613+0000] {logging_mixin.py:154} INFO -   Toyota                 754 ( 20.4%)
+[2025-12-10T06:57:58.613+0000] {logging_mixin.py:154} INFO -   GMC                    579 ( 15.7%)
+[2025-12-10T06:57:58.614+0000] {logging_mixin.py:154} INFO -   Honda                  388 ( 10.5%)
+[2025-12-10T06:57:58.615+0000] {logging_mixin.py:154} INFO -   Tesla                  126 (  3.4%)
+[2025-12-10T06:57:58.616+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:57:58.617+0000] {logging_mixin.py:154} INFO -  ELECTRIC VEHICLES
+[2025-12-10T06:57:58.618+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:57:58.635+0000] {logging_mixin.py:154} INFO - Total EVs: 279 (7.6%)
+[2025-12-10T06:57:58.636+0000] {logging_mixin.py:154} INFO - 
+ Top 5 EVs by Range:
+[2025-12-10T06:57:58.656+0000] {logging_mixin.py:154} INFO -  year   make       model  electric_range
+ 2017 Toyota Prius Prime             640
+ 2018 Toyota Prius Prime             640
+ 2019 Toyota Prius Prime             640
+ 2020 Toyota Prius Prime             640
+ 2021 Toyota Prius Prime             640
+[2025-12-10T06:57:58.657+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:57:58.658+0000] {logging_mixin.py:154} INFO - FUEL TYPE DISTRIBUTION
+[2025-12-10T06:57:58.659+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:57:58.660+0000] {logging_mixin.py:154} INFO -   Regular                         2654 ( 71.9%)
+[2025-12-10T06:57:58.661+0000] {logging_mixin.py:154} INFO -   Premium                          316 (  8.6%)
+[2025-12-10T06:57:58.662+0000] {logging_mixin.py:154} INFO -   Gasoline or E85                  284 (  7.7%)
+[2025-12-10T06:57:58.663+0000] {logging_mixin.py:154} INFO -   Electricity                      236 (  6.4%)
+[2025-12-10T06:57:58.664+0000] {logging_mixin.py:154} INFO -   Diesel                           136 (  3.7%)
+[2025-12-10T06:57:58.665+0000] {logging_mixin.py:154} INFO -   Regular Gas and Electricity       38 (  1.0%)
+[2025-12-10T06:57:58.665+0000] {logging_mixin.py:154} INFO -   Hydrogen                          21 (  0.6%)
+[2025-12-10T06:57:58.666+0000] {logging_mixin.py:154} INFO -   Regular Gas or Electricity         4 (  0.1%)
+[2025-12-10T06:57:58.667+0000] {logging_mixin.py:154} INFO -   Gasoline or natural gas            2 (  0.1%)
+[2025-12-10T06:57:58.667+0000] {logging_mixin.py:154} INFO -   CNG                                1 (  0.0%)
+[2025-12-10T06:57:58.667+0000] {logging_mixin.py:154} INFO -   Premium Gas or Electricity         1 (  0.0%)
+[2025-12-10T06:57:58.668+0000] {logging_mixin.py:154} INFO - 
+  Uploaded to: s3://autoinsightfinal/epa/raw/epa_fuel_economy_2015_2024_20251210_061305.csv
+[2025-12-10T06:57:58.668+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:57:58.780+0000] {logging_mixin.py:154} INFO - ✅ EPA Data Collection Complete: 3,693 records
+[2025-12-10T06:57:58.784+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-10T06:57:58.852+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_data_pipeline, task_id=fetch_epa_data, execution_date=20251209T020000, start_date=20251210T043038, end_date=20251210T065758
+[2025-12-10T06:57:58.926+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=11650, status='terminated', exitcode=0, started='04:30:38') (11650) terminated with exit code 0

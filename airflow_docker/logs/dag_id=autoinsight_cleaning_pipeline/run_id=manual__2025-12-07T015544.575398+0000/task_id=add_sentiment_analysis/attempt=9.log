@@ -1,0 +1,154 @@
+[2025-12-07T07:15:25.217+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T07:15:25.229+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T07:15:25.230+0000] {taskinstance.py:1361} INFO - Starting attempt 9 of 11
+[2025-12-07T07:15:25.247+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): add_sentiment_analysis> on 2025-12-07 01:55:44.575398+00:00
+[2025-12-07T07:15:25.257+0000] {standard_task_runner.py:57} INFO - Started process 240 to run task
+[2025-12-07T07:15:25.261+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'add_sentiment_analysis', 'manual__2025-12-07T01:55:44.575398+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmps8kwjkqz']
+[2025-12-07T07:15:25.266+0000] {standard_task_runner.py:85} INFO - Job 190: Subtask add_sentiment_analysis
+[2025-12-07T07:15:25.376+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T01:55:44.575398+00:00 [running]> on host fb35e4f278df
+[2025-12-07T07:15:25.496+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='add_sentiment_analysis' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T01:55:44.575398+00:00' AIRFLOW_CTX_TRY_NUMBER='9' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T01:55:44.575398+00:00'
+[2025-12-07T07:15:25.499+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:15:25.499+0000] {logging_mixin.py:154} INFO - ADDING CUSTOM SENTIMENT ANALYSIS (Post-Processing)
+[2025-12-07T07:15:25.500+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:15:32.688+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:15:32.690+0000] {logging_mixin.py:154} INFO - ADDING CUSTOM SENTIMENT ANALYSIS TO SNOWFLAKE COMPLAINTS
+[2025-12-07T07:15:32.693+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:15:32.694+0000] {logging_mixin.py:154} INFO - 
+Step 1: Connecting to Snowflake...
+[2025-12-07T07:15:32.695+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-07T07:15:32.696+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-07T07:15:34.365+0000] {logging_mixin.py:154} INFO - ✅ Connected to Snowflake
+[2025-12-07T07:15:34.369+0000] {logging_mixin.py:154} INFO - 
+Step 2: Verifying sentiment columns exist in FACT_COMPLAINTS...
+[2025-12-07T07:15:34.370+0000] {cursor.py:1032} INFO - query: [DESCRIBE TABLE FACT_COMPLAINTS]
+[2025-12-07T07:15:34.521+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T07:15:34.523+0000] {cursor.py:1205} INFO - Number of results in first chunk: 34
+[2025-12-07T07:15:34.527+0000] {logging_mixin.py:154} INFO - ✅ All sentiment columns exist
+[2025-12-07T07:15:34.528+0000] {logging_mixin.py:154} INFO - 
+Step 3: Checking complaints needing sentiment analysis...
+[2025-12-07T07:15:34.529+0000] {cursor.py:1032} INFO - query: [SELECT COUNT(*) FROM FACT_COMPLAINTS WHERE SENTIMENT_SCORE IS NULL]
+[2025-12-07T07:15:34.803+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T07:15:34.806+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T07:15:34.809+0000] {logging_mixin.py:154} INFO - Found 74,799 complaints needing sentiment analysis
+[2025-12-07T07:15:34.810+0000] {logging_mixin.py:154} INFO - 
+Step 4: Loading sentiment models...
+[2025-12-07T07:15:34.811+0000] {logging_mixin.py:154} INFO - ⏳ This may take 1-2 minutes on first run (downloading models)...
+[2025-12-07T07:15:34.812+0000] {analyzer.py:29} INFO - Initializing ComplaintSentimentAnalyzer...
+[2025-12-07T07:15:34.818+0000] {models.py:35} INFO - Loading sentiment model: cardiffnlp/twitter-roberta-base-sentiment-latest
+[2025-12-07T07:15:34.831+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.11/site-packages/huggingface_hub/file_download.py:942 FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+[2025-12-07T07:15:39.038+0000] {logging_mixin.py:154} WARNING - Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentiment-latest were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[2025-12-07T07:15:39.262+0000] {models.py:50} INFO - ✅ Sentiment model loaded (device: CPU)
+[2025-12-07T07:15:39.263+0000] {models.py:104} INFO - Loading embedding model: sentence-transformers/all-mpnet-base-v2
+[2025-12-07T07:15:40.714+0000] {models.py:114} INFO - ✅ Embedding model loaded (device: cpu)
+[2025-12-07T07:15:40.715+0000] {analyzer.py:36} INFO - ✅ ComplaintSentimentAnalyzer ready
+[2025-12-07T07:15:40.716+0000] {logging_mixin.py:154} INFO - ✅ Models loaded in 5.9 seconds
+[2025-12-07T07:15:40.716+0000] {logging_mixin.py:154} INFO - 
+Step 5: Processing 74,799 complaints in 1496 batches of 50...
+[2025-12-07T07:15:40.717+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:15:40.718+0000] {logging_mixin.py:154} WARNING - /opt/***/src/add_sentiment_to_snowflake.py:156 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-12-07T07:15:40.719+0000] {cursor.py:1032} INFO - query: [SELECT COMPLAINT_ID, COMPLAINT_DESCRIPTION FROM FACT_COMPLAINTS WHERE SENTIMENT_...]
+[2025-12-07T07:15:41.029+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T07:15:41.041+0000] {cursor.py:1032} INFO - query: [ROLLBACK]
+[2025-12-07T07:15:41.188+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T07:15:41.190+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T07:15:41.190+0000] {logging_mixin.py:154} INFO - ❌ Sentiment Analysis Failed: Execution failed on sql '
+        SELECT COMPLAINT_ID, COMPLAINT_DESCRIPTION 
+        FROM FACT_COMPLAINTS 
+        WHERE SENTIMENT_SCORE IS NULL
+        LIMIT 50
+        ': 000904 (42000): 01c0e2d3-0000-518d-0012-8cd30001392e: SQL compilation error: error line 1 at position 7
+invalid identifier 'COMPLAINT_ID'
+[2025-12-07T07:15:41.195+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-07T07:15:41.196+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 2262, in execute
+    cur.execute(sql, *args)
+[2025-12-07T07:15:41.197+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/snowflake/connector/cursor.py", line 1136, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+[2025-12-07T07:15:41.198+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T07:15:41.198+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+[2025-12-07T07:15:41.199+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+[2025-12-07T07:15:41.199+0000] {logging_mixin.py:154} WARNING - snowflake.connector.errors.ProgrammingError: 000904 (42000): 01c0e2d3-0000-518d-0012-8cd30001392e: SQL compilation error: error line 1 at position 7
+invalid identifier 'COMPLAINT_ID'
+[2025-12-07T07:15:41.200+0000] {logging_mixin.py:154} WARNING - 
+The above exception was the direct cause of the following exception:
+[2025-12-07T07:15:41.201+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-07T07:15:41.202+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/dags/autoinsight_cleaning_pipeline.py", line 406, in add_sentiment_to_complaints
+    sentiment_main()
+[2025-12-07T07:15:41.202+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/add_sentiment_to_snowflake.py", line 156, in main
+    batch_df = pd.read_sql(query, conn)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T07:15:41.203+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 654, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T07:15:41.203+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 2326, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T07:15:41.204+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 2274, in execute
+    raise ex from exc
+[2025-12-07T07:15:41.204+0000] {logging_mixin.py:154} WARNING - pandas.errors.DatabaseError: Execution failed on sql '
+        SELECT COMPLAINT_ID, COMPLAINT_DESCRIPTION 
+        FROM FACT_COMPLAINTS 
+        WHERE SENTIMENT_SCORE IS NULL
+        LIMIT 50
+        ': 000904 (42000): 01c0e2d3-0000-518d-0012-8cd30001392e: SQL compilation error: error line 1 at position 7
+invalid identifier 'COMPLAINT_ID'
+[2025-12-07T07:15:41.206+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 2262, in execute
+    cur.execute(sql, *args)
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/cursor.py", line 1136, in execute
+    Error.errorhandler_wrapper(self.connection, self, error_class, errvalue)
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/errors.py", line 290, in errorhandler_wrapper
+    handed_over = Error.hand_to_other_handler(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/errors.py", line 345, in hand_to_other_handler
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "/home/airflow/.local/lib/python3.11/site-packages/snowflake/connector/errors.py", line 221, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 000904 (42000): 01c0e2d3-0000-518d-0012-8cd30001392e: SQL compilation error: error line 1 at position 7
+invalid identifier 'COMPLAINT_ID'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 406, in add_sentiment_to_complaints
+    sentiment_main()
+  File "/opt/airflow/src/add_sentiment_to_snowflake.py", line 156, in main
+    batch_df = pd.read_sql(query, conn)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 654, in read_sql
+    return pandas_sql.read_query(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 2326, in read_query
+    cursor = self.execute(sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pandas/io/sql.py", line 2274, in execute
+    raise ex from exc
+pandas.errors.DatabaseError: Execution failed on sql '
+        SELECT COMPLAINT_ID, COMPLAINT_DESCRIPTION 
+        FROM FACT_COMPLAINTS 
+        WHERE SENTIMENT_SCORE IS NULL
+        LIMIT 50
+        ': 000904 (42000): 01c0e2d3-0000-518d-0012-8cd30001392e: SQL compilation error: error line 1 at position 7
+invalid identifier 'COMPLAINT_ID'
+[2025-12-07T07:15:41.226+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=autoinsight_cleaning_pipeline, task_id=add_sentiment_analysis, execution_date=20251207T015544, start_date=20251207T071525, end_date=20251207T071541
+[2025-12-07T07:15:41.247+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 190 for task add_sentiment_analysis (Execution failed on sql '
+        SELECT COMPLAINT_ID, COMPLAINT_DESCRIPTION 
+        FROM FACT_COMPLAINTS 
+        WHERE SENTIMENT_SCORE IS NULL
+        LIMIT 50
+        ': 000904 (42000): 01c0e2d3-0000-518d-0012-8cd30001392e: SQL compilation error: error line 1 at position 7
+invalid identifier 'COMPLAINT_ID'; 240)
+[2025-12-07T07:15:41.371+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-07T07:15:41.399+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

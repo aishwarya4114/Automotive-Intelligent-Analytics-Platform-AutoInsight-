@@ -1,0 +1,48 @@
+[2025-12-06T23:00:37.451+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.load_epa_to_snowflake manual__2025-12-06T22:48:05.015739+00:00 [queued]>
+[2025-12-06T23:00:37.471+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.load_epa_to_snowflake manual__2025-12-06T22:48:05.015739+00:00 [queued]>
+[2025-12-06T23:00:37.472+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-06T23:00:37.497+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_epa_to_snowflake> on 2025-12-06 22:48:05.015739+00:00
+[2025-12-06T23:00:37.504+0000] {standard_task_runner.py:57} INFO - Started process 1721 to run task
+[2025-12-06T23:00:37.509+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'load_epa_to_snowflake', 'manual__2025-12-06T22:48:05.015739+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmptuuv48yw']
+[2025-12-06T23:00:37.514+0000] {standard_task_runner.py:85} INFO - Job 116: Subtask load_epa_to_snowflake
+[2025-12-06T23:00:37.631+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.load_epa_to_snowflake manual__2025-12-06T22:48:05.015739+00:00 [running]> on host a568c43bff1e
+[2025-12-06T23:00:37.814+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='load_epa_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T22:48:05.015739+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T22:48:05.015739+00:00'
+[2025-12-06T23:00:37.817+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T23:00:37.818+0000] {logging_mixin.py:154} INFO - SNOWFLAKE LOAD: EPA Fuel Economy
+[2025-12-06T23:00:37.819+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T23:00:40.357+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-06T23:00:40.360+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-06T23:00:43.586+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2025-12-06T23:00:44.104+0000] {logging_mixin.py:154} INFO - Looking for CSV files in: s3://autoinsightfinal/epa/cleaned_new/fuel_economy/csv/
+[2025-12-06T23:00:47.736+0000] {logging_mixin.py:154} INFO - Reading CSV: s3://autoinsightfinal/epa/cleaned_new/fuel_economy/csv/part-00000-1682bcb9-13d5-4819-85ef-6bd1ef0f48e3-c000.csv
+[2025-12-06T23:00:49.292+0000] {logging_mixin.py:154} INFO - Loaded 3858 records from S3
+[2025-12-06T23:00:49.300+0000] {cursor.py:1032} INFO - query: [CREATE TEMP STAGE /* Python:snowflake.connector.pandas_tools.write_pandas() */ "...]
+[2025-12-06T23:00:49.535+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:49.537+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-06T23:00:49.822+0000] {cursor.py:1032} INFO - query: [PUT /* Python:snowflake.connector.pandas_tools.write_pandas() */ 'file:///tmp/tm...]
+[2025-12-06T23:00:50.352+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:56.767+0000] {cursor.py:1032} INFO - query: [CREATE TEMP FILE FORMAT "yunlxvbjmu" /* Python:snowflake.connector.pandas_tools....]
+[2025-12-06T23:00:56.957+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:56.967+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-06T23:00:56.969+0000] {cursor.py:1032} INFO - query: [SELECT COLUMN_NAME, TYPE FROM table(infer_schema(location=>'@"vmmgewgrjc"', file...]
+[2025-12-06T23:00:57.738+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:57.740+0000] {cursor.py:1205} INFO - Number of results in first chunk: 28
+[2025-12-06T23:00:57.742+0000] {cursor.py:1032} INFO - query: [CREATE  TABLE IF NOT EXISTS "bvuwwzjrbe" ("fuel_economy_id" TEXT, "epa_id" NUMBE...]
+[2025-12-06T23:00:57.971+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:57.974+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-06T23:00:57.975+0000] {cursor.py:1032} INFO - query: [COPY INTO "bvuwwzjrbe" /* Python:snowflake.connector.pandas_tools.write_pandas()...]
+[2025-12-06T23:00:59.352+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:59.355+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-06T23:00:59.357+0000] {cursor.py:1032} INFO - query: [DROP TABLE IF EXISTS "FACT_FUEL_ECONOMY" /* Python:snowflake.connector.pandas_to...]
+[2025-12-06T23:00:59.650+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:59.651+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-06T23:00:59.653+0000] {cursor.py:1032} INFO - query: [ALTER TABLE "bvuwwzjrbe" RENAME TO "FACT_FUEL_ECONOMY" /* Python:snowflake.conne...]
+[2025-12-06T23:00:59.978+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-06T23:00:59.979+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-06T23:00:59.984+0000] {logging_mixin.py:154} INFO - ✅ Loaded 3858 rows into AUTOMOTIVE_AI.EPA.FACT_FUEL_ECONOMY
+[2025-12-06T23:00:59.988+0000] {connection.py:734} INFO - closed
+[2025-12-06T23:01:00.273+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2025-12-06T23:01:00.698+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-06T23:01:00.739+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=load_epa_to_snowflake, execution_date=20251206T224805, start_date=20251206T230037, end_date=20251206T230100
+[2025-12-06T23:01:00.797+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-06T23:01:00.824+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

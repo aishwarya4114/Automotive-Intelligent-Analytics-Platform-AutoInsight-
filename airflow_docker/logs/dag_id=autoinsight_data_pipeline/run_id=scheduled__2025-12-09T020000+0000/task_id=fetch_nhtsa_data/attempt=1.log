@@ -1,0 +1,344 @@
+[2025-12-10T06:58:12.605+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_nhtsa_data scheduled__2025-12-09T02:00:00+00:00 [queued]>
+[2025-12-10T06:58:12.618+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_nhtsa_data scheduled__2025-12-09T02:00:00+00:00 [queued]>
+[2025-12-10T06:58:12.619+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2025-12-10T06:58:12.640+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_nhtsa_data> on 2025-12-09 02:00:00+00:00
+[2025-12-10T06:58:12.652+0000] {standard_task_runner.py:57} INFO - Started process 13795 to run task
+[2025-12-10T06:58:12.655+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_nhtsa_data', 'scheduled__2025-12-09T02:00:00+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmpfshvb6d6']
+[2025-12-10T06:58:12.661+0000] {standard_task_runner.py:85} INFO - Job 70: Subtask fetch_nhtsa_data
+[2025-12-10T06:58:12.773+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_nhtsa_data scheduled__2025-12-09T02:00:00+00:00 [running]> on host 09126cf425ed
+[2025-12-10T06:58:13.186+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_nhtsa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-09T02:00:00+00:00'
+[2025-12-10T06:58:13.193+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T06:58:13.195+0000] {logging_mixin.py:154} INFO - TASK 3: NHTSA Safety Data Collection
+[2025-12-10T06:58:13.195+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T06:58:13.340+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:13.341+0000] {logging_mixin.py:154} INFO - NHTSA Complete Data Download - 2015-2025
+[2025-12-10T06:58:13.341+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:13.342+0000] {logging_mixin.py:154} INFO - Recalls: 2015-2025 (issue dates) - ALL DATA
+[2025-12-10T06:58:13.342+0000] {logging_mixin.py:154} INFO - Complaints: 2015-2025 (vehicle years)
+[2025-12-10T06:58:13.343+0000] {logging_mixin.py:154} INFO - Ratings: 2018-2025 (model years)
+[2025-12-10T06:58:13.343+0000] {logging_mixin.py:154} INFO - Investigations: 2018-2025 (vehicle years)
+[2025-12-10T06:58:13.344+0000] {logging_mixin.py:154} INFO - Manufacturers: 15 top brands
+[2025-12-10T06:58:13.345+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:13.345+0000] {logging_mixin.py:154} INFO - ✓ Created directories in: nhtsa_data/nhtsa_bulk
+[2025-12-10T06:58:13.361+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2025-12-10T06:58:13.453+0000] {logging_mixin.py:154} INFO -  Connected to S3 bucket: autoinsightfinal
+[2025-12-10T06:58:13.455+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:13.456+0000] {logging_mixin.py:154} INFO - PHASE 1: DOWNLOADING RAW DATA
+[2025-12-10T06:58:13.456+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:13.457+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:13.458+0000] {logging_mixin.py:154} INFO - Downloading NHTSA Recall Data (2015-2025)
+[2025-12-10T06:58:13.458+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:13.460+0000] {logging_mixin.py:154} INFO - 
+ Downloading recalls for 2015-2019...
+[2025-12-10T06:58:13.461+0000] {logging_mixin.py:154} INFO -   Downloading from: https://static.nhtsa.gov/odi/ffdd/rcl/RCL_FROM_2015_2019.zip
+[2025-12-10T06:58:14.192+0000] {logging_mixin.py:154} INFO -   Download complete: 6.1 MB
+[2025-12-10T06:58:14.193+0000] {logging_mixin.py:154} INFO -   Extracting...
+[2025-12-10T06:58:14.621+0000] {logging_mixin.py:154} INFO -    Extracted 1 file(s): ['RCL_FROM_2015_2019.csv']
+[2025-12-10T06:58:14.624+0000] {logging_mixin.py:154} INFO -    Success!
+[2025-12-10T06:58:14.627+0000] {logging_mixin.py:154} INFO - 
+ Downloading recalls for 2020-2024...
+[2025-12-10T06:58:14.628+0000] {logging_mixin.py:154} INFO -   Downloading from: https://static.nhtsa.gov/odi/ffdd/rcl/RCL_FROM_2020_2024.zip
+[2025-12-10T06:58:15.098+0000] {logging_mixin.py:154} INFO -   Download complete: 3.8 MB
+[2025-12-10T06:58:15.099+0000] {logging_mixin.py:154} INFO -   Extracting...
+[2025-12-10T06:58:15.442+0000] {logging_mixin.py:154} INFO -    Extracted 1 file(s): ['RCL_FROM_2020_2024.csv']
+[2025-12-10T06:58:15.448+0000] {logging_mixin.py:154} INFO -    Success!
+[2025-12-10T06:58:15.454+0000] {logging_mixin.py:154} INFO - 
+ Downloading recalls for 2025-2025...
+[2025-12-10T06:58:15.458+0000] {logging_mixin.py:154} INFO -   Downloading from: https://static.nhtsa.gov/odi/ffdd/rcl/RCL_FROM_2025_2025.zip
+[2025-12-10T06:58:15.626+0000] {logging_mixin.py:154} INFO -   Download complete: 0.1 MB
+[2025-12-10T06:58:15.631+0000] {logging_mixin.py:154} INFO -   Extracting...
+[2025-12-10T06:58:15.645+0000] {logging_mixin.py:154} INFO -    Extracted 1 file(s): ['RCL_FROM_2025_2025.csv']
+[2025-12-10T06:58:15.650+0000] {logging_mixin.py:154} INFO -    Success!
+[2025-12-10T06:58:15.654+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:15.655+0000] {logging_mixin.py:154} INFO - Downloading NHTSA Complaints Data
+[2025-12-10T06:58:15.657+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:15.658+0000] {logging_mixin.py:154} INFO - 
+ Downloading complaints received 2020-2024...
+[2025-12-10T06:58:15.659+0000] {logging_mixin.py:154} INFO -   Contains complaints FILED 2020-2024 for vehicles of ANY year
+[2025-12-10T06:58:15.661+0000] {logging_mixin.py:154} INFO -   Downloading from: https://static.nhtsa.gov/odi/ffdd/cmpl/COMPLAINTS_RECEIVED_2020-2024.zip
+[2025-12-10T06:58:19.789+0000] {logging_mixin.py:154} INFO -   Download complete: 72.3 MB
+[2025-12-10T06:58:19.790+0000] {logging_mixin.py:154} INFO -   Extracting...
+[2025-12-10T06:58:22.276+0000] {logging_mixin.py:154} INFO -    Extracted 1 file(s): ['COMPLAINTS_RECEIVED_2020-2024.txt']
+[2025-12-10T06:58:22.290+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:22.291+0000] {logging_mixin.py:154} INFO - Downloading NHTSA Safety Ratings Data
+[2025-12-10T06:58:22.293+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:22.294+0000] {logging_mixin.py:154} INFO - 
+ Downloading safety ratings data...
+[2025-12-10T06:58:22.295+0000] {logging_mixin.py:154} INFO -   Downloading from: https://static.nhtsa.gov/nhtsa/downloads/Safercar/Safercar_data.csv
+[2025-12-10T06:58:22.790+0000] {logging_mixin.py:154} INFO -    Downloaded: 9.1 MB
+[2025-12-10T06:58:22.791+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:22.792+0000] {logging_mixin.py:154} INFO - Downloading NHTSA Investigations Data
+[2025-12-10T06:58:22.792+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:22.793+0000] {logging_mixin.py:154} INFO - 
+ Downloading investigations data...
+[2025-12-10T06:58:22.794+0000] {logging_mixin.py:154} INFO -   Downloading from: https://static.nhtsa.gov/odi/ffdd/inv/FLAT_INV.zip
+[2025-12-10T06:58:26.342+0000] {logging_mixin.py:154} INFO -   Download complete: 43.2 MB
+[2025-12-10T06:58:26.343+0000] {logging_mixin.py:154} INFO -   Extracting...
+[2025-12-10T06:58:28.516+0000] {logging_mixin.py:154} INFO -    Extracted 1 file(s): ['FLAT_INV.txt']
+[2025-12-10T06:58:28.522+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:58:28.523+0000] {logging_mixin.py:154} INFO - PHASE 2: PROCESSING & FILTERING
+[2025-12-10T06:58:28.524+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:58:28.525+0000] {logging_mixin.py:154} INFO - 
+ STEP 2.1: Process Recalls (2015-2019)
+[2025-12-10T06:58:28.526+0000] {logging_mixin.py:154} INFO -   Strategy: Keep ALL recalls (no vehicle year filter)
+[2025-12-10T06:58:28.526+0000] {logging_mixin.py:154} INFO - 
+ Loading recall data for 2015-2019...
+[2025-12-10T06:58:28.528+0000] {logging_mixin.py:154} INFO -   Loading: RCL_FROM_2015_2019.csv
+[2025-12-10T06:58:29.375+0000] {logging_mixin.py:154} INFO -    Loaded 245,248 recall records
+[2025-12-10T06:58:29.376+0000] {logging_mixin.py:154} INFO -   Columns (6): ['NHTSA ID', 'DOCUMENT NAME', 'MAKE', 'MODEL', 'MODEL YEAR', 'SUMMARY']...
+[2025-12-10T06:58:29.377+0000] {logging_mixin.py:154} INFO - 
+ Filtering for 15 manufacturers...
+[2025-12-10T06:58:29.380+0000] {logging_mixin.py:154} INFO -   Using column: MAKE
+[2025-12-10T06:58:29.535+0000] {logging_mixin.py:154} INFO -    Filtered: 128,155 records (from 245,248)
+[2025-12-10T06:58:29.537+0000] {logging_mixin.py:154} INFO - 
+  Breakdown by manufacturer:
+[2025-12-10T06:58:29.591+0000] {logging_mixin.py:154} INFO -     Tesla               : 23
+[2025-12-10T06:58:29.647+0000] {logging_mixin.py:154} INFO -     Ford                : 8,639
+[2025-12-10T06:58:29.704+0000] {logging_mixin.py:154} INFO -     Toyota              : 27,087
+[2025-12-10T06:58:29.810+0000] {logging_mixin.py:154} INFO -     Honda               : 20,575
+[2025-12-10T06:58:29.864+0000] {logging_mixin.py:154} INFO -     Chevrolet           : 4,806
+[2025-12-10T06:58:29.924+0000] {logging_mixin.py:154} INFO -     Nissan              : 6,718
+[2025-12-10T06:58:29.983+0000] {logging_mixin.py:154} INFO -     BMW                 : 16,640
+[2025-12-10T06:58:30.042+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz       : 5,489
+[2025-12-10T06:58:30.097+0000] {logging_mixin.py:154} INFO -     Volkswagen          : 4,562
+[2025-12-10T06:58:30.154+0000] {logging_mixin.py:154} INFO -     Hyundai             : 441
+[2025-12-10T06:58:30.210+0000] {logging_mixin.py:154} INFO -     Kia                 : 1,452
+[2025-12-10T06:58:30.268+0000] {logging_mixin.py:154} INFO -     Subaru              : 17,206
+[2025-12-10T06:58:30.327+0000] {logging_mixin.py:154} INFO -     Mazda               : 279
+[2025-12-10T06:58:30.395+0000] {logging_mixin.py:154} INFO -     Jeep                : 2,554
+[2025-12-10T06:58:31.548+0000] {logging_mixin.py:154} INFO -    Saved locally: recalls_2015_2019_top15.csv
+[2025-12-10T06:58:31.550+0000] {logging_mixin.py:154} INFO -     Size: 43.4 MB, Rows: 128,155
+[2025-12-10T06:58:31.553+0000] {logging_mixin.py:154} INFO -       Uploading to S3: s3://autoinsightfinal/nhtsa/raw/recalls/recalls_2015_2019_top15.csv
+[2025-12-10T06:58:35.525+0000] {logging_mixin.py:154} INFO -      Uploaded successfully
+[2025-12-10T06:58:35.529+0000] {logging_mixin.py:154} INFO - 
+ STEP 2.2: Process Recalls (2020-2024)
+[2025-12-10T06:58:35.535+0000] {logging_mixin.py:154} INFO - 
+ Loading recall data for 2020-2024...
+[2025-12-10T06:58:35.543+0000] {logging_mixin.py:154} INFO -   Loading: RCL_FROM_2020_2024.csv
+[2025-12-10T06:58:36.324+0000] {logging_mixin.py:154} INFO -    Loaded 216,149 recall records
+[2025-12-10T06:58:36.325+0000] {logging_mixin.py:154} INFO -   Columns (6): ['NHTSA ID', 'DOCUMENT NAME', 'MAKE', 'MODEL', 'MODEL YEAR', 'SUMMARY']...
+[2025-12-10T06:58:36.325+0000] {logging_mixin.py:154} INFO - 
+ Filtering for 15 manufacturers...
+[2025-12-10T06:58:36.326+0000] {logging_mixin.py:154} INFO -   Using column: MAKE
+[2025-12-10T06:58:36.442+0000] {logging_mixin.py:154} INFO -    Filtered: 115,911 records (from 216,149)
+[2025-12-10T06:58:36.442+0000] {logging_mixin.py:154} INFO - 
+  Breakdown by manufacturer:
+[2025-12-10T06:58:36.488+0000] {logging_mixin.py:154} INFO -     Tesla               : 71
+[2025-12-10T06:58:36.532+0000] {logging_mixin.py:154} INFO -     Ford                : 6,873
+[2025-12-10T06:58:36.582+0000] {logging_mixin.py:154} INFO -     Toyota              : 8,078
+[2025-12-10T06:58:36.680+0000] {logging_mixin.py:154} INFO -     Honda               : 20,858
+[2025-12-10T06:58:36.732+0000] {logging_mixin.py:154} INFO -     Chevrolet           : 10,693
+[2025-12-10T06:58:36.786+0000] {logging_mixin.py:154} INFO -     Nissan              : 2,247
+[2025-12-10T06:58:36.847+0000] {logging_mixin.py:154} INFO -     BMW                 : 10,593
+[2025-12-10T06:58:36.911+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz       : 18,899
+[2025-12-10T06:58:36.960+0000] {logging_mixin.py:154} INFO -     Volkswagen          : 2,884
+[2025-12-10T06:58:37.009+0000] {logging_mixin.py:154} INFO -     Hyundai             : 4,246
+[2025-12-10T06:58:37.063+0000] {logging_mixin.py:154} INFO -     Kia                 : 7,605
+[2025-12-10T06:58:37.112+0000] {logging_mixin.py:154} INFO -     Subaru              : 8,854
+[2025-12-10T06:58:37.163+0000] {logging_mixin.py:154} INFO -     Mazda               : 41
+[2025-12-10T06:58:37.211+0000] {logging_mixin.py:154} INFO -     Jeep                : 2,935
+[2025-12-10T06:58:38.172+0000] {logging_mixin.py:154} INFO -    Saved locally: recalls_2020_2024_top15.csv
+[2025-12-10T06:58:38.173+0000] {logging_mixin.py:154} INFO -     Size: 37.6 MB, Rows: 115,911
+[2025-12-10T06:58:38.174+0000] {logging_mixin.py:154} INFO -       Uploading to S3: s3://autoinsightfinal/nhtsa/raw/recalls/recalls_2020_2024_top15.csv
+[2025-12-10T06:58:40.604+0000] {logging_mixin.py:154} INFO -      Uploaded successfully
+[2025-12-10T06:58:40.605+0000] {logging_mixin.py:154} INFO - 
+ STEP 2.3: Process Recalls (2025)
+[2025-12-10T06:58:40.606+0000] {logging_mixin.py:154} INFO - 
+ Loading recall data for 2025-2025...
+[2025-12-10T06:58:40.607+0000] {logging_mixin.py:154} INFO -   Loading: RCL_FROM_2025_2025.csv
+[2025-12-10T06:58:40.622+0000] {logging_mixin.py:154} INFO -    Loaded 4,712 recall records
+[2025-12-10T06:58:40.623+0000] {logging_mixin.py:154} INFO -   Columns (6): ['NHTSA ID', 'DOCUMENT NAME', 'MAKE', 'MODEL', 'MODEL YEAR', 'SUMMARY']...
+[2025-12-10T06:58:40.623+0000] {logging_mixin.py:154} INFO - 
+ Filtering for 15 manufacturers...
+[2025-12-10T06:58:40.624+0000] {logging_mixin.py:154} INFO -   Using column: MAKE
+[2025-12-10T06:58:40.628+0000] {logging_mixin.py:154} INFO -    Filtered: 1,785 records (from 4,712)
+[2025-12-10T06:58:40.629+0000] {logging_mixin.py:154} INFO - 
+  Breakdown by manufacturer:
+[2025-12-10T06:58:40.633+0000] {logging_mixin.py:154} INFO -     Ford                : 316
+[2025-12-10T06:58:40.637+0000] {logging_mixin.py:154} INFO -     Toyota              : 96
+[2025-12-10T06:58:40.641+0000] {logging_mixin.py:154} INFO -     Honda               : 56
+[2025-12-10T06:58:40.644+0000] {logging_mixin.py:154} INFO -     Chevrolet           : 334
+[2025-12-10T06:58:40.650+0000] {logging_mixin.py:154} INFO -     Nissan              : 14
+[2025-12-10T06:58:40.655+0000] {logging_mixin.py:154} INFO -     BMW                 : 47
+[2025-12-10T06:58:40.658+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz       : 287
+[2025-12-10T06:58:40.661+0000] {logging_mixin.py:154} INFO -     Volkswagen          : 118
+[2025-12-10T06:58:40.668+0000] {logging_mixin.py:154} INFO -     Hyundai             : 21
+[2025-12-10T06:58:40.671+0000] {logging_mixin.py:154} INFO -     Kia                 : 143
+[2025-12-10T06:58:40.673+0000] {logging_mixin.py:154} INFO -     Subaru              : 5
+[2025-12-10T06:58:40.675+0000] {logging_mixin.py:154} INFO -     Mazda               : 2
+[2025-12-10T06:58:40.677+0000] {logging_mixin.py:154} INFO -     Jeep                : 35
+[2025-12-10T06:58:40.693+0000] {logging_mixin.py:154} INFO -    Saved locally: recalls_2025_top15.csv
+[2025-12-10T06:58:40.695+0000] {logging_mixin.py:154} INFO -     Size: 0.4 MB, Rows: 1,785
+[2025-12-10T06:58:40.696+0000] {logging_mixin.py:154} INFO -       Uploading to S3: s3://autoinsightfinal/nhtsa/raw/recalls/recalls_2025_top15.csv
+[2025-12-10T06:58:40.897+0000] {logging_mixin.py:154} INFO -      Uploaded successfully
+[2025-12-10T06:58:40.898+0000] {logging_mixin.py:154} INFO - 
+ STEP 2.4: Process Complaints
+[2025-12-10T06:58:40.899+0000] {logging_mixin.py:154} INFO -   Strategy: Filter VEHICLE YEARS 2015-2025
+[2025-12-10T06:58:40.899+0000] {logging_mixin.py:154} INFO - 
+ Loading complaint data...
+[2025-12-10T06:58:40.903+0000] {logging_mixin.py:154} INFO -   File: COMPLAINTS_RECEIVED_2020-2024.txt (310.7 MB)
+[2025-12-10T06:58:40.904+0000] {logging_mixin.py:154} INFO -   Loading ALL data...
+[2025-12-10T06:58:47.562+0000] {logging_mixin.py:154} INFO -    Loaded 418,788 complaint records
+[2025-12-10T06:58:47.574+0000] {logging_mixin.py:154} INFO - 
+  Vehicle Year distribution:
+[2025-12-10T06:58:47.575+0000] {logging_mixin.py:154} INFO -     Min year: 1960.0
+[2025-12-10T06:58:47.575+0000] {logging_mixin.py:154} INFO -     Max year: 9999.0
+[2025-12-10T06:58:47.685+0000] {logging_mixin.py:154} INFO -     Records in 2015-2025: 278,410
+[2025-12-10T06:58:47.686+0000] {logging_mixin.py:154} INFO - 
+ Filtering for 15 manufacturers...
+[2025-12-10T06:58:47.686+0000] {logging_mixin.py:154} INFO -   Using column: MAKETXT
+[2025-12-10T06:58:48.626+0000] {logging_mixin.py:154} INFO -    Filtered: 332,792 records (from 418,788)
+[2025-12-10T06:58:48.627+0000] {logging_mixin.py:154} INFO - 
+  Breakdown by manufacturer:
+[2025-12-10T06:58:48.783+0000] {logging_mixin.py:154} INFO -     Tesla               : 16,623
+[2025-12-10T06:58:48.962+0000] {logging_mixin.py:154} INFO -     Ford                : 72,088
+[2025-12-10T06:58:49.117+0000] {logging_mixin.py:154} INFO -     Toyota              : 22,101
+[2025-12-10T06:58:49.247+0000] {logging_mixin.py:154} INFO -     General Motors      : 11
+[2025-12-10T06:58:49.423+0000] {logging_mixin.py:154} INFO -     Honda               : 32,102
+[2025-12-10T06:58:49.594+0000] {logging_mixin.py:154} INFO -     Chevrolet           : 36,750
+[2025-12-10T06:58:49.766+0000] {logging_mixin.py:154} INFO -     Nissan              : 18,390
+[2025-12-10T06:58:49.921+0000] {logging_mixin.py:154} INFO -     BMW                 : 8,518
+[2025-12-10T06:58:50.093+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz       : 6,218
+[2025-12-10T06:58:50.266+0000] {logging_mixin.py:154} INFO -     Volkswagen          : 10,501
+[2025-12-10T06:58:50.459+0000] {logging_mixin.py:154} INFO -     Hyundai             : 26,758
+[2025-12-10T06:58:50.660+0000] {logging_mixin.py:154} INFO -     Kia                 : 23,562
+[2025-12-10T06:58:50.844+0000] {logging_mixin.py:154} INFO -     Subaru              : 14,181
+[2025-12-10T06:58:51.015+0000] {logging_mixin.py:154} INFO -     Mazda               : 4,503
+[2025-12-10T06:58:51.197+0000] {logging_mixin.py:154} INFO -     Jeep                : 26,189
+[2025-12-10T06:58:51.199+0000] {logging_mixin.py:154} INFO - 
+ Filtering for years 2015-2025...
+[2025-12-10T06:58:51.199+0000] {logging_mixin.py:154} INFO -   Using column: YEARTXT
+[2025-12-10T06:58:51.205+0000] {logging_mixin.py:154} INFO -   Year range in data: 1969.0 to 9999.0
+[2025-12-10T06:58:51.445+0000] {logging_mixin.py:154} INFO -   Records in 2015-2025: 226,993
+[2025-12-10T06:58:57.079+0000] {logging_mixin.py:154} INFO -    Saved locally: complaints_2015_2025_vehicles_top15.csv
+[2025-12-10T06:58:57.081+0000] {logging_mixin.py:154} INFO -     Size: 175.3 MB, Rows: 226,993
+[2025-12-10T06:58:57.082+0000] {logging_mixin.py:154} INFO -       Uploading to S3: s3://autoinsightfinal/nhtsa/raw/complaints/complaints_2015_2025_vehicles_top15.csv
+[2025-12-10T06:59:08.727+0000] {logging_mixin.py:154} INFO -      Uploaded successfully
+[2025-12-10T06:59:08.728+0000] {logging_mixin.py:154} INFO - 
+ STEP 2.5: Process Safety Ratings
+[2025-12-10T06:59:08.729+0000] {logging_mixin.py:154} INFO -   Strategy: Filter MODEL YEARS 2018-2025
+[2025-12-10T06:59:08.730+0000] {logging_mixin.py:154} INFO - 
+ Loading safety ratings data...
+[2025-12-10T06:59:08.730+0000] {logging_mixin.py:154} INFO -   Loading: Safercar_data.csv
+[2025-12-10T06:59:08.954+0000] {logging_mixin.py:154} INFO -    Loaded 17,266 ratings records
+[2025-12-10T06:59:08.956+0000] {logging_mixin.py:154} INFO -   Columns (128): ['MAKE', 'MODEL', 'MODEL_YR', 'BODY_STYLE', 'VEHICLE_TYPE', 'DRIVE_TRAIN', 'PRODUCTION_RELEASE', 'VEHICLE_CLASS', 'BODY_FRAME', 'NUM_OF_SEATING']...
+[2025-12-10T06:59:08.957+0000] {logging_mixin.py:154} INFO - 
+ Filtering for 15 manufacturers...
+[2025-12-10T06:59:08.958+0000] {logging_mixin.py:154} INFO -   Using column: MAKE
+[2025-12-10T06:59:08.998+0000] {logging_mixin.py:154} INFO -    Filtered: 10,014 records (from 17,266)
+[2025-12-10T06:59:08.999+0000] {logging_mixin.py:154} INFO - 
+  Breakdown by manufacturer:
+[2025-12-10T06:59:09.009+0000] {logging_mixin.py:154} INFO -     Tesla               : 133
+[2025-12-10T06:59:09.017+0000] {logging_mixin.py:154} INFO -     Ford                : 1,376
+[2025-12-10T06:59:09.023+0000] {logging_mixin.py:154} INFO -     Toyota              : 1,026
+[2025-12-10T06:59:09.037+0000] {logging_mixin.py:154} INFO -     Honda               : 515
+[2025-12-10T06:59:09.045+0000] {logging_mixin.py:154} INFO -     Chevrolet           : 1,344
+[2025-12-10T06:59:09.054+0000] {logging_mixin.py:154} INFO -     Nissan              : 764
+[2025-12-10T06:59:09.061+0000] {logging_mixin.py:154} INFO -     BMW                 : 991
+[2025-12-10T06:59:09.069+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz       : 823
+[2025-12-10T06:59:09.075+0000] {logging_mixin.py:154} INFO -     Volkswagen          : 398
+[2025-12-10T06:59:09.082+0000] {logging_mixin.py:154} INFO -     Hyundai             : 526
+[2025-12-10T06:59:09.089+0000] {logging_mixin.py:154} INFO -     Kia                 : 415
+[2025-12-10T06:59:09.095+0000] {logging_mixin.py:154} INFO -     Subaru              : 236
+[2025-12-10T06:59:09.101+0000] {logging_mixin.py:154} INFO -     Mazda               : 341
+[2025-12-10T06:59:09.106+0000] {logging_mixin.py:154} INFO -     Jeep                : 315
+[2025-12-10T06:59:09.107+0000] {logging_mixin.py:154} INFO - 
+ Filtering for years 2015-2025...
+[2025-12-10T06:59:09.108+0000] {logging_mixin.py:154} INFO -   Using column: MODEL_YR
+[2025-12-10T06:59:09.110+0000] {logging_mixin.py:154} INFO -   Year range in data: 1990 to 2026
+[2025-12-10T06:59:09.119+0000] {logging_mixin.py:154} INFO -   Records in 2015-2025: 5,140
+[2025-12-10T06:59:09.314+0000] {logging_mixin.py:154} INFO -    Saved locally: ratings_2015_2025_top15.csv
+[2025-12-10T06:59:09.315+0000] {logging_mixin.py:154} INFO -     Size: 3.6 MB, Rows: 5,140
+[2025-12-10T06:59:09.316+0000] {logging_mixin.py:154} INFO -       Uploading to S3: s3://autoinsightfinal/nhtsa/raw/ratings/ratings_2015_2025_top15.csv
+[2025-12-10T06:59:10.210+0000] {logging_mixin.py:154} INFO -      Uploaded successfully
+[2025-12-10T06:59:10.212+0000] {logging_mixin.py:154} INFO - 
+ STEP 2.6: Process Investigations
+[2025-12-10T06:59:10.213+0000] {logging_mixin.py:154} INFO -   Strategy: Filter VEHICLE YEARS 2018-2025
+[2025-12-10T06:59:10.216+0000] {logging_mixin.py:154} INFO - 
+📊 Loading investigations data...
+[2025-12-10T06:59:10.220+0000] {logging_mixin.py:154} INFO -   Loading: FLAT_INV.txt (369.5 MB)
+[2025-12-10T06:59:13.522+0000] {logging_mixin.py:154} INFO -    Loaded 153,673 investigation records
+[2025-12-10T06:59:13.530+0000] {logging_mixin.py:154} INFO - 
+  Top 20 manufacturers:
+[2025-12-10T06:59:13.532+0000] {logging_mixin.py:154} INFO -     HONDA                         : 16576 records
+[2025-12-10T06:59:13.532+0000] {logging_mixin.py:154} INFO -     DODGE                         : 13357 records
+[2025-12-10T06:59:13.533+0000] {logging_mixin.py:154} INFO -     KIA                           : 12796 records
+[2025-12-10T06:59:13.534+0000] {logging_mixin.py:154} INFO -     FORD                          : 10339 records
+[2025-12-10T06:59:13.535+0000] {logging_mixin.py:154} INFO -     BMW                           : 9879 records
+[2025-12-10T06:59:13.536+0000] {logging_mixin.py:154} INFO -     HYUNDAI                       : 9833 records
+[2025-12-10T06:59:13.537+0000] {logging_mixin.py:154} INFO -     MAZDA                         : 7300 records
+[2025-12-10T06:59:13.538+0000] {logging_mixin.py:154} INFO -     TOYOTA                        : 6326 records
+[2025-12-10T06:59:13.539+0000] {logging_mixin.py:154} INFO -     CHRYSLER                      : 4888 records
+[2025-12-10T06:59:13.540+0000] {logging_mixin.py:154} INFO -     SUBARU                        : 4754 records
+[2025-12-10T06:59:13.541+0000] {logging_mixin.py:154} INFO -     INFINITI                      : 4333 records
+[2025-12-10T06:59:13.542+0000] {logging_mixin.py:154} INFO -     CHEVROLET                     : 3907 records
+[2025-12-10T06:59:13.542+0000] {logging_mixin.py:154} INFO -     ACURA                         : 3517 records
+[2025-12-10T06:59:13.543+0000] {logging_mixin.py:154} INFO -     NISSAN                        : 3335 records
+[2025-12-10T06:59:13.544+0000] {logging_mixin.py:154} INFO -     GMC                           : 2390 records
+[2025-12-10T06:59:13.545+0000] {logging_mixin.py:154} INFO -     MITSUBISHI                    : 2361 records
+[2025-12-10T06:59:13.546+0000] {logging_mixin.py:154} INFO -     LEXUS                         : 2075 records
+[2025-12-10T06:59:13.546+0000] {logging_mixin.py:154} INFO -     RICON                         : 2060 records
+[2025-12-10T06:59:13.547+0000] {logging_mixin.py:154} INFO -     PONTIAC                       : 2007 records
+[2025-12-10T06:59:13.548+0000] {logging_mixin.py:154} INFO -     JEEP                          : 1562 records
+[2025-12-10T06:59:13.576+0000] {logging_mixin.py:154} INFO - 
+  Investigation date range:
+[2025-12-10T06:59:13.582+0000] {logging_mixin.py:154} INFO -     Earliest: 1972
+[2025-12-10T06:59:13.584+0000] {logging_mixin.py:154} INFO -     Latest: 2025
+[2025-12-10T06:59:13.593+0000] {logging_mixin.py:154} INFO - 
+ Filtering for 15 manufacturers...
+[2025-12-10T06:59:13.594+0000] {logging_mixin.py:154} INFO -   Using column: MAKE
+[2025-12-10T06:59:13.687+0000] {logging_mixin.py:154} INFO -    Filtered: 93,358 records (from 153,673)
+[2025-12-10T06:59:13.688+0000] {logging_mixin.py:154} INFO - 
+  Breakdown by manufacturer:
+[2025-12-10T06:59:13.732+0000] {logging_mixin.py:154} INFO -     Tesla               : 1,438
+[2025-12-10T06:59:13.776+0000] {logging_mixin.py:154} INFO -     Ford                : 10,339
+[2025-12-10T06:59:13.821+0000] {logging_mixin.py:154} INFO -     Toyota              : 6,326
+[2025-12-10T06:59:13.933+0000] {logging_mixin.py:154} INFO -     Honda               : 16,576
+[2025-12-10T06:59:13.981+0000] {logging_mixin.py:154} INFO -     Chevrolet           : 3,907
+[2025-12-10T06:59:14.027+0000] {logging_mixin.py:154} INFO -     Nissan              : 3,335
+[2025-12-10T06:59:14.079+0000] {logging_mixin.py:154} INFO -     BMW                 : 9,879
+[2025-12-10T06:59:14.123+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz       : 526
+[2025-12-10T06:59:14.163+0000] {logging_mixin.py:154} INFO -     Volkswagen          : 910
+[2025-12-10T06:59:14.209+0000] {logging_mixin.py:154} INFO -     Hyundai             : 9,833
+[2025-12-10T06:59:14.262+0000] {logging_mixin.py:154} INFO -     Kia                 : 12,796
+[2025-12-10T06:59:14.307+0000] {logging_mixin.py:154} INFO -     Subaru              : 4,754
+[2025-12-10T06:59:14.354+0000] {logging_mixin.py:154} INFO -     Mazda               : 7,300
+[2025-12-10T06:59:14.404+0000] {logging_mixin.py:154} INFO -     Jeep                : 1,562
+[2025-12-10T06:59:14.405+0000] {logging_mixin.py:154} INFO - 
+ Filtering for years 2015-2025...
+[2025-12-10T06:59:14.407+0000] {logging_mixin.py:154} INFO -   Using column: YEAR
+[2025-12-10T06:59:14.411+0000] {logging_mixin.py:154} INFO -   Year range in data: 1970.0 to 9999.0
+[2025-12-10T06:59:14.416+0000] {logging_mixin.py:154} INFO -   Records in 2015-2025: 5,579
+[2025-12-10T06:59:14.777+0000] {logging_mixin.py:154} INFO -    Saved locally: investigations_2015_2025_top15.csv
+[2025-12-10T06:59:14.782+0000] {logging_mixin.py:154} INFO -     Size: 14.7 MB, Rows: 5,579
+[2025-12-10T06:59:14.784+0000] {logging_mixin.py:154} INFO -       Uploading to S3: s3://autoinsightfinal/nhtsa/raw/investigations/investigations_2015_2025_top15.csv
+[2025-12-10T06:59:16.678+0000] {logging_mixin.py:154} INFO -      Uploaded successfully
+[2025-12-10T06:59:16.679+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T06:59:16.680+0000] {logging_mixin.py:154} INFO -  NHTSA DATA COLLECTION COMPLETE!
+[2025-12-10T06:59:16.681+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:59:16.682+0000] {logging_mixin.py:154} INFO - 
+Data Coverage:
+[2025-12-10T06:59:16.683+0000] {logging_mixin.py:154} INFO -   Recalls:
+[2025-12-10T06:59:16.684+0000] {logging_mixin.py:154} INFO -     - 2015-2019 (ALL recalls, no filter)
+[2025-12-10T06:59:16.685+0000] {logging_mixin.py:154} INFO -     - 2020-2024 (ALL recalls, no filter)
+[2025-12-10T06:59:16.686+0000] {logging_mixin.py:154} INFO -     - 2025 (ALL recalls, no filter)
+[2025-12-10T06:59:16.688+0000] {logging_mixin.py:154} INFO -   Complaints: Vehicle years 2015-2025
+[2025-12-10T06:59:16.689+0000] {logging_mixin.py:154} INFO -   Ratings: Model years 2015-2025
+[2025-12-10T06:59:16.690+0000] {logging_mixin.py:154} INFO -   Investigations: Vehicle years 2015-2025
+[2025-12-10T06:59:16.691+0000] {logging_mixin.py:154} INFO - 
+ Local: nhtsa_data/nhtsa_bulk/processed/
+[2025-12-10T06:59:16.692+0000] {logging_mixin.py:154} INFO -   S3: s3://autoinsightfinal/nhtsa/raw/
+[2025-12-10T06:59:16.693+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T06:59:16.921+0000] {logging_mixin.py:154} INFO - ✅ NHTSA Data Collection Complete
+[2025-12-10T06:59:16.923+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-10T06:59:16.959+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_data_pipeline, task_id=fetch_nhtsa_data, execution_date=20251209T020000, start_date=20251210T065812, end_date=20251210T065916
+[2025-12-10T06:59:17.062+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-10T06:59:17.104+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

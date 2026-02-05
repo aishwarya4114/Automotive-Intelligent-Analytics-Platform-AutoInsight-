@@ -1,0 +1,57 @@
+[2025-12-08T22:31:57.951+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.load_ratings_to_snowflake manual__2025-12-08T22:23:46.693862+00:00 [queued]>
+[2025-12-08T22:31:57.966+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.load_ratings_to_snowflake manual__2025-12-08T22:23:46.693862+00:00 [queued]>
+[2025-12-08T22:31:57.970+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-08T22:31:57.997+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_ratings_to_snowflake> on 2025-12-08 22:23:46.693862+00:00
+[2025-12-08T22:31:58.003+0000] {standard_task_runner.py:57} INFO - Started process 3581 to run task
+[2025-12-08T22:31:58.009+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline_v2', 'load_ratings_to_snowflake', 'manual__2025-12-08T22:23:46.693862+00:00', '--job-id', '269', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpkmgjgd0s']
+[2025-12-08T22:31:58.016+0000] {standard_task_runner.py:85} INFO - Job 269: Subtask load_ratings_to_snowflake
+[2025-12-08T22:31:58.117+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline_v2.load_ratings_to_snowflake manual__2025-12-08T22:23:46.693862+00:00 [running]> on host 71216401ab91
+[2025-12-08T22:31:58.216+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline_v2' AIRFLOW_CTX_TASK_ID='load_ratings_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2025-12-08T22:23:46.693862+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-08T22:23:46.693862+00:00'
+[2025-12-08T22:31:59.317+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T22:31:59.318+0000] {logging_mixin.py:154} INFO - SNOWFLAKE LOAD: RATINGS
+[2025-12-08T22:31:59.319+0000] {logging_mixin.py:154} INFO - S3 Path: s3://autoinsightfinal/nhtsa/cleaned_new/ratings/csv/
+[2025-12-08T22:31:59.319+0000] {logging_mixin.py:154} INFO - Target: AUTOMOTIVE_AI.NHTSA.FACT_RATINGS
+[2025-12-08T22:31:59.320+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T22:31:59.341+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2025-12-08T22:31:59.967+0000] {logging_mixin.py:154} INFO - Reading: s3://autoinsightfinal/nhtsa/cleaned_new/ratings/csv/part-00000-30c30dde-3273-41db-afcc-b90b15c9ff5f-c000.csv
+[2025-12-08T22:32:01.003+0000] {logging_mixin.py:154} INFO - Loaded 1,727 records from S3
+[2025-12-08T22:32:01.005+0000] {logging_mixin.py:154} INFO - Columns: ['rating_id', 'vehicle_id', 'make', 'model', 'year', 'body_style', 'vehicle_class', 'drive_train', 'num_of_seating', 'curb_weight', 'min_gross_weight', 'max_gross_weight', 'overall_stars', 'overall_front_stars', 'overall_side_stars', 'rollover_stars', 'front_driver_stars', 'front_passenger_stars', 'side_driver_stars', 'side_passenger_stars', 'average_star_rating', 'safety_tier', 'has_abs', 'has_esc', 'has_blind_spot_detection', 'has_backup_camera', 'has_front_collision_warning', 'has_lane_departure_warning', 'has_crash_imminent_brake', 'has_dynamic_brake_support', 'has_adaptive_cruise_control', 'has_advanced_safety', 'advanced_safety_count', 'missing_critical_data', 'has_test_data', 'processed_at', 'data_source', 'processing_version']
+[2025-12-08T22:32:01.007+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-08T22:32:01.014+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-08T22:32:02.712+0000] {cursor.py:1032} INFO - query: [USE SCHEMA NHTSA]
+[2025-12-08T22:32:03.457+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:03.458+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:03.462+0000] {cursor.py:1032} INFO - query: [CREATE TEMP STAGE /* Python:snowflake.connector.pandas_tools.write_pandas() */ h...]
+[2025-12-08T22:32:04.236+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:04.237+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:04.338+0000] {cursor.py:1032} INFO - query: [PUT /* Python:snowflake.connector.pandas_tools.write_pandas() */ 'file:///tmp/tm...]
+[2025-12-08T22:32:05.039+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:06.654+0000] {cursor.py:1032} INFO - query: [CREATE TEMP FILE FORMAT onjqngqltr /* Python:snowflake.connector.pandas_tools.wr...]
+[2025-12-08T22:32:06.771+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:06.772+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:06.774+0000] {cursor.py:1032} INFO - query: [SELECT COLUMN_NAME, TYPE FROM table(infer_schema(location=>'@hwngwsiwqo', file_f...]
+[2025-12-08T22:32:07.421+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:07.422+0000] {cursor.py:1205} INFO - Number of results in first chunk: 38
+[2025-12-08T22:32:07.424+0000] {cursor.py:1032} INFO - query: [CREATE  TABLE IF NOT EXISTS jiqtjsxosq (rating_id TEXT, vehicle_id TEXT, make TE...]
+[2025-12-08T22:32:07.669+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:07.671+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:07.671+0000] {cursor.py:1032} INFO - query: [COPY INTO jiqtjsxosq /* Python:snowflake.connector.pandas_tools.write_pandas() *...]
+[2025-12-08T22:32:08.712+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:08.713+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:08.713+0000] {cursor.py:1032} INFO - query: [DROP TABLE IF EXISTS FACT_RATINGS /* Python:snowflake.connector.pandas_tools.wri...]
+[2025-12-08T22:32:08.851+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:08.852+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:08.853+0000] {cursor.py:1032} INFO - query: [ALTER TABLE jiqtjsxosq RENAME TO FACT_RATINGS /* Python:snowflake.connector.pand...]
+[2025-12-08T22:32:08.938+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:08.940+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:08.941+0000] {logging_mixin.py:154} INFO - ✅ Loaded 1,727 rows into AUTOMOTIVE_AI.NHTSA.FACT_RATINGS
+[2025-12-08T22:32:08.942+0000] {cursor.py:1032} INFO - query: [SELECT COUNT(*) FROM FACT_RATINGS]
+[2025-12-08T22:32:09.093+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T22:32:09.093+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T22:32:09.094+0000] {logging_mixin.py:154} INFO - Verification: 1,727 rows in table
+[2025-12-08T22:32:09.095+0000] {connection.py:734} INFO - closed
+[2025-12-08T22:32:09.150+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2025-12-08T22:32:09.256+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-08T22:32:09.294+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline_v2, task_id=load_ratings_to_snowflake, execution_date=20251208T222346, start_date=20251208T223157, end_date=20251208T223209
+[2025-12-08T22:32:09.412+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-08T22:32:09.477+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

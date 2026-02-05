@@ -1,0 +1,149 @@
+[2025-12-07T01:59:58.380+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.load_nhtsa_to_snowflake manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T01:59:58.393+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.load_nhtsa_to_snowflake manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T01:59:58.394+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-07T01:59:58.417+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_nhtsa_to_snowflake> on 2025-12-07 01:55:44.575398+00:00
+[2025-12-07T01:59:58.424+0000] {standard_task_runner.py:57} INFO - Started process 4618 to run task
+[2025-12-07T01:59:58.429+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'load_nhtsa_to_snowflake', 'manual__2025-12-07T01:55:44.575398+00:00', '--job-id', '172', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpf8m1s8tu']
+[2025-12-07T01:59:58.434+0000] {standard_task_runner.py:85} INFO - Job 172: Subtask load_nhtsa_to_snowflake
+[2025-12-07T01:59:58.560+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.load_nhtsa_to_snowflake manual__2025-12-07T01:55:44.575398+00:00 [running]> on host fb35e4f278df
+[2025-12-07T01:59:58.695+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='load_nhtsa_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T01:55:44.575398+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T01:55:44.575398+00:00'
+[2025-12-07T01:59:58.698+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:59:58.699+0000] {logging_mixin.py:154} INFO - SNOWFLAKE LOAD: All NHTSA Datasets
+[2025-12-07T01:59:58.700+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:59:59.826+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-07T01:59:59.828+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-07T02:00:01.273+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2025-12-07T02:00:01.400+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T02:00:01.401+0000] {logging_mixin.py:154} INFO - Processing FACT_RECALLS
+[2025-12-07T02:00:01.401+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T02:00:01.402+0000] {logging_mixin.py:154} INFO - Looking for CSV files in: s3://autoinsightfinal/nhtsa/cleaned_new/recalls/csv/
+[2025-12-07T02:00:02.011+0000] {logging_mixin.py:154} INFO - Reading CSV: s3://autoinsightfinal/nhtsa/cleaned_new/recalls/csv/part-00000-a9eee349-d3f0-426f-9063-a57db3eabc26-c000.csv
+[2025-12-07T02:00:02.394+0000] {logging_mixin.py:154} INFO - Loaded 1210 records from S3
+[2025-12-07T02:00:02.398+0000] {cursor.py:1032} INFO - query: [CREATE TEMP STAGE /* Python:snowflake.connector.pandas_tools.write_pandas() */ "...]
+[2025-12-07T02:00:02.590+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:02.591+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:02.659+0000] {cursor.py:1032} INFO - query: [PUT /* Python:snowflake.connector.pandas_tools.write_pandas() */ 'file:///tmp/tm...]
+[2025-12-07T02:00:02.829+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:03.450+0000] {cursor.py:1032} INFO - query: [CREATE TEMP FILE FORMAT "ikwisvlehr" /* Python:snowflake.connector.pandas_tools....]
+[2025-12-07T02:00:03.563+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:03.564+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:03.565+0000] {cursor.py:1032} INFO - query: [SELECT COLUMN_NAME, TYPE FROM table(infer_schema(location=>'@"tbmwoauecg"', file...]
+[2025-12-07T02:00:04.145+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:04.147+0000] {cursor.py:1205} INFO - Number of results in first chunk: 14
+[2025-12-07T02:00:04.148+0000] {cursor.py:1032} INFO - query: [CREATE  TABLE IF NOT EXISTS "lwsecbatlg" ("recall_id" TEXT, "nhtsa_recall_id" TE...]
+[2025-12-07T02:00:04.332+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:04.354+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:04.357+0000] {cursor.py:1032} INFO - query: [COPY INTO "lwsecbatlg" /* Python:snowflake.connector.pandas_tools.write_pandas()...]
+[2025-12-07T02:00:05.304+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:05.305+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:05.307+0000] {cursor.py:1032} INFO - query: [DROP TABLE IF EXISTS "FACT_RECALLS" /* Python:snowflake.connector.pandas_tools.w...]
+[2025-12-07T02:00:05.467+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:05.470+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:05.470+0000] {cursor.py:1032} INFO - query: [ALTER TABLE "lwsecbatlg" RENAME TO "FACT_RECALLS" /* Python:snowflake.connector....]
+[2025-12-07T02:00:05.578+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:05.579+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:05.581+0000] {logging_mixin.py:154} INFO - ✅ Loaded 1210 rows into AUTOMOTIVE_AI.NHTSA.FACT_RECALLS
+[2025-12-07T02:00:05.582+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T02:00:05.582+0000] {logging_mixin.py:154} INFO - Processing FACT_COMPLAINTS
+[2025-12-07T02:00:05.583+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T02:00:05.584+0000] {logging_mixin.py:154} INFO - Looking for CSV files in: s3://autoinsightfinal/nhtsa/cleaned_new/complaints/csv/
+[2025-12-07T02:00:05.674+0000] {logging_mixin.py:154} INFO - Reading CSV: s3://autoinsightfinal/nhtsa/cleaned_new/complaints/csv/part-00000-0e70cd70-16b0-4858-b18f-463466bb7f15-c000.csv
+[2025-12-07T02:00:11.721+0000] {logging_mixin.py:154} INFO - Loaded 74799 records from S3
+[2025-12-07T02:00:11.724+0000] {cursor.py:1032} INFO - query: [CREATE TEMP STAGE /* Python:snowflake.connector.pandas_tools.write_pandas() */ "...]
+[2025-12-07T02:00:11.862+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:11.863+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:16.956+0000] {cursor.py:1032} INFO - query: [PUT /* Python:snowflake.connector.pandas_tools.write_pandas() */ 'file:///tmp/tm...]
+[2025-12-07T02:00:17.297+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:18.825+0000] {cursor.py:1032} INFO - query: [CREATE TEMP FILE FORMAT "nlfkbelgof" /* Python:snowflake.connector.pandas_tools....]
+[2025-12-07T02:00:18.921+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:18.924+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:18.925+0000] {cursor.py:1032} INFO - query: [SELECT COLUMN_NAME, TYPE FROM table(infer_schema(location=>'@"juqndglmsq"', file...]
+[2025-12-07T02:00:19.498+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:19.500+0000] {cursor.py:1205} INFO - Number of results in first chunk: 34
+[2025-12-07T02:00:19.502+0000] {cursor.py:1032} INFO - query: [CREATE  TABLE IF NOT EXISTS "dokwsmspgi" ("complaint_id" TEXT, "nhtsa_complaint_...]
+[2025-12-07T02:00:19.735+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:19.738+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:19.740+0000] {cursor.py:1032} INFO - query: [COPY INTO "dokwsmspgi" /* Python:snowflake.connector.pandas_tools.write_pandas()...]
+[2025-12-07T02:00:25.270+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:25.272+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:25.273+0000] {cursor.py:1032} INFO - query: [DROP TABLE IF EXISTS "FACT_COMPLAINTS" /* Python:snowflake.connector.pandas_tool...]
+[2025-12-07T02:00:25.431+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:25.432+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:25.433+0000] {cursor.py:1032} INFO - query: [ALTER TABLE "dokwsmspgi" RENAME TO "FACT_COMPLAINTS" /* Python:snowflake.connect...]
+[2025-12-07T02:00:25.539+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:25.541+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:25.542+0000] {logging_mixin.py:154} INFO - ✅ Loaded 74799 rows into AUTOMOTIVE_AI.NHTSA.FACT_COMPLAINTS
+[2025-12-07T02:00:25.542+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T02:00:25.543+0000] {logging_mixin.py:154} INFO - Processing FACT_RATINGS
+[2025-12-07T02:00:25.543+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T02:00:25.544+0000] {logging_mixin.py:154} INFO - Looking for CSV files in: s3://autoinsightfinal/nhtsa/cleaned_new/ratings/csv/
+[2025-12-07T02:00:25.610+0000] {logging_mixin.py:154} INFO - Reading CSV: s3://autoinsightfinal/nhtsa/cleaned_new/ratings/csv/part-00000-56aa95a9-54fd-444a-97bf-d38a8f917c76-c000.csv
+[2025-12-07T02:00:25.860+0000] {logging_mixin.py:154} INFO - Loaded 1727 records from S3
+[2025-12-07T02:00:25.863+0000] {cursor.py:1032} INFO - query: [CREATE TEMP STAGE /* Python:snowflake.connector.pandas_tools.write_pandas() */ "...]
+[2025-12-07T02:00:25.988+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:25.989+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:26.046+0000] {cursor.py:1032} INFO - query: [PUT /* Python:snowflake.connector.pandas_tools.write_pandas() */ 'file:///tmp/tm...]
+[2025-12-07T02:00:26.246+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:27.054+0000] {cursor.py:1032} INFO - query: [CREATE TEMP FILE FORMAT "dryhbiqplt" /* Python:snowflake.connector.pandas_tools....]
+[2025-12-07T02:00:27.154+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:27.156+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:27.157+0000] {cursor.py:1032} INFO - query: [SELECT COLUMN_NAME, TYPE FROM table(infer_schema(location=>'@"xyhcyomfel"', file...]
+[2025-12-07T02:00:27.534+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:27.534+0000] {cursor.py:1205} INFO - Number of results in first chunk: 38
+[2025-12-07T02:00:27.535+0000] {cursor.py:1032} INFO - query: [CREATE  TABLE IF NOT EXISTS "uwcaqpojwp" ("rating_id" TEXT, "vehicle_id" TEXT, "...]
+[2025-12-07T02:00:27.892+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:27.894+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:27.895+0000] {cursor.py:1032} INFO - query: [COPY INTO "uwcaqpojwp" /* Python:snowflake.connector.pandas_tools.write_pandas()...]
+[2025-12-07T02:00:29.131+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:29.133+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:29.134+0000] {cursor.py:1032} INFO - query: [DROP TABLE IF EXISTS "FACT_RATINGS" /* Python:snowflake.connector.pandas_tools.w...]
+[2025-12-07T02:00:29.340+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:29.342+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:29.342+0000] {cursor.py:1032} INFO - query: [ALTER TABLE "uwcaqpojwp" RENAME TO "FACT_RATINGS" /* Python:snowflake.connector....]
+[2025-12-07T02:00:29.447+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:29.448+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:29.449+0000] {logging_mixin.py:154} INFO - ✅ Loaded 1727 rows into AUTOMOTIVE_AI.NHTSA.FACT_RATINGS
+[2025-12-07T02:00:29.450+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T02:00:29.450+0000] {logging_mixin.py:154} INFO - Processing FACT_INVESTIGATIONS
+[2025-12-07T02:00:29.452+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T02:00:29.452+0000] {logging_mixin.py:154} INFO - Looking for CSV files in: s3://autoinsightfinal/nhtsa/cleaned_new/investigations/csv/
+[2025-12-07T02:00:29.515+0000] {logging_mixin.py:154} INFO - Reading CSV: s3://autoinsightfinal/nhtsa/cleaned_new/investigations/csv/part-00000-cb8ef21b-9235-4020-9be1-7de75aa90d9f-c000.csv
+[2025-12-07T02:00:29.688+0000] {logging_mixin.py:154} INFO - Loaded 89 records from S3
+[2025-12-07T02:00:29.691+0000] {cursor.py:1032} INFO - query: [CREATE TEMP STAGE /* Python:snowflake.connector.pandas_tools.write_pandas() */ "...]
+[2025-12-07T02:00:29.813+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:29.818+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:29.850+0000] {cursor.py:1032} INFO - query: [PUT /* Python:snowflake.connector.pandas_tools.write_pandas() */ 'file:///tmp/tm...]
+[2025-12-07T02:00:30.343+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:30.502+0000] {cursor.py:1032} INFO - query: [CREATE TEMP FILE FORMAT "szfmfyfahm" /* Python:snowflake.connector.pandas_tools....]
+[2025-12-07T02:00:30.592+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:30.593+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:30.594+0000] {cursor.py:1032} INFO - query: [SELECT COLUMN_NAME, TYPE FROM table(infer_schema(location=>'@"hndcrjzgpf"', file...]
+[2025-12-07T02:00:30.890+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:30.892+0000] {cursor.py:1205} INFO - Number of results in first chunk: 24
+[2025-12-07T02:00:30.894+0000] {cursor.py:1032} INFO - query: [CREATE  TABLE IF NOT EXISTS "sewpkscfas" ("investigation_id" TEXT, "nhtsa_action...]
+[2025-12-07T02:00:31.191+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:31.193+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:31.195+0000] {cursor.py:1032} INFO - query: [COPY INTO "sewpkscfas" /* Python:snowflake.connector.pandas_tools.write_pandas()...]
+[2025-12-07T02:00:32.118+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:32.122+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:32.124+0000] {cursor.py:1032} INFO - query: [DROP TABLE IF EXISTS "FACT_INVESTIGATIONS" /* Python:snowflake.connector.pandas_...]
+[2025-12-07T02:00:32.314+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:32.315+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:32.316+0000] {cursor.py:1032} INFO - query: [ALTER TABLE "sewpkscfas" RENAME TO "FACT_INVESTIGATIONS" /* Python:snowflake.con...]
+[2025-12-07T02:00:32.446+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T02:00:32.448+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T02:00:32.449+0000] {logging_mixin.py:154} INFO - ✅ Loaded 89 rows into AUTOMOTIVE_AI.NHTSA.FACT_INVESTIGATIONS
+[2025-12-07T02:00:32.450+0000] {connection.py:734} INFO - closed
+[2025-12-07T02:00:32.507+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2025-12-07T02:00:32.581+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T02:00:32.583+0000] {logging_mixin.py:154} INFO - ✅ All NHTSA datasets loaded to Snowflake
+[2025-12-07T02:00:32.584+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T02:00:32.588+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-07T02:00:32.630+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=load_nhtsa_to_snowflake, execution_date=20251207T015544, start_date=20251207T015958, end_date=20251207T020032
+[2025-12-07T02:00:32.735+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-07T02:00:32.771+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

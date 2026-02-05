@@ -1,0 +1,67 @@
+[2025-12-09T06:25:53.608+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.load_events_to_snowflake manual__2025-12-09T06:24:12.320628+00:00 [queued]>
+[2025-12-09T06:25:53.628+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.load_events_to_snowflake manual__2025-12-09T06:24:12.320628+00:00 [queued]>
+[2025-12-09T06:25:53.631+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-12-09T06:25:53.660+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_events_to_snowflake> on 2025-12-09 06:24:12.320628+00:00
+[2025-12-09T06:25:53.677+0000] {standard_task_runner.py:57} INFO - Started process 687 to run task
+[2025-12-09T06:25:53.684+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_daily_scraper', 'load_events_to_snowflake', 'manual__2025-12-09T06:24:12.320628+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/news_scrapper.py', '--cfg-path', '/tmp/tmpd6gxja9b']
+[2025-12-09T06:25:53.695+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask load_events_to_snowflake
+[2025-12-09T06:25:53.807+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_daily_scraper.load_events_to_snowflake manual__2025-12-09T06:24:12.320628+00:00 [running]> on host 74c4cbde2083
+[2025-12-09T06:25:53.933+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='autoinsight' AIRFLOW_CTX_DAG_ID='autoinsight_daily_scraper' AIRFLOW_CTX_TASK_ID='load_events_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T06:24:12.320628+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-09T06:24:12.320628+00:00'
+[2025-12-09T06:25:53.935+0000] {news_scrapper.py:147} INFO - ============================================================
+[2025-12-09T06:25:53.936+0000] {news_scrapper.py:148} INFO - TASK: Loading Events to Snowflake
+[2025-12-09T06:25:53.963+0000] {snowflake_loader.py:43} INFO - Connecting to Snowflake...
+[2025-12-09T06:25:53.964+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-09T06:25:53.966+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-09T06:25:55.358+0000] {snowflake_loader.py:45} INFO - ✓ Connected to AUTOMOTIVE_AI.PUBLIC
+[2025-12-09T06:25:55.361+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Canada Congress' AS title...]
+[2025-12-09T06:25:56.298+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:56.301+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Congress' AS title, 'http...]
+[2025-12-09T06:25:56.872+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:56.873+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Europe Congress' AS title...]
+[2025-12-09T06:25:57.439+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:57.440+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Leading Women Conference'...]
+[2025-12-09T06:25:57.992+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:57.994+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Canada Retail Forum' AS t...]
+[2025-12-09T06:25:58.653+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:58.654+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Canada Leading Women Roun...]
+[2025-12-09T06:25:59.342+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:59.345+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Japan Mobility Show' AS t...]
+[2025-12-09T06:25:59.871+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:25:59.873+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Los Angeles auto show' AS...]
+[2025-12-09T06:26:00.568+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:00.571+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Munich auto show' AS titl...]
+[2025-12-09T06:26:01.182+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:01.183+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Shanghai auto show' AS ti...]
+[2025-12-09T06:26:01.901+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:01.905+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'New York auto show' AS ti...]
+[2025-12-09T06:26:02.513+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:02.515+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Chicago auto show' AS tit...]
+[2025-12-09T06:26:03.229+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:03.232+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Toronto auto show' AS tit...]
+[2025-12-09T06:26:03.944+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:03.946+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'NADA Show' AS title, 'htt...]
+[2025-12-09T06:26:04.670+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:04.672+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'CES' AS title, 'https://w...]
+[2025-12-09T06:26:05.242+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:05.246+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Detroit auto show' AS tit...]
+[2025-12-09T06:26:05.895+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:05.897+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Beijing auto show' AS tit...]
+[2025-12-09T06:26:06.609+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:06.611+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Paris auto show' AS title...]
+[2025-12-09T06:26:07.229+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:07.242+0000] {cursor.py:1032} INFO - query: [MERGE INTO AUTOMOTIVE_EVENTS AS target USING ( SELECT 'Geneva auto show' AS titl...]
+[2025-12-09T06:26:08.044+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:08.047+0000] {cursor.py:1032} INFO - query: [COMMIT]
+[2025-12-09T06:26:08.125+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:08.126+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-09T06:26:08.127+0000] {snowflake_loader.py:247} INFO - ✓ Inserted/Updated 19 events in Snowflake
+[2025-12-09T06:26:08.128+0000] {cursor.py:1032} INFO - query: [SELECT COUNT(*) FROM AUTOMOTIVE_EVENTS]
+[2025-12-09T06:26:08.658+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:26:08.660+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-09T06:26:08.663+0000] {connection.py:734} INFO - closed
+[2025-12-09T06:26:08.721+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2025-12-09T06:26:08.778+0000] {snowflake_loader.py:55} INFO - ✓ Disconnected from Snowflake
+[2025-12-09T06:26:08.852+0000] {python.py:194} INFO - Done. Returned value was: Loaded 19 events
+[2025-12-09T06:26:08.889+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_daily_scraper, task_id=load_events_to_snowflake, execution_date=20251209T062412, start_date=20251209T062553, end_date=20251209T062608
+[2025-12-09T06:26:08.964+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-09T06:26:09.015+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

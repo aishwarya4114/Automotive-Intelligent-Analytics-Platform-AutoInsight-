@@ -1,0 +1,48 @@
+[2025-12-06T23:20:47.531+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_complaints manual__2025-12-06T23:20:46.538164+00:00 [queued]>
+[2025-12-06T23:20:47.538+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_complaints manual__2025-12-06T23:20:46.538164+00:00 [queued]>
+[2025-12-06T23:20:47.539+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-06T23:20:47.551+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_complaints> on 2025-12-06 23:20:46.538164+00:00
+[2025-12-06T23:20:47.556+0000] {standard_task_runner.py:57} INFO - Started process 266 to run task
+[2025-12-06T23:20:47.560+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'clean_nhtsa_complaints', 'manual__2025-12-06T23:20:46.538164+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpo_f2eha6']
+[2025-12-06T23:20:47.564+0000] {standard_task_runner.py:85} INFO - Job 124: Subtask clean_nhtsa_complaints
+[2025-12-06T23:20:47.648+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_complaints manual__2025-12-06T23:20:46.538164+00:00 [running]> on host 332f35943d46
+[2025-12-06T23:20:47.754+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='clean_nhtsa_complaints' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T23:20:46.538164+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T23:20:46.538164+00:00'
+[2025-12-06T23:20:47.757+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T23:20:47.757+0000] {logging_mixin.py:154} INFO - CLEANING TASK 3B: NHTSA Complaints
+[2025-12-06T23:20:47.758+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T23:20:48.155+0000] {logging_mixin.py:154} INFO - ❌ NHTSA Complaints Cleaning Failed: No module named 'nltk'
+[2025-12-06T23:20:48.178+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-06T23:20:48.179+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/dags/autoinsight_cleaning_pipeline.py", line 134, in clean_nhtsa_complaints
+    from clean_nhtsa_complaints import main as complaints_clean_main
+[2025-12-06T23:20:48.180+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/clean_nhtsa_complaints.py", line 34, in <module>
+    from sentiment.spark_udfs import add_sentiment_analysis
+[2025-12-06T23:20:48.180+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/sentiment/__init__.py", line 6, in <module>
+    from .analyzer import ComplaintSentimentAnalyzer
+[2025-12-06T23:20:48.181+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/sentiment/analyzer.py", line 6, in <module>
+    from .preprocessor import TextPreprocessor, FeatureExtractor
+[2025-12-06T23:20:48.182+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/sentiment/preprocessor.py", line 7, in <module>
+    import nltk
+[2025-12-06T23:20:48.182+0000] {logging_mixin.py:154} WARNING - ModuleNotFoundError: No module named 'nltk'
+[2025-12-06T23:20:48.184+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 134, in clean_nhtsa_complaints
+    from clean_nhtsa_complaints import main as complaints_clean_main
+  File "/opt/airflow/src/clean_nhtsa_complaints.py", line 34, in <module>
+    from sentiment.spark_udfs import add_sentiment_analysis
+  File "/opt/airflow/src/sentiment/__init__.py", line 6, in <module>
+    from .analyzer import ComplaintSentimentAnalyzer
+  File "/opt/airflow/src/sentiment/analyzer.py", line 6, in <module>
+    from .preprocessor import TextPreprocessor, FeatureExtractor
+  File "/opt/airflow/src/sentiment/preprocessor.py", line 7, in <module>
+    import nltk
+ModuleNotFoundError: No module named 'nltk'
+[2025-12-06T23:20:48.204+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=autoinsight_cleaning_pipeline, task_id=clean_nhtsa_complaints, execution_date=20251206T232046, start_date=20251206T232047, end_date=20251206T232048
+[2025-12-06T23:20:48.222+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 124 for task clean_nhtsa_complaints (No module named 'nltk'; 266)
+[2025-12-06T23:20:48.259+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-06T23:20:48.286+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,19 @@
+[2025-12-10T06:13:06.988+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.scrape_news_articles scheduled__2025-12-09T06:00:00+00:00 [queued]>
+[2025-12-10T06:13:07.001+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.scrape_news_articles scheduled__2025-12-09T06:00:00+00:00 [queued]>
+[2025-12-10T06:13:07.002+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-12-10T06:13:07.026+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): scrape_news_articles> on 2025-12-09 06:00:00+00:00
+[2025-12-10T06:13:07.033+0000] {standard_task_runner.py:57} INFO - Started process 13567 to run task
+[2025-12-10T06:13:07.038+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_daily_scraper', 'scrape_news_articles', 'scheduled__2025-12-09T06:00:00+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/news_scrapper.py', '--cfg-path', '/tmp/tmp9mu8qug2']
+[2025-12-10T06:13:07.043+0000] {standard_task_runner.py:85} INFO - Job 67: Subtask scrape_news_articles
+[2025-12-10T06:13:07.146+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_daily_scraper.scrape_news_articles scheduled__2025-12-09T06:00:00+00:00 [running]> on host 09126cf425ed
+[2025-12-10T06:13:07.561+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='autoinsight' AIRFLOW_CTX_DAG_ID='autoinsight_daily_scraper' AIRFLOW_CTX_TASK_ID='scrape_news_articles' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-09T06:00:00+00:00'
+[2025-12-10T06:13:07.562+0000] {news_scrapper.py:48} INFO - ============================================================
+[2025-12-10T06:13:07.563+0000] {news_scrapper.py:49} INFO - TASK: Scraping News Articles
+[2025-12-10T06:13:07.564+0000] {news_scrapper.py:58} INFO - Fetching articles from AutoNews RSS feed...
+[2025-12-10T06:13:07.564+0000] {scrapper.py:246} INFO - Fetching news from RSS feed...
+[2025-12-10T06:13:07.572+0000] {scrapper.py:336} ERROR - Error fetching RSS: HTTPSConnectionPool(host='www.autonews.com', port=443): Max retries exceeded with url: /arc/outboundfeeds/rss/?outputType=xml (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7e160ea10ed0>: Failed to establish a new connection: [Errno -2] Name or service not known'))
+[2025-12-10T06:13:07.574+0000] {news_scrapper.py:62} WARNING - No articles scraped!
+[2025-12-10T06:13:07.574+0000] {python.py:194} INFO - Done. Returned value was: No articles scraped
+[2025-12-10T06:13:07.615+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_daily_scraper, task_id=scrape_news_articles, execution_date=20251209T060000, start_date=20251210T061306, end_date=20251210T061307
+[2025-12-10T06:13:07.654+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-10T06:40:34.239+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,69 @@
+[2025-12-08T21:51:51.539+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_investigations manual__2025-12-08T21:28:54.281742+00:00 [queued]>
+[2025-12-08T21:51:51.558+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_investigations manual__2025-12-08T21:28:54.281742+00:00 [queued]>
+[2025-12-08T21:51:51.562+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2025-12-08T21:51:51.580+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_investigations> on 2025-12-08 21:28:54.281742+00:00
+[2025-12-08T21:51:51.591+0000] {standard_task_runner.py:57} INFO - Started process 216 to run task
+[2025-12-08T21:51:51.596+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline_v2', 'clean_nhtsa_investigations', 'manual__2025-12-08T21:28:54.281742+00:00', '--job-id', '239', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmppj8n4_ah']
+[2025-12-08T21:51:51.610+0000] {standard_task_runner.py:85} INFO - Job 239: Subtask clean_nhtsa_investigations
+[2025-12-08T21:51:51.764+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_investigations manual__2025-12-08T21:28:54.281742+00:00 [running]> on host 45f471f9d25e
+[2025-12-08T21:51:51.935+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline_v2' AIRFLOW_CTX_TASK_ID='clean_nhtsa_investigations' AIRFLOW_CTX_EXECUTION_DATE='2025-12-08T21:28:54.281742+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-08T21:28:54.281742+00:00'
+[2025-12-08T21:51:51.940+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T21:51:51.941+0000] {logging_mixin.py:154} INFO - CLEANING TASK: NHTSA Investigations
+[2025-12-08T21:51:51.941+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T21:51:52.354+0000] {logging_mixin.py:154} INFO - 
+🚀 Starting NHTSA Investigations Cleaning
+[2025-12-08T21:51:52.355+0000] {logging_mixin.py:154} INFO - 🔧 Running in LOCAL mode
+[2025-12-08T21:51:52.355+0000] {logging_mixin.py:154} INFO - 📦 Loading AWS S3 connectors...
+[2025-12-08T21:51:59.857+0000] {logging_mixin.py:154} INFO - ❌ NHTSA Investigations Failed: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2025-12-08T21:51:59.866+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-08T21:51:59.869+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/dags/autoinsight_cleaning_pipeline.py", line 88, in run_cleaning_task
+    main()
+[2025-12-08T21:51:59.870+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/clean_nhtsa_investigation.py", line 364, in main
+    spark = builder.getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^
+[2025-12-08T21:51:59.872+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-08T21:51:59.883+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+[2025-12-08T21:51:59.895+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+[2025-12-08T21:51:59.898+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+[2025-12-08T21:51:59.903+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+[2025-12-08T21:51:59.906+0000] {logging_mixin.py:154} WARNING - pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2025-12-08T21:51:59.909+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 128, in clean_nhtsa_investigations
+    return run_cleaning_task('clean_nhtsa_investigation', 'NHTSA Investigations', **context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 88, in run_cleaning_task
+    main()
+  File "/opt/airflow/src/clean_nhtsa_investigation.py", line 364, in main
+    spark = builder.getOrCreate()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/sql/session.py", line 497, in getOrCreate
+    sc = SparkContext.getOrCreate(sparkConf)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/context.py", line 515, in getOrCreate
+    SparkContext(conf=conf or SparkConf())
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/context.py", line 201, in __init__
+    SparkContext._ensure_initialized(self, gateway=gateway, conf=conf)
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/context.py", line 436, in _ensure_initialized
+    SparkContext._gateway = gateway or launch_gateway(conf)
+                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/java_gateway.py", line 107, in launch_gateway
+    raise PySparkRuntimeError(
+pyspark.errors.exceptions.base.PySparkRuntimeError: [JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.
+[2025-12-08T21:51:59.943+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=autoinsight_cleaning_pipeline_v2, task_id=clean_nhtsa_investigations, execution_date=20251208T212854, start_date=20251208T215151, end_date=20251208T215159
+[2025-12-08T21:51:59.975+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 239 for task clean_nhtsa_investigations ([JAVA_GATEWAY_EXITED] Java gateway process exited before sending its port number.; 216)
+[2025-12-08T21:52:00.004+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-08T21:52:00.066+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

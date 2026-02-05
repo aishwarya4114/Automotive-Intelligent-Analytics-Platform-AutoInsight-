@@ -1,0 +1,199 @@
+[2025-12-07T00:05:43.814+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_complaints manual__2025-12-06T23:20:46.538164+00:00 [queued]>
+[2025-12-07T00:05:43.829+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_complaints manual__2025-12-06T23:20:46.538164+00:00 [queued]>
+[2025-12-07T00:05:43.830+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 5
+[2025-12-07T00:05:43.848+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_complaints> on 2025-12-06 23:20:46.538164+00:00
+[2025-12-07T00:05:43.854+0000] {standard_task_runner.py:57} INFO - Started process 5972 to run task
+[2025-12-07T00:05:43.858+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'clean_nhtsa_complaints', 'manual__2025-12-06T23:20:46.538164+00:00', '--job-id', '143', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpxjhq9w32']
+[2025-12-07T00:05:43.861+0000] {standard_task_runner.py:85} INFO - Job 143: Subtask clean_nhtsa_complaints
+[2025-12-07T00:05:43.931+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_complaints manual__2025-12-06T23:20:46.538164+00:00 [running]> on host 3bdfb183f13f
+[2025-12-07T00:05:44.019+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='clean_nhtsa_complaints' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T23:20:46.538164+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T23:20:46.538164+00:00'
+[2025-12-07T00:05:44.021+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T00:05:44.021+0000] {logging_mixin.py:154} INFO - CLEANING TASK 3B: NHTSA Complaints
+[2025-12-07T00:05:44.022+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T00:05:50.123+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T00:05:50.123+0000] {logging_mixin.py:154} INFO - NHTSA COMPLAINTS CLEANING WITH SENTIMENT ANALYSIS
+[2025-12-07T00:05:50.124+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T00:05:50.124+0000] {logging_mixin.py:154} INFO - Running in LOCAL mode
+[2025-12-07T00:05:50.124+0000] {logging_mixin.py:154} INFO - Loading AWS S3 connectors...
+[2025-12-07T00:05:58.415+0000] {logging_mixin.py:154} INFO - Input: s3a://autoinsightfinal/nhtsa/raw/complaints/*.csv
+[2025-12-07T00:05:58.416+0000] {logging_mixin.py:154} INFO - Output: s3a://autoinsightfinal/nhtsa/cleaned/complaints/parquet/
+[2025-12-07T00:05:58.416+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T00:05:58.417+0000] {logging_mixin.py:154} INFO - NHTSA COMPLAINTS - SPARK CLEANING PIPELINE WITH SENTIMENT
+[2025-12-07T00:05:58.418+0000] {logging_mixin.py:154} INFO - Input: 2020-2025 data (pre-filtered)
+[2025-12-07T00:05:58.418+0000] {logging_mixin.py:154} INFO - Target: Top 15 manufacturers
+[2025-12-07T00:05:58.419+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with sentiment analysis
+[2025-12-07T00:05:58.420+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T00:05:58.420+0000] {logging_mixin.py:154} INFO - 
+Reading raw data from: s3a://autoinsightfinal/nhtsa/raw/complaints/*.csv
+[2025-12-07T00:06:31.619+0000] {logging_mixin.py:154} INFO -   Loaded 227,011 records
+[2025-12-07T00:06:31.620+0000] {logging_mixin.py:154} INFO -   Initial columns: 50
+[2025-12-07T00:06:31.621+0000] {logging_mixin.py:154} INFO - 
+Step 1: Standardizing manufacturer names...
+[2025-12-07T00:06:32.165+0000] {logging_mixin.py:154} INFO - 
+Step 2: Filtering to top 15 manufacturers...
+[2025-12-07T00:06:43.194+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-07T00:07:02.547+0000] {logging_mixin.py:154} INFO -   ✓ Kept 226,993 records from top 15 manufacturers
+[2025-12-07T00:07:02.548+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 11 records from other manufacturers
+[2025-12-07T00:07:02.549+0000] {logging_mixin.py:154} INFO - 
+Step 3: Validating YEAR field...
+[2025-12-07T00:07:02.667+0000] {logging_mixin.py:154} INFO - 
+Step 4: Cleaning MODEL field...
+[2025-12-07T00:07:02.853+0000] {logging_mixin.py:154} INFO - 
+Step 5: Cleaning date fields...
+[2025-12-07T00:07:02.960+0000] {logging_mixin.py:154} INFO - 
+Step 6: Converting Y/N fields to boolean...
+[2025-12-07T00:07:03.330+0000] {logging_mixin.py:154} INFO - 
+Step 7: Converting numeric fields...
+[2025-12-07T00:07:03.529+0000] {logging_mixin.py:154} INFO - 
+Step 8: Cleaning text fields...
+[2025-12-07T00:07:03.951+0000] {logging_mixin.py:154} INFO - 
+Step 9: Creating severity level...
+[2025-12-07T00:07:04.041+0000] {logging_mixin.py:154} INFO - 
+Step 10: Adding data quality flags...
+[2025-12-07T00:07:04.077+0000] {logging_mixin.py:154} INFO - 
+Step 11: Removing duplicates...
+[2025-12-07T00:07:23.896+0000] {logging_mixin.py:154} INFO -   Removed 0 duplicate records
+[2025-12-07T00:07:23.896+0000] {logging_mixin.py:154} INFO - 
+Step 12: Standardizing column names for Snowflake...
+[2025-12-07T00:07:24.009+0000] {logging_mixin.py:154} INFO - 
+Step 13: Creating standardized vehicle_id...
+[2025-12-07T00:07:24.154+0000] {logging_mixin.py:154} INFO - 
+Step 14: Adding metadata...
+[2025-12-07T00:07:24.238+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T00:07:24.240+0000] {logging_mixin.py:154} INFO - Step 15: Applying Custom Sentiment Analysis
+[2025-12-07T00:07:24.241+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T00:07:24.242+0000] {logging_mixin.py:154} INFO - This will add 6 new columns:
+[2025-12-07T00:07:24.242+0000] {logging_mixin.py:154} INFO -   - sentiment_score
+[2025-12-07T00:07:24.243+0000] {logging_mixin.py:154} INFO -   - sentiment_label
+[2025-12-07T00:07:24.244+0000] {logging_mixin.py:154} INFO -   - sentiment_confidence
+[2025-12-07T00:07:24.245+0000] {logging_mixin.py:154} INFO -   - complaint_embedding
+[2025-12-07T00:07:24.245+0000] {logging_mixin.py:154} INFO -   - negation_count
+[2025-12-07T00:07:24.246+0000] {logging_mixin.py:154} INFO -   - safety_keyword_count
+[2025-12-07T00:07:24.247+0000] {spark_udfs.py:114} INFO - 🤖 Adding sentiment analysis to column: CDESCR_clean
+[2025-12-07T00:07:24.247+0000] {spark_udfs.py:115} INFO -    Embeddings: True
+[2025-12-07T00:07:24.248+0000] {spark_udfs.py:116} INFO -    Features: True
+[2025-12-07T00:07:24.402+0000] {spark_udfs.py:125} INFO -    Generating 768-dim embeddings...
+[2025-12-07T00:07:24.457+0000] {spark_udfs.py:130} INFO -    Extracting linguistic features...
+[2025-12-07T00:07:24.539+0000] {spark_udfs.py:134} INFO - ✅ Sentiment analysis complete!
+[2025-12-07T00:07:24.540+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T00:07:24.541+0000] {logging_mixin.py:154} INFO - Step 16: Creating Sentiment Categories
+[2025-12-07T00:07:24.541+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T00:07:24.613+0000] {logging_mixin.py:154} INFO - 
+📊 Sentiment Distribution:
+[2025-12-07T00:08:16.723+0000] {clientserver.py:538} INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+[2025-12-07T00:08:16.759+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2025-12-07T00:08:16.762+0000] {java_gateway.py:1055} ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[2025-12-07T00:08:16.773+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2025-12-07T00:08:16.774+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2025-12-07T00:08:16.777+0000] {logging_mixin.py:154} INFO -    (Distribution will be calculated after processing)
+[2025-12-07T00:08:16.781+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2025-12-07T00:08:16.790+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T00:08:16.792+0000] {logging_mixin.py:154} INFO - Step 17: Selecting Final Columns (Snowflake-ready)
+[2025-12-07T00:08:16.793+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T00:08:16.797+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2025-12-07T00:08:16.801+0000] {logging_mixin.py:154} INFO - ❌ NHTSA Complaints Cleaning Failed: [Errno 111] Connection refused
+[2025-12-07T00:08:16.872+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-07T00:08:16.882+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/dags/autoinsight_cleaning_pipeline.py", line 136, in clean_nhtsa_complaints
+    result = complaints_clean_main()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.918+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/clean_nhtsa_complaints.py", line 504, in main
+    df_clean = clean_complaints(spark, INPUT_PATH, OUTPUT_PATH)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.941+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/clean_nhtsa_complaints.py", line 332, in clean_complaints
+    col('complaint_id'),
+    ^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.958+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/sql/utils.py", line 174, in wrapped
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.964+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/sql/functions.py", line 223, in col
+    return _invoke_function("col", col)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.972+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/sql/functions.py", line 96, in _invoke_function
+    jf = _get_jvm_function(name, SparkContext._active_spark_context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.977+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/sql/functions.py", line 87, in _get_jvm_function
+    return getattr(sc._jvm.functions, name)
+                   ^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.982+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1712, in __getattr__
+    answer = self._gateway_client.send_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:16.989+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1036, in send_command
+    connection = self._get_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:17.001+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 284, in _get_connection
+    connection = self._create_new_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T00:08:17.005+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 291, in _create_new_connection
+    connection.connect_to_java_server()
+[2025-12-07T00:08:17.024+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 438, in connect_to_java_server
+    self.socket.connect((self.java_address, self.java_port))
+[2025-12-07T00:08:17.043+0000] {logging_mixin.py:154} WARNING - ConnectionRefusedError: [Errno 111] Connection refused
+[2025-12-07T00:08:17.048+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 136, in clean_nhtsa_complaints
+    result = complaints_clean_main()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/clean_nhtsa_complaints.py", line 504, in main
+    df_clean = clean_complaints(spark, INPUT_PATH, OUTPUT_PATH)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/clean_nhtsa_complaints.py", line 332, in clean_complaints
+    col('complaint_id'),
+    ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/sql/utils.py", line 174, in wrapped
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/sql/functions.py", line 223, in col
+    return _invoke_function("col", col)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/sql/functions.py", line 96, in _invoke_function
+    jf = _get_jvm_function(name, SparkContext._active_spark_context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/sql/functions.py", line 87, in _get_jvm_function
+    return getattr(sc._jvm.functions, name)
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1712, in __getattr__
+    answer = self._gateway_client.send_command(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1036, in send_command
+    connection = self._get_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 284, in _get_connection
+    connection = self._create_new_connection()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 291, in _create_new_connection
+    connection.connect_to_java_server()
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/clientserver.py", line 438, in connect_to_java_server
+    self.socket.connect((self.java_address, self.java_port))
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-12-07T00:08:17.295+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=autoinsight_cleaning_pipeline, task_id=clean_nhtsa_complaints, execution_date=20251206T232046, start_date=20251207T000543, end_date=20251207T000817
+[2025-12-07T00:08:17.332+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 143 for task clean_nhtsa_complaints ([Errno 111] Connection refused; 5972)
+[2025-12-07T00:08:17.396+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-07T00:08:17.505+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,135 @@
+[2025-12-07T01:15:31.758+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_recalls manual__2025-12-07T01:15:30.295033+00:00 [queued]>
+[2025-12-07T01:15:31.769+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_recalls manual__2025-12-07T01:15:30.295033+00:00 [queued]>
+[2025-12-07T01:15:31.771+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-07T01:15:31.795+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_recalls> on 2025-12-07 01:15:30.295033+00:00
+[2025-12-07T01:15:31.801+0000] {standard_task_runner.py:57} INFO - Started process 251 to run task
+[2025-12-07T01:15:31.806+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'clean_nhtsa_recalls', 'manual__2025-12-07T01:15:30.295033+00:00', '--job-id', '149', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpkfpql523']
+[2025-12-07T01:15:31.810+0000] {standard_task_runner.py:85} INFO - Job 149: Subtask clean_nhtsa_recalls
+[2025-12-07T01:15:31.900+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_recalls manual__2025-12-07T01:15:30.295033+00:00 [running]> on host fb35e4f278df
+[2025-12-07T01:15:32.014+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='clean_nhtsa_recalls' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T01:15:30.295033+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T01:15:30.295033+00:00'
+[2025-12-07T01:15:32.016+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:15:32.017+0000] {logging_mixin.py:154} INFO - CLEANING TASK 3A: NHTSA Recalls
+[2025-12-07T01:15:32.019+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:15:32.216+0000] {logging_mixin.py:154} INFO - 
+Starting NHTSA Recalls Cleaning
+[2025-12-07T01:15:32.217+0000] {logging_mixin.py:154} INFO - Running in LOCAL mode
+[2025-12-07T01:15:32.218+0000] {logging_mixin.py:154} INFO - Loading AWS S3 connectors...
+[2025-12-07T01:15:46.936+0000] {logging_mixin.py:154} INFO - Input: s3a://autoinsightfinal/nhtsa/raw/recalls/*.csv
+[2025-12-07T01:15:46.938+0000] {logging_mixin.py:154} INFO - Output: s3a://autoinsightfinal/nhtsa/cleaned_new/recalls/parquet/
+[2025-12-07T01:15:46.939+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:15:46.939+0000] {logging_mixin.py:154} INFO - NHTSA RECALLS - SPARK CLEANING PIPELINE
+[2025-12-07T01:15:46.940+0000] {logging_mixin.py:154} INFO - Input: 2020-2025 data (pre-filtered)
+[2025-12-07T01:15:46.940+0000] {logging_mixin.py:154} INFO - Target: Top 15 manufacturers
+[2025-12-07T01:15:46.941+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with standardized columns
+[2025-12-07T01:15:46.942+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:15:46.949+0000] {logging_mixin.py:154} INFO - 
+Reading raw data from: s3a://autoinsightfinal/nhtsa/raw/recalls/*.csv
+[2025-12-07T01:16:19.576+0000] {logging_mixin.py:154} INFO -   Loaded 230,540 records (includes duplicate documents)
+[2025-12-07T01:16:19.653+0000] {logging_mixin.py:154} INFO -   Columns: 6
+[2025-12-07T01:16:19.654+0000] {logging_mixin.py:154} INFO - 
+Step 0: Normalizing column names...
+[2025-12-07T01:16:19.725+0000] {logging_mixin.py:154} INFO -   Column names normalized (spaces removed)
+[2025-12-07T01:16:19.727+0000] {logging_mixin.py:154} INFO - 
+Step 1: Cleaning NHTSA_ID...
+[2025-12-07T01:16:19.780+0000] {logging_mixin.py:154} INFO - 
+Step 2: Extracting document type...
+[2025-12-07T01:16:19.891+0000] {logging_mixin.py:154} INFO - 
+Step 3: Standardizing manufacturer names...
+[2025-12-07T01:16:20.415+0000] {logging_mixin.py:154} INFO - 
+Step 4: Filtering to top 15 manufacturers...
+[2025-12-07T01:16:20.465+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-07T01:16:40.340+0000] {logging_mixin.py:154} INFO -   ✓ Kept 117,696 records from top 15 manufacturers
+[2025-12-07T01:16:40.342+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 112,844 records from other manufacturers
+[2025-12-07T01:16:40.343+0000] {logging_mixin.py:154} INFO - 
+Step 5: Cleaning MODEL_YEAR...
+[2025-12-07T01:16:40.627+0000] {logging_mixin.py:154} INFO - 
+Step 6: Cleaning MODEL field...
+[2025-12-07T01:16:41.124+0000] {logging_mixin.py:154} INFO - 
+Step 7: Cleaning SUMMARY field...
+[2025-12-07T01:16:41.557+0000] {logging_mixin.py:154} INFO - 
+Step 8: Deduplicating recalls (same recall, multiple documents)...
+[2025-12-07T01:16:59.888+0000] {logging_mixin.py:154} INFO -   Removed 48,110 duplicate documents
+[2025-12-07T01:16:59.893+0000] {logging_mixin.py:154} INFO -   Unique recalls: 1,210
+[2025-12-07T01:16:59.895+0000] {logging_mixin.py:154} INFO - 
+Step 9: Adding data quality flags...
+[2025-12-07T01:17:00.038+0000] {logging_mixin.py:154} INFO - 
+Step 10: Standardizing column names for Snowflake...
+[2025-12-07T01:17:00.136+0000] {logging_mixin.py:154} INFO - 
+Step 11: Creating standardized vehicle_id...
+[2025-12-07T01:17:00.401+0000] {logging_mixin.py:154} INFO - 
+Step 12: Adding metadata...
+[2025-12-07T01:17:00.496+0000] {logging_mixin.py:154} INFO - 
+Step 13: Selecting final columns (Snowflake-ready)...
+[2025-12-07T01:17:09.830+0000] {logging_mixin.py:154} INFO - 
+Cleaning Summary:
+[2025-12-07T01:17:09.835+0000] {logging_mixin.py:154} INFO -   Initial records: 230,540
+[2025-12-07T01:17:09.836+0000] {logging_mixin.py:154} INFO -   Final records: 1,210
+[2025-12-07T01:17:09.837+0000] {logging_mixin.py:154} INFO -   Deduplication rate: 99.5%
+[2025-12-07T01:17:09.838+0000] {logging_mixin.py:154} INFO - 
+  Top Manufacturers:
+[2025-12-07T01:17:23.402+0000] {logging_mixin.py:154} INFO -     Ford: 283
+[2025-12-07T01:17:23.403+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz: 160
+[2025-12-07T01:17:23.406+0000] {logging_mixin.py:154} INFO -     BMW: 122
+[2025-12-07T01:17:23.410+0000] {logging_mixin.py:154} INFO -     Chevrolet: 107
+[2025-12-07T01:17:23.413+0000] {logging_mixin.py:154} INFO -     Jeep: 76
+[2025-12-07T01:17:23.414+0000] {logging_mixin.py:154} INFO -     Volkswagen: 72
+[2025-12-07T01:17:23.415+0000] {logging_mixin.py:154} INFO -     Honda: 69
+[2025-12-07T01:17:23.416+0000] {logging_mixin.py:154} INFO -     Nissan: 69
+[2025-12-07T01:17:23.417+0000] {logging_mixin.py:154} INFO -     Kia: 68
+[2025-12-07T01:17:23.418+0000] {logging_mixin.py:154} INFO -     Hyundai: 65
+[2025-12-07T01:17:23.418+0000] {logging_mixin.py:154} INFO -     Toyota: 64
+[2025-12-07T01:17:23.419+0000] {logging_mixin.py:154} INFO -     Subaru: 26
+[2025-12-07T01:17:23.422+0000] {logging_mixin.py:154} INFO -     GMC: 14
+[2025-12-07T01:17:23.423+0000] {logging_mixin.py:154} INFO -     Tesla: 9
+[2025-12-07T01:17:23.425+0000] {logging_mixin.py:154} INFO -     Mazda: 6
+[2025-12-07T01:17:23.426+0000] {logging_mixin.py:154} INFO - 
+  Recalls by Year:
+[2025-12-07T01:17:28.455+0000] {logging_mixin.py:154} INFO -     2020: 360
+[2025-12-07T01:17:28.456+0000] {logging_mixin.py:154} INFO -     2021: 255
+[2025-12-07T01:17:28.457+0000] {logging_mixin.py:154} INFO -     2022: 224
+[2025-12-07T01:17:28.457+0000] {logging_mixin.py:154} INFO -     2023: 168
+[2025-12-07T01:17:28.458+0000] {logging_mixin.py:154} INFO -     2024: 136
+[2025-12-07T01:17:28.459+0000] {logging_mixin.py:154} INFO -     2025: 51
+[2025-12-07T01:17:28.460+0000] {logging_mixin.py:154} INFO - 
+Preparing to write cleaned data...
+[2025-12-07T01:17:28.677+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/recalls/parquet/
+[2025-12-07T01:17:28.678+0000] {logging_mixin.py:154} INFO - Writing cleaned data to: s3a://autoinsightfinal/nhtsa/cleaned_new/recalls/parquet/
+[2025-12-07T01:18:04.018+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/recalls/csv/
+[2025-12-07T01:18:04.020+0000] {logging_mixin.py:154} INFO - Writing CSV to: s3a://autoinsightfinal/nhtsa/cleaned_new/recalls/csv/
+[2025-12-07T01:18:31.568+0000] {logging_mixin.py:154} INFO - 
+Recalls cleaning complete!
+[2025-12-07T01:18:31.570+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:18:31.571+0000] {logging_mixin.py:154} INFO - 
+Sample of cleaned data (Snowflake-ready):
+[2025-12-07T01:18:40.388+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+---------------+---------+----------------------+----+
+|recall_id                                                       |nhtsa_recall_id|make     |model                 |year|
++----------------------------------------------------------------+---------------+---------+----------------------+----+
+|7b04eaaedc786244575299301eb339954ecab250026c548080ed4287f50dd78b|20E013         |BMW      |BRAKE FLUID RES. COVER|NULL|
+|19e54cb7d39467781a9c4d459c396197ccd88a367f9618a3c5cf4056c29ee378|20E068         |Honda    |HARD TONNEAU COVERS   |NULL|
+|f96cce94d73c27b4a7beac6739dfaf2beb83c25223ffebc074997519f6d3c9e3|20E069         |Ford     |BRAKE PEDAL BRACKET   |NULL|
+|e61d062f028f08a4be617aaa9eaede157494768865540fd0d511f0b165714b8d|20E090         |Ford     |F-250 SD              |2020|
+|8483ac1e86c8c1ea3a9ab6b2e00cd9c0336405b5a2e4a34637442b25b3e7c0f7|20V022         |Hyundai  |KONA                  |2020|
+|bc5b27b544dcf77eb36b5b2101200c549bd5273af1c5e87c418326900adcb000|20V025         |Chevrolet|4500HD                |2020|
+|ca59c5e537498a1472ca49b7e6911d677aab91306be8fec23bae0e503b065cd2|20V042         |Jeep     |WRANGLER              |2020|
+|0270ad16480c5c51b9e355a3a33b77830978950b4c3a5db59fcdfd28e2d483bd|20V052         |BMW      |X7                    |2020|
+|6d708c80ba2e740c29b6126a3585027ae3d4571238b6a362c72cee74ef773b44|20V064         |Toyota   |AVALON HYBRID         |2020|
+|344e0e7bb65bcdbbc330a74262a420f9950a1284fb217d1df3c5284157f22c5e|20V066         |Honda    |ODYSSEY               |2020|
++----------------------------------------------------------------+---------------+---------+----------------------+----+
+only showing top 10 rows
+[2025-12-07T01:18:40.389+0000] {logging_mixin.py:154} INFO - 
+Vehicle ID verification (first 5):
+[2025-12-07T01:18:43.340+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+-------+----------------------+----+
+|vehicle_id                                                      |make   |model                 |year|
++----------------------------------------------------------------+-------+----------------------+----+
+|6ac89c27282a32097dca9d5819ec14255ba1a6882f775b47bafeb3775214e17f|BMW    |BRAKE FLUID RES. COVER|NULL|
+|8ddd50e17267346d602b4c39c90932c8afd54a116493d89b0a10c585c2d8326f|Honda  |HARD TONNEAU COVERS   |NULL|
+|2cfcba4743921830d8b6bca7b8baebfaf6f9fe014f1efcb754d55a675b084548|Ford   |BRAKE PEDAL BRACKET   |NULL|
+|571819e453bfab394c179198cfce05a2929dade1068e1c37c1544372f12190b3|Ford   |F-250 SD              |2020|
+|b403b88abd7df00ba59be2b364126671ad9bf7163f09a6a2e70168f032bab6a7|Hyundai|KONA                  |2020|
++----------------------------------------------------------------+-------+----------------------+----+
+only showing top 5 rows
+[2025-12-07T01:18:43.968+0000] {logging_mixin.py:154} INFO - ✅ NHTSA Recalls Cleaning Complete
+[2025-12-07T01:18:44.000+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-07T01:18:44.041+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=clean_nhtsa_recalls, execution_date=20251207T011530, start_date=20251207T011531, end_date=20251207T011844
+[2025-12-07T01:18:44.119+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-07T01:18:44.166+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

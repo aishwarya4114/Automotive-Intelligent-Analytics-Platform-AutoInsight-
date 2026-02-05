@@ -1,0 +1,126 @@
+[2025-12-07T01:55:45.710+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_investigations manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T01:55:45.724+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_investigations manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T01:55:45.726+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-07T01:55:45.746+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_investigations> on 2025-12-07 01:55:44.575398+00:00
+[2025-12-07T01:55:45.753+0000] {standard_task_runner.py:57} INFO - Started process 241 to run task
+[2025-12-07T01:55:45.761+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'clean_nhtsa_investigations', 'manual__2025-12-07T01:55:44.575398+00:00', '--job-id', '164', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpal0dk5al']
+[2025-12-07T01:55:45.767+0000] {standard_task_runner.py:85} INFO - Job 164: Subtask clean_nhtsa_investigations
+[2025-12-07T01:55:45.866+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.clean_nhtsa_investigations manual__2025-12-07T01:55:44.575398+00:00 [running]> on host fb35e4f278df
+[2025-12-07T01:55:45.996+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='clean_nhtsa_investigations' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T01:55:44.575398+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T01:55:44.575398+00:00'
+[2025-12-07T01:55:45.999+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:55:46.000+0000] {logging_mixin.py:154} INFO - CLEANING TASK 3D: NHTSA Investigations
+[2025-12-07T01:55:46.001+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:55:46.150+0000] {logging_mixin.py:154} INFO - 
+🚀 Starting NHTSA Investigations Cleaning
+[2025-12-07T01:55:46.151+0000] {logging_mixin.py:154} INFO - 🔧 Running in LOCAL mode
+[2025-12-07T01:55:46.151+0000] {logging_mixin.py:154} INFO - 📦 Loading AWS S3 connectors...
+[2025-12-07T01:56:02.129+0000] {logging_mixin.py:154} INFO - 📥 Input: s3a://autoinsightfinal/nhtsa/raw/investigations/*.csv
+[2025-12-07T01:56:02.131+0000] {logging_mixin.py:154} INFO - 📤 Output: s3a://autoinsightfinal/nhtsa/cleaned_new/investigations/parquet/
+[2025-12-07T01:56:02.132+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:56:02.133+0000] {logging_mixin.py:154} INFO - NHTSA INVESTIGATIONS - SPARK CLEANING PIPELINE
+[2025-12-07T01:56:02.134+0000] {logging_mixin.py:154} INFO - Input: 2020-2025 data (pre-filtered)
+[2025-12-07T01:56:02.135+0000] {logging_mixin.py:154} INFO - Target: Top 15 manufacturers
+[2025-12-07T01:56:02.136+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with standardized columns
+[2025-12-07T01:56:02.136+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:56:02.137+0000] {logging_mixin.py:154} INFO - 
+📥 Reading raw data from: s3a://autoinsightfinal/nhtsa/raw/investigations/*.csv
+[2025-12-07T01:56:25.172+0000] {logging_mixin.py:154} INFO -   ✓ Loaded 1,307 records (2020-2025)
+[2025-12-07T01:56:25.175+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 1: Standardizing manufacturer names...
+[2025-12-07T01:56:26.119+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 2: Filtering to top 15 manufacturers...
+[2025-12-07T01:56:26.131+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-07T01:56:30.534+0000] {logging_mixin.py:154} INFO -   ✓ Kept 1,307 records from top 15 manufacturers
+[2025-12-07T01:56:30.538+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 0 records from other manufacturers
+[2025-12-07T01:56:30.539+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 3: Validating YEAR field...
+[2025-12-07T01:56:30.798+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 4: Cleaning date fields...
+[2025-12-07T01:56:31.205+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 5: Cleaning text fields...
+[2025-12-07T01:56:32.296+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 6: Normalizing component names...
+[2025-12-07T01:56:32.677+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 7: Creating calculated fields...
+[2025-12-07T01:56:32.852+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 8: Processing campaign numbers...
+[2025-12-07T01:56:32.969+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 9: Adding data quality flags...
+[2025-12-07T01:56:33.074+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 10: Removing duplicates...
+[2025-12-07T01:56:40.358+0000] {logging_mixin.py:154} INFO -   ✓ Removed 1,218 duplicate records
+[2025-12-07T01:56:40.361+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 11: Standardizing column names for Snowflake...
+[2025-12-07T01:56:40.521+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 12: Creating standardized vehicle_id...
+[2025-12-07T01:56:40.712+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 13: Adding metadata...
+[2025-12-07T01:56:40.807+0000] {logging_mixin.py:154} INFO - 
+🔧 Step 14: Selecting final columns (Snowflake-ready)...
+[2025-12-07T01:56:42.934+0000] {logging_mixin.py:154} INFO - 
+📊 Cleaning Summary:
+[2025-12-07T01:56:42.935+0000] {logging_mixin.py:154} INFO -   Initial records: 1,307
+[2025-12-07T01:56:42.935+0000] {logging_mixin.py:154} INFO -   Final records: 89
+[2025-12-07T01:56:42.936+0000] {logging_mixin.py:154} INFO -   Records dropped: 1,218
+[2025-12-07T01:56:42.937+0000] {logging_mixin.py:154} INFO -   Retention rate: 6.8%
+[2025-12-07T01:56:49.269+0000] {logging_mixin.py:154} INFO - 
+  Data Quality:
+[2025-12-07T01:56:49.276+0000] {logging_mixin.py:154} INFO -     Missing critical data: 0
+[2025-12-07T01:56:49.277+0000] {logging_mixin.py:154} INFO -     Date inconsistencies: 0
+[2025-12-07T01:56:49.278+0000] {logging_mixin.py:154} INFO -     Open investigations: 89
+[2025-12-07T01:56:49.279+0000] {logging_mixin.py:154} INFO - 
+  Top Manufacturers:
+[2025-12-07T01:56:54.433+0000] {logging_mixin.py:154} INFO -     Ford: 20
+[2025-12-07T01:56:54.435+0000] {logging_mixin.py:154} INFO -     Honda: 16
+[2025-12-07T01:56:54.437+0000] {logging_mixin.py:154} INFO -     Tesla: 16
+[2025-12-07T01:56:54.438+0000] {logging_mixin.py:154} INFO -     Hyundai: 7
+[2025-12-07T01:56:54.438+0000] {logging_mixin.py:154} INFO -     Jeep: 6
+[2025-12-07T01:56:54.439+0000] {logging_mixin.py:154} INFO -     Kia: 5
+[2025-12-07T01:56:54.440+0000] {logging_mixin.py:154} INFO -     Chevrolet: 5
+[2025-12-07T01:56:54.440+0000] {logging_mixin.py:154} INFO -     Nissan: 5
+[2025-12-07T01:56:54.443+0000] {logging_mixin.py:154} INFO -     Volkswagen: 4
+[2025-12-07T01:56:54.443+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz: 3
+[2025-12-07T01:56:54.446+0000] {logging_mixin.py:154} INFO -     GMC: 2
+[2025-12-07T01:56:54.447+0000] {logging_mixin.py:154} INFO - 
+💾 Preparing to write cleaned data...
+[2025-12-07T01:56:54.816+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/investigations/parquet/
+[2025-12-07T01:56:54.817+0000] {logging_mixin.py:154} INFO - 💾 Writing cleaned data to: s3a://autoinsightfinal/nhtsa/cleaned_new/investigations/parquet/
+[2025-12-07T01:57:20.721+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/investigations/csv/
+[2025-12-07T01:57:20.722+0000] {logging_mixin.py:154} INFO - 💾 Writing CSV to: s3a://autoinsightfinal/nhtsa/cleaned_new/investigations/csv/
+[2025-12-07T01:57:46.666+0000] {logging_mixin.py:154} INFO - 
+✅ Investigations cleaning complete!
+[2025-12-07T01:57:46.667+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:57:46.668+0000] {logging_mixin.py:154} INFO - 
+📋 Sample of cleaned data (Snowflake-ready):
+[2025-12-07T01:57:48.566+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+-------+-------+----+--------------------+---------+
+|investigation_id                                                |make   |model  |year|investigation_status|open_date|
++----------------------------------------------------------------+-------+-------+----+--------------------+---------+
+|a25f73d1552c05d48d8f2a6b705aad5afa2e58a9c11b16b1e0651726735a642f|Ford   |ESCAPE |2021|OPEN                |NULL     |
+|a1ae882efa46636603d6c82ec53e1d4c35cd349ecc5aeb47da97d9339945baf8|Nissan |ALTIMA |2022|OPEN                |NULL     |
+|8b4f0ade410619dd53ad85e2b3d46f75046c1031fa9c711d81050544ea1e3108|Hyundai|TUCSON |2021|OPEN                |NULL     |
+|7b77b9097e637ae47767f87517b2813f800bed0ad5333ffb4939a984ee37b4e6|Kia    |SELTOS |2023|OPEN                |NULL     |
+|55edd3184b9d4a5067f7078ed0e5446d1442f0cb3c9b5ee8cfd8d34864b9a4ee|Tesla  |MODEL 3|2020|OPEN                |NULL     |
+|163d36c92759f9fc6d5994167877af5138a454f0702a7eb93a758ee82fd9f6b6|Ford   |BRONCO |2021|OPEN                |NULL     |
+|1553c66a35104d5cda11d08558aec79c65599b19cd41384eb2872f973196c7d5|Hyundai|SONATA |2021|OPEN                |NULL     |
+|f21714cc30c36c0e3537314606abd2c3d2b904b38d3eb2af7fb78f253cca318b|Nissan |LEAF   |2021|OPEN                |NULL     |
+|bccdd6f8c50064f919d2b173db8383157bbdc10829a45123a60f8232edd0b45f|Tesla  |MODEL Y|2023|OPEN                |NULL     |
+|642b9135383197481e5af1c4e72c3e74497adfde318ba29a84d344e8e6f68d94|Tesla  |MODEL Y|2021|OPEN                |NULL     |
++----------------------------------------------------------------+-------+-------+----+--------------------+---------+
+only showing top 10 rows
+[2025-12-07T01:57:48.567+0000] {logging_mixin.py:154} INFO - 
+🔍 Vehicle ID verification (first 5):
+[2025-12-07T01:57:51.663+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+-------+-------+----+
+|vehicle_id                                                      |make   |model  |year|
++----------------------------------------------------------------+-------+-------+----+
+|18c09c7099dad78894c78fc71d38c923d17c61c3d5d0a34c7d687e0d7066475d|Ford   |ESCAPE |2021|
+|385e4668610fc89f881d59e171c4f101ac086ee23345be86afc643f068aca878|Nissan |ALTIMA |2022|
+|94afd3bda793d7e5862f6c039d786694d89acc2c0ee01e55e1613fbe84e51de0|Hyundai|TUCSON |2021|
+|f8b177d86ca877995e6c7f1067f00fe58a1d15bd83bee1cbbb473bcd9be24699|Kia    |SELTOS |2023|
+|6e770e6bfe5c3bbe7c425fee94ed904433568c8a7aa33ecaa79194e1c2f68f8d|Tesla  |MODEL 3|2020|
++----------------------------------------------------------------+-------+-------+----+
+only showing top 5 rows
+[2025-12-07T01:57:52.091+0000] {logging_mixin.py:154} INFO - ✅ NHTSA Investigations Cleaning Complete
+[2025-12-07T01:57:52.124+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-07T01:57:52.176+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=clean_nhtsa_investigations, execution_date=20251207T015544, start_date=20251207T015545, end_date=20251207T015752
+[2025-12-07T01:57:52.236+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-07T01:57:52.296+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

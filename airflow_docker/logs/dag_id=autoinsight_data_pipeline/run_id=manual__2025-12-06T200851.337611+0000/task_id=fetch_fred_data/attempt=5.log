@@ -1,0 +1,61 @@
+[2025-12-06T21:47:34.966+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_fred_data manual__2025-12-06T20:08:51.337611+00:00 [queued]>
+[2025-12-06T21:47:34.978+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_fred_data manual__2025-12-06T20:08:51.337611+00:00 [queued]>
+[2025-12-06T21:47:34.979+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 8
+[2025-12-06T21:47:34.999+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_fred_data> on 2025-12-06 20:08:51.337611+00:00
+[2025-12-06T21:47:35.016+0000] {standard_task_runner.py:57} INFO - Started process 228 to run task
+[2025-12-06T21:47:35.021+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_fred_data', 'manual__2025-12-06T20:08:51.337611+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmp_hq7gj66']
+[2025-12-06T21:47:35.030+0000] {standard_task_runner.py:85} INFO - Job 76: Subtask fetch_fred_data
+[2025-12-06T21:47:35.149+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_fred_data manual__2025-12-06T20:08:51.337611+00:00 [running]> on host de224815f25b
+[2025-12-06T21:47:35.288+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_fred_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T20:08:51.337611+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T20:08:51.337611+00:00'
+[2025-12-06T21:47:35.295+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T21:47:35.297+0000] {logging_mixin.py:154} INFO - TASK 2: FRED Economic Data Collection
+[2025-12-06T21:47:35.299+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T21:47:36.224+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:47:36.225+0000] {logging_mixin.py:154} INFO - FRED DATA FETCH AND S3 UPLOAD
+[2025-12-06T21:47:36.226+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:47:36.701+0000] {logging_mixin.py:154} INFO - Fetching TOTALSA...
+[2025-12-06T21:47:36.712+0000] {logging_mixin.py:154} INFO -   Status: 200
+[2025-12-06T21:47:36.739+0000] {logging_mixin.py:154} INFO -   Got 71 records (2020-01-01 to 2025-11-01)
+[2025-12-06T21:47:37.147+0000] {logging_mixin.py:154} INFO - Fetching ALTSALES...
+[2025-12-06T21:47:37.148+0000] {logging_mixin.py:154} INFO -   Status: 200
+[2025-12-06T21:47:37.152+0000] {logging_mixin.py:154} INFO -   Got 71 records (2020-01-01 to 2025-11-01)
+[2025-12-06T21:47:37.736+0000] {logging_mixin.py:154} INFO - Fetching DAUTOSAAR...
+[2025-12-06T21:47:37.737+0000] {logging_mixin.py:154} INFO -   Status: 200
+[2025-12-06T21:47:37.746+0000] {logging_mixin.py:154} INFO -   Got 71 records (2020-01-01 to 2025-11-01)
+[2025-12-06T21:47:37.790+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:47:37.791+0000] {logging_mixin.py:154} INFO - LOCAL FILE CREATED
+[2025-12-06T21:47:37.791+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:47:37.792+0000] {logging_mixin.py:154} INFO -   Filename: /opt/***/data/fred_economic_indicators.csv
+[2025-12-06T21:47:37.792+0000] {logging_mixin.py:154} INFO -   Records: 213
+[2025-12-06T21:47:37.794+0000] {logging_mixin.py:154} INFO -   Date range: 2020-01-01 to 2025-11-01
+[2025-12-06T21:47:37.795+0000] {logging_mixin.py:154} INFO -   Series: 3 (TOTALSA, ALTSALES, DAUTOSAAR)
+[2025-12-06T21:47:37.795+0000] {logging_mixin.py:154} INFO - 
+  Sample data:
+[2025-12-06T21:47:37.800+0000] {logging_mixin.py:154} INFO -       date  value series_id         series_name
+2020-01-01 16.420  ALTSALES   Light Truck Sales
+2020-01-01  3.224 DAUTOSAAR Domestic Auto Sales
+2020-01-01 16.850   TOTALSA Total Vehicle Sales
+2020-02-01 16.669  ALTSALES   Light Truck Sales
+2020-02-01  3.202 DAUTOSAAR Domestic Auto Sales
+2020-02-01 17.130   TOTALSA Total Vehicle Sales
+2020-03-01 11.444  ALTSALES   Light Truck Sales
+2020-03-01  2.270 DAUTOSAAR Domestic Auto Sales
+2020-03-01 11.825   TOTALSA Total Vehicle Sales
+2020-04-01  8.571  ALTSALES   Light Truck Sales
+[2025-12-06T21:47:38.504+0000] {logging_mixin.py:154} INFO - 
+Uploading to S3...
+[2025-12-06T21:47:38.508+0000] {logging_mixin.py:154} INFO -   File: /opt/***/data/fred_economic_indicators.csv
+[2025-12-06T21:47:38.513+0000] {logging_mixin.py:154} INFO -   Destination: s3://autoinsightfinal/fred/raw/fred_economic_indicators.csv
+[2025-12-06T21:47:39.226+0000] {logging_mixin.py:154} INFO -   Success!
+[2025-12-06T21:47:39.230+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:47:39.231+0000] {logging_mixin.py:154} INFO - COMPLETE!
+[2025-12-06T21:47:39.232+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:47:39.232+0000] {logging_mixin.py:154} INFO -   FRED data successfully uploaded to:
+[2025-12-06T21:47:39.233+0000] {logging_mixin.py:154} INFO -   s3://autoinsightfinal/fred/raw/fred_economic_indicators.csv
+[2025-12-06T21:47:39.272+0000] {logging_mixin.py:154} INFO - ✅ FRED Data Collection Complete: 213 records
+[2025-12-06T21:47:39.273+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-06T21:47:39.346+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_data_pipeline, task_id=fetch_fred_data, execution_date=20251206T200851, start_date=20251206T214734, end_date=20251206T214739
+[2025-12-06T21:47:39.450+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-06T21:47:39.517+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
