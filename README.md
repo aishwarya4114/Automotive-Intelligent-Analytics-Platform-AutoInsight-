@@ -362,7 +362,36 @@ curl -s http://metadata.google.internal/computeMetadata/v1/instance/network-inte
    - `autoinsight_cleaning_pipeline_v2` - Spark ETL
    - `autoinsight_daily_scraper` - News scraping
 3. Manually trigger initial runs
+
+AWS EC2 Deployment (FastAPI + Streamlit)
+Services Deployed
+
+FastAPI (MCP Server): http://18.191.175.145:8001/docs
+Streamlit UI: http://18.191.175.145:8501/
+
+#### Deployment Steps
+
+```bash
+# SSH into EC2 instance
+ssh -i your-key.pem ubuntu@your-ec2-ip
+
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/autoinsight.git
+cd autoinsight
+
+# Configure environment variables
+nano .env  # Add Snowflake, Anthropic, Pinecone credentials
+
+# Deploy with Docker Compose
+sudo docker-compose up --build -d
+
+# Verify services
+sudo docker ps
 ```
+### EC2 Configuration
+
+- **Instance Type**: t3.medium (2 vCPU, 4GB RAM)
+- **Security Groups**: Open ports 8001 (FastAPI), 8501 (Streamlit)
 ---
 ## System Requirements
 
@@ -434,10 +463,5 @@ This project is for academic purposes (Northeastern University DAMG7245).## Tech
 - **Docker & Docker Compose** - Containerization
 - **GCP Compute Engine** - Cloud hosting
 - **Git** - Version control
-
-
-
----
-
 
 ---
