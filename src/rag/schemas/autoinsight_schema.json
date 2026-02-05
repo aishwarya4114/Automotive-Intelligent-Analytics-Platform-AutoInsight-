@@ -1,0 +1,1216 @@
+{
+  "NHTSA.FACT_COMPLAINTS": {
+    "schema": "NHTSA",
+    "table_name": "FACT_COMPLAINTS",
+    "full_name": "NHTSA.FACT_COMPLAINTS",
+    "table_type": "BASE TABLE",
+    "row_count": 210517,
+    "columns": [
+      {
+        "name": "COMPLAINT_ID",
+        "position": 1,
+        "type": "TEXT",
+        "nullable": false,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "NHTSA_COMPLAINT_ID",
+        "position": 2,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_ID",
+        "position": 3,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MAKE",
+        "position": 4,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MODEL",
+        "position": 5,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "YEAR",
+        "position": 6,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FAIL_DATE",
+        "position": 7,
+        "type": "DATE",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATE_ADDED",
+        "position": 8,
+        "type": "DATE",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MILEAGE",
+        "position": 9,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_SPEED",
+        "position": 10,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "COMPONENT_DESCRIPTION",
+        "position": 11,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "CRASH_FLAG",
+        "position": 12,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FIRE_FLAG",
+        "position": 13,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "INJURED",
+        "position": 14,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DEATHS",
+        "position": 15,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_INCIDENT",
+        "position": 16,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SEVERITY_LEVEL",
+        "position": 17,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "COMPLAINT_DESCRIPTION",
+        "position": 18,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SENTIMENT_SCORE",
+        "position": 19,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SENTIMENT_LABEL",
+        "position": 20,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SENTIMENT_CONFIDENCE",
+        "position": 21,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SENTIMENT_CATEGORY",
+        "position": 22,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "COMPLAINT_EMBEDDING",
+        "position": 23,
+        "type": "ARRAY",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "NEGATION_COUNT",
+        "position": 24,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SAFETY_KEYWORD_COUNT",
+        "position": 25,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VIN",
+        "position": 26,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DRIVE_TRAIN",
+        "position": 27,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FUEL_TYPE",
+        "position": 28,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "IS_ORIGINAL_OWNER",
+        "position": 29,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "WAS_REPAIRED",
+        "position": 30,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "WAS_TOWED",
+        "position": 31,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MISSING_CRITICAL_DATA",
+        "position": 32,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSED_AT",
+        "position": 33,
+        "type": "TIMESTAMP_NTZ",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATA_SOURCE",
+        "position": 34,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSING_VERSION",
+        "position": 35,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      }
+    ]
+  },
+  "NHTSA.FACT_INVESTIGATIONS": {
+    "schema": "NHTSA",
+    "table_name": "FACT_INVESTIGATIONS",
+    "full_name": "NHTSA.FACT_INVESTIGATIONS",
+    "table_type": "BASE TABLE",
+    "row_count": 178,
+    "columns": [
+      {
+        "name": "INVESTIGATION_ID",
+        "position": 1,
+        "type": "TEXT",
+        "nullable": false,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "NHTSA_ACTION_NUMBER",
+        "position": 2,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_ID",
+        "position": 3,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MAKE",
+        "position": 4,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MANUFACTURER_NAME",
+        "position": 5,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MODEL",
+        "position": 6,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "YEAR",
+        "position": 7,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "COMPONENT_NAME",
+        "position": 8,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "COMPONENT_CATEGORY",
+        "position": 9,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "OPEN_DATE",
+        "position": 10,
+        "type": "DATE",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "CLOSE_DATE",
+        "position": 11,
+        "type": "DATE",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "OPEN_YEAR",
+        "position": 12,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "CAMPAIGN_NUMBER",
+        "position": 13,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_RECALL",
+        "position": 14,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SUBJECT",
+        "position": 15,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SUMMARY",
+        "position": 16,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "INVESTIGATION_STATUS",
+        "position": 17,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "INVESTIGATION_DURATION_DAYS",
+        "position": 18,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "LONG_INVESTIGATION_FLAG",
+        "position": 19,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MISSING_CRITICAL_DATA",
+        "position": 20,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATE_INCONSISTENCY",
+        "position": 21,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSED_AT",
+        "position": 22,
+        "type": "TIMESTAMP_NTZ",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATA_SOURCE",
+        "position": 23,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSING_VERSION",
+        "position": 24,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      }
+    ]
+  },
+  "NHTSA.FACT_RATINGS": {
+    "schema": "NHTSA",
+    "table_name": "FACT_RATINGS",
+    "full_name": "NHTSA.FACT_RATINGS",
+    "table_type": "BASE TABLE",
+    "row_count": 3090,
+    "columns": [
+      {
+        "name": "RATING_ID",
+        "position": 1,
+        "type": "TEXT",
+        "nullable": false,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_ID",
+        "position": 2,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MAKE",
+        "position": 3,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MODEL",
+        "position": 4,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "YEAR",
+        "position": 5,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "BODY_STYLE",
+        "position": 6,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_CLASS",
+        "position": 7,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DRIVE_TRAIN",
+        "position": 8,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "NUM_OF_SEATING",
+        "position": 9,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "CURB_WEIGHT",
+        "position": 10,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MIN_GROSS_WEIGHT",
+        "position": 11,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MAX_GROSS_WEIGHT",
+        "position": 12,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "OVERALL_STARS",
+        "position": 13,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "OVERALL_FRONT_STARS",
+        "position": 14,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "OVERALL_SIDE_STARS",
+        "position": 15,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "ROLLOVER_STARS",
+        "position": 16,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FRONT_DRIVER_STARS",
+        "position": 17,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FRONT_PASSENGER_STARS",
+        "position": 18,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SIDE_DRIVER_STARS",
+        "position": 19,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SIDE_PASSENGER_STARS",
+        "position": 20,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "AVERAGE_STAR_RATING",
+        "position": 21,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SAFETY_TIER",
+        "position": 22,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_ABS",
+        "position": 23,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_ESC",
+        "position": 24,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_BLIND_SPOT_DETECTION",
+        "position": 25,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_BACKUP_CAMERA",
+        "position": 26,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_FRONT_COLLISION_WARNING",
+        "position": 27,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_LANE_DEPARTURE_WARNING",
+        "position": 28,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_CRASH_IMMINENT_BRAKE",
+        "position": 29,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_DYNAMIC_BRAKE_SUPPORT",
+        "position": 30,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_ADAPTIVE_CRUISE_CONTROL",
+        "position": 31,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_ADVANCED_SAFETY",
+        "position": 32,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "ADVANCED_SAFETY_COUNT",
+        "position": 33,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MISSING_CRITICAL_DATA",
+        "position": 34,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_TEST_DATA",
+        "position": 35,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSED_AT",
+        "position": 36,
+        "type": "TIMESTAMP_NTZ",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATA_SOURCE",
+        "position": 37,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSING_VERSION",
+        "position": 38,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      }
+    ]
+  },
+  "NHTSA.FACT_RECALLS": {
+    "schema": "NHTSA",
+    "table_name": "FACT_RECALLS",
+    "full_name": "NHTSA.FACT_RECALLS",
+    "table_type": "BASE TABLE",
+    "row_count": 2146,
+    "columns": [
+      {
+        "name": "RECALL_ID",
+        "position": 1,
+        "type": "TEXT",
+        "nullable": false,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "NHTSA_RECALL_ID",
+        "position": 2,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_ID",
+        "position": 3,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MAKE",
+        "position": 4,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MODEL",
+        "position": 5,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "YEAR",
+        "position": 6,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "RECALL_SUMMARY",
+        "position": 7,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DOCUMENT_TYPE",
+        "position": 8,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PRIMARY_DOCUMENT",
+        "position": 9,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MISSING_CRITICAL_DATA",
+        "position": 10,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "HAS_YEAR_DATA",
+        "position": 11,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSED_AT",
+        "position": 12,
+        "type": "TIMESTAMP_NTZ",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATA_SOURCE",
+        "position": 13,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSING_VERSION",
+        "position": 14,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      }
+    ]
+  },
+  "EPA.FACT_FUEL_ECONOMY": {
+    "schema": "EPA",
+    "table_name": "FACT_FUEL_ECONOMY",
+    "full_name": "EPA.FACT_FUEL_ECONOMY",
+    "table_type": "BASE TABLE",
+    "row_count": 8526,
+    "columns": [
+      {
+        "name": "FUEL_ECONOMY_ID",
+        "position": 1,
+        "type": "TEXT",
+        "nullable": false,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "EPA_ID",
+        "position": 2,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_ID",
+        "position": 3,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MAKE",
+        "position": 4,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MODEL",
+        "position": 5,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "YEAR",
+        "position": 6,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "VEHICLE_CLASS",
+        "position": 7,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FUEL_TYPE",
+        "position": 8,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PRIMARY_FUEL_TYPE",
+        "position": 9,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "SECONDARY_FUEL_TYPE",
+        "position": 10,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "FUEL_CATEGORY",
+        "position": 11,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MPG_CITY",
+        "position": 12,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MPG_HIGHWAY",
+        "position": 13,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MPG_COMBINED",
+        "position": 14,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "MPGE_COMBINED",
+        "position": 15,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "ELECTRIC_RANGE",
+        "position": 16,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "EFFICIENCY_SCORE",
+        "position": 17,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "CYLINDERS",
+        "position": 18,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DRIVE_TRAIN",
+        "position": 19,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "TRANSMISSION",
+        "position": 20,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "GREENHOUSE_GAS_SCORE",
+        "position": 21,
+        "type": "NUMBER",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "CO2_TAILPIPE",
+        "position": 22,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "IS_ELECTRIC",
+        "position": 23,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "IS_HYBRID",
+        "position": 24,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "IS_FLEX_FUEL",
+        "position": 25,
+        "type": "BOOLEAN",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSED_AT",
+        "position": 26,
+        "type": "TIMESTAMP_NTZ",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATA_SOURCE",
+        "position": 27,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "PROCESSING_VERSION",
+        "position": 28,
+        "type": "TEXT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      }
+    ]
+  },
+  "FRED.FACT_ECONOMIC_INDICATORS": {
+    "schema": "FRED",
+    "table_name": "FACT_ECONOMIC_INDICATORS",
+    "full_name": "FRED.FACT_ECONOMIC_INDICATORS",
+    "table_type": "BASE TABLE",
+    "row_count": 131,
+    "columns": [
+      {
+        "name": "DATE",
+        "position": 1,
+        "type": "DATE",
+        "nullable": false,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "TOTAL_VEHICLE_SALES",
+        "position": 2,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "LIGHT_TRUCK_SALES",
+        "position": 3,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DOMESTIC_AUTO_SALES",
+        "position": 4,
+        "type": "FLOAT",
+        "nullable": true,
+        "default": null,
+        "comment": null
+      },
+      {
+        "name": "DATA_SOURCE",
+        "position": 5,
+        "type": "TEXT",
+        "nullable": true,
+        "default": "'FRED'",
+        "comment": null
+      },
+      {
+        "name": "LOADED_AT",
+        "position": 6,
+        "type": "TIMESTAMP_NTZ",
+        "nullable": true,
+        "default": "CURRENT_TIMESTAMP()",
+        "comment": null
+      }
+    ]
+  }
+}
