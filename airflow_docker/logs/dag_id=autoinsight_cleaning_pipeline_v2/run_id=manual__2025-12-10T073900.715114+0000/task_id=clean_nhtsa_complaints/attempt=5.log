@@ -1,0 +1,155 @@
+[2025-12-10T08:47:25.098+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_complaints manual__2025-12-10T07:39:00.715114+00:00 [queued]>
+[2025-12-10T08:47:25.110+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_complaints manual__2025-12-10T07:39:00.715114+00:00 [queued]>
+[2025-12-10T08:47:25.114+0000] {taskinstance.py:1361} INFO - Starting attempt 5 of 6
+[2025-12-10T08:47:25.131+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_complaints> on 2025-12-10 07:39:00.715114+00:00
+[2025-12-10T08:47:25.141+0000] {standard_task_runner.py:57} INFO - Started process 212 to run task
+[2025-12-10T08:47:25.146+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline_v2', 'clean_nhtsa_complaints', 'manual__2025-12-10T07:39:00.715114+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpybd3xk70']
+[2025-12-10T08:47:25.153+0000] {standard_task_runner.py:85} INFO - Job 116: Subtask clean_nhtsa_complaints
+[2025-12-10T08:47:25.255+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_complaints manual__2025-12-10T07:39:00.715114+00:00 [running]> on host 846744d01d56
+[2025-12-10T08:47:25.354+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline_v2' AIRFLOW_CTX_TASK_ID='clean_nhtsa_complaints' AIRFLOW_CTX_EXECUTION_DATE='2025-12-10T07:39:00.715114+00:00' AIRFLOW_CTX_TRY_NUMBER='5' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-10T07:39:00.715114+00:00'
+[2025-12-10T08:47:25.356+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T08:47:25.357+0000] {logging_mixin.py:154} INFO - CLEANING TASK: NHTSA Complaints (with Sentiment)
+[2025-12-10T08:47:25.358+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T08:47:25.635+0000] {logging_mixin.py:154} INFO - 
+NHTSA COMPLAINTS CLEANING WITH STANDALONE SENTIMENT
+[2025-12-10T08:47:25.636+0000] {logging_mixin.py:154} INFO - Running in LOCAL mode
+[2025-12-10T08:47:25.636+0000] {logging_mixin.py:154} INFO - Sentiment module path: /opt/***/src/data_cleaning/sentiment_standalone.py
+[2025-12-10T08:47:25.638+0000] {logging_mixin.py:154} INFO - Loading AWS S3 connectors...
+[2025-12-10T08:47:34.052+0000] {logging_mixin.py:154} INFO - ✅ Added sentiment_standalone.py to Spark workers
+[2025-12-10T08:47:34.056+0000] {logging_mixin.py:154} INFO - Input: s3a://autoinsightfinal/nhtsa/raw/complaints/*.csv
+[2025-12-10T08:47:34.056+0000] {logging_mixin.py:154} INFO - Output: s3a://autoinsightfinal/nhtsa/cleaned_new/complaints/parquet/
+[2025-12-10T08:47:34.057+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:47:34.058+0000] {logging_mixin.py:154} INFO - NHTSA COMPLAINTS - CLEANING WITH STANDALONE SENTIMENT
+[2025-12-10T08:47:34.058+0000] {logging_mixin.py:154} INFO - Input: 2015-2025 data
+[2025-12-10T08:47:34.059+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with sentiment (cleaned_new)
+[2025-12-10T08:47:34.060+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:47:34.060+0000] {logging_mixin.py:154} INFO - 
+Reading raw data from: s3a://autoinsightfinal/nhtsa/raw/complaints/*.csv
+[2025-12-10T08:48:20.386+0000] {logging_mixin.py:154} INFO -   Loaded 454,022 records
+[2025-12-10T08:48:20.386+0000] {logging_mixin.py:154} INFO -   Initial columns: 50
+[2025-12-10T08:48:20.387+0000] {logging_mixin.py:154} INFO - 
+Step 1: Standardizing manufacturer names...
+[2025-12-10T08:48:21.178+0000] {logging_mixin.py:154} INFO - 
+Step 2: Filtering to top 15 manufacturers...
+[2025-12-10T08:48:21.226+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-10T08:48:51.376+0000] {logging_mixin.py:154} INFO -   ✓ Kept 453,986 records from top 15 manufacturers
+[2025-12-10T08:48:51.379+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 22 records from other manufacturers
+[2025-12-10T08:48:51.383+0000] {logging_mixin.py:154} INFO - 
+Step 3: Validating YEAR field...
+[2025-12-10T08:48:51.534+0000] {logging_mixin.py:154} INFO - 
+Step 4: Cleaning MODEL field...
+[2025-12-10T08:48:51.767+0000] {logging_mixin.py:154} INFO - 
+Step 5: Cleaning date fields...
+[2025-12-10T08:48:51.896+0000] {logging_mixin.py:154} INFO - 
+Step 6: Converting Y/N fields to boolean...
+[2025-12-10T08:48:52.356+0000] {logging_mixin.py:154} INFO - 
+Step 7: Converting numeric fields...
+[2025-12-10T08:48:52.572+0000] {logging_mixin.py:154} INFO - 
+Step 8: Cleaning text fields...
+[2025-12-10T08:48:53.042+0000] {logging_mixin.py:154} INFO - 
+Step 9: Creating severity level...
+[2025-12-10T08:48:53.150+0000] {logging_mixin.py:154} INFO - 
+Step 10: Adding data quality flags...
+[2025-12-10T08:48:53.193+0000] {logging_mixin.py:154} INFO - 
+Step 11: Removing duplicates...
+[2025-12-10T08:49:29.925+0000] {logging_mixin.py:154} INFO -   Removed 210,517 duplicate records
+[2025-12-10T08:49:29.927+0000] {logging_mixin.py:154} INFO - 
+Step 12: Standardizing column names for Snowflake...
+[2025-12-10T08:49:30.030+0000] {logging_mixin.py:154} INFO - 
+Step 13: Creating standardized vehicle_id...
+[2025-12-10T08:49:30.158+0000] {logging_mixin.py:154} INFO - 
+Step 14: Adding metadata...
+[2025-12-10T08:49:30.243+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:49:30.244+0000] {logging_mixin.py:154} INFO - Step 15: Applying Standalone Sentiment Analysis
+[2025-12-10T08:49:30.245+0000] {logging_mixin.py:154} INFO -   Module: sentiment_standalone.py
+[2025-12-10T08:49:30.246+0000] {logging_mixin.py:154} INFO -   Features: 30+ safety keywords, failure detection, intensifiers
+[2025-12-10T08:49:30.246+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:49:30.581+0000] {logging_mixin.py:154} INFO - ✅ Sentiment analysis complete!
+[2025-12-10T08:49:30.582+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:49:30.583+0000] {logging_mixin.py:154} INFO - Step 16: Creating Sentiment Categories
+[2025-12-10T08:49:30.584+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:49:30.672+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:49:30.673+0000] {logging_mixin.py:154} INFO - Step 17: Selecting Final Columns
+[2025-12-10T08:49:30.675+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:49:47.769+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:49:47.770+0000] {logging_mixin.py:154} INFO - CLEANING SUMMARY
+[2025-12-10T08:49:47.771+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:49:47.772+0000] {logging_mixin.py:154} INFO -   Initial records: 454,022
+[2025-12-10T08:49:47.772+0000] {logging_mixin.py:154} INFO -   Final records: 210,517
+[2025-12-10T08:49:47.773+0000] {logging_mixin.py:154} INFO -   Retention rate: 46.4%
+[2025-12-10T08:49:47.775+0000] {logging_mixin.py:154} INFO - 
+  Severity Distribution:
+[2025-12-10T08:50:04.835+0000] {logging_mixin.py:154} INFO -     LOW: 195,885
+[2025-12-10T08:50:04.837+0000] {logging_mixin.py:154} INFO -     MEDIUM: 8,807
+[2025-12-10T08:50:04.838+0000] {logging_mixin.py:154} INFO -     HIGH: 5,682
+[2025-12-10T08:50:04.839+0000] {logging_mixin.py:154} INFO -     CRITICAL: 143
+[2025-12-10T08:50:04.841+0000] {logging_mixin.py:154} INFO - 
+  Sentiment Distribution:
+[2025-12-10T08:50:29.707+0000] {logging_mixin.py:154} INFO -     NEUTRAL: 90,119
+[2025-12-10T08:50:29.709+0000] {logging_mixin.py:154} INFO -     VERY_NEGATIVE: 72,482
+[2025-12-10T08:50:29.711+0000] {logging_mixin.py:154} INFO -     NEGATIVE: 47,913
+[2025-12-10T08:50:29.711+0000] {logging_mixin.py:154} INFO -     POSITIVE: 3
+[2025-12-10T08:50:29.713+0000] {logging_mixin.py:154} INFO - 
+  Top Manufacturers:
+[2025-12-10T08:50:47.137+0000] {logging_mixin.py:154} INFO -     Ford: 43,816
+[2025-12-10T08:50:47.146+0000] {logging_mixin.py:154} INFO -     Honda: 23,879
+[2025-12-10T08:50:47.147+0000] {logging_mixin.py:154} INFO -     Chevrolet: 20,380
+[2025-12-10T08:50:47.148+0000] {logging_mixin.py:154} INFO -     Jeep: 17,818
+[2025-12-10T08:50:47.149+0000] {logging_mixin.py:154} INFO -     Hyundai: 16,230
+[2025-12-10T08:50:47.149+0000] {logging_mixin.py:154} INFO -     Kia: 14,401
+[2025-12-10T08:50:47.150+0000] {logging_mixin.py:154} INFO -     Tesla: 14,030
+[2025-12-10T08:50:47.150+0000] {logging_mixin.py:154} INFO -     Toyota: 11,771
+[2025-12-10T08:50:47.151+0000] {logging_mixin.py:154} INFO -     Subaru: 11,516
+[2025-12-10T08:50:47.151+0000] {logging_mixin.py:154} INFO -     Nissan: 10,841
+[2025-12-10T08:50:47.152+0000] {logging_mixin.py:154} INFO -     GMC: 7,471
+[2025-12-10T08:50:47.152+0000] {logging_mixin.py:154} INFO -     Volkswagen: 7,141
+[2025-12-10T08:50:47.153+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz: 4,774
+[2025-12-10T08:50:47.154+0000] {logging_mixin.py:154} INFO -     BMW: 3,674
+[2025-12-10T08:50:47.155+0000] {logging_mixin.py:154} INFO -     Mazda: 2,775
+[2025-12-10T08:50:47.155+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:50:47.156+0000] {logging_mixin.py:154} INFO - WRITING TO S3 (cleaned_new)
+[2025-12-10T08:50:47.156+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:50:47.258+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/complaints/parquet/
+[2025-12-10T08:50:47.258+0000] {logging_mixin.py:154} INFO - Writing parquet...
+[2025-12-10T08:52:12.977+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/nhtsa/cleaned_new/complaints/csv/
+[2025-12-10T08:52:12.981+0000] {logging_mixin.py:154} INFO - Writing CSV (excluding array columns)...
+[2025-12-10T08:53:28.405+0000] {logging_mixin.py:154} INFO - 
+✅ COMPLAINTS CLEANING COMPLETE!
+[2025-12-10T08:53:28.407+0000] {logging_mixin.py:154} INFO - 
+Sample data:
+[2025-12-10T08:53:44.489+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+-------+-----------+----+---------------+------------------+
+|complaint_id                                                    |make   |model      |year|sentiment_score|sentiment_category|
++----------------------------------------------------------------+-------+-----------+----+---------------+------------------+
+|d58d229e7f06652c7546c5b1d1a0b784ab65081db101db458beafa1dbac9e1f0|Jeep   |RENEGADE   |2017|0.0            |NEUTRAL           |
+|a2689c7264fae69572aa69b39ffcccca2969faa392161ba1e1dc3e7378e44f09|Subaru |CROSSTREK  |2017|-0.5           |NEGATIVE          |
+|f764f0376ad39ffea2368fb088cb290fe62e2fa1fec151bbcd0cb2466b4add4c|Ford   |ESCAPE     |2018|0.0            |NEUTRAL           |
+|a399f4ed3f2ad56f172ae3a8450ff5b80eaa401dfacdbf64a3f4849cd714f7f4|Ford   |F-250      |2017|-0.35561797    |NEGATIVE          |
+|df78ac9393c18ec68ca70484184c57ba26a51e540576115174d70d5bddd57efe|Jeep   |PATRIOT    |2015|-0.41916665    |NEGATIVE          |
+|c12bcb08427ac91511a3ea9f993ec11781dfabe352a53fb29f4e97b78d63e791|Nissan |PATHFINDER |2017|-0.01728395    |NEUTRAL           |
+|0a8dd23c12cc0ec8f3b5092b3eae3d79ed42bfc343a39fd62e3087ec83cf4b82|Ford   |F-350      |2019|-0.7364173     |VERY_NEGATIVE     |
+|d42d447720f0c2e6187a19c388f1e6b8925075bf725e70b13e271fce2d78ecc6|Hyundai|ELANTRA    |2015|0.0            |NEUTRAL           |
+|832a2226997c34f3741fb13cbf23537e3f7de1e2e2a3ee29ef0541011f4baae9|Ford   |FUSION     |2016|-0.004901961   |NEUTRAL           |
+|51dbbe957edce03ef9314f87116477dd2c12cd32b0cff1b38465a28c5235e2c3|GMC    |SIERRA 1500|2019|-0.69867927    |VERY_NEGATIVE     |
++----------------------------------------------------------------+-------+-----------+----+---------------+------------------+
+only showing top 10 rows
+[2025-12-10T08:53:44.494+0000] {logging_mixin.py:154} INFO - 
+Sentiment Statistics:
+[2025-12-10T08:54:00.471+0000] {logging_mixin.py:154} INFO - +-------+--------------------+
+|summary|     sentiment_score|
++-------+--------------------+
+|  count|              210517|
+|   mean|-0.36428522652749257|
+| stddev|  0.3399172950615688|
+|    min|                -1.0|
+|    max|                 0.3|
++-------+--------------------+
+[2025-12-10T08:54:01.371+0000] {logging_mixin.py:154} INFO - ✅ NHTSA Complaints (with Sentiment) Complete
+[2025-12-10T08:54:01.402+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-10T08:54:01.438+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline_v2, task_id=clean_nhtsa_complaints, execution_date=20251210T073900, start_date=20251210T084725, end_date=20251210T085401
+[2025-12-10T08:54:01.500+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-10T08:54:01.542+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

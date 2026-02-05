@@ -1,0 +1,28 @@
+[2025-12-06T19:35:49.003+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data manual__2025-12-06T19:30:45.897197+00:00 [queued]>
+[2025-12-06T19:35:49.013+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data manual__2025-12-06T19:30:45.897197+00:00 [queued]>
+[2025-12-06T19:35:49.014+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 4
+[2025-12-06T19:35:49.046+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_epa_data> on 2025-12-06 19:30:45.897197+00:00
+[2025-12-06T19:35:49.056+0000] {standard_task_runner.py:57} INFO - Started process 374 to run task
+[2025-12-06T19:35:49.060+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_epa_data', 'manual__2025-12-06T19:30:45.897197+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmpej7m5ycv']
+[2025-12-06T19:35:49.065+0000] {standard_task_runner.py:85} INFO - Job 19: Subtask fetch_epa_data
+[2025-12-06T19:35:49.172+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_epa_data manual__2025-12-06T19:30:45.897197+00:00 [running]> on host 97baade31759
+[2025-12-06T19:35:49.291+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_epa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T19:30:45.897197+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T19:30:45.897197+00:00'
+[2025-12-06T19:35:49.294+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T19:35:49.295+0000] {logging_mixin.py:154} INFO - TASK 1: EPA Fuel Economy Data Collection
+[2025-12-06T19:35:49.295+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T19:35:49.298+0000] {logging_mixin.py:154} INFO - ❌ EPA Data Collection Failed: No module named 'fetch_epa_data'
+[2025-12-06T19:35:49.299+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_data_pipeline.py", line 58, in fetch_epa_data
+    from fetch_epa_data import main as epa_main
+ModuleNotFoundError: No module named 'fetch_epa_data'
+[2025-12-06T19:35:49.321+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=autoinsight_data_pipeline, task_id=fetch_epa_data, execution_date=20251206T193045, start_date=20251206T193549, end_date=20251206T193549
+[2025-12-06T19:35:49.346+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 19 for task fetch_epa_data (No module named 'fetch_epa_data'; 374)
+[2025-12-06T19:35:49.360+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-06T19:35:49.388+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

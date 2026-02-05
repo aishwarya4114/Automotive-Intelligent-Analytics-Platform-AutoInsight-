@@ -1,0 +1,47 @@
+[2025-12-10T08:50:05.428+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.completion_summary manual__2025-12-10T08:48:14.122781+00:00 [queued]>
+[2025-12-10T08:50:05.445+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.completion_summary manual__2025-12-10T08:48:14.122781+00:00 [queued]>
+[2025-12-10T08:50:05.447+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-12-10T08:50:05.482+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): completion_summary> on 2025-12-10 08:48:14.122781+00:00
+[2025-12-10T08:50:05.492+0000] {standard_task_runner.py:57} INFO - Started process 1139 to run task
+[2025-12-10T08:50:05.497+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_daily_scraper', 'completion_summary', 'manual__2025-12-10T08:48:14.122781+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/news_scrapper.py', '--cfg-path', '/tmp/tmp6fvsdbgo']
+[2025-12-10T08:50:05.502+0000] {standard_task_runner.py:85} INFO - Job 122: Subtask completion_summary
+[2025-12-10T08:50:05.599+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_daily_scraper.completion_summary manual__2025-12-10T08:48:14.122781+00:00 [running]> on host 846744d01d56
+[2025-12-10T08:50:05.717+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='autoinsight' AIRFLOW_CTX_DAG_ID='autoinsight_daily_scraper' AIRFLOW_CTX_TASK_ID='completion_summary' AIRFLOW_CTX_EXECUTION_DATE='2025-12-10T08:48:14.122781+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-10T08:48:14.122781+00:00'
+[2025-12-10T08:50:05.855+0000] {news_scrapper.py:301} INFO - 
+    ============================================
+    ✅ AutoInsight News Scraper Completed
+    ============================================
+    📰 News Articles:
+       - Scraped: 100
+       - Loaded to Snowflake: 100 new/updated
+       - Total in DB: 139
+       - S3 Location: s3://autoinsightfinal/news/raw/articles_20251210_084819.json
+    
+    📅 Events:
+       - Scraped: 19
+       - Loaded to Snowflake: 19 new/updated
+       - Total in DB: 19
+       - S3 Location: s3://autoinsightfinal/events/raw/events_20251210_084829.json
+    ============================================
+    
+[2025-12-10T08:50:05.858+0000] {logging_mixin.py:154} INFO - 
+    ============================================
+    ✅ AutoInsight News Scraper Completed
+    ============================================
+    📰 News Articles:
+       - Scraped: 100
+       - Loaded to Snowflake: 100 new/updated
+       - Total in DB: 139
+       - S3 Location: s3://autoinsightfinal/news/raw/articles_20251210_084819.json
+    
+    📅 Events:
+       - Scraped: 19
+       - Loaded to Snowflake: 19 new/updated
+       - Total in DB: 19
+       - S3 Location: s3://autoinsightfinal/events/raw/events_20251210_084829.json
+    ============================================
+    
+[2025-12-10T08:50:05.860+0000] {python.py:194} INFO - Done. Returned value was: None
+[2025-12-10T08:50:05.874+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_daily_scraper, task_id=completion_summary, execution_date=20251210T084814, start_date=20251210T085005, end_date=20251210T085005
+[2025-12-10T08:50:05.913+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-10T08:50:05.955+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,51 @@
+[2025-12-07T07:19:44.188+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-06T02:00:00+00:00 [queued]>
+[2025-12-07T07:19:44.202+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-06T02:00:00+00:00 [queued]>
+[2025-12-07T07:19:44.203+0000] {taskinstance.py:1361} INFO - Starting attempt 6 of 4
+[2025-12-07T07:19:44.225+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_epa_data> on 2025-12-06 02:00:00+00:00
+[2025-12-07T07:19:44.234+0000] {standard_task_runner.py:57} INFO - Started process 204 to run task
+[2025-12-07T07:19:44.239+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_epa_data', 'scheduled__2025-12-06T02:00:00+00:00', '--job-id', '192', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmp4p3tey8w']
+[2025-12-07T07:19:44.245+0000] {standard_task_runner.py:85} INFO - Job 192: Subtask fetch_epa_data
+[2025-12-07T07:19:44.368+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_epa_data scheduled__2025-12-06T02:00:00+00:00 [running]> on host fb35e4f278df
+[2025-12-07T07:19:44.501+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_epa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T02:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-06T02:00:00+00:00'
+[2025-12-07T07:19:44.504+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:19:44.505+0000] {logging_mixin.py:154} INFO - TASK 1: EPA Fuel Economy Data Collection
+[2025-12-07T07:19:44.506+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T07:19:45.085+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T07:19:45.086+0000] {logging_mixin.py:154} INFO - EPA FUEL ECONOMY DATA COLLECTION WITH S3 UPLOAD
+[2025-12-07T07:19:45.087+0000] {logging_mixin.py:154} INFO - AutoInsight Project - 15 Manufacturers
+[2025-12-07T07:19:45.088+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T07:19:45.088+0000] {logging_mixin.py:154} INFO - 📅 Date Range: January 1, 2020 - December 07, 2025
+[2025-12-07T07:19:45.089+0000] {logging_mixin.py:154} INFO - 🔓 Authentication: NONE REQUIRED (Public API)
+[2025-12-07T07:19:45.090+0000] {logging_mixin.py:154} INFO - 📄 Format: XML (automatically parsed)
+[2025-12-07T07:19:45.090+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T07:19:45.091+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-07T07:19:45.092+0000] {logging_mixin.py:154} INFO - Fetching EPA Data for 15 Manufacturers
+[2025-12-07T07:19:45.093+0000] {logging_mixin.py:154} INFO - Date Range: January 1, 2020 - December 07, 2025
+[2025-12-07T07:19:45.094+0000] {logging_mixin.py:154} INFO - Years: [2020, 2021, 2022, 2023, 2024]
+[2025-12-07T07:19:45.094+0000] {logging_mixin.py:154} INFO - Format: XML (parsed automatically)
+[2025-12-07T07:19:45.095+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T07:19:45.095+0000] {logging_mixin.py:154} INFO - 📊 [1/15] Processing: Tesla
+[2025-12-07T07:19:45.096+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-07T07:19:45.543+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-07T07:20:02.365+0000] {logging_mixin.py:154} INFO - → 21 variants
+[2025-12-07T07:20:02.372+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-07T07:20:02.712+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-07T07:20:14.831+0000] {logging_mixin.py:154} INFO - → 13 variants
+[2025-12-07T07:20:14.835+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-07T07:20:15.082+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-07T07:20:25.317+0000] {logging_mixin.py:154} INFO - → 13 variants
+[2025-12-07T07:20:25.319+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-07T07:20:25.756+0000] {logging_mixin.py:154} INFO - Found 10 model(s) 
+[2025-12-07T07:20:33.892+0000] {logging_mixin.py:154} INFO - → 10 variants
+[2025-12-07T07:20:33.894+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-07T07:20:34.148+0000] {logging_mixin.py:154} INFO - Found 16 model(s) 
+[2025-12-07T07:20:48.755+0000] {logging_mixin.py:154} INFO - → 16 variants
+[2025-12-07T07:20:48.758+0000] {logging_mixin.py:154} INFO -   ✅ Tesla COMPLETE: 73 total vehicles
+[2025-12-07T07:20:48.759+0000] {logging_mixin.py:154} INFO - 📊 [2/15] Processing: Ford
+[2025-12-07T07:20:48.760+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-07T07:20:49.040+0000] {logging_mixin.py:154} INFO - Found 53 model(s) 
+[2025-12-07T07:21:46.240+0000] {logging_mixin.py:154} INFO - → 74 variants
+[2025-12-07T07:21:46.241+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-07T07:21:46.549+0000] {logging_mixin.py:154} INFO - Found 58 model(s) 

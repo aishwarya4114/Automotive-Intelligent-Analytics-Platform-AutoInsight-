@@ -1,0 +1,19 @@
+[2025-12-09T06:25:41.499+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.scrape_news_articles manual__2025-12-09T06:24:12.320628+00:00 [queued]>
+[2025-12-09T06:25:41.509+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.scrape_news_articles manual__2025-12-09T06:24:12.320628+00:00 [queued]>
+[2025-12-09T06:25:41.509+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-12-09T06:25:41.525+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): scrape_news_articles> on 2025-12-09 06:24:12.320628+00:00
+[2025-12-09T06:25:41.536+0000] {standard_task_runner.py:57} INFO - Started process 507 to run task
+[2025-12-09T06:25:41.540+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_daily_scraper', 'scrape_news_articles', 'manual__2025-12-09T06:24:12.320628+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/news_scrapper.py', '--cfg-path', '/tmp/tmpga0smi_t']
+[2025-12-09T06:25:41.545+0000] {standard_task_runner.py:85} INFO - Job 10: Subtask scrape_news_articles
+[2025-12-09T06:25:41.642+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_daily_scraper.scrape_news_articles manual__2025-12-09T06:24:12.320628+00:00 [running]> on host 74c4cbde2083
+[2025-12-09T06:25:41.746+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='autoinsight' AIRFLOW_CTX_DAG_ID='autoinsight_daily_scraper' AIRFLOW_CTX_TASK_ID='scrape_news_articles' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T06:24:12.320628+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-09T06:24:12.320628+00:00'
+[2025-12-09T06:25:41.748+0000] {news_scrapper.py:48} INFO - ============================================================
+[2025-12-09T06:25:41.749+0000] {news_scrapper.py:49} INFO - TASK: Scraping News Articles
+[2025-12-09T06:25:41.750+0000] {news_scrapper.py:58} INFO - Fetching articles from AutoNews RSS feed...
+[2025-12-09T06:25:41.750+0000] {scrapper.py:246} INFO - Fetching news from RSS feed...
+[2025-12-09T06:25:42.228+0000] {scrapper.py:333} INFO - ✓ Scraped 100 articles from RSS
+[2025-12-09T06:25:42.260+0000] {scrapper.py:575} INFO - ✓ Saved 100 items to /opt/***/data/autonews_articles_latest.json
+[2025-12-09T06:25:42.308+0000] {python.py:194} INFO - Done. Returned value was: Successfully scraped 100 articles
+[2025-12-09T06:25:42.334+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_daily_scraper, task_id=scrape_news_articles, execution_date=20251209T062412, start_date=20251209T062541, end_date=20251209T062542
+[2025-12-09T06:25:42.397+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-09T06:25:42.435+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,158 @@
+[2025-12-07T20:52:00.509+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T20:52:00.535+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T20:52:00.537+0000] {taskinstance.py:1361} INFO - Starting attempt 15 of 17
+[2025-12-07T20:52:00.576+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): add_sentiment_analysis> on 2025-12-07 01:55:44.575398+00:00
+[2025-12-07T20:52:00.593+0000] {standard_task_runner.py:57} INFO - Started process 562 to run task
+[2025-12-07T20:52:00.607+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'add_sentiment_analysis', 'manual__2025-12-07T01:55:44.575398+00:00', '--job-id', '207', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpc2gc44c3']
+[2025-12-07T20:52:00.619+0000] {standard_task_runner.py:85} INFO - Job 207: Subtask add_sentiment_analysis
+[2025-12-07T20:52:00.727+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T01:55:44.575398+00:00 [running]> on host fb35e4f278df
+[2025-12-07T20:52:00.842+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='add_sentiment_analysis' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T01:55:44.575398+00:00' AIRFLOW_CTX_TRY_NUMBER='15' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T01:55:44.575398+00:00'
+[2025-12-07T20:52:00.844+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T20:52:00.845+0000] {logging_mixin.py:154} INFO - ADDING CUSTOM SENTIMENT ANALYSIS (Post-Processing)
+[2025-12-07T20:52:00.846+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T20:52:07.365+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T20:52:07.376+0000] {logging_mixin.py:154} INFO - ADDING CUSTOM SENTIMENT ANALYSIS - OPTIMIZED VERSION
+[2025-12-07T20:52:07.382+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T20:52:07.385+0000] {logging_mixin.py:154} INFO - 
+Step 1: Connecting to Snowflake...
+[2025-12-07T20:52:07.386+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-07T20:52:07.388+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-07T20:52:09.338+0000] {logging_mixin.py:154} INFO - ✅ Connected to Snowflake
+[2025-12-07T20:52:09.340+0000] {logging_mixin.py:154} INFO - 
+Step 2: Verifying sentiment columns...
+[2025-12-07T20:52:09.341+0000] {cursor.py:1032} INFO - query: [DESCRIBE TABLE FACT_COMPLAINTS]
+[2025-12-07T20:52:09.439+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T20:52:09.441+0000] {cursor.py:1205} INFO - Number of results in first chunk: 34
+[2025-12-07T20:52:09.445+0000] {logging_mixin.py:154} INFO - ✅ All sentiment columns exist
+[2025-12-07T20:52:09.453+0000] {logging_mixin.py:154} INFO - 
+Step 3: Checking complaints needing sentiment analysis...
+[2025-12-07T20:52:09.457+0000] {cursor.py:1032} INFO - query: [SELECT COUNT(*) FROM FACT_COMPLAINTS WHERE "SENTIMENT_SCORE" IS NULL]
+[2025-12-07T20:52:09.635+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T20:52:09.636+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T20:52:09.637+0000] {logging_mixin.py:154} INFO - Found 66,738 complaints needing sentiment analysis
+[2025-12-07T20:52:09.638+0000] {logging_mixin.py:154} INFO - 
+Step 4: Creating temporary staging table...
+[2025-12-07T20:52:09.638+0000] {cursor.py:1032} INFO - query: [CREATE TEMP TABLE sentiment_staging ( complaint_id VARCHAR, sentiment_score FLOA...]
+[2025-12-07T20:52:09.841+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T20:52:09.844+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-07T20:52:09.845+0000] {logging_mixin.py:154} INFO - ✅ Temp table created
+[2025-12-07T20:52:09.846+0000] {logging_mixin.py:154} INFO - 
+Step 5: Loading sentiment models...
+[2025-12-07T20:52:09.847+0000] {logging_mixin.py:154} INFO - ⏳ This may take 1-2 minutes...
+[2025-12-07T20:52:09.848+0000] {analyzer.py:29} INFO - Initializing ComplaintSentimentAnalyzer...
+[2025-12-07T20:52:09.851+0000] {models.py:35} INFO - Loading sentiment model: cardiffnlp/twitter-roberta-base-sentiment-latest
+[2025-12-07T20:52:09.864+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.11/site-packages/huggingface_hub/file_download.py:942 FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+[2025-12-07T20:52:11.301+0000] {logging_mixin.py:154} WARNING - Some weights of the model checkpoint at cardiffnlp/twitter-roberta-base-sentiment-latest were not used when initializing RobertaForSequenceClassification: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+- This IS expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[2025-12-07T20:52:11.645+0000] {models.py:50} INFO - ✅ Sentiment model loaded (device: CPU)
+[2025-12-07T20:52:11.646+0000] {models.py:104} INFO - Loading embedding model: sentence-transformers/all-mpnet-base-v2
+[2025-12-07T20:52:12.802+0000] {models.py:114} INFO - ✅ Embedding model loaded (device: cpu)
+[2025-12-07T20:52:12.803+0000] {analyzer.py:36} INFO - ✅ ComplaintSentimentAnalyzer ready
+[2025-12-07T20:52:12.804+0000] {logging_mixin.py:154} INFO - ✅ Models loaded in 3.0 seconds
+[2025-12-07T20:52:12.805+0000] {logging_mixin.py:154} INFO - 
+Step 6: Processing 66,738 complaints in 134 batches of 500...
+[2025-12-07T20:52:12.805+0000] {logging_mixin.py:154} INFO - Using OPTIMIZED bulk update strategy with 500 complaints/batch
+[2025-12-07T20:52:12.805+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T20:52:12.806+0000] {cursor.py:1032} INFO - query: [SELECT "complaint_id", "complaint_description" FROM FACT_COMPLAINTS WHERE "SENTI...]
+[2025-12-07T20:52:12.956+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-07T20:52:12.958+0000] {cursor.py:1205} INFO - Number of results in first chunk: 0
+[2025-12-07T20:58:13.373+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-12-07T20:58:13.380+0000] {process_utils.py:131} INFO - Sending 15 to group 562. PIDs of all processes in the group: [562]
+[2025-12-07T20:58:13.384+0000] {process_utils.py:86} INFO - Sending the signal 15 to group 562
+[2025-12-07T20:58:13.388+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-12-07T20:58:13.392+0000] {logging_mixin.py:154} INFO - ❌ Sentiment Analysis Failed: Task received SIGTERM signal
+[2025-12-07T20:58:13.419+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-07T20:58:13.428+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/dags/autoinsight_cleaning_pipeline.py", line 406, in add_sentiment_to_complaints
+    sentiment_main()
+[2025-12-07T20:58:13.429+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/add_sentiment_to_snowflake.py", line 165, in main
+    sentiment_results = process_sentiment_batch(batch_df, analyzer)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.431+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/add_sentiment_to_snowflake.py", line 27, in process_sentiment_batch
+    result = analyzer.analyze(text)
+             ^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.431+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/sentiment/analyzer.py", line 77, in analyze
+    sentiment_score, label, confidence = self.sentiment_model.predict(text)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.438+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/sentiment/models.py", line 72, in predict
+    result = self.pipeline(text)[0]
+             ^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.443+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/pipelines/text_classification.py", line 156, in __call__
+    result = super().__call__(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.443+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1140, in __call__
+    return self.run_single(inputs, preprocess_params, forward_params, postprocess_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.450+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1147, in run_single
+    model_outputs = self.forward(model_inputs, **forward_params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.451+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/pipelines/base.py", line 1046, in forward
+    model_outputs = self._forward(model_inputs, **forward_params)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.453+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/pipelines/text_classification.py", line 187, in _forward
+    return self.model(**model_inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.454+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.455+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.455+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/models/roberta/modeling_roberta.py", line 1198, in forward
+    outputs = self.roberta(
+              ^^^^^^^^^^^^^
+[2025-12-07T20:58:13.458+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.460+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.464+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/models/roberta/modeling_roberta.py", line 835, in forward
+    encoder_outputs = self.encoder(
+                      ^^^^^^^^^^^^^
+[2025-12-07T20:58:13.466+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.466+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.467+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/models/roberta/modeling_roberta.py", line 524, in forward
+    layer_outputs = layer_module(
+                    ^^^^^^^^^^^^^
+[2025-12-07T20:58:13.468+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.469+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.470+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/models/roberta/modeling_roberta.py", line 455, in forward
+    layer_output = apply_chunking_to_forward(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.470+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/pytorch_utils.py", line 242, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.471+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/models/roberta/modeling_roberta.py", line 468, in feed_forward_chunk
+    layer_output = self.output(intermediate_output, attention_output)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.471+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.472+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.474+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/transformers/models/roberta/modeling_roberta.py", line 379, in forward
+    hidden_states = self.dense(hidden_states)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.475+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.480+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.481+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-07T20:58:13.483+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/***/models/taskinstance.py", line 1634, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+[2025-12-07T20:58:13.489+0000] {logging_mixin.py:154} WARNING - ***.exceptions.AirflowException: Task received SIGTERM signal
+[2025-12-07T20:58:13.880+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=562, status='terminated', exitcode=0, started='20:52:00') (562) terminated with exit code 0

@@ -1,0 +1,40 @@
+[2025-12-08T19:26:38.054+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T20:58:09.695467+00:00 [queued]>
+[2025-12-08T19:26:38.086+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T20:58:09.695467+00:00 [queued]>
+[2025-12-08T19:26:38.088+0000] {taskinstance.py:1361} INFO - Starting attempt 6 of 6
+[2025-12-08T19:26:38.115+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): add_sentiment_analysis> on 2025-12-07 20:58:09.695467+00:00
+[2025-12-08T19:26:38.124+0000] {standard_task_runner.py:57} INFO - Started process 207 to run task
+[2025-12-08T19:26:38.133+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'add_sentiment_analysis', 'manual__2025-12-07T20:58:09.695467+00:00', '--job-id', '230', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmp2bb064_k']
+[2025-12-08T19:26:38.140+0000] {standard_task_runner.py:85} INFO - Job 230: Subtask add_sentiment_analysis
+[2025-12-08T19:26:38.275+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.add_sentiment_analysis manual__2025-12-07T20:58:09.695467+00:00 [running]> on host fb35e4f278df
+[2025-12-08T19:26:38.447+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='add_sentiment_analysis' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T20:58:09.695467+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T20:58:09.695467+00:00'
+[2025-12-08T19:26:38.450+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T19:26:38.451+0000] {logging_mixin.py:154} INFO - ADDING CUSTOM SENTIMENT ANALYSIS (Post-Processing)
+[2025-12-08T19:26:38.451+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T19:26:52.073+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T19:26:52.074+0000] {logging_mixin.py:154} INFO - ADDING CUSTOM SENTIMENT ANALYSIS - FINAL FIXED VERSION
+[2025-12-08T19:26:52.074+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-08T19:26:52.075+0000] {logging_mixin.py:154} INFO - 
+Step 1: Connecting to Snowflake...
+[2025-12-08T19:26:52.075+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-08T19:26:52.076+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-08T19:26:54.507+0000] {logging_mixin.py:154} INFO - ✅ Connected to Snowflake
+[2025-12-08T19:26:54.510+0000] {logging_mixin.py:154} INFO - 
+Step 2: Verifying sentiment columns...
+[2025-12-08T19:26:54.512+0000] {cursor.py:1032} INFO - query: [DESCRIBE TABLE FACT_COMPLAINTS]
+[2025-12-08T19:26:54.715+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T19:26:54.715+0000] {cursor.py:1205} INFO - Number of results in first chunk: 35
+[2025-12-08T19:26:54.717+0000] {logging_mixin.py:154} INFO - ✅ All sentiment columns exist
+[2025-12-08T19:26:54.718+0000] {logging_mixin.py:154} INFO - 
+Step 3: Checking complaints needing sentiment analysis...
+[2025-12-08T19:26:54.718+0000] {cursor.py:1032} INFO - query: [SELECT COUNT(*) FROM FACT_COMPLAINTS WHERE sentiment_score IS NULL]
+[2025-12-08T19:26:55.492+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-08T19:26:55.492+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-08T19:26:55.493+0000] {logging_mixin.py:154} INFO - Found 0 complaints needing sentiment analysis
+[2025-12-08T19:26:55.494+0000] {logging_mixin.py:154} INFO - ✅ All complaints already have sentiment scores!
+[2025-12-08T19:26:55.494+0000] {connection.py:734} INFO - closed
+[2025-12-08T19:26:55.555+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2025-12-08T19:26:55.656+0000] {logging_mixin.py:154} INFO - ✅ Custom Sentiment Analysis Complete
+[2025-12-08T19:26:55.671+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-08T19:26:55.687+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=add_sentiment_analysis, execution_date=20251207T205809, start_date=20251208T192638, end_date=20251208T192655
+[2025-12-08T19:26:55.749+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-08T19:26:55.762+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

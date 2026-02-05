@@ -1,0 +1,148 @@
+[2025-12-07T01:55:45.714+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_epa_data manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T01:55:45.728+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline.clean_epa_data manual__2025-12-07T01:55:44.575398+00:00 [queued]>
+[2025-12-07T01:55:45.729+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 3
+[2025-12-07T01:55:45.750+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_epa_data> on 2025-12-07 01:55:44.575398+00:00
+[2025-12-07T01:55:45.761+0000] {standard_task_runner.py:57} INFO - Started process 243 to run task
+[2025-12-07T01:55:45.766+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline', 'clean_epa_data', 'manual__2025-12-07T01:55:44.575398+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmppman4v1l']
+[2025-12-07T01:55:45.773+0000] {standard_task_runner.py:85} INFO - Job 168: Subtask clean_epa_data
+[2025-12-07T01:55:45.875+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline.clean_epa_data manual__2025-12-07T01:55:44.575398+00:00 [running]> on host fb35e4f278df
+[2025-12-07T01:55:46.011+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline' AIRFLOW_CTX_TASK_ID='clean_epa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-07T01:55:44.575398+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-07T01:55:44.575398+00:00'
+[2025-12-07T01:55:46.013+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:55:46.014+0000] {logging_mixin.py:154} INFO - CLEANING TASK 1: EPA Fuel Economy Data
+[2025-12-07T01:55:46.014+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-07T01:55:46.163+0000] {logging_mixin.py:154} INFO - 
+Starting EPA Fuel Economy Cleaning
+[2025-12-07T01:55:46.165+0000] {logging_mixin.py:154} INFO - Running in LOCAL mode
+[2025-12-07T01:55:46.166+0000] {logging_mixin.py:154} INFO - Loading AWS S3 connectors...
+[2025-12-07T01:56:02.143+0000] {logging_mixin.py:154} INFO - Input: s3a://autoinsightfinal/epa/raw/*.csv
+[2025-12-07T01:56:02.145+0000] {logging_mixin.py:154} INFO - Output: s3a://autoinsightfinal/epa/cleaned_new/fuel_economy/parquet/
+[2025-12-07T01:56:02.146+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:56:02.146+0000] {logging_mixin.py:154} INFO - EPA FUEL ECONOMY - SPARK CLEANING PIPELINE
+[2025-12-07T01:56:02.148+0000] {logging_mixin.py:154} INFO - Input: 2020-2024 data (pre-filtered, high quality)
+[2025-12-07T01:56:02.148+0000] {logging_mixin.py:154} INFO - Target: Top 15 manufacturers (already filtered)
+[2025-12-07T01:56:02.149+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with standardized columns
+[2025-12-07T01:56:02.150+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:56:02.150+0000] {logging_mixin.py:154} INFO - 
+Reading raw data from: s3a://autoinsightfinal/epa/raw/*.csv
+[2025-12-07T01:56:28.917+0000] {logging_mixin.py:154} INFO -   Loaded 7,716 records
+[2025-12-07T01:56:28.919+0000] {logging_mixin.py:154} INFO -   Initial columns: 33
+[2025-12-07T01:56:28.920+0000] {logging_mixin.py:154} INFO - 
+Step 1: Standardizing manufacturer names...
+[2025-12-07T01:56:29.534+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-07T01:56:34.795+0000] {logging_mixin.py:154} INFO -   ✓ Kept 7,716 records from top 15 manufacturers
+[2025-12-07T01:56:34.797+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 0 records from other manufacturers
+[2025-12-07T01:56:34.800+0000] {logging_mixin.py:154} INFO - 
+Step 2: Cleaning MODEL field...
+[2025-12-07T01:56:35.219+0000] {logging_mixin.py:154} INFO - 
+Step 3: Validating YEAR field...
+[2025-12-07T01:56:38.850+0000] {logging_mixin.py:154} INFO - 
+Step 4: Standardizing fuel type categories...
+[2025-12-07T01:56:38.968+0000] {logging_mixin.py:154} INFO - 
+Step 5: Creating unified efficiency metric...
+[2025-12-07T01:56:39.056+0000] {logging_mixin.py:154} INFO - 
+Step 6: Adding data quality flags...
+[2025-12-07T01:56:39.189+0000] {logging_mixin.py:154} INFO - 
+Step 7: Removing duplicates...
+[2025-12-07T01:56:43.503+0000] {logging_mixin.py:154} INFO -   Removed 3,858 duplicate records
+[2025-12-07T01:56:43.504+0000] {logging_mixin.py:154} INFO - 
+Step 8: Standardizing column names for Snowflake...
+[2025-12-07T01:56:43.757+0000] {logging_mixin.py:154} INFO - 
+Step 9: Creating standardized vehicle_id...
+[2025-12-07T01:56:44.137+0000] {logging_mixin.py:154} INFO - 
+Step 10: Adding metadata...
+[2025-12-07T01:56:44.299+0000] {logging_mixin.py:154} INFO - 
+Step 11: Selecting final columns (Snowflake-ready)...
+[2025-12-07T01:56:47.860+0000] {logging_mixin.py:154} INFO - 
+Cleaning Summary:
+[2025-12-07T01:56:47.867+0000] {logging_mixin.py:154} INFO -   Initial records: 7,716
+[2025-12-07T01:56:47.868+0000] {logging_mixin.py:154} INFO -   Final records: 3,858
+[2025-12-07T01:56:47.873+0000] {logging_mixin.py:154} INFO -   Retention rate: 50.0%
+[2025-12-07T01:56:47.880+0000] {logging_mixin.py:154} INFO -   Initial columns: 33
+[2025-12-07T01:56:47.888+0000] {logging_mixin.py:154} INFO -   Final columns: 28 (selected essentials)
+[2025-12-07T01:56:47.892+0000] {logging_mixin.py:154} INFO - 
+  Fuel Type Distribution:
+[2025-12-07T01:56:53.208+0000] {logging_mixin.py:154} INFO -     Gasoline: 3,244
+[2025-12-07T01:56:53.209+0000] {logging_mixin.py:154} INFO -     Electric: 330
+[2025-12-07T01:56:53.210+0000] {logging_mixin.py:154} INFO -     Diesel: 99
+[2025-12-07T01:56:53.211+0000] {logging_mixin.py:154} INFO -     Plug-in Hybrid: 83
+[2025-12-07T01:56:53.212+0000] {logging_mixin.py:154} INFO -     Flex-Fuel: 79
+[2025-12-07T01:56:53.213+0000] {logging_mixin.py:154} INFO -     Other: 23
+[2025-12-07T01:56:53.213+0000] {logging_mixin.py:154} INFO - 
+  Top Manufacturers:
+[2025-12-07T01:56:56.397+0000] {logging_mixin.py:154} INFO -     BMW: 514
+[2025-12-07T01:56:56.403+0000] {logging_mixin.py:154} INFO -     Ford: 461
+[2025-12-07T01:56:56.404+0000] {logging_mixin.py:154} INFO -     Chevrolet: 420
+[2025-12-07T01:56:56.409+0000] {logging_mixin.py:154} INFO -     Mercedes-Benz: 399
+[2025-12-07T01:56:56.411+0000] {logging_mixin.py:154} INFO -     Toyota: 378
+[2025-12-07T01:56:56.413+0000] {logging_mixin.py:154} INFO -     GMC: 289
+[2025-12-07T01:56:56.414+0000] {logging_mixin.py:154} INFO -     Hyundai: 225
+[2025-12-07T01:56:56.414+0000] {logging_mixin.py:154} INFO -     Kia: 199
+[2025-12-07T01:56:56.417+0000] {logging_mixin.py:154} INFO -     Nissan: 195
+[2025-12-07T01:56:56.418+0000] {logging_mixin.py:154} INFO -     Jeep: 184
+[2025-12-07T01:56:56.419+0000] {logging_mixin.py:154} INFO -     Honda: 168
+[2025-12-07T01:56:56.421+0000] {logging_mixin.py:154} INFO -     Volkswagen: 134
+[2025-12-07T01:56:56.422+0000] {logging_mixin.py:154} INFO -     Subaru: 114
+[2025-12-07T01:56:56.422+0000] {logging_mixin.py:154} INFO -     Mazda: 105
+[2025-12-07T01:56:56.425+0000] {logging_mixin.py:154} INFO -     Tesla: 73
+[2025-12-07T01:56:56.427+0000] {logging_mixin.py:154} INFO - 
+  Records by Year:
+[2025-12-07T01:56:58.414+0000] {logging_mixin.py:154} INFO -     2020: 765
+[2025-12-07T01:56:58.415+0000] {logging_mixin.py:154} INFO -     2021: 789
+[2025-12-07T01:56:58.416+0000] {logging_mixin.py:154} INFO -     2022: 792
+[2025-12-07T01:56:58.417+0000] {logging_mixin.py:154} INFO -     2023: 763
+[2025-12-07T01:56:58.417+0000] {logging_mixin.py:154} INFO -     2024: 749
+[2025-12-07T01:56:58.418+0000] {logging_mixin.py:154} INFO - 
+Preparing to write cleaned data...
+[2025-12-07T01:56:58.584+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/epa/cleaned_new/fuel_economy/parquet/
+[2025-12-07T01:56:58.585+0000] {logging_mixin.py:154} INFO - Writing cleaned data to: s3a://autoinsightfinal/epa/cleaned_new/fuel_economy/parquet/
+[2025-12-07T01:57:31.486+0000] {logging_mixin.py:154} INFO -    Safety check: Will not delete from non-cleaned path: s3a://autoinsightfinal/epa/cleaned_new/fuel_economy/csv/
+[2025-12-07T01:57:31.492+0000] {logging_mixin.py:154} INFO - Writing CSV to: s3a://autoinsightfinal/epa/cleaned_new/fuel_economy/csv/
+[2025-12-07T01:57:57.481+0000] {logging_mixin.py:154} INFO - 
+EPA Fuel Economy cleaning complete!
+[2025-12-07T01:57:57.487+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-07T01:57:57.488+0000] {logging_mixin.py:154} INFO - 
+Sample of cleaned data (Snowflake-ready):
+[2025-12-07T01:57:58.915+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+------+-----------------+----+-------------+------------+----------------+
+|fuel_economy_id                                                 |make  |model            |year|fuel_category|mpg_combined|efficiency_score|
++----------------------------------------------------------------+------+-----------------+----+-------------+------------+----------------+
+|2d07c8e580a998762f4bd929ca5e38a023ae8f515c7e9e91b9401b7170a935e6|Toyota|Corolla          |2020|Gasoline     |34          |34.2793         |
+|693020785250aa00f84eed2df02fa29d03445e72dbf64471f5e792ebb1857ce5|Toyota|Corolla Hybrid   |2020|Gasoline     |52          |52.0            |
+|30b03658c66ca6c2a8ea3ae12349f81a3ac48dee6a3fc3d73d5bf12dda4b11fa|Toyota|Corolla          |2020|Gasoline     |32          |31.8162         |
+|7452ff2b3d958cb0e4bd50bc1d5667dbfdc2412a887dd6031f46e846cad77dce|Toyota|Corolla XSE      |2020|Gasoline     |34          |33.6766         |
+|e9ba55db2909651aa6a0fa24a99f767ec0b7489a315a3f2f4767e7b9892704cd|Toyota|Corolla          |2020|Gasoline     |33          |33.0496         |
+|fd73df04c21cdf0b0d493e246624a5e50a85715d849e8a5b08331a0f6c73c943|Toyota|Corolla          |2020|Gasoline     |33          |33.1228         |
+|b70ee34b44909553f5a800d9ca9bba5d21768380ed5a1648405edb71b2ff2352|Toyota|Corolla XLE      |2020|Gasoline     |32          |32.2043         |
+|88e28f5076eee109dda32d01dd33a99c5ea1cbc31972f15812f2bb331d1385a6|Kia   |Soul             |2020|Gasoline     |30          |29.651          |
+|9eaba82d838419c6c0af08e01dffd0319a714e5ba67fc5f65a3a59961ec5a5c3|Kia   |Soul Eco dynamics|2020|Gasoline     |31          |31.3493         |
+|101559a5c716581eb9034333b4ac9ba9fb65801da2797d495812fb251d8647d5|Kia   |Soul             |2020|Gasoline     |27          |27.0504         |
++----------------------------------------------------------------+------+-----------------+----+-------------+------------+----------------+
+only showing top 10 rows
+[2025-12-07T01:57:58.918+0000] {logging_mixin.py:154} INFO - 
+Vehicle ID verification (first 5):
+[2025-12-07T01:58:01.387+0000] {logging_mixin.py:154} INFO - +----------------------------------------------------------------+------+--------------+----+
+|vehicle_id                                                      |make  |model         |year|
++----------------------------------------------------------------+------+--------------+----+
+|8ceb37e3e0ba3a05949a3b5232d24ca1fb7edf14e3c8e033d3c31a7251faca49|Toyota|Corolla       |2020|
+|3233036c095c84bd83134cb7dabcd2386a26d12782cc0b3da9d445bec5d4a03a|Toyota|Corolla Hybrid|2020|
+|8ceb37e3e0ba3a05949a3b5232d24ca1fb7edf14e3c8e033d3c31a7251faca49|Toyota|Corolla       |2020|
+|70fddaf8a18199834c9b5af67e02ed0e5bf28d829e1a1c7f0def059c382b6325|Toyota|Corolla XSE   |2020|
+|8ceb37e3e0ba3a05949a3b5232d24ca1fb7edf14e3c8e033d3c31a7251faca49|Toyota|Corolla       |2020|
++----------------------------------------------------------------+------+--------------+----+
+only showing top 5 rows
+[2025-12-07T01:58:01.388+0000] {logging_mixin.py:154} INFO - 
+Electric vehicle sample:
+[2025-12-07T01:58:03.901+0000] {logging_mixin.py:154} INFO - +---------+----------------------+----+-------------+--------------+
+|make     |model                 |year|mpge_combined|electric_range|
++---------+----------------------+----+-------------+--------------+
+|Hyundai  |Kona Electric         |2020|122.6523     |258           |
+|Chevrolet|Bolt EV               |2020|117.6        |259           |
+|Hyundai  |Ioniq Electric        |2020|132.768      |170           |
+|Tesla    |Model 3 Long Range    |2020|130.2464     |330           |
+|Tesla    |Model 3 Long Range AWD|2020|120.5        |322           |
++---------+----------------------+----+-------------+--------------+
+only showing top 5 rows
+[2025-12-07T01:58:04.144+0000] {logging_mixin.py:154} INFO - ✅ EPA Data Cleaning Complete
+[2025-12-07T01:58:04.189+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-07T01:58:04.247+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_cleaning_pipeline, task_id=clean_epa_data, execution_date=20251207T015544, start_date=20251207T015545, end_date=20251207T015804
+[2025-12-07T01:58:04.333+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-07T01:58:04.389+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,21 @@
+[2025-12-10T08:48:14.815+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.check_environment manual__2025-12-10T08:48:14.122781+00:00 [queued]>
+[2025-12-10T08:48:14.827+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.check_environment manual__2025-12-10T08:48:14.122781+00:00 [queued]>
+[2025-12-10T08:48:14.828+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-12-10T08:48:14.854+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): check_environment> on 2025-12-10 08:48:14.122781+00:00
+[2025-12-10T08:48:14.866+0000] {standard_task_runner.py:57} INFO - Started process 568 to run task
+[2025-12-10T08:48:14.875+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_daily_scraper', 'check_environment', 'manual__2025-12-10T08:48:14.122781+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/news_scrapper.py', '--cfg-path', '/tmp/tmpgal4gqfh']
+[2025-12-10T08:48:14.882+0000] {standard_task_runner.py:85} INFO - Job 117: Subtask check_environment
+[2025-12-10T08:48:15.015+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_daily_scraper.check_environment manual__2025-12-10T08:48:14.122781+00:00 [running]> on host 846744d01d56
+[2025-12-10T08:48:15.154+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='autoinsight' AIRFLOW_CTX_DAG_ID='autoinsight_daily_scraper' AIRFLOW_CTX_TASK_ID='check_environment' AIRFLOW_CTX_EXECUTION_DATE='2025-12-10T08:48:14.122781+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-10T08:48:14.122781+00:00'
+[2025-12-10T08:48:15.158+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-10T08:48:15.161+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "Checking environment..."\n            echo "S3_BUCKET_NAME: ${S3_BUCKET_NAME:-NOT SET}"\n            echo "AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:+SET}"\n            echo "SNOWFLAKE_USER: ${SNOWFLAKE_USER:+SET}"\n            \n            if [ -z "$S3_BUCKET_NAME" ]; then\n                echo "ERROR: S3_BUCKET_NAME not set"\n                exit 1\n            fi\n            \n            echo "✅ Environment check passed"\n        ']
+[2025-12-10T08:48:15.190+0000] {subprocess.py:86} INFO - Output:
+[2025-12-10T08:48:15.196+0000] {subprocess.py:93} INFO - Checking environment...
+[2025-12-10T08:48:15.199+0000] {subprocess.py:93} INFO - S3_BUCKET_NAME: autoinsightfinal
+[2025-12-10T08:48:15.201+0000] {subprocess.py:93} INFO - AWS_ACCESS_KEY_ID: SET
+[2025-12-10T08:48:15.203+0000] {subprocess.py:93} INFO - SNOWFLAKE_USER: SET
+[2025-12-10T08:48:15.206+0000] {subprocess.py:93} INFO - ✅ Environment check passed
+[2025-12-10T08:48:15.208+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-12-10T08:48:15.264+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_daily_scraper, task_id=check_environment, execution_date=20251210T084814, start_date=20251210T084814, end_date=20251210T084815
+[2025-12-10T08:48:15.331+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-10T08:48:15.383+0000] {taskinstance.py:2778} INFO - 2 downstream tasks scheduled from follow-on schedule check

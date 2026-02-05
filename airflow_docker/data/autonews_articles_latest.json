@@ -1,0 +1,2367 @@
+[
+  {
+    "title": "Ford will launch Renault-based small EVs in Europe",
+    "url": "https://www.autonews.com/ford/ane-ford-renault-partnership-1209/",
+    "published_date": "2025-12-09T06:10:14",
+    "source": "autonews_rss",
+    "author": "Nick Gibbs",
+    "summary": "The EVs will be engineered and produced by Renault at Ampere’s ElectriCity plant in France, with Ford overseeing the design as well as the ride and handling characteristics.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EVs",
+      "Ampere",
+      "Renault",
+      "Ford"
+    ],
+    "mentioned_models": [
+      "Renault-based"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "France",
+      "Europe The",
+      "Ampere",
+      "Renault"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.468020"
+  },
+  {
+    "title": "Suppliers to the new Skoda Kodiaq",
+    "url": "https://www.autonews.com/car-concepts/ane-car-cutaway-skoda-kodiaq-1209/",
+    "published_date": "2025-12-09T05:00:00",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Production of the midsize SUV is expected to peak at nearly 139,000 next year.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "SUV"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.468268"
+  },
+  {
+    "title": "Asbury CEO David Hult to step down in May; COO Dan Clara to lead dealership group",
+    "url": "https://www.autonews.com/retail/an-asbury-david-hult-dan-clara-ceo-1208/",
+    "published_date": "2025-12-08T22:39:47",
+    "source": "autonews_rss",
+    "author": "John Huetter",
+    "summary": "The CEO change from David Hult to Dan Clara, which Asbury called “the culmination of the Board’s long-term leadership succession plan,” will take effect after Asbury’s annual stockholder meeting in May.",
+    "category": "executive",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "change",
+      "David"
+    ],
+    "mentioned_models": [
+      "long-term"
+    ],
+    "mentioned_executives": [
+      "dealership group",
+      "David Hult"
+    ],
+    "mentioned_locations": [
+      "May",
+      "David"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.468613"
+  },
+  {
+    "title": "BMW, Toyota oppose EU’s proposed CO2 targets for business fleets",
+    "url": "https://www.autonews.com/regulation-safety/ane-business-fleet-emission-targets-1208/",
+    "published_date": "2025-12-08T20:48:50",
+    "source": "autonews_rss",
+    "author": "Reuters News",
+    "summary": "The European Union's latest proposals for cutting CO2 emissions could include mandatory targets for electric vehicle purchases for corporate fleets, a move opponents say will be \"highly damaging.\"",
+    "category": "ev",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU",
+      "BMW",
+      "Union"
+    ],
+    "mentioned_models": [
+      "CO2"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.468926"
+  },
+  {
+    "title": "Rivian CEO RJ Scaringe interview; six EU leaders call to stop ICE ban",
+    "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-rj-scaringe-eu-ice-ban/",
+    "published_date": "2025-12-08T20:20:10",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "In the first part of an exclusive interview with Automotive News, Rivian CEO RJ Scaringe says the auto industry is on the verge of a self-driving revolution. Six countries call on the European Union to abandon its 2035 ICE ban. Plus, Canadian auto retailers have poured millions into electric vehicle infrastructure upgrades, but many say there’s been no return on investment.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 9,
+    "mentioned_manufacturers": [
+      "EU",
+      "RJ",
+      "ICE"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.469408"
+  },
+  {
+    "title": "Daily 5 report for Dec. 8: The battle to ease emissions rules isn’t just being fought in America",
+    "url": "https://www.autonews.com/newsletters/daily-5/an-daily-5-eu-regulation-1208/",
+    "published_date": "2025-12-08T20:00:00",
+    "source": "autonews_rss",
+    "author": "Omari Gardner",
+    "summary": "After last week’s widely expected news that the Trump administration is proposing relaxed U.S. fuel economy standards, several developments in Europe signal dissatisfaction in that market’s regulatory landscape.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Daily 5"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe",
+      "America After"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.469786"
+  },
+  {
+    "title": "How smarter aftersales strategies deliver results: Service view case study",
+    "url": "https://www.autonews.com/resource_center/urban-science/ane-how-smarter-aftersales-strategies-deliver-results-service-view-case-study/",
+    "published_date": "2025-12-08T19:00:07",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "In response to industry challenges and declining new vehicle sales, dealership leaders aimed to increase service retention and aftersales revenue. Additionally, as part of an OEM corporate initiative, they focused on growing customer-paid service work to achieve 100% service absorption.",
+    "category": "financial",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "OEM"
+    ],
+    "mentioned_models": [
+      "customer-paid"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.470137"
+  },
+  {
+    "title": "Aftersales in the EV Future: Plan now to realize tomorrow’s potential",
+    "url": "https://www.autonews.com/resource_center/urban-science/ane-aftersales-in-the-ev-future-plan-now-to-realize-tomorrows-potential/",
+    "published_date": "2025-12-08T18:59:55",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "A recent Harris Poll commissioned by Urban Science shows that global auto buyers recognize electric vehicles (EVs) as the most impactful innovation shaping the future of the automotive industry. Despite this shift, a strong majority across the U.K., Germany, and the U.S. still value personal vehicle ownership. Government regulations, especially in Europe, are accelerating the transition to EVs, with significant growth in sales projected in the near future.",
+    "category": "ev",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "EV",
+      "Urban"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.470704"
+  },
+  {
+    "title": "Editorial: Stellantis hiring spree a welcome turnabout for metro Detroit",
+    "url": "https://www.autonews.com/opinion/editorials/an-stellantis-editorial-1208/",
+    "published_date": "2025-12-08T18:42:59",
+    "source": "autonews_rss",
+    "author": "Crain's Detroit Business",
+    "summary": "News that Stellantis is on a hiring spree of white-collar workers in Auburn Hills is a welcome change.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Hills",
+      "Stellantis"
+    ],
+    "mentioned_models": [
+      "white-collar"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Auburn Hills",
+      "Stellantis"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.470919"
+  },
+  {
+    "title": "First Shift: GM envisions cars as personal assistants",
+    "url": "https://www.autonews.com/video/first-shift-gm-envisions-cars-as-personal-assistants/",
+    "published_date": "2025-12-08T18:29:10",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "Volvo: Growth returning in 2026 | Toyota revives Lexus LFA | Scout Motors service strategy",
+    "category": "general",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Scout",
+      "GM",
+      "LFA"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.471092"
+  },
+  {
+    "title": "Auto Supply Chain Performance: The Hidden Gaps Costing OEMs Billions",
+    "url": "https://www.autonews.com/resource_center/bcg/auto-supply-chain-performance-hidden-gaps-costing-oems/",
+    "published_date": "2025-12-08T18:22:16",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "BCG’s new perspective highlights the seven capabilities that define high-performing automotive supply chains illustrated through real-life examples and focused deep dives from our recent work.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "real-life"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Performance"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.471495"
+  },
+  {
+    "title": "Aisin spending $11M on Ontario plant to build panoramic sunroofs for Lexus NX",
+    "url": "https://www.autonews.com/manufacturing/suppliers/anc-aisin-ontario-lexus-sunroof-production-1208/",
+    "published_date": "2025-12-08T17:09:02",
+    "source": "autonews_rss",
+    "author": "David Kennedy",
+    "summary": "The investment in new equipment will shift work currently done in Asia to North America.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "NX"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Asia"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.471694"
+  },
+  {
+    "title": "5 Revenue Secrets Every Dealership Needs to Know Heading Into 2026",
+    "url": "https://www.autonews.com/resource_center/dynatron-software/5-revenue-secrets-every-dealership-needs-to-know-heading-into-2026/",
+    "published_date": "2025-12-08T16:11:53",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Discover how top-performing dealerships are capturing untapped revenue opportunities through smarter pricing, disciplined processes, and connected performance insights.",
+    "category": "financial",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "top-performing",
+      "Into 2026"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.471948"
+  },
+  {
+    "title": "Mercedes GLB: Electric debut for an overlooked contender",
+    "url": "https://www.autonews.com/mercedes-benz/ane-mercedes-glb-gets-electric-version-1208/",
+    "published_date": "2025-12-08T16:09:19",
+    "source": "autonews_rss",
+    "author": "Michael Gerster",
+    "summary": "The electric Mercedes GLB delivers up to 631 km (392 miles) of range, likely setting a benchmark in its class.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "GLB"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.472125"
+  },
+  {
+    "title": "Automakers fall short of end-of-year rush as China sales drop second straight month",
+    "url": "https://www.autonews.com/china/an-china-noc-2025-sales-drop-1208/",
+    "published_date": "2025-12-08T15:21:09",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "Retail vehicle sales fell about 8 percent to 2.2 million in November, the China Passenger Car Association said, mainly due to a 22 percent slump in sales of gasoline cars, with new-energy vehicle volume up 4.2 percent.",
+    "category": "sales",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Association"
+    ],
+    "mentioned_models": [
+      "end-of",
+      "new-energy"
+    ],
+    "mentioned_executives": [
+      "Car Association"
+    ],
+    "mentioned_locations": [
+      "November"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.472409"
+  },
+  {
+    "title": "Automotive News Video: Volvo targets growth in 2026",
+    "url": "https://www.autonews.com/video/automotive-news-video-volvo-targets-growth-in-2026/",
+    "published_date": "2025-12-08T15:12:20",
+    "source": "autonews_rss",
+    "author": "Douglas A. Bolduc",
+    "summary": "Volvo Cars CEO Håkan Samuelsson says the automaker is ready to return to growth in 2026 after falling short of last year's record 700,000 global sales.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "Volvo Cars"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.472608"
+  },
+  {
+    "title": "Best practices for leveraging the power of AI at auto dealerships",
+    "url": "https://www.autonews.com/sponsored/an-best-practices-for-leveraging-the-power-of-ai-at-auto-dealerships/",
+    "published_date": "2025-12-08T14:17:54",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Many dealers are grappling with how to fully harness the potential of artificial intelligence (AI) while at the same time minimizing the possible risks. There are a myriad of things to consider: What’s the best way to introduce AI to employees?",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "AI"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.472927"
+  },
+  {
+    "title": "LexisNexis Risk Solutions VP on the changing face of car buyer loyalty: What OEMs must do next",
+    "url": "https://www.autonews.com/sponsored/in-the-drivers-seat/an-lexisnexis-risk-solutions-vp-on-the-changing-face-of-car-buyer-loyalty-what-oems-must-do-next/",
+    "published_date": "2025-12-08T14:16:46",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Loyalty isn’t what it used to be—and new research from LexisNexis Risk Solutions reveals that only 31% of car buyers still behave like true brand loyalists. In this episode, host Emma Hancock speaks with Dave Nemtuda, Assistant Vice President, Connected Car, who breaks down why loyalty is fragmenting, how multi-brand households are reshaping the market, and what predictive garage insights mean for the future of retention.",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "OEMs",
+      "LexisNexis",
+      "VP"
+    ],
+    "mentioned_models": [
+      "multi-brand"
+    ],
+    "mentioned_executives": [
+      "Assistant Vice"
+    ],
+    "mentioned_locations": [
+      "Lexis"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.473449"
+  },
+  {
+    "title": "Lexis Nexis VP on the changing face of car buyer loyalty: What OEMs must do next",
+    "url": "https://www.autonews.com/video/lexis-nexis-vp-on-the-changing-face-of-car-buyer-loyalty-what-oems-must-do-next/",
+    "published_date": "2025-12-08T14:14:25",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "OEMs",
+      "VP"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.473581"
+  },
+  {
+    "title": "Read the Automotive News digital edition for Dec. 8",
+    "url": "https://www.autonews.com/digital-edition/automotive-news/an-digital-edition-12-08-2025/",
+    "published_date": "2025-12-08T12:51:30",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Archive of digital edition for 12-8-2025",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.473712"
+  },
+  {
+    "title": "Former Volkswagen exec launches self-named line of gin",
+    "url": "https://www.autonews.com/volkswagen/cupra/an-wayne-griffiths-gin-line-1208/",
+    "published_date": "2025-12-08T11:00:00",
+    "source": "autonews_rss",
+    "author": "Jack Walsworth",
+    "summary": "The VW Group veteran left Seat and Cupra in March.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "The",
+      "March"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.473859"
+  },
+  {
+    "title": "Mercedes hires former VW strategy chief Stefan Weckbach to lead AMG",
+    "url": "https://www.autonews.com/mercedes-benz/ane-mercedes-amg-weckbach-hire-executives-1208/",
+    "published_date": "2025-12-08T09:33:36",
+    "source": "autonews_rss",
+    "author": "Micha Gebhardt",
+    "summary": "Stefan Weckbach helped shape Porsche’s EV roadmap and was once considered a contender for the CEO role. He will now steer AMG’s electrification plans as it aims to launch its first full-electric sports car next year.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "EV",
+      "VW",
+      "role",
+      "He",
+      "AMG",
+      "Stefan"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "VW strategy",
+      "contender for"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.474151"
+  },
+  {
+    "title": "What Stellantis CEO Antonio Filosa is seeking in EU auto package",
+    "url": "https://www.autonews.com/stellantis/ane-filosa-stellantis-eu-1208/",
+    "published_date": "2025-12-08T08:41:32",
+    "source": "autonews_rss",
+    "author": "Peter Sigal",
+    "summary": "Stellantis is pushing for rules to support commercial vans and small cars, as well as measures to speed up the renewal of Europe's aging car fleet.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "EU",
+      "Filosa",
+      "Antonio",
+      "Stellantis"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "What Stellantis",
+      "Antonio Filosa"
+    ],
+    "mentioned_locations": [
+      "Stellantis"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.474360"
+  },
+  {
+    "title": "Volvo CEO predicts 2026 sales rebound, calls U.S. ideal market for electrification",
+    "url": "https://www.autonews.com/executives/ane-volvo-ceo-hakan-samuelsson-interview-of-the-month-1208/",
+    "published_date": "2025-12-08T05:00:00",
+    "source": "autonews_rss",
+    "author": "Douglas A. Bolduc",
+    "summary": "Hakan Samuelsson says the EX30, EX90 and XC70 will lead the comeback. He also is bullish about long-range plug-in hybrids gaining traction in Europe and the U.S.",
+    "category": "executive",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "predicts"
+    ],
+    "mentioned_models": [
+      "plug-in",
+      "XC70",
+      "EX90",
+      "EX30",
+      "long-range"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.474584"
+  },
+  {
+    "title": "Canadian dealers spent millions on EV infrastructure for few sales",
+    "url": "https://www.autonews.com/ev/anc-canadian-dealer-ev-investment-costly-1205/",
+    "published_date": "2025-12-07T23:56:54",
+    "source": "autonews_rss",
+    "author": "Greg Layson",
+    "summary": "One group has spent as much as $4.5 million on store upgrades while one dealer in Western Canada spent $200,000 on one dealership, but electric-vehicle sales continue to slump.",
+    "category": "ev",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV"
+    ],
+    "mentioned_models": [
+      "electric-vehicle"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Western Canada"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.474813"
+  },
+  {
+    "title": "BMW iX3 Neue Klasse: What the new EV delivers in battery tech, computing and dynamics",
+    "url": "https://www.autonews.com/bmw/ane-bmw-neue-klasse-ix3-whats-good-1207/",
+    "published_date": "2025-12-07T18:43:34",
+    "source": "autonews_rss",
+    "author": "Thomas Geiger",
+    "summary": "The iX3 is the first software-defined vehicle to launch using BMW's new Neue Klasse tech platform. Here are key impressions from a first drive of the midsize electric SUV.",
+    "category": "ev",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "BMW",
+      "EV",
+      "SUV"
+    ],
+    "mentioned_models": [
+      "software-defined"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.475048"
+  },
+  {
+    "title": "EU confirms auto package that could weaken 2035 ICE ban is delayed to Dec. 16",
+    "url": "https://www.autonews.com/regulation-safety/ane-europe-auto-aid-package-new-date-1207/",
+    "published_date": "2025-12-07T18:35:34",
+    "source": "autonews_rss",
+    "author": "Reuters News",
+    "summary": "Automakers and governments have asked the EU revise its 2035 zero emissions policy that would ban sales of new combustion engine cars.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU",
+      "ICE"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.475352"
+  },
+  {
+    "title": "As AI fuels new cyber threats, can dealerships and vendors stay ahead?",
+    "url": "https://www.autonews.com/retail/an-intercolumn-1207/",
+    "published_date": "2025-12-07T12:00:00",
+    "source": "autonews_rss",
+    "author": "Mark Hollmer",
+    "summary": "Cybercriminals eventually find new ways to attack. The challenge for dealerships and their tech vendors is to keep their protections current.",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "AI"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.475791"
+  },
+  {
+    "title": "Six EU countries call for abandoning 2035 combustion engine ban",
+    "url": "https://www.autonews.com/regulation-safety/ane-italy-meloni-soften-europe-combustion-engine-ban-1207/",
+    "published_date": "2025-12-07T11:40:22",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "Prime ministers including Italy's Giorgia Meloni and Poland’s Donald Tusk demanded that an upcoming revision of EU rules for new cars allow plug-in hybrids, range extenders and fuel-cell technology after the 2035 zero-emission deadline.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU"
+    ],
+    "mentioned_models": [
+      "plug-in",
+      "fuel-cell",
+      "zero-emission"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.476268"
+  },
+  {
+    "title": "Bonus Episode: Steps dealers should take before picking AI vendors",
+    "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-sun-dealer-ai-steps/",
+    "published_date": "2025-12-07T11:00:00",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Part Two of Automotive News Retail Reporter Mark Hollmer’s interview with Yuriy Demidko, chief information officer at Fox Motors, outlining the steps dealers need to take when selecting a vendor for artificial intelligence tools.",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "information",
+      "AI",
+      "Fox"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "Yuriy Demidko"
+    ],
+    "mentioned_locations": [
+      "Fox"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.477159"
+  },
+  {
+    "title": "RJ Scaringe: How Rivian is navigating tariff impacts",
+    "url": "https://www.autonews.com/podcasts/shift/an-shift-podcast-rivian-rj-scaringe-1207/",
+    "published_date": "2025-12-07T11:00:00",
+    "source": "autonews_rss",
+    "author": "Laurence Iliff, Molly Boigon",
+    "summary": "RJ Scaringe, Rivian’s CEO, joins the Automotive News “Shift” podcast to talk about how Rivian reduced its tariff impacts.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "Rivian"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.478248"
+  },
+  {
+    "title": "VW CEO Oliver Blume signals investment cuts as cash flow tightens",
+    "url": "https://www.autonews.com/volkswagen/ane-vw-cuts-investment-on-tariffs-china-slump-1206/",
+    "published_date": "2025-12-06T13:30:19",
+    "source": "autonews_rss",
+    "author": "Micha Gebhardt",
+    "summary": "VW's latest investment plan focuses on Europe but it could include a U.S. plant for Audi and a Porsche model built in China.",
+    "category": "executive",
+    "sentiment": "negative",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "VW",
+      "Oliver"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "Oliver Blume"
+    ],
+    "mentioned_locations": [
+      "China"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.480115"
+  },
+  {
+    "title": "Weekend Drive: Is Trump’s CAFE rollback moot?",
+    "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-wd-cafe-rollback-toyota-supercars/",
+    "published_date": "2025-12-06T11:00:00",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "Auto industry leaders joined President Donald Trump at the White House to announce proposed rollbacks of Biden-era fuel economy standards. Automotive News’ Larry P. Vellequette and Michael Martinez talk about that and other news from the past week, including Toyota’s leap back into supercars.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Donald"
+    ],
+    "mentioned_models": [
+      "Biden-era"
+    ],
+    "mentioned_executives": [
+      "Donald Trump",
+      "leaders joined"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.481830"
+  },
+  {
+    "title": "Former Bollinger executive sues EV automaker",
+    "url": "https://www.autonews.com/manufacturing/automakers/an-bollinger-motors-whistleblower-lawsuit-1205/",
+    "published_date": "2025-12-05T20:23:26",
+    "source": "autonews_rss",
+    "author": "Eric Freedman",
+    "summary": "A former executive at EV automaker Bollinger Innovations sued the company, alleging retaliatory discharge, breach of contract and whistleblower violations.",
+    "category": "ev",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.483699"
+  },
+  {
+    "title": "Daily 5 report for Dec. 5: Trump weakens CAFE rules",
+    "url": "https://www.autonews.com/newsletters/daily-5/an-daily5-intro-1205/",
+    "published_date": "2025-12-05T20:00:00",
+    "source": "autonews_rss",
+    "author": "Wes Raynal",
+    "summary": "The Trump administration's proposed federal fuel economy standards give automakers a reprieve from stringent emissions rules but prompts some analysts and environmental organizations to say the change could mean the return of the gas-guzzler.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Daily 5",
+      "gas-guzzler"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.484913"
+  },
+  {
+    "title": "Top 5 Canadian auto stories this week: New Dodge Charger output; November sales slump; auto job losses; more",
+    "url": "https://www.autonews.com/manufacturing/anc-top-canadian-auto-stories-week-december-1/",
+    "published_date": "2025-12-05T19:53:26",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Here's a rundown of the week's top stories as determined by reader interest.",
+    "category": "sales",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Top 5"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.485326"
+  },
+  {
+    "title": "Trump wants kei cars in U.S.; how to set up dealership mobile service",
+    "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-trump-kei-cars-vernon-davis/",
+    "published_date": "2025-12-05T19:06:04",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "President Donald Trump wants Asian kei cars to be built and sold in the U.S. Toyota leaps back into supercars. Plus, service and parts consultant Vernon Davis talks about his new book about how to implement mobile service at a dealership.",
+    "category": "sales",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Donald"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "Donald Trump",
+      "mobile service"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.485787"
+  },
+  {
+    "title": "First Shift: Nissan seeks partnerships",
+    "url": "https://www.autonews.com/video/first-shift-nissan-seeks-partnerships/",
+    "published_date": "2025-12-05T17:21:49",
+    "source": "autonews_rss",
+    "author": "Jake Neher",
+    "summary": "Mazda’s upmarket strategy pays off | New dealership group’s ambitious plans | Trump greenlights kei cars",
+    "category": "general",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.486120"
+  },
+  {
+    "title": "Scout remains all in on factory-run service centers",
+    "url": "https://www.autonews.com/retail/service-and-parts/an-scout-service-update-1205/",
+    "published_date": "2025-12-05T17:00:00",
+    "source": "autonews_rss",
+    "author": "Jack Walsworth",
+    "summary": "Scout Motors' ambitious service and parts plan will center on factory-run service centers.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Scout"
+    ],
+    "mentioned_models": [
+      "factory-run"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.486334"
+  },
+  {
+    "title": "North America production downtime – 12/08/25",
+    "url": "https://www.autonews.com/data-center/manufacturing-data/production-downtime/an-north-america-assembly-plant-downtime-120825/",
+    "published_date": "2025-12-05T16:44:25",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "North America car and truck assembly plant downtime for the current week",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.486567"
+  },
+  {
+    "title": "GM envisions vehicles becoming owners’ robot assistants",
+    "url": "https://www.autonews.com/general-motors/an-general-motors-conversational-ai-vehicle-1205/",
+    "published_date": "2025-12-05T16:13:03",
+    "source": "autonews_rss",
+    "author": "Lindsay VanHulle",
+    "summary": "Advances in GM's driver-assistance technology, AI, computing and software will work together to make a driver's life easier and more personalized.",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "GM",
+      "AI"
+    ],
+    "mentioned_models": [
+      "driver-assistance"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.486826"
+  },
+  {
+    "title": "Hyundai Canada appoints Ken Maisonville as COO",
+    "url": "https://www.autonews.com/hyundai/anc-hyundai-canada-appoints-maisonville-coo-1203/",
+    "published_date": "2025-12-05T13:43:26",
+    "source": "autonews_rss",
+    "author": "David Kennedy",
+    "summary": "Maisonville will oversee sales, marketing and aftersales for the Hyundai brand in Canada.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "Maisonville"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Canada"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.487022"
+  },
+  {
+    "title": "Carney, Trump, Sheinbaum to meet at 2026 World Cup draw in Washington",
+    "url": "https://www.autonews.com/canada/anc-trump-carney-sheinbaum-meet-world-cup-usmca-1205/",
+    "published_date": "2025-12-05T13:36:54",
+    "source": "autonews_rss",
+    "author": "Canadian Press",
+    "summary": "The 2026 World Cup draw will mark the first time all three leaders have gathered in person. It comes ahead of next year's mandatory review of the United States-Mexico-Canada Agreement.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "next"
+    ],
+    "mentioned_models": [
+      "The 2026",
+      "States-Mexico"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Washington The"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.487330"
+  },
+  {
+    "title": "High Country Chevrolet-Buick-GMC Principal Doug Green Testimony",
+    "url": "https://www.autonews.com/video/high-country-chevrolet-buick-gmc-principal-doug-green-testimony/",
+    "published_date": "2025-12-05T13:27:27",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Chevrolet-Buick"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.487494"
+  },
+  {
+    "title": "Centennial guest essay by Bill Ford: Legendary Mustang means freedom, optimism to generations around the world",
+    "url": "https://www.autonews.com/events/100th-anniversary/an-100-bill-ford-essay-1205/",
+    "published_date": "2025-12-05T12:00:00",
+    "source": "autonews_rss",
+    "author": "Bill Ford",
+    "summary": "Bill Ford describes the evolution and global impact of the Ford Mustang.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Bill"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.487733"
+  },
+  {
+    "title": "Leo Michael cartoon: Safety vs. affordability",
+    "url": "https://www.autonews.com/opinion/cartoons/an-leo-michael-data-profits-1126-2/",
+    "published_date": "2025-12-05T12:00:00",
+    "source": "autonews_rss",
+    "author": "Leo Michael",
+    "summary": "Republicans on the Commerce, Science and Transportation Committee plan to hold a hearing Jan. 14 on vehicle affordability.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.488019"
+  },
+  {
+    "title": "Tesla seeks Europe sales rebound with low-cost Model 3",
+    "url": "https://www.autonews.com/tesla/ane-tesla-model-3-standard-europe-1204/",
+    "published_date": "2025-12-05T09:56:31",
+    "source": "autonews_rss",
+    "author": "Peter Sigal",
+    "summary": "The Model 3 Standard drops ambient lighting, a rear touchscreen and other comfort features to reach below-€37,000 pricing as Tesla battles falling sales and cheaper Chinese EVs in Europe.",
+    "category": "sales",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Model 3"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.488350"
+  },
+  {
+    "title": "Volvo, Tesla supplier Luminar gears up for debt restructuring",
+    "url": "https://www.autonews.com/manufacturing/suppliers/ane-luminar-supplier-debt-restructuring-1205/",
+    "published_date": "2025-12-05T09:41:56",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "Luminar’s struggles come amid growing cracks in the supplier sector, as the industry grapples with tariffs and a shifting outlook for EVs.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.488680"
+  },
+  {
+    "title": "Cupra’s €26,000 Raval takes aim at Renault 5 in Europe’s small EV market",
+    "url": "https://www.autonews.com/volkswagen/cupra/ane-cupra-ev-raval-urban-family-1204/",
+    "published_date": "2025-12-05T09:30:51",
+    "source": "autonews_rss",
+    "author": "Andrea Malan",
+    "summary": "The Raval will be the first EV to launch from VW's Electric Urban Car family. The car targets younger buyers with performance-focused tuning.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV",
+      "VW",
+      "Renault",
+      "Raval"
+    ],
+    "mentioned_models": [
+      "performance-focused",
+      "Renault 5"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe",
+      "Renault"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.488957"
+  },
+  {
+    "title": "VW to convert Dresden EV factory to AI, chip tech center",
+    "url": "https://www.autonews.com/technology/ane-vw-dresden-ai-chip-center-1205/",
+    "published_date": "2025-12-05T08:52:30",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "VW's Dresden factory will be a research center for artificial intelligence and robotics after the phase out of ID3 production.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "AI",
+      "EV",
+      "VW"
+    ],
+    "mentioned_models": [
+      "ID3"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.489193"
+  },
+  {
+    "title": "ANC Podcast: Dec. 5, 2025 | The week’s top stories and Laura Zanchin talks EV investment, sales, rebates, more",
+    "url": "https://www.autonews.com/podcasts/canada-conversations/anc-automotive-news-canada-podcast-dec-28-laura-zanchin/",
+    "published_date": "2025-12-05T03:23:28",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "November sales slide; New Charger output starts; USMCA under scrutiny. Plus, Zanchin Automotive Group Principal and Executive Director Laura Zanchin talks EV investment, sales, rebates and more.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "ANC",
+      "Zanchin",
+      "EV"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Automotive Group"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.489547"
+  },
+  {
+    "title": "Toyota leaps back into supercars with gasoline-powered GR GT/GT3; Lexus LFA resurrected as EV",
+    "url": "https://www.autonews.com/toyota/lexus/an-toyota-gr-gt-lexus-lfa-concept-1204/",
+    "published_date": "2025-12-05T02:00:00",
+    "source": "autonews_rss",
+    "author": "Larry P. Vellequette, Hans Greimel",
+    "summary": "Toyota will leap back into supercars with three new entries on a shared architecture due in about 2027. The GR GT and GR GT3 will be powered by a high-output twin-turbo V-8, while the Lexus LFA is expected to be reborn as an EV, perhaps with a solid state battery.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV",
+      "GR",
+      "Toyota",
+      "LFA",
+      "GT"
+    ],
+    "mentioned_models": [
+      "GT3",
+      "gasoline-powered",
+      "V-8",
+      "twin-turbo"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.489929"
+  },
+  {
+    "title": "Stellantis getting notice of default from Canada following production shift to U.S., Joly says",
+    "url": "https://www.autonews.com/stellantis/anc-stellantis-notice-default-canada-brampton/",
+    "published_date": "2025-12-05T00:59:51",
+    "source": "autonews_rss",
+    "author": "Canadian Press",
+    "summary": "Stellantis’ production shift breaches federal contracts tied to manufacturing in Brampton and Windsor, Ont., Industry Minister Mélanie Joly told the international trade  committee.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Canada"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Canada",
+      "Brampton"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.490326"
+  },
+  {
+    "title": "Unlock dealer success: Harness market data for profitable decisions in today’s automotive landscape",
+    "url": "https://www.autonews.com/resource_center/cox-automotive/an-unlock-dealer-success-harness-market-data-for-profitable-decisions-in-todays-automotive-landscape/",
+    "published_date": "2025-12-04T22:04:08",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Today’s most successful dealerships aren’t just adapting to change—they’re anticipating it with real-time market intelligence. Cox Automotive research shows that data-driven dealers outperform their peers with smarter pricing, faster inventory movement, and stronger profitability in a volatile market.",
+    "category": "financial",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "Cox"
+    ],
+    "mentioned_models": [
+      "data-driven",
+      "real-time"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.490834"
+  },
+  {
+    "title": "Simple steps to achieve faster deals and better experiences for car buyers",
+    "url": "https://www.autonews.com/resource_center/cox-automotive/an-simple-steps-to-achieve-faster-deals-and-better-experiences-for-car-buyers/",
+    "published_date": "2025-12-04T22:04:02",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Today’s buyers expect speed, transparency, and flexibility—Dealertrack’s Digitization Guide reveals how dealerships can deliver all three with surprisingly simple workflow upgrades. Learn how small digital shifts can remove friction, accelerate deals, and create a smoother experience for both your team and your customers.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.491401"
+  },
+  {
+    "title": "Unlock shopper satisfaction with precision: Build the experience today’s buyers expect",
+    "url": "https://www.autonews.com/resource_center/cox-automotive/an-unlock-shopper-satisfaction-with-precision-build-the-experience-todays-buyers-expect/",
+    "published_date": "2025-12-04T22:03:56",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Car buyers want more control, more clarity, and more confidence—and top dealers are meeting that demand with precision, not guesswork. VinSolutions’ latest guide reveals the four key drivers of shopper satisfaction and shows how data-backed strategies can transform every touchpoint of the buying journey.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "data-backed"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.491857"
+  },
+  {
+    "title": "Customer Incentives – 12/08/25",
+    "url": "https://www.autonews.com/data-center/sales-data/incentives/an-u-s-customer-incentives-december-08-2025/",
+    "published_date": "2025-12-04T21:45:32",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "National customer cash back and finance rate programs listed by automaker, brand and model; updated weekly",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.492066"
+  },
+  {
+    "title": "The AI Moment: Why standing still isn’t an option in automotive",
+    "url": "https://www.autonews.com/resource_center/cox-automotive/an-the-ai-moment-why-standing-still-isnt-an-option-in-automotive/",
+    "published_date": "2025-12-04T21:35:40",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "AI is reshaping automotive retail faster than any technology before it, and dealers who fully commit are already seeing 50% stronger performance across sales, operations, and profitability. With 81% saying adoption was easier than expected, the real risk isn’t moving too fast—it’s falling behind.",
+    "category": "financial",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "AI"
+    ],
+    "mentioned_models": [
+      "With 81"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.492465"
+  },
+  {
+    "title": "Automotive News Video: Trump slashes fuel economy rules",
+    "url": "https://www.autonews.com/video/automotive-news-video-trump-slashes-fuel-economy-rules/",
+    "published_date": "2025-12-04T21:04:05",
+    "source": "autonews_rss",
+    "author": "Jake Neher",
+    "summary": "The proposed rule would also reclassify crossovers and small SUVs as passenger vehicles instead of light trucks.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.492677"
+  },
+  {
+    "title": "Daily 5 report for Dec. 4: Domestic brands continue to struggle in Consumer Reports rankings",
+    "url": "https://www.autonews.com/manufacturing/an-daily5-consumer-reports-automaker-rankings-1204/",
+    "published_date": "2025-12-04T20:00:00",
+    "source": "autonews_rss",
+    "author": "Jerry Hirsch",
+    "summary": "Consumer Reports bases its analysis on its own road tests and owner survey results that covered 380,000 vehicles.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Daily 5"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Consumer Reports"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.492949"
+  },
+  {
+    "title": "U.S. sales stumbles continue in November as affordability woes deepen",
+    "url": "https://www.autonews.com/retail/sales/an-november-sales-slump-continues-1204/",
+    "published_date": "2025-12-04T19:51:25",
+    "source": "autonews_rss",
+    "author": "Michael Martinez, David Phillips",
+    "summary": "While the overall market fell for the second consecutive month, some brands such as Toyota and Kia posted modest gains driven by strong demand for hybrids and lower-priced models.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "lower-priced"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "November"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.493194"
+  },
+  {
+    "title": "Car Pros Automotive sells 3 stores to Canadian Go Auto",
+    "url": "https://www.autonews.com/retail/mergers-acquisitions/an-car-pros-automotive-sells-washington-dealerhips-1204/",
+    "published_date": "2025-12-04T19:44:51",
+    "source": "autonews_rss",
+    "author": "Gail Kachadourian Howe",
+    "summary": "Car Pros Automotive Group sold its three dealerships in Washington, according to a Dec. 4 LinkedIn post from CEO Matthew Phillips. Those stores sell Kia and Hyundai vehicles.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "CEO",
+      "Car Pros",
+      "Canadian Go",
+      "Matthew"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "post from",
+      "Matthew Phillips"
+    ],
+    "mentioned_locations": [
+      "Washington"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.493460"
+  },
+  {
+    "title": "How dealers should shop for AI tools; Trump unveils relaxed CAFE standards",
+    "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-dealer-ai-shopping-trump-cafe/",
+    "published_date": "2025-12-04T18:22:49",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "Yuri Demidko, chief information Officer at Fox Motors, outlines the steps dealers need to take before settling on new artificial intelligence tools for their stores. President Donald Trump unveils his plan to slash fuel economy rules. Plus, dealer sentiment sinks as the tariff rush fades and tax credits end.",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "information",
+      "AI",
+      "Donald",
+      "Fox"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "Donald Trump",
+      "Yuri Demidko"
+    ],
+    "mentioned_locations": [
+      "Fox"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.493816"
+  },
+  {
+    "title": "Identifying & Training the Next-Generation EV Workforce",
+    "url": "https://www.autonews.com/resource_center/RegionalGrowthPartnership/identifying-and-training-the-next-gen-ev-workforce/",
+    "published_date": "2025-12-04T18:17:35",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "The rapidly growing EV industry needs workers with a diverse set of skills, beyond the traditional industry occupations. These include computer programmers, EV maintenance technicians, chemical engineers, software developers and materials engineers. Companies will find some of those workers already trained and ready – working in adjacent sectors. They also can turn to colleges, many of which are now taking a more aggressive role in preparing these next generation workers.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV",
+      "Companies"
+    ],
+    "mentioned_models": [
+      "Next-Generation"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.494379"
+  },
+  {
+    "title": "U.S. loyalty rates by make, as of Sept. 2025",
+    "url": "https://www.autonews.com/data-center/sales-data/loyalty-rates/an-us-loyalty-rates-by-make-as-of-sept-2025/",
+    "published_date": "2025-12-04T18:17:03",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "U.S. loyalty rates by make as of a certain date.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.494629"
+  },
+  {
+    "title": "CDK’s Service Shopper Study: Trends Shaping the Service Experience",
+    "url": "https://www.autonews.com/resource_center/CDK/cdk-service-shopper-study-2025/",
+    "published_date": "2025-12-04T18:14:44",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "CDK’s annual Service Shopper study offers a fresh lens from 2,000+ customers into how Service departments are performing, what matters most to today’s shoppers, and where the biggest chances for growth lie. From appointment friction to loyalty trends, this year’s results reveal a complex picture, one that demands attention, adaptation and action.",
+    "category": "general",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.495142"
+  },
+  {
+    "title": "First Shift: Trump loosens fuel economy rules",
+    "url": "https://www.autonews.com/video/first-shift-trump-loosens-fuel-economy-rules/",
+    "published_date": "2025-12-04T17:49:29",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "Rivian CEO in founder mode | Dealer sentiment hits near-record low | 700Credit data breach",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "in"
+    ],
+    "mentioned_models": [
+      "near-record"
+    ],
+    "mentioned_executives": [
+      "rules Rivian"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.495346"
+  },
+  {
+    "title": "Why midsize premium sedans are losing ground in Europe",
+    "url": "https://www.autonews.com/europe/ane-midsize-premium-segment-analysis-1205/",
+    "published_date": "2025-12-04T17:29:49",
+    "source": "autonews_rss",
+    "author": "Nick Gibbs",
+    "summary": "Fleet tax policies and the slow introduction of full-electric models are reshaping European premium car sales.",
+    "category": "sales",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe Fleet"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.495567"
+  },
+  {
+    "title": "EU to review, possibly exempt tariffs on Volkswagen EVs built in China",
+    "url": "https://www.autonews.com/volkswagen/an-vw-eu-cupra-seat-tariff-review-1204/",
+    "published_date": "2025-12-04T17:19:03",
+    "source": "autonews_rss",
+    "author": "Reuters News",
+    "summary": "Volkswagen’s Seat-Cupra subsidiary, which produces the Tavascan all-electric crossover in China and exports to Europe, warns that new EU tariffs pose a serious threat to its business.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU"
+    ],
+    "mentioned_models": [
+      "Seat-Cupra"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "China",
+      "China Volkswagen"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.495922"
+  },
+  {
+    "title": "U.S. car and light-truck inventories, on Dec. 1, 2025",
+    "url": "https://www.autonews.com/data-center/sales-data/an-us-car-and-light-truck-inventories-on-dec-1-2025/",
+    "published_date": "2025-12-04T17:08:57",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "Unit inventory and days’ supply of cars and light trucks in the U.S. for automakers that report monthly sales and inventory",
+    "category": "sales",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "light-truck"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.496199"
+  },
+  {
+    "title": "Dealer enthusiasm for service and parts business wanes, Cox study finds",
+    "url": "https://www.autonews.com/retail/service-and-parts/an-cox-dealer-sentiment-service-parts-1204/",
+    "published_date": "2025-12-04T17:01:51",
+    "source": "autonews_rss",
+    "author": "Dan Shine",
+    "summary": "Dealers' views of current and future service and parts business dropped in the latest Cox Automotive Dealer Sentiment Index.",
+    "category": "general",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Cox"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.496428"
+  },
+  {
+    "title": "Trump moves to slash fuel economy rules with automaker support",
+    "url": "https://www.autonews.com/regulation-safety/an-trump-cafe-nhtsa-changes-duffy-1203/",
+    "published_date": "2025-12-04T16:51:31",
+    "source": "autonews_rss",
+    "author": "Molly Boigon",
+    "summary": "The planned presence of the Detroit 3 and automotive stakeholders at the Oval Office announcement shows how times have changed regarding vehicle emissions.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Detroit 3"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.496738"
+  },
+  {
+    "title": "Changan set to launch Avatr, Nevo EV brands in Europe, executive says",
+    "url": "https://www.autonews.com/china/an-china-changan-avatr-nevo-eurepe-1204/",
+    "published_date": "2025-12-04T16:50:47",
+    "source": "autonews_rss",
+    "author": "Reuters News",
+    "summary": "Chongqing-based Changan joins a growing number of Chinese automakers in Europe, including China’s No. 1 car company, BYD, and the country’s top exporter, Chery, as well as EV makers Xpeng and Zeekr.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV",
+      "BYD"
+    ],
+    "mentioned_models": [
+      "Chongqing-based"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Chongqing",
+      "Europe"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.497062"
+  },
+  {
+    "title": "EU reviews removing tariffs on VW electric cars built in China",
+    "url": "https://www.autonews.com/volkswagen/cupra/ane-vw-cupra-tavascan-may-avoid-europes-china-tariffs-1204/",
+    "published_date": "2025-12-04T16:39:57",
+    "source": "autonews_rss",
+    "author": "Reuters News",
+    "summary": "VW's Seat/Cupra subsidiary, whose Tavascan electric SUV is built in China, has warned that the tariff poses a serious threat to its business.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU",
+      "VW",
+      "SUV"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "China"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.497325"
+  },
+  {
+    "title": "Automotive News Video: Rivian CEO on autonomy push",
+    "url": "https://www.autonews.com/video/automotive-news-video-rivian-ceo-on-autonomy-push/",
+    "published_date": "2025-12-04T16:30:54",
+    "source": "autonews_rss",
+    "author": "Laurence Iliff",
+    "summary": "Rivian CEO RJ Scaringe says autonomy will redefine vehicle ownership before the decade's end.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "RJ",
+      "on"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "push Rivian"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.497504"
+  },
+  {
+    "title": "Trump wants Asia’s ‘cute’ kei cars to be built and sold in America",
+    "url": "https://www.autonews.com/manufacturing/an-trump-wants-japans-kei-cars-built-sold-in-us-1204/",
+    "published_date": "2025-12-04T16:16:44",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "While the ultra-compact cars are highly popular in Japan, they currently don’t meet federal standards for new vehicles in the U.S.",
+    "category": "sales",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "ultra-compact"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "America While",
+      "Japan"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.497767"
+  },
+  {
+    "title": "Rivian CEO RJ Scaringe says autonomy could reshape market share ‘before the end of the decade’",
+    "url": "https://www.autonews.com/rivian/an-rivian-sees-autonomy-as-growth-engine-1204/",
+    "published_date": "2025-12-04T15:57:20",
+    "source": "autonews_rss",
+    "author": "Laurence Iliff",
+    "summary": "Rivian is developing self-driving features as CEO RJ Scaringe says giving drivers “time back” will shift market share, echoing Tesla’s playbook.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 8,
+    "mentioned_manufacturers": [
+      "RJ",
+      "Rivian"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "features as"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": true,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.498060"
+  },
+  {
+    "title": "Tesla China shipments rise for just the third time in 2025",
+    "url": "https://www.autonews.com/tesla/an-tesla-china-nov-2025-shipments-rise-1204/",
+    "published_date": "2025-12-04T15:09:40",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "Tesla's November shipments from a Shanghai plant totaled 86,700 in November, up 10 percent from a year earlier, and the second-highest tally for the company this year, trailing only September’s wholesale deliveries.",
+    "category": "sales",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "second-highest"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "November"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.498606"
+  },
+  {
+    "title": "Consumer Reports: Toyota is most reliable brand while Ford sees best result in 15 years",
+    "url": "https://www.autonews.com/manufacturing/automakers/an-consumer-reports-report-card-1204/",
+    "published_date": "2025-12-04T15:05:59",
+    "source": "autonews_rss",
+    "author": "Richard Truett",
+    "summary": "Toyota and Subaru consistently rank highest in quality rankings because they make incremental changes, said Jake Fisher, Consumer Reports senior director of auto testing.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Toyota"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.499013"
+  },
+  {
+    "title": "Guest commentary: Why the first dealers to experiment with AI will have advantages",
+    "url": "https://www.autonews.com/opinion/guest-commentary/an-guest-commentary-nick-cossette-auto-dealers-ai-1204/",
+    "published_date": "2025-12-04T15:00:00",
+    "source": "autonews_rss",
+    "author": "Nick Cossette",
+    "summary": "AI is reshaping auto retail as early-adopter dealerships tighten response times, test new workflows and build compounding advantages in leads, loyalty and margins that late adopters will struggle to match.",
+    "category": "technology",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "AI"
+    ],
+    "mentioned_models": [
+      "early-adopter"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.499390"
+  },
+  {
+    "title": "Dealers are key to carmakers’ success",
+    "url": "https://www.autonews.com/opinion/letters/an-letter-press-1203/",
+    "published_date": "2025-12-04T14:00:00",
+    "source": "autonews_rss",
+    "author": null,
+    "summary": "A mutually trusting relationship consistently build over 50 years cannot be duplicated overnight, writes Jim Press.",
+    "category": "general",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.499646"
+  },
+  {
+    "title": "Nissan shops for partnerships, but not one-way deals",
+    "url": "https://www.autonews.com/nissan/an-nissan-shops-for-joint-venture-deals-1204/",
+    "published_date": "2025-12-04T13:59:45",
+    "source": "autonews_rss",
+    "author": "Urvaksh Karkaria",
+    "summary": "Nissan brings some unique technology to the negotiating table, including an electrified body-on-frame platform that could support up to five new models.",
+    "category": "general",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "one-way",
+      "body-on"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.499869"
+  },
+  {
+    "title": "New auto retailer LTA Auto Group, backed by investment group, buys first dealerships, seeks to grow to 50-plus stores",
+    "url": "https://www.autonews.com/retail/mergers-acquisitions/an-lta-auto-buys-first-dealerships-1204/",
+    "published_date": "2025-12-04T13:00:00",
+    "source": "autonews_rss",
+    "author": "Gail Kachadourian Howe",
+    "summary": "LTA Auto Group bought its first two dealerships, both in California, with plans to buy more in that state, then expand into other states.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "LTA"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "California"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.500151"
+  },
+  {
+    "title": "Gasoline-powered Dodge Charger returns as first models roll off the line in Windsor, Ont.",
+    "url": "https://www.autonews.com/stellantis/dodge/anc-charger-scat-pack-windsor-production-1203/",
+    "published_date": "2025-12-04T12:30:59",
+    "source": "autonews_rss",
+    "author": "David Kennedy",
+    "summary": "Stellantis plans to hire about 1,500 workers in Windsor to meet demand for its expanded lineup of muscle cars.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Stellantis"
+    ],
+    "mentioned_models": [
+      "Gasoline-powered"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Windsor"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.500372"
+  },
+  {
+    "title": "How a once-struggling Mitsubishi store more than doubled annual sales in a decade",
+    "url": "https://www.autonews.com/retail/canada-best-practices/anc-best-practices-nanaimo-mitsubishi/",
+    "published_date": "2025-12-04T12:24:58",
+    "source": "autonews_rss",
+    "author": "Doug Firby",
+    "summary": "Sales were once so slow, staff had to show photos to buyers and then bring in physical vehicles from other Mitsubishi dealerships.",
+    "category": "sales",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "once-struggling"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.500639"
+  },
+  {
+    "title": "Why the next wave of software-defined vehicles will be cheaper to make, have fewer delays",
+    "url": "https://www.autonews.com/technology/ane-new-sdvs-cheaper-faster-1204/",
+    "published_date": "2025-12-04T12:06:11",
+    "source": "autonews_rss",
+    "author": "Lois Hoyal, Douglas A. Bolduc",
+    "summary": "VW, Renault and Hyundai will benefit from the costly, time-consuming mistakes made by rivals when launching early-generation SDVs, a top tech supplier boss said.",
+    "category": "manufacturing",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Hyundai",
+      "VW"
+    ],
+    "mentioned_models": [
+      "early-generation",
+      "software-defined",
+      "time-consuming"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.500879"
+  },
+  {
+    "title": "CEO RJ Scaringe: Rivian’s next phase hinges on mass-market R2 and advanced autonomy",
+    "url": "https://www.autonews.com/executives/talk-from-the-top/an-rivian-rj-scaringe-talk-from-top-ceo-interview-1204/",
+    "published_date": "2025-12-04T12:00:00",
+    "source": "autonews_rss",
+    "author": "Laurence Iliff",
+    "summary": "Four years after launching high-end R1 vehicles, Rivian enters a new phase with the R2 crossover, advanced software and an autonomy push, CEO RJ Scaringe says.",
+    "category": "executive",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "RJ"
+    ],
+    "mentioned_models": [
+      "R2",
+      "R1",
+      "mass-market"
+    ],
+    "mentioned_executives": [
+      "autonomy push"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.501195"
+  },
+  {
+    "title": "Mazda CEO Masahiro Moro: Retail-driven growth transforms U.S. brand value",
+    "url": "https://www.autonews.com/mazda/an-mazda-masahiro-moro-talk-from-the-top-ceo-interview-qa-1208/",
+    "published_date": "2025-12-04T11:00:01",
+    "source": "autonews_rss",
+    "author": "Hans Greimel",
+    "summary": "Mazda CEO Masahiro Moro outlines plans to return to profitability after a big tariff hit and revises his outlook for electric vehicles.",
+    "category": "executive",
+    "sentiment": "positive",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "Masahiro"
+    ],
+    "mentioned_models": [
+      "Retail-driven"
+    ],
+    "mentioned_executives": [
+      "value Mazda",
+      "Masahiro Moro"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.501415"
+  },
+  {
+    "title": "Scout’s arrival in South Carolina has executive teaching college engineering course",
+    "url": "https://www.autonews.com/volkswagen/scout/an-scout-exec-teaches-south-carolina-1204/",
+    "published_date": "2025-12-04T11:00:01",
+    "source": "autonews_rss",
+    "author": "Jack Walsworth",
+    "summary": "Scout Motors' growing presence in South Carolina now includes an executive teaching a university course.",
+    "category": "general",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Scout",
+      "Carolina"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "South Carolina"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.501709"
+  },
+  {
+    "title": "Why Mazda CEO Masahiro Moro’s ‘retail-driven’ strategy has succeeded",
+    "url": "https://www.autonews.com/mazda/an-mazda-masahiro-moro-retail-growth-strategy-1204/",
+    "published_date": "2025-12-04T11:00:01",
+    "source": "autonews_rss",
+    "author": "Hans Greimel",
+    "summary": "Upmarket brand migration is a holy grail of many mass-market automakers. Mazda CEO Masahiro Moro may have cracked the code.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "Masahiro"
+    ],
+    "mentioned_models": [
+      "retail-driven",
+      "mass-market"
+    ],
+    "mentioned_executives": [
+      "Why Mazda",
+      "Masahiro Moro"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.501953"
+  },
+  {
+    "title": "Car industry bets EU will delay announcement on combustion-engine cut-off, report says",
+    "url": "https://www.autonews.com/manufacturing/automakers/ane-eu-emissions-package-delay-1204/",
+    "published_date": "2025-12-04T10:14:11",
+    "source": "autonews_rss",
+    "author": "Reuters News",
+    "summary": "Industry sources have joined EU Transport Commissioner Apostolos Tzitzikostas in suggesting an announcement on the support package may not take place on Dec. 10.",
+    "category": "general",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU"
+    ],
+    "mentioned_models": [
+      "cut-off",
+      "combustion-engine"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.502258"
+  },
+  {
+    "title": "France pushes EU to support local EV production in auto relief deal",
+    "url": "https://www.autonews.com/ev/ane-france-eu-local-production-evs-support-1204/",
+    "published_date": "2025-12-04T09:27:17",
+    "source": "autonews_rss",
+    "author": "Bloomberg News",
+    "summary": "The government wants EVs sold in Europe to include 75 percent of locally sourced parts, in line with the current content levels for ICE vehicles.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EU",
+      "EV",
+      "ICE"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Europe"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.502475"
+  },
+  {
+    "title": "German importers lobby group sees EV incentives as key to sales growth in 2026",
+    "url": "https://www.autonews.com/ev/ane-vdik-germany-ev-incentives-growth-1204/",
+    "published_date": "2025-12-04T09:17:56",
+    "source": "autonews_rss",
+    "author": "William Boston",
+    "summary": "The VDIK says if Berlin meets its demands for subsidy adjustments, the BEV market could raise its share to 25.5 percent, enough to “just about meet” fleet CO2 limits.",
+    "category": "ev",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV",
+      "BEV"
+    ],
+    "mentioned_models": [
+      "CO2"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.502754"
+  },
+  {
+    "title": "What BMW CEO Oliver Zipse wants from the EU’s auto rescue package",
+    "url": "https://www.autonews.com/bmw/ane-bmw-zipse-eu-1203/",
+    "published_date": "2025-12-03T21:26:59",
+    "source": "autonews_rss",
+    "author": "Peter Sigal",
+    "summary": "The European market cannot reach the EU's 100 percent zero emissions goal by the 2035 target date, BMW's Zipse said. He called on regulators to implement life cycle carbon assessment, along with provisions for plug-in hybrids and sustainable fuels.",
+    "category": "executive",
+    "sentiment": "neutral",
+    "importance_score": 7,
+    "mentioned_manufacturers": [
+      "EU",
+      "BMW",
+      "Oliver",
+      "Zipse"
+    ],
+    "mentioned_models": [
+      "plug-in"
+    ],
+    "mentioned_executives": [
+      "What BMW",
+      "Oliver Zipse"
+    ],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.503114"
+  },
+  {
+    "title": "Canada’s Element Fleet Management buying vehicle payment technology firm Car IQ",
+    "url": "https://www.autonews.com/canada/anc-element-fleet-management-buys-car-iq-1203/",
+    "published_date": "2025-12-03T20:03:26",
+    "source": "autonews_rss",
+    "author": "Canadian Press",
+    "summary": "Element helps companies manage fleets of vehicles.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "IQ"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.503404"
+  },
+  {
+    "title": "Daily 5 report for Dec. 3: Don’t choose affordability over safety",
+    "url": "https://www.autonews.com/regulation-safety/an-daily5-intro-1203/",
+    "published_date": "2025-12-03T20:00:00",
+    "source": "autonews_rss",
+    "author": "Wes Raynal",
+    "summary": "It could be quite the important day for the auto business Jan. 14. That’s when Senate Republicans plan to hold a hearing on one of the industry’s biggest issues: vehicle affordability.",
+    "category": "general",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [
+      "Daily 5"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.503705"
+  },
+  {
+    "title": "Edmunds’ Jessica Caldwell on state of the market; Trump set to ease fuel economy standards",
+    "url": "https://www.autonews.com/podcasts/daily-drive/an-daily-drive-caldwell-trump-cafe/",
+    "published_date": "2025-12-03T19:57:45",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "Jessica Caldwell, head of insights at Edmunds, talks about the state of the industry heading into 2026 and how affordability issues have continued to shrink the new car market. Trump is poised to propose relaxed fuel economy standards. Plus, thousands of dealerships fall victim to a new data breach.",
+    "category": "general",
+    "sentiment": "negative",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "insights",
+      "Edmunds",
+      "Trump"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "Edmunds"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.504162"
+  },
+  {
+    "title": "First Shift: Scout Motors sound design",
+    "url": "https://www.autonews.com/video/first-shift-scout-motors-sound-design/",
+    "published_date": "2025-12-03T19:09:32",
+    "source": "autonews_rss",
+    "author": "Kellen Walker",
+    "summary": "Nexperia dispute escalates | Hybrid sales surge in November | JLR design chief ousted",
+    "category": "ev",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "Scout",
+      "JLR",
+      "ousted"
+    ],
+    "mentioned_models": [],
+    "mentioned_executives": [
+      "JLR design"
+    ],
+    "mentioned_locations": [
+      "November"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.504333"
+  },
+  {
+    "title": "November sales down 8.6% amid headwinds and against strong 2024",
+    "url": "https://www.autonews.com/retail/anc-canadian-november-car-sales-1203/",
+    "published_date": "2025-12-03T18:56:06",
+    "source": "autonews_rss",
+    "author": "Greg Layson",
+    "summary": "Of the 10 brands that still report sales on a monthly basis, six posted gains.",
+    "category": "sales",
+    "sentiment": "positive",
+    "importance_score": 5,
+    "mentioned_manufacturers": [],
+    "mentioned_models": [],
+    "mentioned_executives": [],
+    "mentioned_locations": [],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.504516"
+  },
+  {
+    "title": "Who wants to buy a $67,000 off-road EV? Jeep Recon confronts rocky terrain",
+    "url": "https://www.autonews.com/stellantis/an-jeep-recon-prospects-1203/",
+    "published_date": "2025-12-03T18:43:28",
+    "source": "autonews_rss",
+    "author": "Vince Bond Jr.",
+    "summary": "The 650-hp Jeep Recon is coming to the market next year during a challenging time for the EV segment.",
+    "category": "ev",
+    "sentiment": "neutral",
+    "importance_score": 5,
+    "mentioned_manufacturers": [
+      "EV",
+      "Recon"
+    ],
+    "mentioned_models": [
+      "off-road",
+      "The 650"
+    ],
+    "mentioned_executives": [],
+    "mentioned_locations": [
+      "The"
+    ],
+    "is_breaking_news": false,
+    "is_recall_related": false,
+    "is_safety_critical": false,
+    "scraped_at": "2025-12-09T06:31:35.504809"
+  }
+]

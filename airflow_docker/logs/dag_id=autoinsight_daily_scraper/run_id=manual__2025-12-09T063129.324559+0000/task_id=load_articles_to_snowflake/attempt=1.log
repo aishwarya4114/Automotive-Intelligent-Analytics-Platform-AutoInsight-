@@ -1,0 +1,229 @@
+[2025-12-09T06:31:36.489+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.load_articles_to_snowflake manual__2025-12-09T06:31:29.324559+00:00 [queued]>
+[2025-12-09T06:31:36.504+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_daily_scraper.load_articles_to_snowflake manual__2025-12-09T06:31:29.324559+00:00 [queued]>
+[2025-12-09T06:31:36.505+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-12-09T06:31:36.527+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_articles_to_snowflake> on 2025-12-09 06:31:29.324559+00:00
+[2025-12-09T06:31:36.538+0000] {standard_task_runner.py:57} INFO - Started process 1109 to run task
+[2025-12-09T06:31:36.543+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_daily_scraper', 'load_articles_to_snowflake', 'manual__2025-12-09T06:31:29.324559+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/news_scrapper.py', '--cfg-path', '/tmp/tmpgrhhzig6']
+[2025-12-09T06:31:36.550+0000] {standard_task_runner.py:85} INFO - Job 17: Subtask load_articles_to_snowflake
+[2025-12-09T06:31:36.665+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_daily_scraper.load_articles_to_snowflake manual__2025-12-09T06:31:29.324559+00:00 [running]> on host 74c4cbde2083
+[2025-12-09T06:31:36.786+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='autoinsight' AIRFLOW_CTX_DAG_ID='autoinsight_daily_scraper' AIRFLOW_CTX_TASK_ID='load_articles_to_snowflake' AIRFLOW_CTX_EXECUTION_DATE='2025-12-09T06:31:29.324559+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-09T06:31:29.324559+00:00'
+[2025-12-09T06:31:36.788+0000] {news_scrapper.py:110} INFO - ============================================================
+[2025-12-09T06:31:36.788+0000] {news_scrapper.py:111} INFO - TASK: Loading Articles to Snowflake
+[2025-12-09T06:31:36.818+0000] {snowflake_loader.py:43} INFO - Connecting to Snowflake...
+[2025-12-09T06:31:36.819+0000] {connection.py:386} INFO - Snowflake Connector for Python Version: 3.7.0, Python Version: 3.11.6, Platform: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[2025-12-09T06:31:36.821+0000] {connection.py:1211} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2025-12-09T06:31:38.274+0000] {snowflake_loader.py:45} INFO - ✓ Connected to AUTOMOTIVE_AI.PUBLIC
+[2025-12-09T06:31:38.275+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Ford will launch Renault-base...]
+[2025-12-09T06:31:38.914+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:38.916+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Suppliers to the new Skoda Ko...]
+[2025-12-09T06:31:39.956+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:39.958+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Asbury CEO David Hult to step...]
+[2025-12-09T06:31:40.659+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:40.661+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'BMW, Toyota oppose EU’s propo...]
+[2025-12-09T06:31:41.448+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:41.449+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Rivian CEO RJ Scaringe interv...]
+[2025-12-09T06:31:42.161+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:42.162+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Daily 5 report for Dec. 8: Th...]
+[2025-12-09T06:31:43.131+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:43.133+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'How smarter aftersales strate...]
+[2025-12-09T06:31:43.817+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:43.819+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Aftersales in the EV Future: ...]
+[2025-12-09T06:31:44.412+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:44.414+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Editorial: Stellantis hiring ...]
+[2025-12-09T06:31:45.154+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:45.156+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'First Shift: GM envisions car...]
+[2025-12-09T06:31:45.764+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:45.766+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Auto Supply Chain Performance...]
+[2025-12-09T06:31:46.350+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:46.351+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Aisin spending $11M on Ontari...]
+[2025-12-09T06:31:47.084+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:47.086+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT '5 Revenue Secrets Every Deale...]
+[2025-12-09T06:31:47.711+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:47.713+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Mercedes GLB: Electric debut ...]
+[2025-12-09T06:31:48.321+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:48.323+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Automakers fall short of end-...]
+[2025-12-09T06:31:48.873+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:48.875+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Automotive News Video: Volvo ...]
+[2025-12-09T06:31:49.467+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:49.470+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Best practices for leveraging...]
+[2025-12-09T06:31:50.059+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:50.061+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'LexisNexis Risk Solutions VP ...]
+[2025-12-09T06:31:50.656+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:50.658+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Lexis Nexis VP on the changin...]
+[2025-12-09T06:31:51.293+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:51.294+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Read the Automotive News digi...]
+[2025-12-09T06:31:52.010+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:52.012+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Former Volkswagen exec launch...]
+[2025-12-09T06:31:52.622+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:52.623+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Mercedes hires former VW stra...]
+[2025-12-09T06:31:53.238+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:53.239+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'What Stellantis CEO Antonio F...]
+[2025-12-09T06:31:53.856+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:53.861+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Volvo CEO predicts 2026 sales...]
+[2025-12-09T06:31:54.465+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:54.467+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Canadian dealers spent millio...]
+[2025-12-09T06:31:55.082+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:55.084+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'BMW iX3 Neue Klasse: What the...]
+[2025-12-09T06:31:55.696+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:55.698+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'EU confirms auto package that...]
+[2025-12-09T06:31:56.276+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:56.280+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'As AI fuels new cyber threats...]
+[2025-12-09T06:31:56.926+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:56.929+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Six EU countries call for aba...]
+[2025-12-09T06:31:57.537+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:57.538+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Bonus Episode: Steps dealers ...]
+[2025-12-09T06:31:58.153+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:58.155+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'RJ Scaringe: How Rivian is na...]
+[2025-12-09T06:31:58.977+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:58.979+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'VW CEO Oliver Blume signals i...]
+[2025-12-09T06:31:59.610+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:31:59.612+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Weekend Drive: Is Trump’s CAF...]
+[2025-12-09T06:32:00.318+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:00.319+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Former Bollinger executive su...]
+[2025-12-09T06:32:00.920+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:00.921+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Daily 5 report for Dec. 5: Tr...]
+[2025-12-09T06:32:01.534+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:01.536+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Top 5 Canadian auto stories t...]
+[2025-12-09T06:32:02.253+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:02.254+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Trump wants kei cars in U.S.;...]
+[2025-12-09T06:32:02.866+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:02.867+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'First Shift: Nissan seeks par...]
+[2025-12-09T06:32:03.989+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:03.991+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Scout remains all in on facto...]
+[2025-12-09T06:32:04.608+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:04.610+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'North America production down...]
+[2025-12-09T06:32:05.222+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:05.224+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'GM envisions vehicles becomin...]
+[2025-12-09T06:32:05.834+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:05.836+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Hyundai Canada appoints Ken M...]
+[2025-12-09T06:32:06.449+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:06.451+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Carney, Trump, Sheinbaum to m...]
+[2025-12-09T06:32:07.369+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:07.371+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'High Country Chevrolet-Buick-...]
+[2025-12-09T06:32:07.987+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:07.989+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Centennial guest essay by Bil...]
+[2025-12-09T06:32:08.603+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:08.605+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Leo Michael cartoon: Safety v...]
+[2025-12-09T06:32:09.213+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:09.216+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Tesla seeks Europe sales rebo...]
+[2025-12-09T06:32:10.345+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:10.348+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Volvo, Tesla supplier Luminar...]
+[2025-12-09T06:32:10.960+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:10.968+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Cupra’s €26,000 Raval takes a...]
+[2025-12-09T06:32:11.670+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:11.672+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'VW to convert Dresden EV fact...]
+[2025-12-09T06:32:12.286+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:12.288+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'ANC Podcast: Dec. 5, 2025 | T...]
+[2025-12-09T06:32:12.927+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:12.929+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Toyota leaps back into superc...]
+[2025-12-09T06:32:13.516+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:13.519+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Stellantis getting notice of ...]
+[2025-12-09T06:32:14.238+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:14.241+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Unlock dealer success: Harnes...]
+[2025-12-09T06:32:14.851+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:14.854+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Simple steps to achieve faste...]
+[2025-12-09T06:32:15.471+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:15.491+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Unlock shopper satisfaction w...]
+[2025-12-09T06:32:16.075+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:16.077+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Customer Incentives – 12/08/2...]
+[2025-12-09T06:32:17.508+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:17.516+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'The AI Moment: Why standing s...]
+[2025-12-09T06:32:18.121+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:18.123+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Automotive News Video: Trump ...]
+[2025-12-09T06:32:18.737+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:18.739+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Daily 5 report for Dec. 4: Do...]
+[2025-12-09T06:32:19.454+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:19.456+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'U.S. sales stumbles continue ...]
+[2025-12-09T06:32:20.476+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:20.478+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Car Pros Automotive sells 3 s...]
+[2025-12-09T06:32:21.198+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:21.200+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'How dealers should shop for A...]
+[2025-12-09T06:32:21.911+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:21.913+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Identifying & Training the Ne...]
+[2025-12-09T06:32:22.524+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:22.526+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'U.S. loyalty rates by make, a...]
+[2025-12-09T06:32:23.164+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:23.166+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'CDK’s Service Shopper Study: ...]
+[2025-12-09T06:32:23.754+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:23.760+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'First Shift: Trump loosens fu...]
+[2025-12-09T06:32:24.473+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:24.475+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Why midsize premium sedans ar...]
+[2025-12-09T06:32:25.091+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:25.093+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'EU to review, possibly exempt...]
+[2025-12-09T06:32:25.700+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:25.702+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'U.S. car and light-truck inve...]
+[2025-12-09T06:32:26.314+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:26.315+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Dealer enthusiasm for service...]
+[2025-12-09T06:32:26.927+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:26.929+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Trump moves to slash fuel eco...]
+[2025-12-09T06:32:27.484+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:27.486+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Changan set to launch Avatr, ...]
+[2025-12-09T06:32:28.258+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:28.259+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'EU reviews removing tariffs o...]
+[2025-12-09T06:32:28.872+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:28.876+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Automotive News Video: Rivian...]
+[2025-12-09T06:32:29.488+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:29.490+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Trump wants Asia’s ‘cute’ kei...]
+[2025-12-09T06:32:30.207+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:30.208+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Rivian CEO RJ Scaringe says a...]
+[2025-12-09T06:32:30.818+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:30.821+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Tesla China shipments rise fo...]
+[2025-12-09T06:32:31.434+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:31.436+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Consumer Reports: Toyota is m...]
+[2025-12-09T06:32:32.048+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:32.050+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Guest commentary: Why the fir...]
+[2025-12-09T06:32:32.764+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:32.767+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Dealers are key to carmakers’...]
+[2025-12-09T06:32:33.487+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:33.492+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Nissan shops for partnerships...]
+[2025-12-09T06:32:34.097+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:34.098+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'New auto retailer LTA Auto Gr...]
+[2025-12-09T06:32:34.812+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:34.815+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Gasoline-powered Dodge Charge...]
+[2025-12-09T06:32:35.430+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:35.434+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'How a once-struggling Mitsubi...]
+[2025-12-09T06:32:35.994+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:35.998+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Why the next wave of software...]
+[2025-12-09T06:32:36.657+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:36.659+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'CEO RJ Scaringe: Rivian’s nex...]
+[2025-12-09T06:32:37.273+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:37.275+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Mazda CEO Masahiro Moro: Reta...]
+[2025-12-09T06:32:37.887+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:37.888+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Scout’s arrival in South Caro...]
+[2025-12-09T06:32:38.500+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:38.502+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Why Mazda CEO Masahiro Moro’s...]
+[2025-12-09T06:32:39.112+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:39.114+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Car industry bets EU will del...]
+[2025-12-09T06:32:39.730+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:39.732+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'France pushes EU to support l...]
+[2025-12-09T06:32:40.448+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:40.450+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'German importers lobby group ...]
+[2025-12-09T06:32:41.061+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:41.068+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'What BMW CEO Oliver Zipse wan...]
+[2025-12-09T06:32:41.878+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:41.880+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Canada’s Element Fleet Manage...]
+[2025-12-09T06:32:42.390+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:42.392+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Daily 5 report for Dec. 3: Do...]
+[2025-12-09T06:32:43.113+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:43.115+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Edmunds’ Jessica Caldwell on ...]
+[2025-12-09T06:32:43.828+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:43.833+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'First Shift: Scout Motors sou...]
+[2025-12-09T06:32:44.543+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:44.551+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'November sales down 8.6% amid...]
+[2025-12-09T06:32:45.156+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:45.225+0000] {cursor.py:1032} INFO - query: [MERGE INTO NEWS_ARTICLES AS target USING ( SELECT 'Who wants to buy a $67,000 of...]
+[2025-12-09T06:32:45.978+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:45.980+0000] {cursor.py:1032} INFO - query: [COMMIT]
+[2025-12-09T06:32:46.050+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:46.052+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-09T06:32:46.054+0000] {snowflake_loader.py:156} INFO - ✓ Inserted/Updated 100 articles in Snowflake
+[2025-12-09T06:32:46.056+0000] {cursor.py:1032} INFO - query: [SELECT COUNT(*) FROM NEWS_ARTICLES]
+[2025-12-09T06:32:46.165+0000] {cursor.py:1045} INFO - query execution done
+[2025-12-09T06:32:46.167+0000] {cursor.py:1205} INFO - Number of results in first chunk: 1
+[2025-12-09T06:32:46.169+0000] {connection.py:734} INFO - closed
+[2025-12-09T06:32:46.241+0000] {connection.py:740} INFO - No async queries seem to be running, deleting session
+[2025-12-09T06:32:46.330+0000] {snowflake_loader.py:55} INFO - ✓ Disconnected from Snowflake
+[2025-12-09T06:32:46.372+0000] {python.py:194} INFO - Done. Returned value was: Loaded 100 articles
+[2025-12-09T06:32:46.405+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_daily_scraper, task_id=load_articles_to_snowflake, execution_date=20251209T063129, start_date=20251209T063136, end_date=20251209T063246
+[2025-12-09T06:32:46.453+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-09T06:32:46.487+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,109 @@
+[2025-12-06T06:24:46.584+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.check_environment manual__2025-12-06T05:54:33.257679+00:00 [queued]>
+[2025-12-06T06:24:46.592+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.check_environment manual__2025-12-06T05:54:33.257679+00:00 [queued]>
+[2025-12-06T06:24:46.593+0000] {taskinstance.py:1361} INFO - Starting attempt 4 of 4
+[2025-12-06T06:24:46.612+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): check_environment> on 2025-12-06 05:54:33.257679+00:00
+[2025-12-06T06:24:46.617+0000] {standard_task_runner.py:57} INFO - Started process 776 to run task
+[2025-12-06T06:24:46.620+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'check_environment', 'manual__2025-12-06T05:54:33.257679+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmp2ls7a0li']
+[2025-12-06T06:24:46.623+0000] {standard_task_runner.py:85} INFO - Job 12: Subtask check_environment
+[2025-12-06T06:24:46.698+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.check_environment manual__2025-12-06T05:54:33.257679+00:00 [running]> on host 3f365d9d5d97
+[2025-12-06T06:24:46.765+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='check_environment' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T05:54:33.257679+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T05:54:33.257679+00:00'
+[2025-12-06T06:24:46.766+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-12-06T06:24:46.768+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', '\n            echo "Checking environment variables..."\n            echo "S3_BUCKET_NAME: ${S3_BUCKET_NAME:-NOT SET}"\n            echo "FRED_API_KEY: ${FRED_API_KEY:+SET}"\n            echo "AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:+SET}"\n            \n            if [ -z "$S3_BUCKET_NAME" ]; then\n                echo "ERROR: S3_BUCKET_NAME not set"\n                exit 1\n            fi\n            \n            if [ -z "$FRED_API_KEY" ]; then\n                echo "ERROR: FRED_API_KEY not set"\n                exit 1\n            fi\n            \n            echo "✅ Environment check passed"\n        ']
+[2025-12-06T06:24:46.778+0000] {subprocess.py:86} INFO - Output:
+[2025-12-06T06:24:46.780+0000] {subprocess.py:93} INFO - Checking environment variables...
+[2025-12-06T06:24:46.781+0000] {subprocess.py:93} INFO - S3_BUCKET_NAME: NOT SET
+[2025-12-06T06:24:46.781+0000] {subprocess.py:93} INFO - FRED_API_KEY:
+[2025-12-06T06:24:46.781+0000] {subprocess.py:93} INFO - AWS_ACCESS_KEY_ID:
+[2025-12-06T06:24:46.782+0000] {subprocess.py:93} INFO - ERROR: S3_BUCKET_NAME not set
+[2025-12-06T06:24:46.782+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-12-06T06:24:46.792+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-12-06T06:24:46.796+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=autoinsight_data_pipeline, task_id=check_environment, execution_date=20251206T055433, start_date=20251206T062446, end_date=20251206T062446
+[2025-12-06T06:24:46.818+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.11/site-packages/***/utils/email.py:154 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-12-06T06:24:46.819+0000] {configuration.py:1050} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-12-06T06:24:46.819+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2025-12-06T06:24:46.826+0000] {configuration.py:1050} WARNING - section/key [smtp/smtp_user] not found in config
+[2025-12-06T06:24:46.827+0000] {email.py:270} INFO - Email alerting: attempt 1
+[2025-12-06T06:24:46.828+0000] {taskinstance.py:2007} ERROR - Failed to send email to: ['autoinsight@example.com']
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1518, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode, session=session)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1681, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 1739, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/bash.py", line 210, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2420, in email_alert
+    send_email(task.email, subject, html_content)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+           ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 154, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 272, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 316, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2005, in handle_failure
+    self.email_alert(error, task)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2422, in email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+           ^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 154, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 272, in send_mime_email
+    smtp_conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/email.py", line 316, in _get_smtp_connection
+    return smtplib.SMTP(host=host, port=port, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+[2025-12-06T06:24:46.843+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 12 for task check_environment (Bash command failed. The command returned a non-zero exit code 1.; 776)
+[2025-12-06T06:24:46.873+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-06T06:24:46.896+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

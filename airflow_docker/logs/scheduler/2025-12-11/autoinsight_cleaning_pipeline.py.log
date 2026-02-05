@@ -1,0 +1,994 @@
+[2025-12-11T00:00:11.200+0000] {processor.py:157} INFO - Started process (PID=8922) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:00:11.202+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:00:11.204+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:00:11.203+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:00:11.280+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:00:11.535+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:00:11.535+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:00:11.553+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:00:11.553+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:00:11.596+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.408 seconds
+[2025-12-11T00:00:42.228+0000] {processor.py:157} INFO - Started process (PID=8944) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:00:42.230+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:00:42.233+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:00:42.232+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:00:42.286+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:00:42.334+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:00:42.334+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:00:42.352+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:00:42.351+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:00:42.393+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.173 seconds
+[2025-12-11T00:01:12.680+0000] {processor.py:157} INFO - Started process (PID=8966) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:01:12.685+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:01:12.687+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:01:12.686+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:01:12.752+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:01:12.799+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:01:12.799+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:01:12.825+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:01:12.824+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:01:12.860+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T00:01:43.089+0000] {processor.py:157} INFO - Started process (PID=8988) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:01:43.092+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:01:43.093+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:01:43.093+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:01:43.164+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:01:43.211+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:01:43.211+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:01:43.229+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:01:43.229+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:01:43.266+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.183 seconds
+[2025-12-11T00:02:14.021+0000] {processor.py:157} INFO - Started process (PID=9010) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:02:14.024+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:02:14.025+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:02:14.025+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:02:14.105+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:02:14.165+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:02:14.165+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:02:14.186+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:02:14.186+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:02:14.224+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.213 seconds
+[2025-12-11T00:02:44.847+0000] {processor.py:157} INFO - Started process (PID=9031) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:02:44.850+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:02:44.853+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:02:44.852+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:02:44.921+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:02:44.989+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:02:44.989+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:02:45.008+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:02:45.007+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:02:45.041+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.199 seconds
+[2025-12-11T00:03:15.311+0000] {processor.py:157} INFO - Started process (PID=9053) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:03:15.314+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:03:15.316+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:03:15.315+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:03:15.401+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:03:15.461+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:03:15.461+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:03:15.483+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:03:15.483+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:03:15.518+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.219 seconds
+[2025-12-11T00:03:45.709+0000] {processor.py:157} INFO - Started process (PID=9075) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:03:45.714+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:03:45.717+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:03:45.716+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:03:45.777+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:03:45.828+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:03:45.828+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:03:45.854+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:03:45.853+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:03:45.896+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.195 seconds
+[2025-12-11T00:04:16.140+0000] {processor.py:157} INFO - Started process (PID=9097) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:04:16.142+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:04:16.145+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:04:16.144+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:04:16.198+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:04:16.249+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:04:16.248+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:04:16.269+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:04:16.269+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:04:16.307+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.172 seconds
+[2025-12-11T00:04:46.641+0000] {processor.py:157} INFO - Started process (PID=9119) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:04:46.645+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:04:46.647+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:04:46.646+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:04:46.719+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:04:46.773+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:04:46.773+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:04:46.793+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:04:46.793+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:04:46.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.202 seconds
+[2025-12-11T00:05:17.108+0000] {processor.py:157} INFO - Started process (PID=9142) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:05:17.112+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:05:17.116+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:05:17.115+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:05:17.189+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:05:17.248+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:05:17.247+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:05:17.272+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:05:17.272+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:05:17.311+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.209 seconds
+[2025-12-11T00:05:47.428+0000] {processor.py:157} INFO - Started process (PID=9164) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:05:47.431+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:05:47.434+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:05:47.433+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:05:47.496+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:05:47.552+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:05:47.551+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:05:47.575+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:05:47.574+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:05:47.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.195 seconds
+[2025-12-11T00:06:18.343+0000] {processor.py:157} INFO - Started process (PID=9184) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:06:18.348+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:06:18.351+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:06:18.350+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:06:18.491+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:06:18.563+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:06:18.563+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:06:18.591+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:06:18.591+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:06:18.636+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.301 seconds
+[2025-12-11T00:06:49.357+0000] {processor.py:157} INFO - Started process (PID=9206) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:06:49.359+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:06:49.362+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:06:49.361+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:06:49.419+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:06:49.479+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:06:49.479+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:06:49.500+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:06:49.499+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:06:49.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.191 seconds
+[2025-12-11T00:07:19.789+0000] {processor.py:157} INFO - Started process (PID=9225) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:07:19.792+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:07:19.794+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:07:19.794+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:07:19.880+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:07:19.956+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:07:19.955+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:07:19.981+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:07:19.981+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:07:20.021+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.243 seconds
+[2025-12-11T00:07:50.902+0000] {processor.py:157} INFO - Started process (PID=9247) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:07:50.906+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:07:50.911+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:07:50.909+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:07:51.046+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:07:51.165+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:07:51.164+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:07:51.210+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:07:51.209+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:07:51.272+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.386 seconds
+[2025-12-11T00:08:21.865+0000] {processor.py:157} INFO - Started process (PID=9269) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:08:21.867+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:08:21.869+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:08:21.869+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:08:21.939+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:08:21.989+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:08:21.989+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:08:22.009+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:08:22.008+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:08:22.044+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.184 seconds
+[2025-12-11T00:08:52.383+0000] {processor.py:157} INFO - Started process (PID=9291) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:08:52.384+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:08:52.386+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:08:52.385+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:08:52.454+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:08:52.500+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:08:52.499+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:08:52.514+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:08:52.514+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:08:52.543+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.165 seconds
+[2025-12-11T00:09:22.910+0000] {processor.py:157} INFO - Started process (PID=9313) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:09:22.912+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:09:22.914+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:09:22.913+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:09:22.993+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:09:23.038+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:09:23.038+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:09:23.056+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:09:23.055+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:09:23.088+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.184 seconds
+[2025-12-11T00:09:53.355+0000] {processor.py:157} INFO - Started process (PID=9342) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:09:53.359+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:09:53.363+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:09:53.362+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:09:53.423+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:09:53.467+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:09:53.467+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:09:53.483+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:09:53.482+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:09:53.510+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.162 seconds
+[2025-12-11T00:10:23.958+0000] {processor.py:157} INFO - Started process (PID=9364) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:10:23.960+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:10:23.962+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:10:23.962+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:10:24.018+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:10:24.069+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:10:24.069+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:10:24.389+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:10:24.389+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:10:24.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.469 seconds
+[2025-12-11T00:10:54.885+0000] {processor.py:157} INFO - Started process (PID=9386) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:10:54.889+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:10:54.892+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:10:54.891+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:10:55.010+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:10:55.129+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:10:55.128+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:10:55.924+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:10:55.924+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:10:55.986+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 1.130 seconds
+[2025-12-11T00:11:26.629+0000] {processor.py:157} INFO - Started process (PID=9407) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:11:26.632+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:11:26.633+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:11:26.633+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:11:26.693+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:11:26.748+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:11:26.748+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:11:26.768+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:11:26.768+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:11:26.806+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.183 seconds
+[2025-12-11T00:11:58.873+0000] {processor.py:157} INFO - Started process (PID=9429) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:11:58.876+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:11:58.879+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:11:58.878+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:11:58.983+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:11:59.040+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:11:59.040+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:11:59.064+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:11:59.064+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:11:59.109+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.243 seconds
+[2025-12-11T00:12:29.262+0000] {processor.py:157} INFO - Started process (PID=9452) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:12:29.265+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:12:29.268+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:12:29.268+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:12:29.325+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:12:29.372+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:12:29.372+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:12:29.389+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:12:29.389+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:12:29.421+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.165 seconds
+[2025-12-11T00:13:00.226+0000] {processor.py:157} INFO - Started process (PID=9474) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:13:00.229+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:13:00.231+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:13:00.230+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:13:00.320+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:13:00.395+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:13:00.395+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:13:00.412+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:13:00.412+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:13:00.439+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.219 seconds
+[2025-12-11T00:13:30.651+0000] {processor.py:157} INFO - Started process (PID=9496) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:13:30.653+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:13:30.655+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:13:30.655+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:13:30.718+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:13:30.770+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:13:30.769+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:13:30.790+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:13:30.790+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:13:30.825+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.180 seconds
+[2025-12-11T00:14:01.510+0000] {processor.py:157} INFO - Started process (PID=9518) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:14:01.512+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:14:01.514+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:14:01.513+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:14:01.580+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:14:01.645+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:14:01.645+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:14:01.665+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:14:01.665+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:14:01.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.194 seconds
+[2025-12-11T00:14:32.374+0000] {processor.py:157} INFO - Started process (PID=9540) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:14:32.377+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:14:32.380+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:14:32.379+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:14:32.456+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:14:32.500+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:14:32.499+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:14:32.519+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:14:32.518+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:14:32.553+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T00:15:03.242+0000] {processor.py:157} INFO - Started process (PID=9562) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:15:03.244+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:15:03.247+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:15:03.246+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:15:03.309+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:15:03.361+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:15:03.361+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:15:03.379+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:15:03.379+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:15:03.413+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.177 seconds
+[2025-12-11T00:15:34.110+0000] {processor.py:157} INFO - Started process (PID=9584) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:15:34.115+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:15:34.117+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:15:34.117+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:15:34.183+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:15:34.240+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:15:34.240+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:15:34.261+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:15:34.261+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:15:34.295+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:16:04.900+0000] {processor.py:157} INFO - Started process (PID=9606) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:16:04.902+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:16:04.904+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:16:04.903+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:16:04.973+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:16:05.038+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:16:05.038+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:16:05.056+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:16:05.055+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:16:05.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.192 seconds
+[2025-12-11T00:16:35.785+0000] {processor.py:157} INFO - Started process (PID=9628) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:16:35.787+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:16:35.789+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:16:35.789+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:16:35.860+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:16:35.912+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:16:35.911+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:16:35.929+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:16:35.928+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:16:35.962+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T00:17:06.681+0000] {processor.py:157} INFO - Started process (PID=9650) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:17:06.683+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:17:06.685+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:17:06.684+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:17:06.762+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:17:06.826+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:17:06.826+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:17:06.852+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:17:06.852+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:17:06.889+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.217 seconds
+[2025-12-11T00:17:37.584+0000] {processor.py:157} INFO - Started process (PID=9672) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:17:37.586+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:17:37.588+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:17:37.587+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:17:37.657+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:17:37.706+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:17:37.706+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:17:37.726+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:17:37.726+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:17:37.762+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.183 seconds
+[2025-12-11T00:18:08.410+0000] {processor.py:157} INFO - Started process (PID=9694) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:18:08.412+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:18:08.415+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:18:08.415+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:18:08.481+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:18:08.542+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:18:08.542+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:18:08.564+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:18:08.563+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:18:08.602+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.199 seconds
+[2025-12-11T00:18:39.519+0000] {processor.py:157} INFO - Started process (PID=9716) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:18:39.523+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:18:39.526+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:18:39.525+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:18:39.636+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:18:39.708+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:18:39.708+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:18:39.740+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:18:39.739+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:18:39.787+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.274 seconds
+[2025-12-11T00:19:10.484+0000] {processor.py:157} INFO - Started process (PID=9738) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:19:10.486+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:19:10.488+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:19:10.487+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:19:10.558+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:19:10.627+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:19:10.627+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:19:10.654+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:19:10.653+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:19:10.699+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.222 seconds
+[2025-12-11T00:19:41.382+0000] {processor.py:157} INFO - Started process (PID=9761) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:19:41.385+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:19:41.387+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:19:41.386+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:19:41.452+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:19:41.506+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:19:41.506+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:19:41.533+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:19:41.533+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:19:41.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:20:12.342+0000] {processor.py:157} INFO - Started process (PID=9783) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:20:12.345+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:20:12.348+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:20:12.347+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:20:12.419+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:20:12.474+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:20:12.474+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:20:12.505+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:20:12.505+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:20:12.550+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.214 seconds
+[2025-12-11T00:20:43.200+0000] {processor.py:157} INFO - Started process (PID=9805) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:20:43.202+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:20:43.204+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:20:43.204+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:20:43.270+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:20:43.322+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:20:43.322+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:20:43.357+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:20:43.356+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:20:43.397+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.203 seconds
+[2025-12-11T00:21:14.036+0000] {processor.py:157} INFO - Started process (PID=9827) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:21:14.039+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:21:14.042+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:21:14.041+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:21:14.110+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:21:14.173+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:21:14.173+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:21:14.196+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:21:14.196+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:21:14.239+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.210 seconds
+[2025-12-11T00:21:44.435+0000] {processor.py:157} INFO - Started process (PID=9849) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:21:44.437+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:21:44.439+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:21:44.438+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:21:44.504+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:21:44.568+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:21:44.567+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:21:44.590+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:21:44.590+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:21:44.633+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.205 seconds
+[2025-12-11T00:22:15.290+0000] {processor.py:157} INFO - Started process (PID=9870) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:22:15.293+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:22:15.295+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:22:15.295+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:22:15.377+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:22:15.436+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:22:15.435+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:22:15.458+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:22:15.457+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:22:15.500+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.214 seconds
+[2025-12-11T00:22:46.115+0000] {processor.py:157} INFO - Started process (PID=9893) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:22:46.118+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:22:46.120+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:22:46.119+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:22:46.183+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:22:46.236+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:22:46.236+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:22:46.262+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:22:46.262+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:22:46.302+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.195 seconds
+[2025-12-11T00:23:17.170+0000] {processor.py:157} INFO - Started process (PID=9916) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:23:17.173+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:23:17.174+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:23:17.174+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:23:17.240+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:23:17.302+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:23:17.302+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:23:17.326+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:23:17.326+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:23:17.366+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.202 seconds
+[2025-12-11T00:23:47.952+0000] {processor.py:157} INFO - Started process (PID=9938) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:23:47.956+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:23:47.958+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:23:47.958+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:23:48.023+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:23:48.078+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:23:48.078+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:23:48.097+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:23:48.097+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:23:48.139+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:24:18.821+0000] {processor.py:157} INFO - Started process (PID=9960) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:24:18.823+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:24:18.828+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:24:18.825+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:24:18.897+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:24:18.948+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:24:18.948+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:24:18.970+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:24:18.970+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:24:19.008+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.193 seconds
+[2025-12-11T00:24:49.723+0000] {processor.py:157} INFO - Started process (PID=9982) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:24:49.726+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:24:49.729+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:24:49.728+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:24:49.818+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:24:49.879+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:24:49.879+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:24:49.915+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:24:49.914+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:24:49.975+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.260 seconds
+[2025-12-11T00:25:20.665+0000] {processor.py:157} INFO - Started process (PID=10003) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:25:20.668+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:25:20.670+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:25:20.669+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:25:20.739+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:25:20.806+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:25:20.805+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:25:20.830+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:25:20.830+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:25:20.868+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.210 seconds
+[2025-12-11T00:25:51.558+0000] {processor.py:157} INFO - Started process (PID=10025) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:25:51.560+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:25:51.564+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:25:51.562+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:25:51.646+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:25:51.717+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:25:51.717+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:25:51.739+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:25:51.738+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:25:51.778+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.230 seconds
+[2025-12-11T00:26:22.487+0000] {processor.py:157} INFO - Started process (PID=10047) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:26:22.489+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:26:22.492+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:26:22.491+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:26:22.556+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:26:22.626+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:26:22.626+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:26:22.650+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:26:22.650+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:26:22.689+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.211 seconds
+[2025-12-11T00:26:53.363+0000] {processor.py:157} INFO - Started process (PID=10069) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:26:53.365+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:26:53.366+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:26:53.366+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:26:53.426+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:26:53.477+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:26:53.477+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:26:53.506+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:26:53.506+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:26:53.550+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.193 seconds
+[2025-12-11T00:27:23.990+0000] {processor.py:157} INFO - Started process (PID=10091) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:27:23.993+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:27:23.998+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:27:23.997+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:27:24.062+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:27:24.122+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:27:24.121+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:27:24.147+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:27:24.147+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:27:24.181+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:27:54.855+0000] {processor.py:157} INFO - Started process (PID=10114) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:27:54.857+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:27:54.859+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:27:54.858+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:27:54.922+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:27:54.974+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:27:54.973+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:27:54.998+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:27:54.997+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:27:55.042+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.195 seconds
+[2025-12-11T00:28:25.930+0000] {processor.py:157} INFO - Started process (PID=10136) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:28:25.933+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:28:25.934+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:28:25.934+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:28:26.015+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:28:26.069+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:28:26.069+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:28:26.090+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:28:26.089+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:28:26.127+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.202 seconds
+[2025-12-11T00:28:56.777+0000] {processor.py:157} INFO - Started process (PID=10158) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:28:56.779+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:28:56.781+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:28:56.780+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:28:56.860+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:28:56.923+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:28:56.923+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:28:56.947+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:28:56.946+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:28:56.992+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.224 seconds
+[2025-12-11T00:29:27.697+0000] {processor.py:157} INFO - Started process (PID=10181) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:29:27.699+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:29:27.701+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:29:27.700+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:29:27.788+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:29:27.861+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:29:27.861+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:29:27.900+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:29:27.899+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:29:27.953+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.261 seconds
+[2025-12-11T00:29:58.596+0000] {processor.py:157} INFO - Started process (PID=10203) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:29:58.598+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:29:58.602+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:29:58.600+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:29:58.678+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:29:58.758+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:29:58.757+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:29:58.791+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:29:58.791+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:29:58.838+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.251 seconds
+[2025-12-11T00:30:29.533+0000] {processor.py:157} INFO - Started process (PID=10233) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:30:29.537+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:30:29.541+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:30:29.541+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:30:29.654+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:30:29.716+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:30:29.716+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:30:29.743+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:30:29.743+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:30:29.796+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.270 seconds
+[2025-12-11T00:31:00.697+0000] {processor.py:157} INFO - Started process (PID=10255) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:31:00.699+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:31:00.703+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:31:00.703+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:31:00.786+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:31:00.860+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:31:00.860+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:31:00.897+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:31:00.895+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:31:00.947+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.266 seconds
+[2025-12-11T00:31:31.569+0000] {processor.py:157} INFO - Started process (PID=10277) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:31:31.571+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:31:31.573+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:31:31.572+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:31:31.631+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:31:31.686+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:31:31.686+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:31:31.709+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:31:31.709+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:31:31.756+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.193 seconds
+[2025-12-11T00:32:02.493+0000] {processor.py:157} INFO - Started process (PID=10299) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:32:02.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:32:02.497+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:32:02.497+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:32:02.570+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:32:02.629+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:32:02.628+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:32:02.654+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:32:02.653+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:32:02.693+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.206 seconds
+[2025-12-11T00:32:33.006+0000] {processor.py:157} INFO - Started process (PID=10322) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:32:33.009+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:32:33.010+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:32:33.010+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:32:33.077+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:32:33.129+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:32:33.129+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:32:33.156+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:32:33.156+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:32:33.196+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.197 seconds
+[2025-12-11T00:33:03.818+0000] {processor.py:157} INFO - Started process (PID=10344) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:33:03.820+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:33:03.822+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:33:03.821+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:33:03.886+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:33:03.947+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:33:03.947+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:33:03.969+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:33:03.969+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:33:04.008+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:33:34.192+0000] {processor.py:157} INFO - Started process (PID=10366) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:33:34.194+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:33:34.197+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:33:34.196+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:33:34.255+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:33:34.303+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:33:34.303+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:33:34.326+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:33:34.326+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:33:34.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T00:34:05.024+0000] {processor.py:157} INFO - Started process (PID=10388) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:34:05.026+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:34:05.028+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:34:05.027+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:34:05.093+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:34:05.145+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:34:05.145+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:34:05.168+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:34:05.168+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:34:05.203+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.189 seconds
+[2025-12-11T00:34:35.834+0000] {processor.py:157} INFO - Started process (PID=10410) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:34:35.838+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:34:35.840+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:34:35.839+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:34:35.900+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:34:35.950+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:34:35.949+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:34:35.975+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:34:35.975+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:34:36.007+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.179 seconds
+[2025-12-11T00:35:06.701+0000] {processor.py:157} INFO - Started process (PID=10432) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:35:06.704+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:35:06.706+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:35:06.705+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:35:06.775+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:35:06.837+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:35:06.837+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:35:06.857+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:35:06.857+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:35:06.900+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.206 seconds
+[2025-12-11T00:35:37.590+0000] {processor.py:157} INFO - Started process (PID=10455) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:35:37.595+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:35:37.597+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:35:37.596+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:35:37.665+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:35:37.710+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:35:37.710+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:35:37.738+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:35:37.737+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:35:37.785+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.200 seconds
+[2025-12-11T00:36:08.509+0000] {processor.py:157} INFO - Started process (PID=10477) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:36:08.512+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:36:08.514+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:36:08.513+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:36:08.588+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:36:08.646+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:36:08.645+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:36:08.670+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:36:08.670+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:36:08.703+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.201 seconds
+[2025-12-11T00:36:39.416+0000] {processor.py:157} INFO - Started process (PID=10499) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:36:39.418+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:36:39.419+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:36:39.419+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:36:39.477+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:36:39.524+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:36:39.523+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:36:39.546+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:36:39.545+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:36:39.581+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.172 seconds
+[2025-12-11T00:37:10.422+0000] {processor.py:157} INFO - Started process (PID=10521) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:37:10.425+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:37:10.428+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:37:10.428+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:37:10.542+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:37:10.625+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:37:10.624+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:37:10.660+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:37:10.660+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:37:10.715+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.300 seconds
+[2025-12-11T00:37:41.377+0000] {processor.py:157} INFO - Started process (PID=10543) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:37:41.379+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:37:41.381+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:37:41.381+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:37:41.442+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:37:41.491+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:37:41.491+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:37:41.515+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:37:41.514+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:37:41.552+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.180 seconds
+[2025-12-11T00:38:12.236+0000] {processor.py:157} INFO - Started process (PID=10565) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:38:12.239+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:38:12.242+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:38:12.241+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:38:12.305+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:38:12.364+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:38:12.364+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:38:12.389+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:38:12.389+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:38:12.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.197 seconds
+[2025-12-11T00:38:42.590+0000] {processor.py:157} INFO - Started process (PID=10587) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:38:42.592+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:38:42.594+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:38:42.593+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:38:42.659+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:38:42.715+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:38:42.714+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:38:42.739+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:38:42.739+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:38:42.777+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.194 seconds
+[2025-12-11T00:39:13.440+0000] {processor.py:157} INFO - Started process (PID=10609) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:39:13.443+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:39:13.444+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:39:13.444+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:39:13.508+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:39:13.565+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:39:13.565+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:39:13.589+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:39:13.589+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:39:13.625+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.192 seconds
+[2025-12-11T00:39:44.281+0000] {processor.py:157} INFO - Started process (PID=10631) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:39:44.283+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:39:44.285+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:39:44.285+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:39:44.353+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:39:44.406+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:39:44.405+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:39:44.426+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:39:44.426+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:39:44.462+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.186 seconds
+[2025-12-11T00:40:15.204+0000] {processor.py:157} INFO - Started process (PID=10653) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:40:15.206+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:40:15.209+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:40:15.208+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:40:15.277+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:40:15.345+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:40:15.345+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:40:15.367+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:40:15.367+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:40:15.399+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.201 seconds
+[2025-12-11T00:40:46.169+0000] {processor.py:157} INFO - Started process (PID=10675) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:40:46.174+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:40:46.176+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:40:46.175+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:40:46.274+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:40:46.340+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:40:46.340+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:40:46.372+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:40:46.371+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:40:46.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.258 seconds
+[2025-12-11T00:41:17.089+0000] {processor.py:157} INFO - Started process (PID=10698) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:41:17.092+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:41:17.093+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:41:17.093+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:41:17.150+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:41:17.208+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:41:17.208+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:41:17.229+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:41:17.229+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:41:17.267+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.186 seconds
+[2025-12-11T00:41:47.943+0000] {processor.py:157} INFO - Started process (PID=10720) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:41:47.945+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:41:47.947+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:41:47.946+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:41:48.007+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:41:48.064+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:41:48.064+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:41:48.086+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:41:48.085+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:41:48.120+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.183 seconds
+[2025-12-11T00:42:18.902+0000] {processor.py:157} INFO - Started process (PID=10742) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:42:18.904+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:42:18.908+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:42:18.907+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:42:18.976+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:42:19.025+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:42:19.024+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:42:19.044+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:42:19.044+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:42:19.080+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.184 seconds
+[2025-12-11T00:42:49.760+0000] {processor.py:157} INFO - Started process (PID=10764) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:42:49.763+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:42:49.764+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:42:49.764+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:42:49.832+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:42:49.890+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:42:49.890+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:42:49.915+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:42:49.915+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:42:49.956+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.203 seconds
+[2025-12-11T00:43:20.197+0000] {processor.py:157} INFO - Started process (PID=10787) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:43:20.200+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:43:20.202+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:43:20.202+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:43:20.320+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:43:20.389+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:43:20.389+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:43:20.419+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:43:20.418+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:43:20.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.285 seconds
+[2025-12-11T00:43:50.621+0000] {processor.py:157} INFO - Started process (PID=10809) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:43:50.624+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:43:50.627+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:43:50.626+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:43:50.715+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:43:50.779+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:43:50.779+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:43:50.814+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:43:50.812+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:43:50.865+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.251 seconds
+[2025-12-11T00:44:21.238+0000] {processor.py:157} INFO - Started process (PID=10831) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:44:21.243+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:44:21.247+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:44:21.246+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:44:21.316+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:44:21.371+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:44:21.370+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:44:21.390+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:44:21.389+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:44:21.427+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.199 seconds
+[2025-12-11T00:44:51.767+0000] {processor.py:157} INFO - Started process (PID=10853) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:44:51.770+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:44:51.774+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:44:51.772+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:44:51.839+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:44:51.899+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:44:51.898+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:44:51.920+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:44:51.920+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:44:51.959+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.199 seconds
+[2025-12-11T00:45:22.294+0000] {processor.py:157} INFO - Started process (PID=10875) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:45:22.296+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:45:22.298+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:45:22.297+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:45:22.363+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:45:22.427+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:45:22.427+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:45:22.449+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:45:22.449+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:45:22.488+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.203 seconds
+[2025-12-11T00:45:52.804+0000] {processor.py:157} INFO - Started process (PID=10897) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:45:52.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:45:52.808+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:45:52.807+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:45:52.868+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:45:52.926+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:45:52.926+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:45:52.947+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:45:52.947+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:45:52.998+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.200 seconds
+[2025-12-11T00:46:23.349+0000] {processor.py:157} INFO - Started process (PID=10919) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:46:23.351+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:46:23.353+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:46:23.352+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:46:23.419+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:46:23.477+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:46:23.477+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:46:23.500+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:46:23.500+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:46:23.541+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.199 seconds
+[2025-12-11T00:46:53.835+0000] {processor.py:157} INFO - Started process (PID=10941) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:46:53.838+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:46:53.839+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:46:53.839+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:46:53.903+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:46:53.961+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:46:53.961+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:46:53.985+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:46:53.985+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:46:54.027+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.200 seconds
+[2025-12-11T00:47:24.341+0000] {processor.py:157} INFO - Started process (PID=10963) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:47:24.343+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:47:24.345+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:47:24.344+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:47:24.403+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:47:24.458+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:47:24.457+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:47:24.479+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:47:24.479+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:47:24.517+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.181 seconds
+[2025-12-11T00:47:55.423+0000] {processor.py:157} INFO - Started process (PID=10985) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:47:55.426+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:47:55.428+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:47:55.427+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:47:55.502+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:47:55.567+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:47:55.566+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:47:55.590+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:47:55.590+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:47:55.627+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.218 seconds
+[2025-12-11T00:48:26.529+0000] {processor.py:157} INFO - Started process (PID=11006) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:48:26.532+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:48:26.535+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:48:26.534+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:48:26.602+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:48:26.657+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:48:26.656+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:48:26.677+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:48:26.677+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:48:26.713+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.199 seconds
+[2025-12-11T00:48:57.427+0000] {processor.py:157} INFO - Started process (PID=11028) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:48:57.432+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:48:57.435+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:48:57.434+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:48:57.494+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:48:57.549+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:48:57.549+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:48:57.573+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:48:57.573+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:48:57.612+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.195 seconds
+[2025-12-11T00:49:28.366+0000] {processor.py:157} INFO - Started process (PID=11050) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:49:28.369+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:49:28.373+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:49:28.372+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:49:28.447+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:49:28.506+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:49:28.506+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:49:28.532+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:49:28.531+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:49:28.569+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.212 seconds
+[2025-12-11T00:49:59.194+0000] {processor.py:157} INFO - Started process (PID=11072) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:49:59.197+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:49:59.200+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:49:59.199+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:49:59.265+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:49:59.339+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:49:59.338+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:49:59.367+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:49:59.367+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:49:59.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.221 seconds
+[2025-12-11T00:50:29.570+0000] {processor.py:157} INFO - Started process (PID=11094) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:50:29.575+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:50:29.577+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:50:29.576+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:50:29.646+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:50:29.717+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:50:29.717+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:50:29.738+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:50:29.737+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:50:29.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.212 seconds
+[2025-12-11T00:51:00.520+0000] {processor.py:157} INFO - Started process (PID=11115) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:51:00.530+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:51:00.535+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:51:00.534+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:51:00.740+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:51:00.835+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:51:00.834+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:51:00.863+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:51:00.863+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:51:00.907+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.405 seconds
+[2025-12-11T00:51:31.155+0000] {processor.py:157} INFO - Started process (PID=11137) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:51:31.157+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:51:31.161+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:51:31.160+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:51:31.270+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:51:31.337+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:51:31.336+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:51:31.360+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:51:31.360+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:51:31.397+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.250 seconds
+[2025-12-11T00:52:02.086+0000] {processor.py:157} INFO - Started process (PID=11159) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:52:02.089+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:52:02.092+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:52:02.091+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:52:02.158+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:52:02.218+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:52:02.217+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:52:02.246+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:52:02.246+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:52:02.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.205 seconds
+[2025-12-11T00:52:32.937+0000] {processor.py:157} INFO - Started process (PID=11181) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:52:32.939+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:52:32.943+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:52:32.943+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:52:33.011+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:52:33.066+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:52:33.066+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:52:33.089+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:52:33.088+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:52:33.126+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.194 seconds
+[2025-12-11T00:53:03.783+0000] {processor.py:157} INFO - Started process (PID=11203) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:53:03.785+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:53:03.788+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:53:03.787+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:53:03.847+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:53:03.904+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:53:03.903+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:53:03.930+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:53:03.930+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:53:03.969+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.191 seconds
+[2025-12-11T00:53:34.789+0000] {processor.py:157} INFO - Started process (PID=11225) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:53:34.793+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:53:34.796+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:53:34.795+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:53:34.861+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:53:34.925+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:53:34.924+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:53:34.945+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:53:34.945+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:53:34.982+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.200 seconds
+[2025-12-11T00:54:05.503+0000] {processor.py:157} INFO - Started process (PID=11254) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:54:05.506+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:54:05.507+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:54:05.507+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:54:05.582+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:54:05.636+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:54:05.636+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:54:05.657+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:54:05.656+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:54:05.695+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.198 seconds
+[2025-12-11T00:54:36.376+0000] {processor.py:157} INFO - Started process (PID=11276) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:54:36.379+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:54:36.382+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:54:36.381+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:54:36.445+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:54:36.505+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:54:36.505+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:54:36.527+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:54:36.527+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:54:36.565+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:55:07.067+0000] {processor.py:157} INFO - Started process (PID=11298) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:55:07.069+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:55:07.072+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:55:07.071+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:55:07.140+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:55:07.195+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:55:07.195+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:55:07.220+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:55:07.219+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:55:07.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T00:55:37.737+0000] {processor.py:157} INFO - Started process (PID=11320) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:55:37.739+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:55:37.741+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:55:37.740+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:55:37.822+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:55:37.896+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:55:37.896+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:55:37.919+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:55:37.919+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:55:37.954+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.228 seconds
+[2025-12-11T00:56:08.244+0000] {processor.py:157} INFO - Started process (PID=11342) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:56:08.247+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:56:08.249+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:56:08.248+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:56:08.355+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:56:08.411+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:56:08.411+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:56:08.434+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:56:08.434+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:56:08.474+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.239 seconds
+[2025-12-11T00:56:38.956+0000] {processor.py:157} INFO - Started process (PID=11364) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:56:38.958+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:56:38.960+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:56:38.960+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:56:39.052+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:56:39.130+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:56:39.129+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:56:39.155+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:56:39.155+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:56:39.202+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.252 seconds
+[2025-12-11T00:57:09.876+0000] {processor.py:157} INFO - Started process (PID=11386) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:57:09.881+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:57:09.883+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:57:09.882+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:57:09.950+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:57:10.005+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:57:10.005+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:57:10.025+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:57:10.025+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:57:10.058+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.186 seconds
+[2025-12-11T00:57:40.350+0000] {processor.py:157} INFO - Started process (PID=11408) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:57:40.352+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:57:40.355+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:57:40.354+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:57:40.745+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:57:40.803+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:57:40.803+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:57:40.826+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:57:40.826+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:57:40.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.522 seconds
+[2025-12-11T00:58:11.223+0000] {processor.py:157} INFO - Started process (PID=11430) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:58:11.232+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:58:11.235+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:58:11.234+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:58:11.322+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:58:11.392+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:58:11.392+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:58:11.416+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:58:11.416+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:58:11.450+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.233 seconds
+[2025-12-11T00:58:41.674+0000] {processor.py:157} INFO - Started process (PID=11452) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:58:41.678+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:58:41.680+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:58:41.679+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:58:41.759+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:58:41.802+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:58:41.801+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:58:41.821+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:58:41.821+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:58:41.853+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.187 seconds
+[2025-12-11T00:59:12.199+0000] {processor.py:157} INFO - Started process (PID=11474) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:59:12.201+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:59:12.203+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:59:12.203+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:59:12.283+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:59:12.332+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:59:12.331+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:59:12.353+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:59:12.353+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:59:12.395+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.203 seconds
+[2025-12-11T00:59:42.761+0000] {processor.py:157} INFO - Started process (PID=11496) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:59:42.764+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T00:59:42.766+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:59:42.765+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:59:42.839+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T00:59:42.885+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:59:42.884+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T00:59:42.904+0000] {logging_mixin.py:154} INFO - [2025-12-11T00:59:42.904+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T00:59:42.942+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.189 seconds
+[2025-12-11T01:00:13.269+0000] {processor.py:157} INFO - Started process (PID=11518) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:00:13.271+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:00:13.273+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:00:13.273+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:00:13.343+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:00:13.397+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:00:13.397+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:00:13.417+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:00:13.417+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:00:13.448+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.184 seconds
+[2025-12-11T01:00:43.795+0000] {processor.py:157} INFO - Started process (PID=11540) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:00:43.798+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:00:43.801+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:00:43.800+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:00:43.875+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:00:43.929+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:00:43.929+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:00:43.950+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:00:43.949+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:00:43.983+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.196 seconds
+[2025-12-11T01:01:14.303+0000] {processor.py:157} INFO - Started process (PID=11562) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:01:14.305+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:01:14.307+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:01:14.306+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:01:14.371+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:01:14.419+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:01:14.419+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:01:14.444+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:01:14.443+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:01:14.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.179 seconds
+[2025-12-11T01:01:44.861+0000] {processor.py:157} INFO - Started process (PID=11584) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:01:44.864+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:01:44.866+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:01:44.866+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:01:44.924+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:01:44.968+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:01:44.968+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:01:44.991+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:01:44.991+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:01:45.026+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.171 seconds
+[2025-12-11T01:02:15.759+0000] {processor.py:157} INFO - Started process (PID=11607) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:02:15.761+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:02:15.764+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:02:15.763+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:02:15.821+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:02:15.870+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:02:15.870+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:02:15.888+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:02:15.888+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:02:15.923+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.170 seconds
+[2025-12-11T01:02:46.664+0000] {processor.py:157} INFO - Started process (PID=11629) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:02:46.666+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:02:46.668+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:02:46.668+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:02:46.729+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:02:46.772+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:02:46.771+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:02:46.787+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:02:46.787+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:02:46.819+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.164 seconds
+[2025-12-11T01:03:17.099+0000] {processor.py:157} INFO - Started process (PID=11651) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:03:17.101+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:03:17.103+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:03:17.102+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:03:17.168+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:03:17.222+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:03:17.222+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:03:17.246+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:03:17.245+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:03:17.279+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.186 seconds
+[2025-12-11T01:03:48.007+0000] {processor.py:157} INFO - Started process (PID=11673) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:03:48.009+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:03:48.011+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:03:48.010+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:03:48.080+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:03:48.135+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:03:48.135+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:03:48.154+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:03:48.154+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:03:48.201+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.200 seconds
+[2025-12-11T01:04:18.892+0000] {processor.py:157} INFO - Started process (PID=11695) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:04:18.895+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:04:18.897+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:04:18.896+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:04:18.966+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:04:19.015+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:04:19.015+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:04:19.037+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:04:19.037+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:04:19.072+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.187 seconds
+[2025-12-11T01:04:49.799+0000] {processor.py:157} INFO - Started process (PID=11717) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:04:49.801+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:04:49.804+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:04:49.803+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:04:49.886+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:04:49.939+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:04:49.938+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:04:49.957+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:04:49.957+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:04:49.993+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.202 seconds
+[2025-12-11T01:05:20.764+0000] {processor.py:157} INFO - Started process (PID=11739) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:05:20.767+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:05:20.770+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:05:20.769+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:05:20.843+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:05:20.888+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:05:20.888+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:05:20.908+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:05:20.907+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:05:20.941+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T01:05:51.534+0000] {processor.py:157} INFO - Started process (PID=11761) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:05:51.537+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:05:51.540+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:05:51.539+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:05:51.621+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:05:51.678+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:05:51.678+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:05:51.701+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:05:51.700+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:05:51.733+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.207 seconds
+[2025-12-11T01:06:22.526+0000] {processor.py:157} INFO - Started process (PID=11783) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:06:22.528+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:06:22.531+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:06:22.530+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:06:22.606+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:06:22.656+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:06:22.656+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:06:22.672+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:06:22.672+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:06:22.722+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.204 seconds
+[2025-12-11T01:06:53.586+0000] {processor.py:157} INFO - Started process (PID=11805) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:06:53.588+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:06:53.590+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:06:53.589+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:06:53.643+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:06:53.691+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:06:53.690+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:06:53.708+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:06:53.708+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:06:53.738+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.158 seconds
+[2025-12-11T01:07:24.527+0000] {processor.py:157} INFO - Started process (PID=11827) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:07:24.529+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:07:24.532+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:07:24.531+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:07:24.597+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:07:24.640+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:07:24.640+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:07:24.656+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:07:24.656+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:07:24.683+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.163 seconds
+[2025-12-11T01:07:55.365+0000] {processor.py:157} INFO - Started process (PID=11849) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:07:55.368+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:07:55.370+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:07:55.369+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:07:55.440+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:07:55.486+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:07:55.485+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:07:55.502+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:07:55.502+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:07:55.543+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T01:08:25.773+0000] {processor.py:157} INFO - Started process (PID=11871) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:08:25.776+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:08:25.777+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:08:25.777+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:08:25.847+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:08:25.902+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:08:25.902+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:08:25.921+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:08:25.920+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:08:25.951+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.185 seconds
+[2025-12-11T01:08:56.702+0000] {processor.py:157} INFO - Started process (PID=11893) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:08:56.704+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:08:56.706+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:08:56.705+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:08:56.771+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:08:56.826+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:08:56.826+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:08:56.845+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:08:56.844+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:08:56.881+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.186 seconds
+[2025-12-11T01:09:27.556+0000] {processor.py:157} INFO - Started process (PID=11915) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:09:27.558+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:09:27.560+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:09:27.560+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:09:27.628+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:09:27.690+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:09:27.689+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:09:27.707+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:09:27.707+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:09:27.743+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.193 seconds
+[2025-12-11T01:09:58.492+0000] {processor.py:157} INFO - Started process (PID=11937) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:09:58.495+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:09:58.497+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:09:58.496+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:09:58.573+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:09:58.633+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:09:58.632+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:09:58.655+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:09:58.655+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:09:58.696+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.210 seconds
+[2025-12-11T01:10:28.876+0000] {processor.py:157} INFO - Started process (PID=11958) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:10:28.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:10:28.881+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:10:28.881+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:10:28.970+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:10:29.015+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:10:29.015+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:10:29.035+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:10:29.035+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:10:29.073+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.204 seconds
+[2025-12-11T01:10:59.389+0000] {processor.py:157} INFO - Started process (PID=11980) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:10:59.392+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:10:59.395+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:10:59.394+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:10:59.491+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:10:59.543+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:10:59.542+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:10:59.562+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:10:59.561+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:10:59.601+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.225 seconds
+[2025-12-11T01:11:29.805+0000] {processor.py:157} INFO - Started process (PID=12002) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:11:29.807+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:11:29.809+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:11:29.809+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:11:29.873+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:11:29.915+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:11:29.915+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:11:29.930+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:11:29.930+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:11:29.964+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.165 seconds
+[2025-12-11T01:12:00.235+0000] {processor.py:157} INFO - Started process (PID=12024) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:12:00.237+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:12:00.239+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:12:00.239+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:12:00.326+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:12:00.417+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:12:00.417+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:12:00.450+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:12:00.449+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:12:00.507+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.279 seconds
+[2025-12-11T01:12:30.838+0000] {processor.py:157} INFO - Started process (PID=12046) to work on /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:12:30.841+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/autoinsight_cleaning_pipeline.py for tasks to queue
+[2025-12-11T01:12:30.844+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:12:30.843+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:12:30.934+0000] {processor.py:839} INFO - DAG(s) dict_keys(['autoinsight_cleaning_pipeline_v2']) retrieved from /opt/airflow/dags/autoinsight_cleaning_pipeline.py
+[2025-12-11T01:12:30.994+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:12:30.993+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-12-11T01:12:31.014+0000] {logging_mixin.py:154} INFO - [2025-12-11T01:12:31.013+0000] {dag.py:3722} INFO - Setting next_dagrun for autoinsight_cleaning_pipeline_v2 to None, run_after=None
+[2025-12-11T01:12:31.054+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/autoinsight_cleaning_pipeline.py took 0.225 seconds

@@ -1,0 +1,383 @@
+[2025-12-06T20:17:12.339+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data manual__2025-12-06T20:08:51.337611+00:00 [queued]>
+[2025-12-06T20:17:12.356+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_data_pipeline.fetch_epa_data manual__2025-12-06T20:08:51.337611+00:00 [queued]>
+[2025-12-06T20:17:12.358+0000] {taskinstance.py:1361} INFO - Starting attempt 3 of 6
+[2025-12-06T20:17:12.386+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): fetch_epa_data> on 2025-12-06 20:08:51.337611+00:00
+[2025-12-06T20:17:12.398+0000] {standard_task_runner.py:57} INFO - Started process 238 to run task
+[2025-12-06T20:17:12.403+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_data_pipeline', 'fetch_epa_data', 'manual__2025-12-06T20:08:51.337611+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_data_pipeline.py', '--cfg-path', '/tmp/tmp4rwqaucp']
+[2025-12-06T20:17:12.414+0000] {standard_task_runner.py:85} INFO - Job 69: Subtask fetch_epa_data
+[2025-12-06T20:17:12.561+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_data_pipeline.fetch_epa_data manual__2025-12-06T20:08:51.337611+00:00 [running]> on host de224815f25b
+[2025-12-06T20:17:12.720+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_data_pipeline' AIRFLOW_CTX_TASK_ID='fetch_epa_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-06T20:08:51.337611+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-06T20:08:51.337611+00:00'
+[2025-12-06T20:17:12.722+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T20:17:12.722+0000] {logging_mixin.py:154} INFO - TASK 1: EPA Fuel Economy Data Collection
+[2025-12-06T20:17:12.723+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-06T20:17:14.234+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T20:17:14.236+0000] {logging_mixin.py:154} INFO - EPA FUEL ECONOMY DATA COLLECTION WITH S3 UPLOAD
+[2025-12-06T20:17:14.243+0000] {logging_mixin.py:154} INFO - AutoInsight Project - 15 Manufacturers
+[2025-12-06T20:17:14.246+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T20:17:14.247+0000] {logging_mixin.py:154} INFO - 📅 Date Range: January 1, 2020 - December 06, 2025
+[2025-12-06T20:17:14.248+0000] {logging_mixin.py:154} INFO - 🔓 Authentication: NONE REQUIRED (Public API)
+[2025-12-06T20:17:14.249+0000] {logging_mixin.py:154} INFO - 📄 Format: XML (automatically parsed)
+[2025-12-06T20:17:14.251+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T20:17:14.254+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T20:17:14.256+0000] {logging_mixin.py:154} INFO - Fetching EPA Data for 15 Manufacturers
+[2025-12-06T20:17:14.258+0000] {logging_mixin.py:154} INFO - Date Range: January 1, 2020 - December 06, 2025
+[2025-12-06T20:17:14.259+0000] {logging_mixin.py:154} INFO - Years: [2020, 2021, 2022, 2023, 2024]
+[2025-12-06T20:17:14.259+0000] {logging_mixin.py:154} INFO - Format: XML (parsed automatically)
+[2025-12-06T20:17:14.261+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T20:17:14.263+0000] {logging_mixin.py:154} INFO - 📊 [1/15] Processing: Tesla
+[2025-12-06T20:17:14.266+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:17:14.909+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-06T20:17:33.369+0000] {logging_mixin.py:154} INFO - → 21 variants
+[2025-12-06T20:17:33.371+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:17:33.626+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-06T20:17:44.012+0000] {logging_mixin.py:154} INFO - → 13 variants
+[2025-12-06T20:17:44.014+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:17:44.386+0000] {logging_mixin.py:154} INFO - Found 13 model(s) 
+[2025-12-06T20:17:55.121+0000] {logging_mixin.py:154} INFO - → 13 variants
+[2025-12-06T20:17:55.123+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:17:55.461+0000] {logging_mixin.py:154} INFO - Found 10 model(s) 
+[2025-12-06T20:18:03.443+0000] {logging_mixin.py:154} INFO - → 10 variants
+[2025-12-06T20:18:03.445+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:18:03.738+0000] {logging_mixin.py:154} INFO - Found 16 model(s) 
+[2025-12-06T20:18:20.519+0000] {logging_mixin.py:154} INFO - → 16 variants
+[2025-12-06T20:18:20.523+0000] {logging_mixin.py:154} INFO -   ✅ Tesla COMPLETE: 73 total vehicles
+[2025-12-06T20:18:20.525+0000] {logging_mixin.py:154} INFO - 📊 [2/15] Processing: Ford
+[2025-12-06T20:18:20.526+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:18:20.780+0000] {logging_mixin.py:154} INFO - Found 53 model(s) 
+[2025-12-06T20:19:12.379+0000] {logging_mixin.py:154} INFO - → 74 variants
+[2025-12-06T20:19:12.381+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:19:12.644+0000] {logging_mixin.py:154} INFO - Found 58 model(s) 
+[2025-12-06T20:20:21.608+0000] {logging_mixin.py:154} INFO - → 97 variants
+[2025-12-06T20:20:21.611+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:20:21.903+0000] {logging_mixin.py:154} INFO - Found 64 model(s) 
+[2025-12-06T20:21:37.175+0000] {logging_mixin.py:154} INFO - → 111 variants
+[2025-12-06T20:21:37.177+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:21:37.563+0000] {logging_mixin.py:154} INFO - Found 59 model(s) 
+[2025-12-06T20:22:48.149+0000] {logging_mixin.py:154} INFO - → 109 variants
+[2025-12-06T20:22:48.152+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:22:48.496+0000] {logging_mixin.py:154} INFO - Found 44 model(s) 
+[2025-12-06T20:23:35.476+0000] {logging_mixin.py:154} INFO - → 70 variants
+[2025-12-06T20:23:35.480+0000] {logging_mixin.py:154} INFO -   ✅ Ford COMPLETE: 461 total vehicles
+[2025-12-06T20:23:35.481+0000] {logging_mixin.py:154} INFO - 📊 [3/15] Processing: Toyota
+[2025-12-06T20:23:35.481+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:23:35.758+0000] {logging_mixin.py:154} INFO - Found 51 model(s) 
+[2025-12-06T20:24:24.814+0000] {logging_mixin.py:154} INFO - → 65 variants
+[2025-12-06T20:24:24.817+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:24:25.113+0000] {logging_mixin.py:154} INFO - Found 54 model(s) 
+[2025-12-06T20:25:20.207+0000] {logging_mixin.py:154} INFO - → 67 variants
+[2025-12-06T20:25:20.212+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:25:20.556+0000] {logging_mixin.py:154} INFO - Found 56 model(s) 
+[2025-12-06T20:26:18.107+0000] {logging_mixin.py:154} INFO - → 74 variants
+[2025-12-06T20:26:18.109+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:26:18.395+0000] {logging_mixin.py:154} INFO - Found 59 model(s) 
+[2025-12-06T20:27:13.326+0000] {logging_mixin.py:154} INFO - → 78 variants
+[2025-12-06T20:27:13.329+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:27:13.643+0000] {logging_mixin.py:154} INFO - Found 69 model(s) 
+[2025-12-06T20:28:19.077+0000] {logging_mixin.py:154} INFO - → 94 variants
+[2025-12-06T20:28:19.079+0000] {logging_mixin.py:154} INFO -   ✅ Toyota COMPLETE: 378 total vehicles
+[2025-12-06T20:28:19.080+0000] {logging_mixin.py:154} INFO - 📊 [4/15] Processing: GMC
+[2025-12-06T20:28:19.080+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:28:19.403+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-06T20:28:50.627+0000] {logging_mixin.py:154} INFO - → 53 variants
+[2025-12-06T20:28:50.630+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:28:50.923+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-06T20:29:33.443+0000] {logging_mixin.py:154} INFO - → 69 variants
+[2025-12-06T20:29:33.446+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:29:33.810+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-06T20:30:14.230+0000] {logging_mixin.py:154} INFO - → 66 variants
+[2025-12-06T20:30:14.233+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:30:14.601+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-06T20:30:48.254+0000] {logging_mixin.py:154} INFO - → 46 variants
+[2025-12-06T20:30:48.257+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:30:48.525+0000] {logging_mixin.py:154} INFO - Found 27 model(s) 
+[2025-12-06T20:31:28.267+0000] {logging_mixin.py:154} INFO - → 55 variants
+[2025-12-06T20:31:28.269+0000] {logging_mixin.py:154} INFO -   ✅ GMC COMPLETE: 289 total vehicles
+[2025-12-06T20:31:28.270+0000] {logging_mixin.py:154} INFO - 📊 [5/15] Processing: Honda
+[2025-12-06T20:31:28.271+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:31:28.581+0000] {logging_mixin.py:154} INFO - Found 23 model(s) 
+[2025-12-06T20:31:57.240+0000] {logging_mixin.py:154} INFO - → 46 variants
+[2025-12-06T20:31:57.244+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:31:59.536+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-06T20:32:21.707+0000] {logging_mixin.py:154} INFO - → 30 variants
+[2025-12-06T20:32:21.710+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:32:22.077+0000] {logging_mixin.py:154} INFO - Found 20 model(s) 
+[2025-12-06T20:32:45.277+0000] {logging_mixin.py:154} INFO - → 32 variants
+[2025-12-06T20:32:45.279+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:32:45.538+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-06T20:33:04.073+0000] {logging_mixin.py:154} INFO - → 28 variants
+[2025-12-06T20:33:04.077+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:33:04.382+0000] {logging_mixin.py:154} INFO - Found 20 model(s) 
+[2025-12-06T20:33:26.904+0000] {logging_mixin.py:154} INFO - → 32 variants
+[2025-12-06T20:33:26.906+0000] {logging_mixin.py:154} INFO -   ✅ Honda COMPLETE: 168 total vehicles
+[2025-12-06T20:33:26.906+0000] {logging_mixin.py:154} INFO - 📊 [6/15] Processing: Chevrolet
+[2025-12-06T20:33:26.907+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:33:27.214+0000] {logging_mixin.py:154} INFO - Found 29 model(s) 
+[2025-12-06T20:34:15.387+0000] {logging_mixin.py:154} INFO - → 80 variants
+[2025-12-06T20:34:15.389+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:34:15.663+0000] {logging_mixin.py:154} INFO - Found 28 model(s) 
+[2025-12-06T20:35:09.142+0000] {logging_mixin.py:154} INFO - → 96 variants
+[2025-12-06T20:35:09.146+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:35:09.427+0000] {logging_mixin.py:154} INFO - Found 30 model(s) 
+[2025-12-06T20:36:08.198+0000] {logging_mixin.py:154} INFO - → 96 variants
+[2025-12-06T20:36:08.201+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:36:08.500+0000] {logging_mixin.py:154} INFO - Found 29 model(s) 
+[2025-12-06T20:36:52.087+0000] {logging_mixin.py:154} INFO - → 69 variants
+[2025-12-06T20:36:52.091+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:36:52.375+0000] {logging_mixin.py:154} INFO - Found 37 model(s) 
+[2025-12-06T20:37:43.641+0000] {logging_mixin.py:154} INFO - → 79 variants
+[2025-12-06T20:37:43.642+0000] {logging_mixin.py:154} INFO -   ✅ Chevrolet COMPLETE: 420 total vehicles
+[2025-12-06T20:37:43.642+0000] {logging_mixin.py:154} INFO - 📊 [7/15] Processing: Nissan
+[2025-12-06T20:37:43.643+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:37:43.927+0000] {logging_mixin.py:154} INFO - Found 32 model(s) 
+[2025-12-06T20:38:10.041+0000] {logging_mixin.py:154} INFO - → 35 variants
+[2025-12-06T20:38:10.044+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:38:10.346+0000] {logging_mixin.py:154} INFO - Found 34 model(s) 
+[2025-12-06T20:38:40.215+0000] {logging_mixin.py:154} INFO - → 38 variants
+[2025-12-06T20:38:40.217+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:38:40.464+0000] {logging_mixin.py:154} INFO - Found 31 model(s) 
+[2025-12-06T20:39:05.541+0000] {logging_mixin.py:154} INFO - → 34 variants
+[2025-12-06T20:39:05.544+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:39:05.793+0000] {logging_mixin.py:154} INFO - Found 38 model(s) 
+[2025-12-06T20:39:39.636+0000] {logging_mixin.py:154} INFO - → 48 variants
+[2025-12-06T20:39:39.638+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:39:39.898+0000] {logging_mixin.py:154} INFO - Found 38 model(s) 
+[2025-12-06T20:40:09.746+0000] {logging_mixin.py:154} INFO - → 40 variants
+[2025-12-06T20:40:09.750+0000] {logging_mixin.py:154} INFO -   ✅ Nissan COMPLETE: 195 total vehicles
+[2025-12-06T20:40:09.751+0000] {logging_mixin.py:154} INFO - 📊 [8/15] Processing: BMW
+[2025-12-06T20:40:09.753+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:40:10.112+0000] {logging_mixin.py:154} INFO - Found 102 model(s) 
+[2025-12-06T20:41:36.640+0000] {logging_mixin.py:154} INFO - → 115 variants
+[2025-12-06T20:41:36.643+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:41:36.991+0000] {logging_mixin.py:154} INFO - Found 90 model(s) 
+[2025-12-06T20:42:53.871+0000] {logging_mixin.py:154} INFO - → 94 variants
+[2025-12-06T20:42:53.875+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:42:54.137+0000] {logging_mixin.py:154} INFO - Found 93 model(s) 
+[2025-12-06T20:44:17.363+0000] {logging_mixin.py:154} INFO - → 93 variants
+[2025-12-06T20:44:17.367+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:44:17.641+0000] {logging_mixin.py:154} INFO - Found 101 model(s) 
+[2025-12-06T20:45:54.763+0000] {logging_mixin.py:154} INFO - → 102 variants
+[2025-12-06T20:45:54.766+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:45:55.031+0000] {logging_mixin.py:154} INFO - Found 109 model(s) 
+[2025-12-06T20:47:24.148+0000] {logging_mixin.py:154} INFO - → 110 variants
+[2025-12-06T20:47:24.151+0000] {logging_mixin.py:154} INFO -   ✅ BMW COMPLETE: 514 total vehicles
+[2025-12-06T20:47:24.152+0000] {logging_mixin.py:154} INFO - 📊 [9/15] Processing: Mercedes-Benz
+[2025-12-06T20:47:24.152+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:47:24.446+0000] {logging_mixin.py:154} INFO - Found 88 model(s) 
+[2025-12-06T20:48:39.939+0000] {logging_mixin.py:154} INFO - → 91 variants
+[2025-12-06T20:48:39.941+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:48:40.330+0000] {logging_mixin.py:154} INFO - Found 87 model(s) 
+[2025-12-06T20:49:47.365+0000] {logging_mixin.py:154} INFO - → 87 variants
+[2025-12-06T20:49:47.367+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:49:47.670+0000] {logging_mixin.py:154} INFO - Found 71 model(s) 
+[2025-12-06T20:50:44.147+0000] {logging_mixin.py:154} INFO - → 72 variants
+[2025-12-06T20:50:44.150+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:50:44.428+0000] {logging_mixin.py:154} INFO - Found 76 model(s) 
+[2025-12-06T20:51:45.562+0000] {logging_mixin.py:154} INFO - → 76 variants
+[2025-12-06T20:51:45.565+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:51:45.852+0000] {logging_mixin.py:154} INFO - Found 72 model(s) 
+[2025-12-06T20:52:48.154+0000] {logging_mixin.py:154} INFO - → 73 variants
+[2025-12-06T20:52:48.158+0000] {logging_mixin.py:154} INFO -   ✅ Mercedes-Benz COMPLETE: 399 total vehicles
+[2025-12-06T20:52:48.160+0000] {logging_mixin.py:154} INFO - 📊 [10/15] Processing: Volkswagen
+[2025-12-06T20:52:48.161+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:52:48.467+0000] {logging_mixin.py:154} INFO - Found 12 model(s) 
+[2025-12-06T20:53:02.987+0000] {logging_mixin.py:154} INFO - → 20 variants
+[2025-12-06T20:53:02.990+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:53:03.343+0000] {logging_mixin.py:154} INFO - Found 18 model(s) 
+[2025-12-06T20:53:26.228+0000] {logging_mixin.py:154} INFO - → 26 variants
+[2025-12-06T20:53:26.231+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:53:26.520+0000] {logging_mixin.py:154} INFO - Found 21 model(s) 
+[2025-12-06T20:53:47.429+0000] {logging_mixin.py:154} INFO - → 29 variants
+[2025-12-06T20:53:47.435+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:53:47.765+0000] {logging_mixin.py:154} INFO - Found 23 model(s) 
+[2025-12-06T20:54:10.150+0000] {logging_mixin.py:154} INFO - → 31 variants
+[2025-12-06T20:54:10.152+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:54:10.480+0000] {logging_mixin.py:154} INFO - Found 24 model(s) 
+[2025-12-06T20:54:31.062+0000] {logging_mixin.py:154} INFO - → 28 variants
+[2025-12-06T20:54:31.065+0000] {logging_mixin.py:154} INFO -   ✅ Volkswagen COMPLETE: 134 total vehicles
+[2025-12-06T20:54:31.066+0000] {logging_mixin.py:154} INFO - 📊 [11/15] Processing: Hyundai
+[2025-12-06T20:54:31.067+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:54:31.352+0000] {logging_mixin.py:154} INFO - Found 25 model(s) 
+[2025-12-06T20:55:02.197+0000] {logging_mixin.py:154} INFO - → 43 variants
+[2025-12-06T20:55:02.200+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:55:02.455+0000] {logging_mixin.py:154} INFO - Found 27 model(s) 
+[2025-12-06T20:55:31.815+0000] {logging_mixin.py:154} INFO - → 44 variants
+[2025-12-06T20:55:31.817+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:55:32.110+0000] {logging_mixin.py:154} INFO - Found 36 model(s) 
+[2025-12-06T20:56:09.547+0000] {logging_mixin.py:154} INFO - → 49 variants
+[2025-12-06T20:56:09.550+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:56:09.826+0000] {logging_mixin.py:154} INFO - Found 33 model(s) 
+[2025-12-06T20:56:40.593+0000] {logging_mixin.py:154} INFO - → 44 variants
+[2025-12-06T20:56:40.596+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:56:40.847+0000] {logging_mixin.py:154} INFO - Found 36 model(s) 
+[2025-12-06T20:57:15.448+0000] {logging_mixin.py:154} INFO - → 45 variants
+[2025-12-06T20:57:15.451+0000] {logging_mixin.py:154} INFO -   ✅ Hyundai COMPLETE: 225 total vehicles
+[2025-12-06T20:57:15.451+0000] {logging_mixin.py:154} INFO - 📊 [12/15] Processing: Kia
+[2025-12-06T20:57:15.452+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:57:15.699+0000] {logging_mixin.py:154} INFO - Found 26 model(s) 
+[2025-12-06T20:57:42.077+0000] {logging_mixin.py:154} INFO - → 39 variants
+[2025-12-06T20:57:42.080+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:57:42.373+0000] {logging_mixin.py:154} INFO - Found 24 model(s) 
+[2025-12-06T20:58:10.349+0000] {logging_mixin.py:154} INFO - → 38 variants
+[2025-12-06T20:58:10.353+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T20:58:10.638+0000] {logging_mixin.py:154} INFO - Found 29 model(s) 
+[2025-12-06T20:58:39.694+0000] {logging_mixin.py:154} INFO - → 41 variants
+[2025-12-06T20:58:39.698+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T20:58:39.977+0000] {logging_mixin.py:154} INFO - Found 33 model(s) 
+[2025-12-06T20:59:09.226+0000] {logging_mixin.py:154} INFO - → 41 variants
+[2025-12-06T20:59:09.229+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T20:59:09.530+0000] {logging_mixin.py:154} INFO - Found 34 model(s) 
+[2025-12-06T20:59:38.155+0000] {logging_mixin.py:154} INFO - → 40 variants
+[2025-12-06T20:59:38.161+0000] {logging_mixin.py:154} INFO -   ✅ Kia COMPLETE: 199 total vehicles
+[2025-12-06T20:59:38.162+0000] {logging_mixin.py:154} INFO - 📊 [13/15] Processing: Subaru
+[2025-12-06T20:59:38.163+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T20:59:38.447+0000] {logging_mixin.py:154} INFO - Found 14 model(s) 
+[2025-12-06T20:59:55.968+0000] {logging_mixin.py:154} INFO - → 24 variants
+[2025-12-06T20:59:55.971+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T20:59:56.247+0000] {logging_mixin.py:154} INFO - Found 12 model(s) 
+[2025-12-06T21:00:09.852+0000] {logging_mixin.py:154} INFO - → 21 variants
+[2025-12-06T21:00:09.855+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T21:00:10.105+0000] {logging_mixin.py:154} INFO - Found 14 model(s) 
+[2025-12-06T21:00:27.187+0000] {logging_mixin.py:154} INFO - → 23 variants
+[2025-12-06T21:00:27.189+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T21:00:27.443+0000] {logging_mixin.py:154} INFO - Found 17 model(s) 
+[2025-12-06T21:00:45.849+0000] {logging_mixin.py:154} INFO - → 26 variants
+[2025-12-06T21:00:45.855+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T21:00:46.135+0000] {logging_mixin.py:154} INFO - Found 14 model(s) 
+[2025-12-06T21:01:01.504+0000] {logging_mixin.py:154} INFO - → 20 variants
+[2025-12-06T21:01:01.508+0000] {logging_mixin.py:154} INFO -   ✅ Subaru COMPLETE: 114 total vehicles
+[2025-12-06T21:01:01.510+0000] {logging_mixin.py:154} INFO - 📊 [14/15] Processing: Mazda
+[2025-12-06T21:01:01.511+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T21:01:01.782+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-06T21:01:18.629+0000] {logging_mixin.py:154} INFO - → 23 variants
+[2025-12-06T21:01:18.632+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T21:01:18.923+0000] {logging_mixin.py:154} INFO - Found 15 model(s) 
+[2025-12-06T21:01:38.938+0000] {logging_mixin.py:154} INFO - → 29 variants
+[2025-12-06T21:01:38.940+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T21:01:39.256+0000] {logging_mixin.py:154} INFO - Found 9 model(s) 
+[2025-12-06T21:01:52.141+0000] {logging_mixin.py:154} INFO - → 16 variants
+[2025-12-06T21:01:52.144+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T21:01:52.427+0000] {logging_mixin.py:154} INFO - Found 10 model(s) 
+[2025-12-06T21:02:03.868+0000] {logging_mixin.py:154} INFO - → 18 variants
+[2025-12-06T21:02:03.870+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T21:02:04.132+0000] {logging_mixin.py:154} INFO - Found 9 model(s) 
+[2025-12-06T21:02:17.725+0000] {logging_mixin.py:154} INFO - → 19 variants
+[2025-12-06T21:02:17.728+0000] {logging_mixin.py:154} INFO -   ✅ Mazda COMPLETE: 105 total vehicles
+[2025-12-06T21:02:17.728+0000] {logging_mixin.py:154} INFO - 📊 [15/15] Processing: Jeep
+[2025-12-06T21:02:17.729+0000] {logging_mixin.py:154} INFO -   └─ Year 2020... 
+[2025-12-06T21:02:18.008+0000] {logging_mixin.py:154} INFO - Found 16 model(s) 
+[2025-12-06T21:02:42.105+0000] {logging_mixin.py:154} INFO - → 36 variants
+[2025-12-06T21:02:42.108+0000] {logging_mixin.py:154} INFO -   └─ Year 2021... 
+[2025-12-06T21:02:42.376+0000] {logging_mixin.py:154} INFO - Found 23 model(s) 
+[2025-12-06T21:03:11.189+0000] {logging_mixin.py:154} INFO - → 40 variants
+[2025-12-06T21:03:11.192+0000] {logging_mixin.py:154} INFO -   └─ Year 2022... 
+[2025-12-06T21:03:11.455+0000] {logging_mixin.py:154} INFO - Found 27 model(s) 
+[2025-12-06T21:03:40.677+0000] {logging_mixin.py:154} INFO - → 43 variants
+[2025-12-06T21:03:40.680+0000] {logging_mixin.py:154} INFO -   └─ Year 2023... 
+[2025-12-06T21:03:40.935+0000] {logging_mixin.py:154} INFO - Found 24 model(s) 
+[2025-12-06T21:04:06.104+0000] {logging_mixin.py:154} INFO - → 37 variants
+[2025-12-06T21:04:06.106+0000] {logging_mixin.py:154} INFO -   └─ Year 2024... 
+[2025-12-06T21:04:06.410+0000] {logging_mixin.py:154} INFO - Found 20 model(s) 
+[2025-12-06T21:04:27.333+0000] {logging_mixin.py:154} INFO - → 28 variants
+[2025-12-06T21:04:27.336+0000] {logging_mixin.py:154} INFO -   ✅ Jeep COMPLETE: 184 total vehicles
+[2025-12-06T21:04:27.337+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:27.338+0000] {logging_mixin.py:154} INFO - ✅ COLLECTION COMPLETE: 3858 total vehicles
+[2025-12-06T21:04:27.338+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:27.658+0000] {logging_mixin.py:154} INFO - 💾 Saved locally: data/epa_fuel_economy_2020_to_present_20251206_210427.csv
+[2025-12-06T21:04:27.697+0000] {credentials.py:1147} INFO - Found credentials in environment variables.
+[2025-12-06T21:04:29.060+0000] {logging_mixin.py:154} INFO -     ☁️  Uploading to S3: s3://autoinsightfinal/epa/raw/epa_fuel_economy_2020_to_present_20251206_210427.csv
+[2025-12-06T21:04:30.074+0000] {logging_mixin.py:154} INFO -     ✓ Uploaded successfully
+[2025-12-06T21:04:30.181+0000] {logging_mixin.py:154} INFO - 💾 Saved locally: data/epa_fuel_economy_2020_to_present_20251206_210427.json
+[2025-12-06T21:04:30.189+0000] {logging_mixin.py:154} INFO -     ☁️  Uploading to S3: s3://autoinsightfinal/epa/raw/epa_fuel_economy_2020_to_present_20251206_210427.json
+[2025-12-06T21:04:31.168+0000] {logging_mixin.py:154} INFO -     ✓ Uploaded successfully
+[2025-12-06T21:04:31.171+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.172+0000] {logging_mixin.py:154} INFO - 📊 DATA SUMMARY
+[2025-12-06T21:04:31.173+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:31.174+0000] {logging_mixin.py:154} INFO - Total Records: 3,858
+[2025-12-06T21:04:31.187+0000] {logging_mixin.py:154} INFO - Manufacturers: 15
+[2025-12-06T21:04:31.189+0000] {logging_mixin.py:154} INFO - Unique Models: 951
+[2025-12-06T21:04:31.193+0000] {logging_mixin.py:154} INFO - Years Covered: [2020, 2021, 2022, 2023, 2024]
+[2025-12-06T21:04:31.194+0000] {logging_mixin.py:154} INFO - Collection Time: 47.3 minutes
+[2025-12-06T21:04:31.194+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.195+0000] {logging_mixin.py:154} INFO - 📈 RECORDS BY MANUFACTURER
+[2025-12-06T21:04:31.196+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:31.208+0000] {logging_mixin.py:154} INFO -   BMW                    514 vehicles ( 13.3%)
+[2025-12-06T21:04:31.209+0000] {logging_mixin.py:154} INFO -   Ford                   461 vehicles ( 11.9%)
+[2025-12-06T21:04:31.210+0000] {logging_mixin.py:154} INFO -   Chevrolet              420 vehicles ( 10.9%)
+[2025-12-06T21:04:31.211+0000] {logging_mixin.py:154} INFO -   Mercedes-Benz          399 vehicles ( 10.3%)
+[2025-12-06T21:04:31.212+0000] {logging_mixin.py:154} INFO -   Toyota                 378 vehicles (  9.8%)
+[2025-12-06T21:04:31.213+0000] {logging_mixin.py:154} INFO -   GMC                    289 vehicles (  7.5%)
+[2025-12-06T21:04:31.214+0000] {logging_mixin.py:154} INFO -   Hyundai                225 vehicles (  5.8%)
+[2025-12-06T21:04:31.215+0000] {logging_mixin.py:154} INFO -   Kia                    199 vehicles (  5.2%)
+[2025-12-06T21:04:31.216+0000] {logging_mixin.py:154} INFO -   Nissan                 195 vehicles (  5.1%)
+[2025-12-06T21:04:31.216+0000] {logging_mixin.py:154} INFO -   Jeep                   184 vehicles (  4.8%)
+[2025-12-06T21:04:31.217+0000] {logging_mixin.py:154} INFO -   Honda                  168 vehicles (  4.4%)
+[2025-12-06T21:04:31.218+0000] {logging_mixin.py:154} INFO -   Volkswagen             134 vehicles (  3.5%)
+[2025-12-06T21:04:31.219+0000] {logging_mixin.py:154} INFO -   Subaru                 114 vehicles (  3.0%)
+[2025-12-06T21:04:31.220+0000] {logging_mixin.py:154} INFO -   Mazda                  105 vehicles (  2.7%)
+[2025-12-06T21:04:31.220+0000] {logging_mixin.py:154} INFO -   Tesla                   73 vehicles (  1.9%)
+[2025-12-06T21:04:31.223+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.224+0000] {logging_mixin.py:154} INFO - ⚡ ELECTRIC VEHICLES
+[2025-12-06T21:04:31.227+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:31.246+0000] {logging_mixin.py:154} INFO - Total EVs: 413 (10.7% of dataset)
+[2025-12-06T21:04:31.248+0000] {logging_mixin.py:154} INFO - 
+🏆 Top 5 EVs by Range:
+[2025-12-06T21:04:31.274+0000] {logging_mixin.py:154} INFO -  year    make                 model  electric_range
+ 2020  Toyota           Prius Prime             640
+ 2021  Toyota           Prius Prime             640
+ 2022  Toyota           Prius Prime             640
+ 2020 Hyundai  Ioniq Plug-in Hybrid             630
+ 2020     Kia Optima Plug-in Hybrid             630
+[2025-12-06T21:04:31.275+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.276+0000] {logging_mixin.py:154} INFO - 🔋 FUEL TYPE DISTRIBUTION
+[2025-12-06T21:04:31.277+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:31.279+0000] {logging_mixin.py:154} INFO -   Regular                         2115 ( 54.8%)
+[2025-12-06T21:04:31.279+0000] {logging_mixin.py:154} INFO -   Premium                         1117 ( 29.0%)
+[2025-12-06T21:04:31.280+0000] {logging_mixin.py:154} INFO -   Electricity                      330 (  8.6%)
+[2025-12-06T21:04:31.281+0000] {logging_mixin.py:154} INFO -   Diesel                            99 (  2.6%)
+[2025-12-06T21:04:31.281+0000] {logging_mixin.py:154} INFO -   Gasoline or E85                   79 (  2.0%)
+[2025-12-06T21:04:31.282+0000] {logging_mixin.py:154} INFO -   Regular Gas and Electricity       47 (  1.2%)
+[2025-12-06T21:04:31.282+0000] {logging_mixin.py:154} INFO -   Premium and Electricity           32 (  0.8%)
+[2025-12-06T21:04:31.283+0000] {logging_mixin.py:154} INFO -   Hydrogen                          23 (  0.6%)
+[2025-12-06T21:04:31.284+0000] {logging_mixin.py:154} INFO -   Midgrade                          12 (  0.3%)
+[2025-12-06T21:04:31.284+0000] {logging_mixin.py:154} INFO -   Premium Gas or Electricity         4 (  0.1%)
+[2025-12-06T21:04:31.285+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.285+0000] {logging_mixin.py:154} INFO - 💰 AVERAGE ANNUAL FUEL COSTS
+[2025-12-06T21:04:31.286+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:31.303+0000] {logging_mixin.py:154} INFO -   Electricity                    $   784/year
+[2025-12-06T21:04:31.304+0000] {logging_mixin.py:154} INFO -   Regular Gas and Electricity    $ 1,266/year
+[2025-12-06T21:04:31.304+0000] {logging_mixin.py:154} INFO -   Regular                        $ 1,905/year
+[2025-12-06T21:04:31.305+0000] {logging_mixin.py:154} INFO -   Premium Gas or Electricity     $ 1,950/year
+[2025-12-06T21:04:31.306+0000] {logging_mixin.py:154} INFO -   Diesel                         $ 2,344/year
+[2025-12-06T21:04:31.307+0000] {logging_mixin.py:154} INFO -   Gasoline or E85                $ 2,497/year
+[2025-12-06T21:04:31.307+0000] {logging_mixin.py:154} INFO -   Premium and Electricity        $ 2,556/year
+[2025-12-06T21:04:31.308+0000] {logging_mixin.py:154} INFO -   Premium                        $ 2,898/year
+[2025-12-06T21:04:31.309+0000] {logging_mixin.py:154} INFO -   Midgrade                       $ 3,167/year
+[2025-12-06T21:04:31.310+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.311+0000] {logging_mixin.py:154} INFO - ✅ DATA COLLECTION COMPLETE
+[2025-12-06T21:04:31.311+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-06T21:04:31.312+0000] {logging_mixin.py:154} INFO - 
+☁️  Files uploaded to S3:
+[2025-12-06T21:04:31.313+0000] {logging_mixin.py:154} INFO -     📁 s3://autoinsightfinal/epa/raw/epa_fuel_economy_2020_to_present_20251206_210427.csv
+[2025-12-06T21:04:31.314+0000] {logging_mixin.py:154} INFO -     📁 s3://autoinsightfinal/epa/raw/epa_fuel_economy_2020_to_present_20251206_210427.json
+[2025-12-06T21:04:31.314+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-06T21:04:31.315+0000] {logging_mixin.py:154} INFO - 📋 Sample Data (first 5 rows):
+[2025-12-06T21:04:31.322+0000] {logging_mixin.py:154} INFO -  year  make                                     model   fuel_type  mpge_combined  mpg_combined  annual_fuel_cost
+ 2020 Tesla                        Model 3 Long Range Electricity       130.2464           130               600
+ 2020 Tesla                    Model 3 Long Range AWD Electricity       120.5000           121               650
+ 2020 Tesla Model 3 Long Range Performance AWD (18in) Electricity       121.0000           121               650
+ 2020 Tesla Model 3 Long Range Performance AWD (19in) Electricity       115.7185           116               650
+ 2020 Tesla Model 3 Long Range Performance AWD (20in) Electricity       112.8023           113               650
+[2025-12-06T21:04:31.438+0000] {logging_mixin.py:154} INFO - ✅ EPA Data Collection Complete: 3,858 records
+[2025-12-06T21:04:31.440+0000] {python.py:194} INFO - Done. Returned value was: True
+[2025-12-06T21:04:31.500+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=autoinsight_data_pipeline, task_id=fetch_epa_data, execution_date=20251206T200851, start_date=20251206T201712, end_date=20251206T210431
+[2025-12-06T21:04:31.601+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2025-12-06T21:04:31.716+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

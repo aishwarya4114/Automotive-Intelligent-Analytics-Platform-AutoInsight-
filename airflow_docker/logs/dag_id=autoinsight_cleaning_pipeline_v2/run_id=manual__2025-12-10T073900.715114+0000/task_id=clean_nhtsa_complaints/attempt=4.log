@@ -1,0 +1,226 @@
+[2025-12-10T08:35:24.239+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_complaints manual__2025-12-10T07:39:00.715114+00:00 [queued]>
+[2025-12-10T08:35:24.263+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_complaints manual__2025-12-10T07:39:00.715114+00:00 [queued]>
+[2025-12-10T08:35:24.268+0000] {taskinstance.py:1361} INFO - Starting attempt 4 of 6
+[2025-12-10T08:35:24.298+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): clean_nhtsa_complaints> on 2025-12-10 07:39:00.715114+00:00
+[2025-12-10T08:35:24.317+0000] {standard_task_runner.py:57} INFO - Started process 2305 to run task
+[2025-12-10T08:35:24.331+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'autoinsight_cleaning_pipeline_v2', 'clean_nhtsa_complaints', 'manual__2025-12-10T07:39:00.715114+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/autoinsight_cleaning_pipeline.py', '--cfg-path', '/tmp/tmpiirlxon1']
+[2025-12-10T08:35:24.351+0000] {standard_task_runner.py:85} INFO - Job 106: Subtask clean_nhtsa_complaints
+[2025-12-10T08:35:24.518+0000] {task_command.py:416} INFO - Running <TaskInstance: autoinsight_cleaning_pipeline_v2.clean_nhtsa_complaints manual__2025-12-10T07:39:00.715114+00:00 [running]> on host 846744d01d56
+[2025-12-10T08:35:24.622+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='autoinsight@example.com' AIRFLOW_CTX_DAG_OWNER='autoinsight-team' AIRFLOW_CTX_DAG_ID='autoinsight_cleaning_pipeline_v2' AIRFLOW_CTX_TASK_ID='clean_nhtsa_complaints' AIRFLOW_CTX_EXECUTION_DATE='2025-12-10T07:39:00.715114+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-10T07:39:00.715114+00:00'
+[2025-12-10T08:35:24.625+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T08:35:24.626+0000] {logging_mixin.py:154} INFO - CLEANING TASK: NHTSA Complaints (with Sentiment)
+[2025-12-10T08:35:24.627+0000] {logging_mixin.py:154} INFO - ======================================================================
+[2025-12-10T08:35:24.909+0000] {logging_mixin.py:154} INFO - 
+NHTSA COMPLAINTS CLEANING WITH STANDALONE SENTIMENT
+[2025-12-10T08:35:24.910+0000] {logging_mixin.py:154} INFO - Running in LOCAL mode
+[2025-12-10T08:35:24.911+0000] {logging_mixin.py:154} INFO - Loading AWS S3 connectors...
+[2025-12-10T08:35:36.125+0000] {logging_mixin.py:154} INFO - Input: s3a://autoinsightfinal/nhtsa/raw/complaints/*.csv
+[2025-12-10T08:35:36.126+0000] {logging_mixin.py:154} INFO - Output: s3a://autoinsightfinal/nhtsa/cleaned_new/complaints/parquet/
+[2025-12-10T08:35:36.126+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:35:36.127+0000] {logging_mixin.py:154} INFO - NHTSA COMPLAINTS - CLEANING WITH STANDALONE SENTIMENT
+[2025-12-10T08:35:36.127+0000] {logging_mixin.py:154} INFO - Input: 2015-2025 data
+[2025-12-10T08:35:36.128+0000] {logging_mixin.py:154} INFO - Output: Snowflake-ready with sentiment (cleaned_new)
+[2025-12-10T08:35:36.128+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:35:36.129+0000] {logging_mixin.py:154} INFO - 
+Reading raw data from: s3a://autoinsightfinal/nhtsa/raw/complaints/*.csv
+[2025-12-10T08:36:36.517+0000] {logging_mixin.py:154} INFO -   Loaded 454,022 records
+[2025-12-10T08:36:36.522+0000] {logging_mixin.py:154} INFO -   Initial columns: 50
+[2025-12-10T08:36:36.524+0000] {logging_mixin.py:154} INFO - 
+Step 1: Standardizing manufacturer names...
+[2025-12-10T08:36:37.546+0000] {logging_mixin.py:154} INFO - 
+Step 2: Filtering to top 15 manufacturers...
+[2025-12-10T08:36:37.594+0000] {logging_mixin.py:154} INFO -   📊 Filtering to top 15 manufacturers...
+[2025-12-10T08:37:16.796+0000] {logging_mixin.py:154} INFO -   ✓ Kept 453,986 records from top 15 manufacturers
+[2025-12-10T08:37:16.798+0000] {logging_mixin.py:154} INFO -   ✓ Filtered out 22 records from other manufacturers
+[2025-12-10T08:37:16.799+0000] {logging_mixin.py:154} INFO - 
+Step 3: Validating YEAR field...
+[2025-12-10T08:37:17.013+0000] {logging_mixin.py:154} INFO - 
+Step 4: Cleaning MODEL field...
+[2025-12-10T08:37:17.408+0000] {logging_mixin.py:154} INFO - 
+Step 5: Cleaning date fields...
+[2025-12-10T08:37:17.582+0000] {logging_mixin.py:154} INFO - 
+Step 6: Converting Y/N fields to boolean...
+[2025-12-10T08:37:18.180+0000] {logging_mixin.py:154} INFO - 
+Step 7: Converting numeric fields...
+[2025-12-10T08:37:18.577+0000] {logging_mixin.py:154} INFO - 
+Step 8: Cleaning text fields...
+[2025-12-10T08:37:19.277+0000] {logging_mixin.py:154} INFO - 
+Step 9: Creating severity level...
+[2025-12-10T08:37:19.451+0000] {logging_mixin.py:154} INFO - 
+Step 10: Adding data quality flags...
+[2025-12-10T08:37:19.529+0000] {logging_mixin.py:154} INFO - 
+Step 11: Removing duplicates...
+[2025-12-10T08:37:51.041+0000] {logging_mixin.py:154} INFO -   Removed 210,517 duplicate records
+[2025-12-10T08:37:51.042+0000] {logging_mixin.py:154} INFO - 
+Step 12: Standardizing column names for Snowflake...
+[2025-12-10T08:37:51.200+0000] {logging_mixin.py:154} INFO - 
+Step 13: Creating standardized vehicle_id...
+[2025-12-10T08:37:51.403+0000] {logging_mixin.py:154} INFO - 
+Step 14: Adding metadata...
+[2025-12-10T08:37:51.510+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:37:51.512+0000] {logging_mixin.py:154} INFO - Step 15: Applying Standalone Sentiment Analysis
+[2025-12-10T08:37:51.512+0000] {logging_mixin.py:154} INFO -   Module: sentiment_standalone.py
+[2025-12-10T08:37:51.513+0000] {logging_mixin.py:154} INFO -   Features: 30+ safety keywords, failure detection, intensifiers
+[2025-12-10T08:37:51.513+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:37:52.033+0000] {logging_mixin.py:154} INFO - ✅ Sentiment analysis complete!
+[2025-12-10T08:37:52.034+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:37:52.036+0000] {logging_mixin.py:154} INFO - Step 16: Creating Sentiment Categories
+[2025-12-10T08:37:52.036+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:37:52.150+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:37:52.154+0000] {logging_mixin.py:154} INFO - Step 17: Selecting Final Columns
+[2025-12-10T08:37:52.156+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:38:05.608+0000] {logging_mixin.py:154} INFO - 
+============================================================
+[2025-12-10T08:38:05.609+0000] {logging_mixin.py:154} INFO - CLEANING SUMMARY
+[2025-12-10T08:38:05.609+0000] {logging_mixin.py:154} INFO - ============================================================
+[2025-12-10T08:38:05.610+0000] {logging_mixin.py:154} INFO -   Initial records: 454,022
+[2025-12-10T08:38:05.611+0000] {logging_mixin.py:154} INFO -   Final records: 210,517
+[2025-12-10T08:38:05.611+0000] {logging_mixin.py:154} INFO -   Retention rate: 46.4%
+[2025-12-10T08:38:05.612+0000] {logging_mixin.py:154} INFO - 
+  Severity Distribution:
+[2025-12-10T08:38:21.072+0000] {logging_mixin.py:154} INFO -     LOW: 195,885
+[2025-12-10T08:38:21.073+0000] {logging_mixin.py:154} INFO -     MEDIUM: 8,807
+[2025-12-10T08:38:21.074+0000] {logging_mixin.py:154} INFO -     HIGH: 5,682
+[2025-12-10T08:38:21.075+0000] {logging_mixin.py:154} INFO -     CRITICAL: 143
+[2025-12-10T08:38:21.075+0000] {logging_mixin.py:154} INFO - 
+  Sentiment Distribution:
+[2025-12-10T08:38:39.129+0000] {logging_mixin.py:154} INFO - ❌ NHTSA Complaints (with Sentiment) Failed: 
+  An exception was thrown from the Python worker. Please see the stack trace below.
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1231, in main
+    func, profiler, deserializer, serializer = read_udfs(pickleSer, infile, eval_type)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1067, in read_udfs
+    udfs.append(read_single_udf(pickleSer, infile, eval_type, runner_conf, udf_index=i))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 529, in read_single_udf
+    f, return_type = read_command(pickleSer, infile)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 90, in read_command
+    command = serializer._read_with_length(file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 174, in _read_with_length
+    return self.loads(obj)
+           ^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 472, in loads
+    return cloudpickle.loads(obj, encoding=encoding)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sentiment_standalone'
+[2025-12-10T08:38:39.150+0000] {logging_mixin.py:154} WARNING - Traceback (most recent call last):
+[2025-12-10T08:38:39.153+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/dags/autoinsight_cleaning_pipeline.py", line 88, in run_cleaning_task
+    main()
+[2025-12-10T08:38:39.156+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/data_cleaning/clean_nhtsa_complaints.py", line 396, in main
+    df_clean = clean_complaints(spark, INPUT_PATH, OUTPUT_PATH)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-10T08:38:39.157+0000] {logging_mixin.py:154} WARNING -   File "/opt/***/src/data_cleaning/clean_nhtsa_complaints.py", line 330, in clean_complaints
+    for row in df_final.groupBy('sentiment_category').count().orderBy('count', ascending=False).collect():
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-10T08:38:39.158+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/sql/dataframe.py", line 1257, in collect
+    sock_info = self._jdf.collectToPython()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2025-12-10T08:38:39.159+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+[2025-12-10T08:38:39.160+0000] {logging_mixin.py:154} WARNING -   File "/home/***/.local/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+[2025-12-10T08:38:39.161+0000] {logging_mixin.py:154} WARNING - pyspark.errors.exceptions.captured.PythonException: 
+  An exception was thrown from the Python worker. Please see the stack trace below.
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1231, in main
+    func, profiler, deserializer, serializer = read_udfs(pickleSer, infile, eval_type)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1067, in read_udfs
+    udfs.append(read_single_udf(pickleSer, infile, eval_type, runner_conf, udf_index=i))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 529, in read_single_udf
+    f, return_type = read_command(pickleSer, infile)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 90, in read_command
+    command = serializer._read_with_length(file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 174, in _read_with_length
+    return self.loads(obj)
+           ^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 472, in loads
+    return cloudpickle.loads(obj, encoding=encoding)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sentiment_standalone'
+[2025-12-10T08:38:39.164+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 118, in clean_nhtsa_complaints
+    return run_cleaning_task('clean_nhtsa_complaints', 'NHTSA Complaints (with Sentiment)', **context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/autoinsight_cleaning_pipeline.py", line 88, in run_cleaning_task
+    main()
+  File "/opt/airflow/src/data_cleaning/clean_nhtsa_complaints.py", line 396, in main
+    df_clean = clean_complaints(spark, INPUT_PATH, OUTPUT_PATH)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/src/data_cleaning/clean_nhtsa_complaints.py", line 330, in clean_complaints
+    for row in df_final.groupBy('sentiment_category').count().orderBy('count', ascending=False).collect():
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/sql/dataframe.py", line 1257, in collect
+    sock_info = self._jdf.collectToPython()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+    raise converted from None
+pyspark.errors.exceptions.captured.PythonException: 
+  An exception was thrown from the Python worker. Please see the stack trace below.
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1231, in main
+    func, profiler, deserializer, serializer = read_udfs(pickleSer, infile, eval_type)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1067, in read_udfs
+    udfs.append(read_single_udf(pickleSer, infile, eval_type, runner_conf, udf_index=i))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 529, in read_single_udf
+    f, return_type = read_command(pickleSer, infile)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 90, in read_command
+    command = serializer._read_with_length(file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 174, in _read_with_length
+    return self.loads(obj)
+           ^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 472, in loads
+    return cloudpickle.loads(obj, encoding=encoding)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sentiment_standalone'
+
+[2025-12-10T08:38:39.227+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=autoinsight_cleaning_pipeline_v2, task_id=clean_nhtsa_complaints, execution_date=20251210T073900, start_date=20251210T083524, end_date=20251210T083839
+[2025-12-10T08:38:39.263+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 106 for task clean_nhtsa_complaints (
+  An exception was thrown from the Python worker. Please see the stack trace below.
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1231, in main
+    func, profiler, deserializer, serializer = read_udfs(pickleSer, infile, eval_type)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 1067, in read_udfs
+    udfs.append(read_single_udf(pickleSer, infile, eval_type, runner_conf, udf_index=i))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 529, in read_single_udf
+    f, return_type = read_command(pickleSer, infile)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/worker.py", line 90, in read_command
+    command = serializer._read_with_length(file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 174, in _read_with_length
+    return self.loads(obj)
+           ^^^^^^^^^^^^^^^
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/serializers.py", line 472, in loads
+    return cloudpickle.loads(obj, encoding=encoding)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sentiment_standalone'
+; 2305)
+[2025-12-10T08:38:39.318+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-12-10T08:38:39.369+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
