@@ -1,0 +1,93 @@
+version: '3.8'
+ 
+services:
+
+  # =========================================================
+
+  # 1. BACKEND SERVICE (FastAPI / MCP Server)
+
+  # =========================================================
+
+  backend:
+
+    container_name: autoinsight_backend
+
+    build:
+
+      context: ./src/mcp_server
+
+      dockerfile: Dockerfile
+
+    # Expose the port to the host machine
+
+    ports:
+
+      - "8001:8001"
+
+    environment:
+
+      # CRITICAL HOTFIX for Snowflake SSL validation (Error 254007)
+
+      - PYTHONHTTPSVERIFY=0 
+
+      # Inject GitHub Secrets as Environment Variables
+
+      - SNOWFLAKE_USER=${SNOWFLAKE_USER}
+
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+
+      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+
+    restart: always
+ 
+  # =========================================================
+
+  # 2. FRONTEND SERVICE (Streamlit App)
+
+  # =========================================================
+
+  frontend:
+
+    container_name: autoinsight_frontend
+
+    build:
+
+      context: . 
+
+      dockerfile: Dockerfile.frontend
+
+    # Expose the port to the host machine
+
+    ports:
+
+      - "8501:8501"
+
+    environment:
+
+      # Internal Docker Network Communication
+
+      # This is the KEY fix for the Connection Refused error.
+
+      - MCP_SERVER_URL=http://backend:8001
+
+      # Credentials needed for RAG/Authorization checks in the frontend
+
+      - SNOWFLAKE_USER=${SNOWFLAKE_USER}
+
+      - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+
+      - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
+
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+
+      - PINECONE_API_KEY=${PINECONE_API_KEY}
+
+    # Ensure backend starts before the frontend tries to connect
+
+    depends_on:
+
+      - backend
+
+    restart: always
