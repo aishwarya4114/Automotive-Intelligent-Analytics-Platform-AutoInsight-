@@ -363,8 +363,8 @@ curl -s http://metadata.google.internal/computeMetadata/v1/instance/network-inte
    - `autoinsight_daily_scraper` - News scraping
 3. Manually trigger initial runs
 
-AWS EC2 Deployment (FastAPI + Streamlit)
-Services Deployed
+#### Step 11 AWS EC2 Deployment (FastAPI + Streamlit)
+### Services Deployed
 
 FastAPI (MCP Server): http://18.191.175.145:8001/docs
 Streamlit UI: http://18.191.175.145:8501/
