@@ -364,7 +364,7 @@ curl -s http://metadata.google.internal/computeMetadata/v1/instance/network-inte
 3. Manually trigger initial runs
 
 #### Step 11 AWS EC2 Deployment (FastAPI + Streamlit)
-### Services Deployed
+Services Deployed
 
 FastAPI (MCP Server): http://18.191.175.145:8001/docs
 Streamlit UI: http://18.191.175.145:8501/
